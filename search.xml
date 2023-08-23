@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客说明</title>
+    <url>/3202/01/01/github/</url>
+    <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
+<span id="more"></span>
+<p>工地：</p>
+<ul>
+<li>相册图片大小</li>
+<li>评论区获取头像</li>
+<li>评论邮件推送</li>
+</ul>
+<p>更新日志：</p>
+<p>2023.08.18 建站 v1.0.0<br>2023.08.20 美化 v1.1.0<br>2023.08.20 添加评论功能 v1.2.0<br>2023.08.21 添加单个文章浏览量 v1.2.1<br>2023.08.22 添加相册功能<br>2023.08.22 暂时停用相册功能</p>
+<p>bug：<br>相册照片的大小无法控制，要么生成1080*1080的正方畸变图片，要么生成超大图片，目前暂停维护<br>如果强行点入可能卡死，刷新便可<br>开始维护时间：2024.1.25<br>若有想法请评论留言</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
+]]></content>
+  </entry>
+  <entry>
     <title>搭建问题总结</title>
     <url>/2023/08/19/blog-buliding/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
@@ -53,24 +71,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客说明</title>
-    <url>/3202/01/01/github/</url>
-    <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
-<span id="more"></span>
-<p>工地：</p>
-<ul>
-<li>相册图片大小</li>
-<li>评论区获取头像</li>
-<li>评论邮件推送</li>
-</ul>
-<p>更新日志：</p>
-<p>2023.08.18 建站 v1.0.0<br>2023.08.20 美化 v1.1.0<br>2023.08.20 添加评论功能 v1.2.0<br>2023.08.21 添加单个文章浏览量 v1.2.1<br>2023.08.22 添加相册功能<br>2023.08.22 暂时停用相册功能</p>
-<p>bug：<br>相册照片的大小无法控制，要么生成1080*1080的正方畸变图片，要么生成超大图片，目前暂停维护<br>如果强行点入可能卡死，刷新便可<br>开始维护时间：2024.1.25<br>若有想法请评论留言</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/08/17/hello-world/</url>
     <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
@@ -97,66 +97,6 @@
       <tags>
         <tag>摄影</tag>
         <tag>Nikon D90</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>评论</title>
-    <url>/2023/08/20/review/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样</p>
-<p><a href="https://zhuanlan.zhihu.com/p/143167066">Hexo+yilia安装Valine评论系统、LeanCloud、创建应用、部署云引擎 - 知乎 (zhihu.com)</a></p>
-<p>感谢这位大佬，教程也很明确，如果还看不懂可以去他的主页看「保姆级」教程</p>
-<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><span id="more"></span>
-
-<h3 id="一个坑"><a href="#一个坑" class="headerlink" title="一个坑"></a>一个坑</h3><img src="/2023/08/20/review/image-20230820210712161.png" class title="知乎">
-
-<p>这个是代码模版，如果直接复制到文件尾部的话会导致报错，原因是</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SyntaxError: Unexpected token &#x27;catch&#x27; in D:\Blog\themes\yilia\layout\_partial\ar</span><br><span class="line">ticle.ejs while compiling ejs</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>我们去查看一下错误代码对照表（或者翻译）</p>
-<p>得到<img src="/2023/08/20/review/image-20230820210905747.png" class title="image-20230820210905747"></p>
-<p>但问题的难点在于这个代码也是正确的，所以我猜想不能插到尾部，但是这是最保险的办法。</p>
-<p>所以我们使用c++中的大招：<strong>尾部添加法</strong></p>
-<p>随便在尾部添加一个</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-
-<p>就可以解决问题</p>
-<p>有点随便……</p>
-<h3 id="两个坑"><a href="#两个坑" class="headerlink" title="两个坑"></a>两个坑</h3><p>接下来到最难的：Leancloud</p>
-<hr>
-<p>因为： <em><strong>他改版了！</strong></em></p>
-<p>应用API的部分还算好，但是到了部署和配置的问题就大了</p>
-<p><img src="https://pic4.zhimg.com/v2-e509dd41ee51cd2ece15611f122cb067_r.jpg" alt="img"></p>
-<p>这个是文章里面的</p>
-<img src="/2023/08/20/review/image-20230820211805232.png" class title="image-20230820211805232">
-
-<p>这个是现在（2023.08.21）的UI</p>
-<p>有些教程会教你建立应用，然后就会发现：</p>
-<img src="/2023/08/20/review/image-20230820211908475.png" class title="image-20230820211908475">
-
-<p><strong>这一点也不一样啊</strong></p>
-<p>而且最要命的是云引擎的部分全部重新设计</p>
-<img src="/2023/08/20/review/image-20230820212007204.png" class title="image-20230820212007204">
-
-<p>原来的云引擎里面直接有设置</p>
-<p>但是现在就剩一个「部署」和一个DB</p>
-<p>根据以前的经验，我们肯定去部署瞧一瞧</p>
-<p>然后要新建一个「类」</p>
-<img src="/2023/08/20/review/image-20230820212437483.png" class title="image-20230820212437483">
-
-<p>有了这个类后就好办多了</p>
-<img src="/2023/08/20/review/image-20230820212509478.png" class title="image-20230820212509478">
-
-<p>UI设计到这里了</p>
-<p>后面就是紧跟教程了</p>
-<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><img src="/2023/08/20/review/image-20230820212613221.png" class title="image-20230820212613221">
-
-<p>原始样子大概就是这样，也可以在「自定义环境变量」里修改主题</p>
-<hr>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>hexo</tag>
-        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -225,6 +165,102 @@
       <tags>
         <tag>电子</tag>
         <tag>存储</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>评论</title>
+    <url>/2023/08/20/review/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样</p>
+<p><a href="https://zhuanlan.zhihu.com/p/143167066">Hexo+yilia安装Valine评论系统、LeanCloud、创建应用、部署云引擎 - 知乎 (zhihu.com)</a></p>
+<p>感谢这位大佬，教程也很明确，如果还看不懂可以去他的主页看「保姆级」教程</p>
+<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><span id="more"></span>
+
+<h3 id="一个坑"><a href="#一个坑" class="headerlink" title="一个坑"></a>一个坑</h3><img src="/2023/08/20/review/image-20230820210712161.png" class title="知乎">
+
+<p>这个是代码模版，如果直接复制到文件尾部的话会导致报错，原因是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SyntaxError: Unexpected token &#x27;catch&#x27; in D:\Blog\themes\yilia\layout\_partial\ar</span><br><span class="line">ticle.ejs while compiling ejs</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>我们去查看一下错误代码对照表（或者翻译）</p>
+<p>得到<img src="/2023/08/20/review/image-20230820210905747.png" class title="image-20230820210905747"></p>
+<p>但问题的难点在于这个代码也是正确的，所以我猜想不能插到尾部，但是这是最保险的办法。</p>
+<p>所以我们使用c++中的大招：<strong>尾部添加法</strong></p>
+<p>随便在尾部添加一个</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>就可以解决问题</p>
+<p>有点随便……</p>
+<h3 id="两个坑"><a href="#两个坑" class="headerlink" title="两个坑"></a>两个坑</h3><p>接下来到最难的：Leancloud</p>
+<hr>
+<p>因为： <em><strong>他改版了！</strong></em></p>
+<p>应用API的部分还算好，但是到了部署和配置的问题就大了</p>
+<p><img src="https://pic4.zhimg.com/v2-e509dd41ee51cd2ece15611f122cb067_r.jpg" alt="img"></p>
+<p>这个是文章里面的</p>
+<img src="/2023/08/20/review/image-20230820211805232.png" class title="image-20230820211805232">
+
+<p>这个是现在（2023.08.21）的UI</p>
+<p>有些教程会教你建立应用，然后就会发现：</p>
+<img src="/2023/08/20/review/image-20230820211908475.png" class title="image-20230820211908475">
+
+<p><strong>这一点也不一样啊</strong></p>
+<p>而且最要命的是云引擎的部分全部重新设计</p>
+<img src="/2023/08/20/review/image-20230820212007204.png" class title="image-20230820212007204">
+
+<p>原来的云引擎里面直接有设置</p>
+<p>但是现在就剩一个「部署」和一个DB</p>
+<p>根据以前的经验，我们肯定去部署瞧一瞧</p>
+<p>然后要新建一个「类」</p>
+<img src="/2023/08/20/review/image-20230820212437483.png" class title="image-20230820212437483">
+
+<p>有了这个类后就好办多了</p>
+<img src="/2023/08/20/review/image-20230820212509478.png" class title="image-20230820212509478">
+
+<p>UI设计到这里了</p>
+<p>后面就是紧跟教程了</p>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><img src="/2023/08/20/review/image-20230820212613221.png" class title="image-20230820212613221">
+
+<p>原始样子大概就是这样，也可以在「自定义环境变量」里修改主题</p>
+<hr>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>评论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>紧急bug维修</title>
+    <url>/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/</url>
+    <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
+<p>所有命令均提示异常</p>
+<p><code>hexo d</code>直接报错</p>
+<p>找了很久，发现一个不起眼的地方</p>
+<p>当时心很忙，就没有截图</p>
+<p>但是报错信息是这样的</p>
+<p><code>fatal: bad config line 1 in file </code></p>
+<img src="/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
+
+<p>这个是插件安装错误，插件是dplayer播放器</p>
+<p>解决办法：使用npm卸载</p>
+<p><code>npm uninstall 模块 --save</code></p>
+<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
+<p>这个情况比较特殊，他没有给出路径</p>
+<p>所以这些对于这个问题无用</p>
+<p><a href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
+<p>叫你去动C盘的，后面一定会有一个路径指向C盘</p>
+<p>同样的，这个方法也可以解决hexo d时一堆warning LF。</p>
+<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
+<p>然后在<code>git bash</code>中输入这一行代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
+
+<p>就解决了</p>
+<blockquote>
+<p><a href="https://crab-in-the-northeast.gitee.io/blog/uncategorized/1.29bug/">1月29日惨案-bad config line 1 in .git&#x2F;config 解决方案 | blog-东北小蟹蟹 (gitee.io)</a></p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
@@ -472,42 +508,6 @@
         <tag>科幻</tag>
         <tag>小说</tag>
         <tag>刘慈欣</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>紧急bug维修</title>
-    <url>/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/</url>
-    <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
-<p>所有命令均提示异常</p>
-<p><code>hexo d</code>直接报错</p>
-<p>找了很久，发现一个不起眼的地方</p>
-<p>当时心很忙，就没有截图</p>
-<p>但是报错信息是这样的</p>
-<p><code>fatal: bad config line 1 in file </code></p>
-<img src="/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
-
-<p>这个是插件安装错误，插件是dplayer播放器</p>
-<p>解决办法：使用npm卸载</p>
-<p><code>npm uninstall 模块 --save</code></p>
-<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
-<p>这个情况比较特殊，他没有给出路径</p>
-<p>所以这些对于这个问题无用</p>
-<p><a href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
-<p>叫你去动C盘的，后面一定会有一个路径指向C盘</p>
-<p>同样的，这个方法也可以解决hexo d时一堆warning LF。</p>
-<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
-<p>然后在<code>git bash</code>中输入这一行代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
-
-<p>就解决了</p>
-<blockquote>
-<p><a href="https://crab-in-the-northeast.gitee.io/blog/uncategorized/1.29bug/">1月29日惨案-bad config line 1 in .git&#x2F;config 解决方案 | blog-东北小蟹蟹 (gitee.io)</a></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>hexo</tag>
-        <tag>bug</tag>
       </tags>
   </entry>
 </search>
