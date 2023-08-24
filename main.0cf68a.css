@@ -368,7 +368,7 @@ body {
     line-height: 1.5;
     color: #333;
     min-height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://s1.ax1x.com/2023/08/24/pPY518U.png') no-repeat 0% 0%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://s1.ax1x.com/2023/08/24/pPY518U.png') 0% 0%/cover;
     min-height: 100%
 
 }
