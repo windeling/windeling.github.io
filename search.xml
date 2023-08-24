@@ -9,7 +9,8 @@
 
 <h1 id="分清接口和协议"><a href="#分清接口和协议" class="headerlink" title="分清接口和协议"></a>分清接口和协议</h1><p>在正文开始之前，我们需要分清USB接口和USB协议。</p>
 <p>因为不同的接口可以使用相同的协议，不分清接口和协议的话，容易造成思维的误导和混乱。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/c496490edc5dc2bb7a964f4d8c335ddf.png" alt="img"></p>
+<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/956a5b62c94ebcf94ca96bde388b4db2.png" class title="956a5b62c94ebcf94ca96bde388b4db2">
+
 <p>这个就是USB的不同协议了</p>
 <p>具体内容可以参照<a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关USB数据传输 | Liam’s boring life (boredliam.github.io)</a></p>
 <p>总的来说，协议越高，支持的传输速率就越大，充电功率也越高。</p>
@@ -105,21 +106,25 @@
 <p>这是USB线缆的标识，看图方法大体相同。</p>
 <p>唯一值得注意的是最后一行的线缆表示不可进行数据传输。</p>
 <h1 id="多种多样的接口"><a href="#多种多样的接口" class="headerlink" title="多种多样的接口"></a>多种多样的接口</h1><h2 id="Type系列"><a href="#Type系列" class="headerlink" title="Type系列"></a>Type系列</h2><p>Type系列可以是我们日常生活中接触到最多，用途最广的接口了。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/306e45588b6f5545532e07da7e483a16.png" alt="img"></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/ccecad68aedb7711e967789dfecd62c8.png" alt="img"></p>
+<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181225548.png" class title="image-20230824181225548">
+
+<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181250623.png" class title="image-20230824181250623">
+
 <p>这些便是我们现在的type家族。</p>
 <p>有些人可能会说，好像Type-B没怎么见过。</p>
 <p>事实上，Type-B接口被管方应用于打印机，扫描仪等外部输出输入设备。</p>
 <p>动手安装过打印机的同学应该很熟悉。</p>
 <p>Type A和Type C自然就不用介绍了，这可是两大家喻户晓的存在。</p>
 <p>但是Type C还有一点点不一样的地方，之后我们再详细展开。</p>
-<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><p><img src="https://img-blog.csdnimg.cn/img_convert/3e4e3c270b9894af8863a5f85e2f58e1.png" alt="img"></p>
+<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181350495.png" class title="image-20230824181350495">
+
 <p>这边是mini系列，比较少见。</p>
 <p>而且随着用途的不断减少，也在逐渐退出市场。</p>
 <p>最早的时候可以通过这种线实现两个不同设备之间的连接，没有主机也照样能传输数据。</p>
 <p>其指标与标准USB相同，但是加入了ID针脚（用于区分设备是主机还是外设），以支持OTG。</p>
 <p>主要用途在一些相机设备和MP3 MP4设备，某些老旧型号的手机也会将其作为充电口。</p>
-<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="https://img-blog.csdnimg.cn/img_convert/2be341e37ab4973cb8bf2bb22f472c99.png" alt="img">Micro系列是mini系列的下一代，在同样规格的情况下提高了插拔寿命，最高可到达1万次。</p>
+<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230824181408279.png" alt="image-20230824181408279"></p>
+<p>Micro系列是mini系列的下一代，在同样规格的情况下提高了插拔寿命，最高可到达1万次。</p>
 <p>并且减小的体积更有利于手机部署的小型化。</p>
 <p>当然如果有接触移动硬盘的同学相信对 micro B系列（3.0）一定不陌生。</p>
 <p>因为它也是用在移动硬盘盒上的重要接口。</p>
@@ -140,9 +145,11 @@
 <p>注意雷电协议和雷电接口又是非常不同的两个概念。在开始之前先进行区分一下。</p>
 <h2 id="区分"><a href="#区分" class="headerlink" title="区分"></a>区分</h2><p>雷电接口是支持雷电协议的接口。（有点怪怪的）</p>
 <p>为什么要说这句话？？</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/2ba3ccabab5b234e7e04e74393b05538.png" alt="雷电3菊链功能_雷电4、USB4、全功能Type-C有什么区别？_weixin_39589394的博客-CSDN博客"></p>
+<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181453268.png" class title="image-20230824181453268">
+
 <p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.0e1820084728a5d7c203143fdcff2edd?rik=7zwLzmVdlgOTpQ&riu=http://img1.mydrivers.com/img/20190305/60307c47732645a89d24c4c753be976c.jpg&ehk=Zaz8T7i1c1/wJHXUgl4UT73ltfgXM0XQWSBeOVuyhe8=&risl=&pid=ImgRaw&r=0" alt="雷电多开助手"></p>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.c96873bed2df10901e201d6673b0ec51?rik=WNtya0naSd69Pg&riu=http://sy0.img.pcpop.com/article/0/335/335161.jpg_p-w730&ehk=KlTsQBkaxmUFpR2IXjC3Lbbe1hX59zW+0/XNYyCt28Q=&risl=&pid=ImgRaw&r=0" alt="雷电3和USB Type C究竟有什么区别？_-泡泡网"></p>
+<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181518238.png" class title="image-20230824181518238">
+
 <p>因为雷电协议和USB协议都是用type-c接口。</p>
 <p>区别在于支持雷电协议的接口旁边会有一个雷电标志。</p>
 <p>最新的雷电4的带宽是40Gbps，融合了PCI-E 4.0数据传输协议和DisplayPort视频协议，同时还能提供最大100W的供电能力。</p>
