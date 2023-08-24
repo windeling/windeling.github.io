@@ -7,15 +7,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>Tag: valine | Windeling</title>
+  <title>关于bad config line 1 in file的紧急bug维修 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Windeling">
-<meta property="og:url" content="https://windeling.github.io/tags/valine/index.html">
+  <meta name="description" content="今天尝试着安装视频插件，但是造成了网站崩溃 所有命令均提示异常 hexo d直接报错">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于bad config line 1 in file的紧急bug维修">
+<meta property="og:url" content="https://windeling.github.io/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/index.html">
 <meta property="og:site_name" content="Windeling">
+<meta property="og:description" content="今天尝试着安装视频插件，但是造成了网站崩溃 所有命令均提示异常 hexo d直接报错">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://windeling.github.io/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/65b75d92d9653403790752d5f1c3cade.png">
+<meta property="article:published_time" content="2023-08-23T13:01:07.000Z">
+<meta property="article:modified_time" content="2023-08-24T03:30:59.825Z">
 <meta property="article:author" content="黄文林">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="bug">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://windeling.github.io/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/65b75d92d9653403790752d5f1c3cade.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -178,36 +187,107 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-紧急bug维修" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/08/20/review/" class="archive-article-date">
-  	<time datetime="2023-08-20T13:02:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/08/20/review/">valine评论系统搭建</a>
+    <h1 class="article-title" itemprop="name">
+      关于bad config line 1 in file的紧急bug维修
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        
+        <a href="/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/" class="archive-article-date">
+  	<time datetime="2023-08-23T13:01:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-23</time>
+</a>
+        
+
+          <div style="margin-top:10px;">
+
+  <span class="post-time">
+
+    <span class="post-meta-item-icon">
+
+      <i class="fa fa-keyboard-o"></i>
+
+      <span class="post-meta-item-text">  字数统计: </span>
+
+      <span class="post-count">274字</span>
+
+    </span>
+
+  </span>
+
+  <span class="post-time">
+
+    &nbsp; | &nbsp;
+
+    <span class="post-meta-item-icon">
+
+      <i class="fa fa-hourglass-half"></i>
+
+      <span class="post-meta-item-text">  预计阅读时长: </span>
+
+      <span class="post-count">1分</span>
+
+    </span>
+    
+      <a class="cloud-tie-join-count" href="/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/" style="color:rgba(26, 26, 26);margin-top:10px;">
+        &nbsp; | &nbsp;
+        <span id="busuanzi_container_page_pv">
+          阅读量: <span id="busuanzi_value_page_pv"></span>
+        </span>
+      </a>
+    
+  </span>
+  <!--显示阅读次数-->
+
+</div>
           
+          
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
+<p>所有命令均提示异常</p>
+<p><code>hexo d</code>直接报错</p>
+<span id="more"></span>
+<p>找了很久，发现一个不起眼的地方</p>
+<p>当时心很忙，就没有截图</p>
+<p>但是报错信息是这样的</p>
+<p><code>fatal: bad config line 1 in file </code></p>
+<img src="/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
+
+<p>这个是插件安装错误，插件是dplayer播放器</p>
+<p>解决办法：使用npm卸载</p>
+<p><code>npm uninstall 模块 --save</code></p>
+<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
+<p>这个情况比较特殊，他没有给出路径</p>
+<p>所以这些对于这个问题无用</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
+<p>叫你去动C盘的，后面一定会有一个路径指向C盘</p>
+<p>同样的，这个方法也可以解决hexo d时一堆warning LF。</p>
+<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
+<p>然后在<code>git bash</code>中输入这一行代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
+
+<p>就解决了</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://crab-in-the-northeast.gitee.io/blog/uncategorized/1.29bug/">1月29日惨案-bad config line 1 in .git&#x2F;config 解决方案 | blog-东北小蟹蟹 (gitee.io)</a></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -221,27 +301,106 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">valine</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bug</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2023/09/10/teacher/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          教师节
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2023/08/23/%E6%80%9D%E6%83%B3%E8%80%85/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">思想者</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
 
+  
 
+  
+    <section id="comments" style="margin:10px;padding:10px;background:rgb(255, 255, 255);">
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "xHtXgMKrGA54D3kZj4yP6fzy-gzGzoHsz",
+            app_key: "V2QKljAUxvB9b6TcavCR1aIB",
+            placeholder: "支持Markdown语法，图片可直接粘贴，有关语法可查看「链接」",
+            avatar:"retro"
+        });
+    }
+</script>
+    </section>
+  
+ 
           </div>
         </div>
       </div>
@@ -263,9 +422,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
