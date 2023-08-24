@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客说明</title>
-    <url>/3202/01/01/github/</url>
-    <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
-<span id="more"></span>
-<p>工地：</p>
-<ul>
-<li>相册图片大小</li>
-<li>评论区获取头像</li>
-<li>评论邮件推送</li>
-</ul>
-<p>更新日志：</p>
-<p>2023.08.18 建站 v1.0.0<br>2023.08.20 美化 v1.1.0<br>2023.08.20 添加评论功能 v1.2.0<br>2023.08.21 添加单个文章浏览量 v1.2.1<br>2023.08.22 添加相册功能<br>2023.08.22 暂时停用相册功能</p>
-<p>bug：<br>相册照片的大小无法控制，要么生成1080*1080的正方畸变图片，要么生成超大图片，目前暂停维护<br>如果强行点入可能卡死，刷新便可<br>开始维护时间：2024.1.25<br>若有想法请评论留言</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
-]]></content>
-  </entry>
-  <entry>
     <title>搭建问题总结</title>
     <url>/2023/08/19/blog-buliding/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
@@ -86,6 +68,24 @@
       <tags>
         <tag>欢迎</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>博客说明</title>
+    <url>/3202/01/01/github/</url>
+    <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
+<span id="more"></span>
+<p>工地：</p>
+<ul>
+<li>相册图片大小</li>
+<li>评论区获取头像</li>
+<li>评论邮件推送</li>
+</ul>
+<p>更新日志：</p>
+<p>2023.08.18 建站 v1.0.0<br>2023.08.20 美化 v1.1.0<br>2023.08.20 添加评论功能 v1.2.0<br>2023.08.21 添加单个文章浏览量 v1.2.1<br>2023.08.22 添加相册功能<br>2023.08.22 暂时停用相册功能</p>
+<p>bug：<br>相册照片的大小无法控制，要么生成1080*1080的正方畸变图片，要么生成超大图片，目前暂停维护<br>如果强行点入可能卡死，刷新便可<br>开始维护时间：2024.1.25<br>若有想法请评论留言</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
+]]></content>
   </entry>
   <entry>
     <title>摄影作品</title>
