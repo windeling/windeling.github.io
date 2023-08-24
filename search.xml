@@ -1,6 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>深入分析USB接口大全</title>
+    <url>/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/</url>
+    <content><![CDATA[<p>「接口」一词，伴随着电子设备的产生出现在人们的视野。</p>
+<p>然而如今多种多样复杂的接口也让我们烦不胜烦，今天就用一篇文章来详细介绍一下USB接口的规范。</p>
+<span id="more"></span>
+
+<h1 id="分清接口和协议"><a href="#分清接口和协议" class="headerlink" title="分清接口和协议"></a>分清接口和协议</h1><p>在正文开始之前，我们需要分清USB接口和USB协议。</p>
+<p>因为不同的接口可以使用相同的协议，不分清接口和协议的话，容易造成思维的误导和混乱。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/c496490edc5dc2bb7a964f4d8c335ddf.png" alt="img"></p>
+<p>这个就是USB的不同协议了</p>
+<p>具体内容可以参照<a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关USB数据传输 | Liam’s boring life (boredliam.github.io)</a></p>
+<p>总的来说，协议越高，支持的传输速率就越大，充电功率也越高。</p>
+<h1 id="傻乎乎的命名方法"><a href="#傻乎乎的命名方法" class="headerlink" title="傻乎乎的命名方法"></a>傻乎乎的命名方法</h1><p>众所周知，USB组织是一个很喜欢给别人起名字的家伙。</p>
+<p>在最早的时候，USB组织还是很乖巧安分的。</p>
+<table>
+<thead>
+<tr>
+<th align="center">官方命名1</th>
+<th align="center">官方命名2</th>
+<th align="center">官方命名3</th>
+<th align="center">大众理解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">USB 1.0 (1.5Mbps)</td>
+<td align="center">USB 2.0 Low Speed</td>
+<td align="center"></td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="center">USB 1.1 (12Mbps)</td>
+<td align="center">USB 2.0 Full Speed</td>
+<td align="center"></td>
+<td align="center">1.1</td>
+</tr>
+<tr>
+<td align="center">USB 2.0 (480Mbps)</td>
+<td align="center">USB 2.0 High Speed</td>
+<td align="center"></td>
+<td align="center">2.0</td>
+</tr>
+</tbody></table>
+<p>但是USB组织开始越来越不老实了。</p>
+<p>开始使用大量无所谓的名称</p>
+<table>
+<thead>
+<tr>
+<th align="right">新命名</th>
+<th>旧（USB 3.2 (20Gbps) 发布期间）</th>
+<th>旧（USB 3.1 (10Gbps) 发布期间）</th>
+<th>原名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">USB 80Gbps</td>
+<td>USB4 2.0</td>
+<td>USB4 Gen 2</td>
+<td>USB 4 (80Gbps)</td>
+</tr>
+<tr>
+<td align="right">USB 40Gbps</td>
+<td>USB4</td>
+<td>USB4</td>
+<td>USB 4 (40Gbps)</td>
+</tr>
+<tr>
+<td align="right">USB 20Gbps</td>
+<td>USB 3.2 Gen2x2</td>
+<td>USB 3.1 Gen2x2</td>
+<td>USB 3.2 (20Gbps)</td>
+</tr>
+<tr>
+<td align="right">USB 10Gbps</td>
+<td>USB 3.2 Gen2</td>
+<td>USB 3.1 Gen2</td>
+<td>USB 3.1 (10Gbps)</td>
+</tr>
+<tr>
+<td align="right">USB 5Gbps</td>
+<td>USB 3.2 Gen1</td>
+<td>USB 3.1 Gen1</td>
+<td>USB 3.0 (5Gbps)</td>
+</tr>
+</tbody></table>
+<p>但是现在新命名还没有普及开来</p>
+<p>现在市场上大多名称都是旧版本的USB名称。</p>
+<blockquote>
+<p>改名成功以后，备受称赞的USB if趾高气昂地推出了全新一代USB 5.0 2x2 gen5 Supercalifragilisticexpialidocious speed with power delivery 6.0 pro max mega  super professional ultra ultimate</p>
+</blockquote>
+<h1 id="USB标识"><a href="#USB标识" class="headerlink" title="USB标识"></a>USB标识</h1><p>USB组织除了命名还不死心，还要推出各式各样的标识来显示自己的水平高超。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-db0320107ec6dae1aa2a1323cbec97e9_720w.webp" alt="img"></p>
+<p>这里稍微解释一下各项命名的含义：</p>
+<ul>
+<li>第一列讲的是对应的最新USB协议的名称。</li>
+<li>第二列讲的是印在包装盒上的彩色LOGO。</li>
+<li>第三列讲的是产品接口附近的黑白LOGO。</li>
+<li>第四列讲的是  即使在控制器关机下仍可进行供电的LOGO。</li>
+</ul>
+<p><img src="https://pic2.zhimg.com/80/v2-d773bcafd6876b20ae1b895223982685_720w.webp" alt="好"></p>
+<p>这是USB充电器的标识，很明显就不多解释了。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-051e9426f3bbe6f1c92ed40508b6549f_720w.webp" alt="img"></p>
+<p>这是USB线缆的标识，看图方法大体相同。</p>
+<p>唯一值得注意的是最后一行的线缆表示不可进行数据传输。</p>
+<h1 id="多种多样的接口"><a href="#多种多样的接口" class="headerlink" title="多种多样的接口"></a>多种多样的接口</h1><h2 id="Type系列"><a href="#Type系列" class="headerlink" title="Type系列"></a>Type系列</h2><p>Type系列可以是我们日常生活中接触到最多，用途最广的接口了。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/306e45588b6f5545532e07da7e483a16.png" alt="img"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/ccecad68aedb7711e967789dfecd62c8.png" alt="img"></p>
+<p>这些便是我们现在的type家族。</p>
+<p>有些人可能会说，好像Type-B没怎么见过。</p>
+<p>事实上，Type-B接口被管方应用于打印机，扫描仪等外部输出输入设备。</p>
+<p>动手安装过打印机的同学应该很熟悉。</p>
+<p>Type A和Type C自然就不用介绍了，这可是两大家喻户晓的存在。</p>
+<p>但是Type C还有一点点不一样的地方，之后我们再详细展开。</p>
+<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><p><img src="https://img-blog.csdnimg.cn/img_convert/3e4e3c270b9894af8863a5f85e2f58e1.png" alt="img"></p>
+<p>这边是mini系列，比较少见。</p>
+<p>而且随着用途的不断减少，也在逐渐退出市场。</p>
+<p>最早的时候可以通过这种线实现两个不同设备之间的连接，没有主机也照样能传输数据。</p>
+<p>其指标与标准USB相同，但是加入了ID针脚（用于区分设备是主机还是外设），以支持OTG。</p>
+<p>主要用途在一些相机设备和MP3 MP4设备，某些老旧型号的手机也会将其作为充电口。</p>
+<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="https://img-blog.csdnimg.cn/img_convert/2be341e37ab4973cb8bf2bb22f472c99.png" alt="img">Micro系列是mini系列的下一代，在同样规格的情况下提高了插拔寿命，最高可到达1万次。</p>
+<p>并且减小的体积更有利于手机部署的小型化。</p>
+<p>当然如果有接触移动硬盘的同学相信对 micro B系列（3.0）一定不陌生。</p>
+<p>因为它也是用在移动硬盘盒上的重要接口。</p>
+<p>以前很多手机用micro B作为充电和数据传输接口。</p>
+<p>但是随着Type-c的普及，micro-b正在退出市场。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/a7dd2e05fad7a91243c0e86ce48fd31c.png" alt="img"></p>
+<p>这张图就是USB接口的小结。</p>
+<blockquote>
+<p>全新的USB4 V2.0标准规范，新一代USB4 2.0接口将支持80Gbps的双向最高传输速率，以及非对称式120Gbps的最高速率</p>
+</blockquote>
+<p> 小提示：USB4采用了全新的拼写方法。数字和USB是紧贴起来的，如果分开，则一定指的不是USB4。</p>
+<h1 id="Type-c-接口-——未来的接口"><a href="#Type-c-接口-——未来的接口" class="headerlink" title="Type-c 接口 ——未来的接口"></a>Type-c 接口 ——未来的接口</h1><p>从上面的图中我们可以看到，随着版本的不断更新，后面只支持type c接口了。</p>
+<p>因为这种接口不仅触点多，数据传输能力大。而且体积小巧，方便实用。</p>
+<p>type-c是这些接口中唯一能支持正反插拔的，对于用户来说体验很友好。</p>
+<p>同样能支持正反插拔的苹果lightning接口，充电功率则被限制在了25w左右，传输速率也只达到了USB 2.0的水平。</p>
+<p>所以type c接口也正是我们未来的接口，可以想象在未来的许多年里，type-c接口就会取代所有接口。<img src="http://5b0988e595225.cdn.sohucs.com/images/20190110/f7a4e92f489a47dfb4f5c919f00fcb0e.jpeg" alt="img"></p>
+<h1 id="雷电协议"><a href="#雷电协议" class="headerlink" title="雷电协议"></a>雷电协议</h1><p>既然说了这么多USB接口了，我们来看看全新一代雷电协议。</p>
+<p>注意雷电协议和雷电接口又是非常不同的两个概念。在开始之前先进行区分一下。</p>
+<h2 id="区分"><a href="#区分" class="headerlink" title="区分"></a>区分</h2><p>雷电接口是支持雷电协议的接口。（有点怪怪的）</p>
+<p>为什么要说这句话？？</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/2ba3ccabab5b234e7e04e74393b05538.png" alt="雷电3菊链功能_雷电4、USB4、全功能Type-C有什么区别？_weixin_39589394的博客-CSDN博客"></p>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.0e1820084728a5d7c203143fdcff2edd?rik=7zwLzmVdlgOTpQ&riu=http://img1.mydrivers.com/img/20190305/60307c47732645a89d24c4c753be976c.jpg&ehk=Zaz8T7i1c1/wJHXUgl4UT73ltfgXM0XQWSBeOVuyhe8=&risl=&pid=ImgRaw&r=0" alt="雷电多开助手"></p>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.c96873bed2df10901e201d6673b0ec51?rik=WNtya0naSd69Pg&riu=http://sy0.img.pcpop.com/article/0/335/335161.jpg_p-w730&ehk=KlTsQBkaxmUFpR2IXjC3Lbbe1hX59zW+0/XNYyCt28Q=&risl=&pid=ImgRaw&r=0" alt="雷电3和USB Type C究竟有什么区别？_-泡泡网"></p>
+<p>因为雷电协议和USB协议都是用type-c接口。</p>
+<p>区别在于支持雷电协议的接口旁边会有一个雷电标志。</p>
+<p>最新的雷电4的带宽是40Gbps，融合了PCI-E 4.0数据传输协议和DisplayPort视频协议，同时还能提供最大100W的供电能力。</p>
+<p>这里主要对比一下雷电4、雷电3、USB4的区别。</p>
+<p>同样是 USB-C 接口，就拿 USB4 和雷电4 来说，两者都是采用这一接口，基于雷电3协议打造。但雷电4能够完全兼容USB4，比USB4的最低性能要求还高了两倍。简单来说，USB4 相当于雷电4的低配版。</p>
+<p>但是USB4 2.0出来以后，速率大为提升。不过由于支持的设备较少，暂且不讨论。</p>
+<p><img src="https://img2.xitongzhijia.net/allimg/210511/137-210511133309422.jpg" alt="还说"></p>
+<h2 id="雷电接口的优势"><a href="#雷电接口的优势" class="headerlink" title="雷电接口的优势"></a>雷电接口的优势</h2><p>那么雷电接口最大的优势在哪里呢？</p>
+<p>可以看出来反向充电一栏，雷电接口占了优势。</p>
+<p>这里的反向充电不是说给国家电网充电，而是说给外接的设备供电。</p>
+<p>比如通过雷电四协议，我们可以外接一个功率为15w的拓展坞，而用usb协议。我们只能连接7.5w的拓展坞。</p>
+<h2 id="雷电四和雷电三"><a href="#雷电四和雷电三" class="headerlink" title="雷电四和雷电三"></a>雷电四和雷电三</h2><p>雷电4相对于雷电3，物理外观和最大速率上均没有变化。</p>
+<p>同样是 USB-C 接口的设计和最高 40Gbps 的带宽，很多人可能认为雷电4就是雷电3的换皮。</p>
+<p>但实际上，在视频、数据以及充电三方面，雷电4的规范和要求与雷电3都有所不同。在数据传输方面，虽然都是同样的带宽，但在雷电3中，图像信号的传输明显有着更高的优先级。雷电3给视频画面传输预留了 18Gbps 的带宽，视频画面之外的数据只剩下22Gbps。并且这个带宽划分是固定的。如果没有传输视频画面，比如只接了一组硬盘，速度照样会限制在22Gbps。</p>
+<p>雷电4采用了动态带宽的分配设计，可以更有效地利用所有带宽。</p>
+<p>雷电4控制器集成到处理器也是传输性能提升的重要原因。除了 10 代 Icelake 处理器外，雷电3控制器都是接到 PCH（平台控制器中枢）上的。PCH 除了接雷电3之外，还可能接固态硬盘、USB、WiFi、音频信号等等。雷电3跟这些设备抢带宽，导致实际上数据传输并没有 22Gbps。而雷电4将控制器单拎出来，整合进处理器里，需要多少带宽就给多少带宽。这就不禁让人期待，雷电4能否填补外接显卡性能丢失的遗憾。</p>
+<p>　　视频输出方面，基于 USB3.1 协议的 USB-C 接口，一出生就支持DP输出协议。只不过在USB协议上，没有雷电那样强制的认证标准，显示器对 USB-C 接口的支持力度也不是很大。通过 USB-C作为视频输出的方式主要还是以拓展坞的形式，通过转接的方式来实现视频输出。雷电4视频输出方面最低要求是支持双4K，前代雷电3仅支持单4K。对于经常用双屏、对画质要求高的设计师来说，雷电4更友好。</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>USB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建问题总结</title>
     <url>/2023/08/19/blog-buliding/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
@@ -53,23 +219,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/08/17/hello-world/</url>
-    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>欢迎</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客说明</title>
     <url>/3202/01/01/github/</url>
     <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
@@ -86,6 +235,23 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 <p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/08/17/hello-world/</url>
+    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
   </entry>
   <entry>
     <title>摄影作品</title>
@@ -186,74 +352,6 @@
       </tags>
   </entry>
   <entry>
-    <title>内存卡</title>
-    <url>/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/</url>
-    <content><![CDATA[<p>今天，我们来简要了解一下目前生活中比较少见的内存卡。</p>
-<h1 id="为什么内存卡在生活中越来越少见？"><a href="#为什么内存卡在生活中越来越少见？" class="headerlink" title="为什么内存卡在生活中越来越少见？"></a>为什么内存卡在生活中越来越少见？</h1><span id="more"></span>
-
-<p>一方面是手机技术的进步，以前的诺基亚等老人机背面。打开电池仓便会看到有三个插槽，两个插槽是SIM卡。而第三个插槽便是TF卡，这个便是老人机存储的核心部分。</p>
-<p>随着时间的流逝，各大厂商逐渐把存储芯片内部集成。可以提供更好的读写性能，但是还是保留了外接TF的选择。这个时间大概在2000年~2015年。</p>
-<p>后来厂商们发现外接TF似乎成为一种机械硬盘式的操作。严重的侵害了厂商的利益。</p>
-<p>举个例子，我可以买一个128+8的手机，然后再买一张拓展的512G卡。</p>
-<p>TF卡由于读写速度较慢，充当了一个类似于机械硬盘的角色，可以存储大量对读写性能要求不是很高的文件。比如手机中的文档，一些文字工作软件。还有APP应用的存储，虽然可能打开的慢一点。</p>
-<p>手机厂商就慌了，他们连夜取消了这个TF卡槽。对外宣称是所谓的增加手机气密性，减少进水可能。</p>
-<p>本质上是什么大家心里都清楚。你取消TF卡槽，你为什么不取消SIM卡槽啊？</p>
-<p>那么后来华为公司又开发出了NM卡技术。可以直接用SIM卡槽的框架存储，这下你总不能把我SIM卡槽给砍掉了吧，不然我都没办法拨打电话，上网了。</p>
-<p>可现在又突然出现了一个esim可以实现内置SIM卡。无需插入实体卡。</p>
-<p>不过还好，由于一些政治原因和经济原因，中国的SIM卡目前暂停推行。2023年五六月左右，三大营商都几乎同时宣布了因系统更新暂停eSIM卡的服务等通知。</p>
-<p>所以nm卡还能用，不过测试没有测试过，并不清楚它的具体读写速度。</p>
-<p>不过我猜也不会太快，毕竟SIM卡的触点较少，虽然看起来一大片金黄金黄的芯片，但是与主板实际接触点就只有五六个。如果有使用过诺基亚老人机的人感受会更深刻，因为以前是可以直接看到触点的。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-6aeec6e38baf184b8245c54dc76032fc_720w.webp" alt="img"></p>
-<p>从知乎回答我们可以看到，sim卡的触点是比较少的。</p>
-<p>而且手机厂商说不定会故意限制sim卡的读写速度。毕竟SIM卡最大的功能就是存储信息和存储电话本了。你的卡号是已经烧录进去的，无法更改的。</p>
-<p>所以厂家很可能在主板的什么传输通道加上一些传输速度限制。让读写速度过于缓慢，以至于放弃使用NM卡。</p>
-<p>出于以上种种原因，sim卡的好兄弟NM卡并没有流行起来。</p>
-<h1 id="常用的内存卡"><a href="#常用的内存卡" class="headerlink" title="常用的内存卡"></a>常用的内存卡</h1><p>目前内存卡的使用领域主要是在相机拍摄领域。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>一方面相机需要有多张不同的卡存储不同的素材，一个成熟的摄影师一天可能会接四五份拍摄任务。</p>
-<p>不同的素材就需要有不同储存卡来储存，这样即使突发故障，有一份储存卡的数据丢失了。其他的储存卡照样能够保存好数据。</p>
-<p>能使拍摄和后期分开，避免占用相机</p>
-<p>而且可以根据需要的拍摄场景选择合适自己的内存卡，避免产生资源浪费。</p>
-<h2 id="储存卡介绍"><a href="#储存卡介绍" class="headerlink" title="储存卡介绍"></a>储存卡介绍</h2><h3 id="首先是摄影界最小的东西，也就是TF卡。"><a href="#首先是摄影界最小的东西，也就是TF卡。" class="headerlink" title="首先是摄影界最小的东西，也就是TF卡。"></a>首先是摄影界最小的东西，也就是<strong>TF卡</strong>。</h3><p><img src="https://picx.zhimg.com/80/v2-25824c624b04e79698c90002f1205576_720w.webp?source=1940ef5c" alt="img"></p>
-<p>大概和我们的大拇指甲盖差不多大。</p>
-<p>主要用于运动相机。</p>
-<hr>
-<h3 id="接着是SD卡，相机界的中流砥柱。"><a href="#接着是SD卡，相机界的中流砥柱。" class="headerlink" title="接着是SD卡，相机界的中流砥柱。"></a>接着是<strong>SD卡</strong>，相机界的中流砥柱。</h3><p><img src="https://picx.zhimg.com/80/v2-62a9ad20b266b6ba1aef1c170ab082d5_720w.webp?source=1940ef5c" alt="img"></p>
-<p>SD卡通用于绝大部分相机，很多小型单反和<a href="https://www.zhihu.com/search?q=%E5%8D%A1%E7%89%87%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">卡片机</a>也是只有SD卡这一个卡槽。可以说SD卡虽然不是最厉害的卡，但是是最普遍的卡。</p>
-<h3 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h3><p>由于SD卡的广泛使用，各大国际联盟也制定了SD卡的标准。</p>
-<img src="/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/image-20230823092833459.png" class title="image-20230823092833459">
-
-<h4 id="Class等级标准："><a href="#Class等级标准：" class="headerlink" title="Class等级标准："></a>Class等级标准：</h4><p>早期存储卡速度等级使用Class等级来标识。主要有C10、C6、C4、C2四种标识。C2最低写入速度为2MB&#x2F;秒；C4最低写入速度为4MB&#x2F;秒；C6最低写入速度为6MB&#x2F;秒；C10最低写入速度为10MB&#x2F;秒。</p>
-<h4 id="UHS-等级标准："><a href="#UHS-等级标准：" class="headerlink" title="UHS 等级标准："></a>UHS 等级标准：</h4><p>UHS（Ultra High Speed）超高速等级为全新的总线模式。目前有UHS-I、UHS-II、UHS-III三种版本。实现UHS标准传输速度需要设备支持，高版本向下兼容低版本，不支持该标准可以兼容降速为普通存储卡使用。日常使用U1（最低写入速度10M&#x2F;S）和U3（最低写入速度30M&#x2F;S）的等级标识最低写入速度。UHS-I卡的最大读取速度为104M&#x2F;S，而UHS-II卡的最大读取速度为312M&#x2F;S。UHS-III卡的最大读取达到了624M&#x2F;S。</p>
-<h4 id="VSC等级标准："><a href="#VSC等级标准：" class="headerlink" title="VSC等级标准："></a>VSC等级标准：</h4><p><a href="https://so.csdn.net/so/search?q=VSC&spm=1001.2101.3001.7020">VSC</a>（Video Speed Class）视频速度等级。4K视频的拍摄需求增大后，SD协会针对视频拍摄应用制定的视频速度等级，以识别字母V加上最低写入速度值的数字构成标识。即：V10最低写入速度10M&#x2F;S；V30最低写入速度30M&#x2F;S；</p>
-<p>由于各项参数之间有重合，所以SD卡允许标上不同的参数的。</p>
-<h4 id="实际分析"><a href="#实际分析" class="headerlink" title="实际分析"></a>实际分析</h4><p>例如我们回到例子的那张SD卡。</p>
-<p>首先上面有着很明显的标识，170 MB每秒。</p>
-<p>但是这个170是MB每秒是读还是写呢？</p>
-<p>我们可以分析一下，如果是写的话，这个储存卡完全可以满足v90的标准。</p>
-<p>可是他只标了v30，那么意味着这个170MB每秒是读的概率比较大。</p>
-<p>然后我们看看各项参数，发现并没有矛盾。</p>
-<p>所以这个170 MB每秒是读数，对于摄影实际帮助并不太大。</p>
-<p>实际写入速度应该在30 MB每秒到60 MB每秒左右。</p>
-<hr>
-<p><img src="https://picx.zhimg.com/80/v2-cdd83c95606e76a90c3bf31641f3e877_720w.webp?source=1940ef5c" alt="img"></p>
-<h3 id="CF和XQD"><a href="#CF和XQD" class="headerlink" title="CF和XQD"></a>CF和XQD</h3><p>这是<a href="https://www.zhihu.com/search?q=sqd%E5%8D%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">SQD卡</a>和CF卡两个老兄，不过cf卡因为一些性能原因已经被放弃了，只有一些较老的相机，还有CF卡的插槽，现在的高端相机，比如尼康的Z6，Z7都有第二插槽为XQD插槽。</p>
-<hr>
-<p><img src="https://picx.zhimg.com/80/v2-9c85a0dc3787af2aa650867cdfaaf92e_720w.webp?source=1940ef5c" alt="img"></p>
-<p>诶，这个是不是很熟悉，感觉长得像很像SD卡？</p>
-<p>这就是SD卡的下一代，我们刚刚讲的以USH协议为代表的新一代的SD卡。，不同的是后面的金手指由一排变成了两排。提高了写入速度。</p>
-<p>但是缺点很明显，只有极少数的相机支持这样的卡槽，所以一般只能发挥出一半的实力。</p>
-<p>不过我们前面也提到了，这玩意是可以向下兼容的，必要时可以变成普通SD卡来使用。</p>
-<p>由于只是多出来一排触点，所以它和SD卡是兼容的。</p>
-<p>速度到底有多高呢？读者可以自行分析一下。</p>
-<h1 id="奇怪的储存卡"><a href="#奇怪的储存卡" class="headerlink" title="奇怪的储存卡"></a>奇怪的储存卡</h1><p>这些是比较通用的储存卡，已经占据99%的储存卡量了。剩下一些就是专业摄影机专用的卡。比如像<a href="https://www.zhihu.com/search?q=%E9%98%BF%E8%8E%B1%E7%94%B5%E5%BD%B1%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">阿莱电影机</a>，一张1T的卡就要10万元。这种是专业电影公司才用得到的。</p>
-<p>还有比如DJI大疆公司的无人机，也有专门的存储卡。</p>
-]]></content>
-      <tags>
-        <tag>电子</tag>
-        <tag>存储</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>浅析对焦本质</title>
     <url>/2023/08/22/%E5%AF%B9%E7%84%A6/</url>
     <content><![CDATA[<p>对焦是摄影中很重要的一环，今天就浅析一下对焦的本质</p>
@@ -344,6 +442,74 @@
       <tags>
         <tag>摄影</tag>
         <tag>对焦</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>内存卡</title>
+    <url>/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/</url>
+    <content><![CDATA[<p>今天，我们来简要了解一下目前生活中比较少见的内存卡。</p>
+<h1 id="为什么内存卡在生活中越来越少见？"><a href="#为什么内存卡在生活中越来越少见？" class="headerlink" title="为什么内存卡在生活中越来越少见？"></a>为什么内存卡在生活中越来越少见？</h1><span id="more"></span>
+
+<p>一方面是手机技术的进步，以前的诺基亚等老人机背面。打开电池仓便会看到有三个插槽，两个插槽是SIM卡。而第三个插槽便是TF卡，这个便是老人机存储的核心部分。</p>
+<p>随着时间的流逝，各大厂商逐渐把存储芯片内部集成。可以提供更好的读写性能，但是还是保留了外接TF的选择。这个时间大概在2000年~2015年。</p>
+<p>后来厂商们发现外接TF似乎成为一种机械硬盘式的操作。严重的侵害了厂商的利益。</p>
+<p>举个例子，我可以买一个128+8的手机，然后再买一张拓展的512G卡。</p>
+<p>TF卡由于读写速度较慢，充当了一个类似于机械硬盘的角色，可以存储大量对读写性能要求不是很高的文件。比如手机中的文档，一些文字工作软件。还有APP应用的存储，虽然可能打开的慢一点。</p>
+<p>手机厂商就慌了，他们连夜取消了这个TF卡槽。对外宣称是所谓的增加手机气密性，减少进水可能。</p>
+<p>本质上是什么大家心里都清楚。你取消TF卡槽，你为什么不取消SIM卡槽啊？</p>
+<p>那么后来华为公司又开发出了NM卡技术。可以直接用SIM卡槽的框架存储，这下你总不能把我SIM卡槽给砍掉了吧，不然我都没办法拨打电话，上网了。</p>
+<p>可现在又突然出现了一个esim可以实现内置SIM卡。无需插入实体卡。</p>
+<p>不过还好，由于一些政治原因和经济原因，中国的SIM卡目前暂停推行。2023年五六月左右，三大营商都几乎同时宣布了因系统更新暂停eSIM卡的服务等通知。</p>
+<p>所以nm卡还能用，不过测试没有测试过，并不清楚它的具体读写速度。</p>
+<p>不过我猜也不会太快，毕竟SIM卡的触点较少，虽然看起来一大片金黄金黄的芯片，但是与主板实际接触点就只有五六个。如果有使用过诺基亚老人机的人感受会更深刻，因为以前是可以直接看到触点的。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-6aeec6e38baf184b8245c54dc76032fc_720w.webp" alt="img"></p>
+<p>从知乎回答我们可以看到，sim卡的触点是比较少的。</p>
+<p>而且手机厂商说不定会故意限制sim卡的读写速度。毕竟SIM卡最大的功能就是存储信息和存储电话本了。你的卡号是已经烧录进去的，无法更改的。</p>
+<p>所以厂家很可能在主板的什么传输通道加上一些传输速度限制。让读写速度过于缓慢，以至于放弃使用NM卡。</p>
+<p>出于以上种种原因，sim卡的好兄弟NM卡并没有流行起来。</p>
+<h1 id="常用的内存卡"><a href="#常用的内存卡" class="headerlink" title="常用的内存卡"></a>常用的内存卡</h1><p>目前内存卡的使用领域主要是在相机拍摄领域。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>一方面相机需要有多张不同的卡存储不同的素材，一个成熟的摄影师一天可能会接四五份拍摄任务。</p>
+<p>不同的素材就需要有不同储存卡来储存，这样即使突发故障，有一份储存卡的数据丢失了。其他的储存卡照样能够保存好数据。</p>
+<p>能使拍摄和后期分开，避免占用相机</p>
+<p>而且可以根据需要的拍摄场景选择合适自己的内存卡，避免产生资源浪费。</p>
+<h2 id="储存卡介绍"><a href="#储存卡介绍" class="headerlink" title="储存卡介绍"></a>储存卡介绍</h2><h3 id="首先是摄影界最小的东西，也就是TF卡。"><a href="#首先是摄影界最小的东西，也就是TF卡。" class="headerlink" title="首先是摄影界最小的东西，也就是TF卡。"></a>首先是摄影界最小的东西，也就是<strong>TF卡</strong>。</h3><p><img src="https://picx.zhimg.com/80/v2-25824c624b04e79698c90002f1205576_720w.webp?source=1940ef5c" alt="img"></p>
+<p>大概和我们的大拇指甲盖差不多大。</p>
+<p>主要用于运动相机。</p>
+<hr>
+<h3 id="接着是SD卡，相机界的中流砥柱。"><a href="#接着是SD卡，相机界的中流砥柱。" class="headerlink" title="接着是SD卡，相机界的中流砥柱。"></a>接着是<strong>SD卡</strong>，相机界的中流砥柱。</h3><p><img src="https://picx.zhimg.com/80/v2-62a9ad20b266b6ba1aef1c170ab082d5_720w.webp?source=1940ef5c" alt="img"></p>
+<p>SD卡通用于绝大部分相机，很多小型单反和<a href="https://www.zhihu.com/search?q=%E5%8D%A1%E7%89%87%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">卡片机</a>也是只有SD卡这一个卡槽。可以说SD卡虽然不是最厉害的卡，但是是最普遍的卡。</p>
+<h3 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h3><p>由于SD卡的广泛使用，各大国际联盟也制定了SD卡的标准。</p>
+<img src="/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/image-20230823092833459.png" class title="image-20230823092833459">
+
+<h4 id="Class等级标准："><a href="#Class等级标准：" class="headerlink" title="Class等级标准："></a>Class等级标准：</h4><p>早期存储卡速度等级使用Class等级来标识。主要有C10、C6、C4、C2四种标识。C2最低写入速度为2MB&#x2F;秒；C4最低写入速度为4MB&#x2F;秒；C6最低写入速度为6MB&#x2F;秒；C10最低写入速度为10MB&#x2F;秒。</p>
+<h4 id="UHS-等级标准："><a href="#UHS-等级标准：" class="headerlink" title="UHS 等级标准："></a>UHS 等级标准：</h4><p>UHS（Ultra High Speed）超高速等级为全新的总线模式。目前有UHS-I、UHS-II、UHS-III三种版本。实现UHS标准传输速度需要设备支持，高版本向下兼容低版本，不支持该标准可以兼容降速为普通存储卡使用。日常使用U1（最低写入速度10M&#x2F;S）和U3（最低写入速度30M&#x2F;S）的等级标识最低写入速度。UHS-I卡的最大读取速度为104M&#x2F;S，而UHS-II卡的最大读取速度为312M&#x2F;S。UHS-III卡的最大读取达到了624M&#x2F;S。</p>
+<h4 id="VSC等级标准："><a href="#VSC等级标准：" class="headerlink" title="VSC等级标准："></a>VSC等级标准：</h4><p><a href="https://so.csdn.net/so/search?q=VSC&spm=1001.2101.3001.7020">VSC</a>（Video Speed Class）视频速度等级。4K视频的拍摄需求增大后，SD协会针对视频拍摄应用制定的视频速度等级，以识别字母V加上最低写入速度值的数字构成标识。即：V10最低写入速度10M&#x2F;S；V30最低写入速度30M&#x2F;S；</p>
+<p>由于各项参数之间有重合，所以SD卡允许标上不同的参数的。</p>
+<h4 id="实际分析"><a href="#实际分析" class="headerlink" title="实际分析"></a>实际分析</h4><p>例如我们回到例子的那张SD卡。</p>
+<p>首先上面有着很明显的标识，170 MB每秒。</p>
+<p>但是这个170是MB每秒是读还是写呢？</p>
+<p>我们可以分析一下，如果是写的话，这个储存卡完全可以满足v90的标准。</p>
+<p>可是他只标了v30，那么意味着这个170MB每秒是读的概率比较大。</p>
+<p>然后我们看看各项参数，发现并没有矛盾。</p>
+<p>所以这个170 MB每秒是读数，对于摄影实际帮助并不太大。</p>
+<p>实际写入速度应该在30 MB每秒到60 MB每秒左右。</p>
+<hr>
+<p><img src="https://picx.zhimg.com/80/v2-cdd83c95606e76a90c3bf31641f3e877_720w.webp?source=1940ef5c" alt="img"></p>
+<h3 id="CF和XQD"><a href="#CF和XQD" class="headerlink" title="CF和XQD"></a>CF和XQD</h3><p>这是<a href="https://www.zhihu.com/search?q=sqd%E5%8D%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">SQD卡</a>和CF卡两个老兄，不过cf卡因为一些性能原因已经被放弃了，只有一些较老的相机，还有CF卡的插槽，现在的高端相机，比如尼康的Z6，Z7都有第二插槽为XQD插槽。</p>
+<hr>
+<p><img src="https://picx.zhimg.com/80/v2-9c85a0dc3787af2aa650867cdfaaf92e_720w.webp?source=1940ef5c" alt="img"></p>
+<p>诶，这个是不是很熟悉，感觉长得像很像SD卡？</p>
+<p>这就是SD卡的下一代，我们刚刚讲的以USH协议为代表的新一代的SD卡。，不同的是后面的金手指由一排变成了两排。提高了写入速度。</p>
+<p>但是缺点很明显，只有极少数的相机支持这样的卡槽，所以一般只能发挥出一半的实力。</p>
+<p>不过我们前面也提到了，这玩意是可以向下兼容的，必要时可以变成普通SD卡来使用。</p>
+<p>由于只是多出来一排触点，所以它和SD卡是兼容的。</p>
+<p>速度到底有多高呢？读者可以自行分析一下。</p>
+<h1 id="奇怪的储存卡"><a href="#奇怪的储存卡" class="headerlink" title="奇怪的储存卡"></a>奇怪的储存卡</h1><p>这些是比较通用的储存卡，已经占据99%的储存卡量了。剩下一些就是专业摄影机专用的卡。比如像<a href="https://www.zhihu.com/search?q=%E9%98%BF%E8%8E%B1%E7%94%B5%E5%BD%B1%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">阿莱电影机</a>，一张1T的卡就要10万元。这种是专业电影公司才用得到的。</p>
+<p>还有比如DJI大疆公司的无人机，也有专门的存储卡。</p>
+]]></content>
+      <tags>
+        <tag>电子</tag>
+        <tag>存储</tag>
       </tags>
   </entry>
   <entry>
