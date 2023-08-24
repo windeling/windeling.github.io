@@ -53,6 +53,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/08/17/hello-world/</url>
+    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客说明</title>
     <url>/3202/01/01/github/</url>
     <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
@@ -69,23 +86,6 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 <p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/08/17/hello-world/</url>
-    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>欢迎</tag>
-      </tags>
   </entry>
   <entry>
     <title>摄影作品</title>
