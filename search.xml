@@ -53,23 +53,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/08/17/hello-world/</url>
-    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>欢迎</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客说明</title>
     <url>/3202/01/01/github/</url>
     <content><![CDATA[<h1 id="欢迎来到本博客！（v2-2-1）"><a href="#欢迎来到本博客！（v2-2-1）" class="headerlink" title="欢迎来到本博客！（v2.2.1）"></a>欢迎来到本博客！（v2.2.1）</h1><p>推荐使用PC端浏览，体验效果更佳<br>由于Github和Leancloud的特殊性，加载较慢见谅<br>目前正在施工中，如误入工地请口下留情(<em>^▽^</em>)<br>有意见和建议可以在<strong>本文</strong>下方的评论区留言<br>文明发言，遵章守法(ﾉ”◑ ◑)ﾉ”)<br>展开查看工地区域和更新日志：</p>
@@ -97,32 +80,6 @@
       <tags>
         <tag>摄影</tag>
         <tag>Nikon D90</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>教师节</title>
-    <url>/2023/09/10/teacher/</url>
-    <content><![CDATA[<p>今天是2023年9月10日，是所有老师的节日</p>
-<p>在此，我向老师们祝以节日的祝福</p>
-<p><strong>感谢<code>曾倩老师</code> <code>龙光森老师</code> <code>黄佩玲老师</code> <code>林生业老师</code> <code>劳永进老师</code> <code>钟洁老师</code> <code>周静轩老师</code> <code>江英球老师</code> <code>颜良霞老师</code> <code>化学老师</code> <code>庞慧文老师</code> <code>梁超源老师</code></strong> </p>
-<p>你们三年来的教育，使我不断成长</p>
-<p><strong>还要感谢<code>刘靖华老师</code> <code>莫冰老师</code> <code>卜肖宁老师</code> <code>莫贻秋老师</code></strong></p>
-<p>是你们的支持，才让我的兴趣走到了今天</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> quote</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 这个函数是爬虫获取汉字的笔画坐标信息</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">obtain_coordinate</span>(<span class="params">target_word</span>):  <span class="comment"># 获取汉字的坐标</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取汉字的坐标</span></span><br><span class="line"><span class="string">    :param target_word:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url = <span class="string">&quot;https://bihua.bmcx.com/web_system/bmcx_com_www/system/file/bihua/get_0/&quot;</span></span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&#x27;font&#x27;</span>: quote(target_word).replace(<span class="string">&quot;%&quot;</span>, <span class="string">&quot;&quot;</span>).lower(),</span><br><span class="line">        <span class="string">&#x27;shi_fou_zi_dong&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;cache_sjs1&#x27;</span>: <span class="string">&#x27;20031914&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.get(url, params=params)</span><br><span class="line">    content = response.text</span><br><span class="line">    content = content.replace(<span class="string">&#x27;hzbh.main(&#x27;</span>, <span class="string">&#x27;&#x27;</span>).split(<span class="string">&#x27;);document.getElementById&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    content = content.split(<span class="string">&#x27;&#123;&#x27;</span>)[-<span class="number">1</span>].split(<span class="string">&quot;&#125;&quot;</span>)[<span class="number">0</span>]</span><br><span class="line">    pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\w:\[(.+?)\]&#x27;</span>)</span><br><span class="line">    result = re.split(pattern, content)</span><br><span class="line">    order_xy_routine = []</span><br><span class="line">    words_cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> result:</span><br><span class="line">        sec = re.findall(<span class="string">r&#x27;\&#x27;.+?\&#x27;&#x27;</span>, r)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sec):</span><br><span class="line">            orders = sec[<span class="number">1</span>].split(<span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            <span class="keyword">for</span> order <span class="keyword">in</span> orders:</span><br><span class="line">                order_str = re.findall(<span class="string">r&#x27;\(\d+,\d+\)&#x27;</span>, order)</span><br><span class="line">                order_xy = [<span class="built_in">eval</span>(xy) <span class="keyword">for</span> xy <span class="keyword">in</span> order_str]</span><br><span class="line">                order_xy_routine.append(order_xy)</span><br><span class="line">            words_cnt += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(order_xy_routine)</span><br><span class="line">    <span class="keyword">return</span> order_xy_routine</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#这个函数是根据汉字的笔画坐标信息，打印汉字 有笔画的轨迹</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_words</span>(<span class="params">target_words, startx, starty, lineNum=<span class="number">1</span></span>):  <span class="comment"># 画汉字</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    画汉字</span></span><br><span class="line"><span class="string">    :param target_words:</span></span><br><span class="line"><span class="string">    :param startx:</span></span><br><span class="line"><span class="string">    :param starty:</span></span><br><span class="line"><span class="string">    :param lineNum:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    turtle.color(<span class="string">&quot;black&quot;</span>, <span class="string">&quot;black&quot;</span>)  <span class="comment"># 设置画笔颜色</span></span><br><span class="line">    turtle.pu()  <span class="comment"># 抬起画笔</span></span><br><span class="line">    coordinates = obtain_coordinate(target_words)</span><br><span class="line">    <span class="keyword">for</span> index, coordinate <span class="keyword">in</span> <span class="built_in">enumerate</span>(coordinates):</span><br><span class="line">        turtle.goto((startx + coordinate[<span class="number">0</span>][<span class="number">0</span>])/<span class="number">2</span>, -(starty + coordinate[<span class="number">0</span>][<span class="number">1</span>])/<span class="number">2</span>)</span><br><span class="line">        turtle.pd()</span><br><span class="line">        <span class="keyword">for</span> xy <span class="keyword">in</span> coordinate:</span><br><span class="line">            x,y=xy</span><br><span class="line">            turtle.goto((startx+x)/<span class="number">2</span>, -(starty+y)/<span class="number">2</span>)</span><br><span class="line">        turtle.pu()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    turtle.screensize(<span class="number">2400</span>,<span class="number">1300</span>)</span><br><span class="line">    <span class="comment">#画汉字</span></span><br><span class="line">    word = [<span class="string">&quot;教&quot;</span>,<span class="string">&quot;师&quot;</span>,<span class="string">&quot;节&quot;</span>,<span class="string">&quot;快&quot;</span>,<span class="string">&quot;乐&quot;</span>]</span><br><span class="line">    draw_words(word[<span class="number">0</span>], -<span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">1</span>], -<span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">3</span>], <span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">4</span>], <span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    turtle.done()  <span class="comment"># 保证界面不退出 可点击右上角关闭</span></span><br></pre></td></tr></table></figure>
-
-<p>谨用这些代码，来表达我的感激之情</p>
-<img src="/2023/09/10/teacher/1.gif" class>
-
-<p>祝老师们</p>
-<img src="/2023/09/10/teacher/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
-
-
-
-<p>​																																								黄文林</p>
-<p>​																																				          2023年9月10日</p>
-]]></content>
-      <tags>
-        <tag>2023教师节</tag>
       </tags>
   </entry>
   <entry>
@@ -183,6 +140,32 @@
         <tag>编程</tag>
         <tag>hexo</tag>
         <tag>valine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教师节</title>
+    <url>/2023/09/10/teacher/</url>
+    <content><![CDATA[<p>今天是2023年9月10日，是所有老师的节日</p>
+<p>在此，我向老师们祝以节日的祝福</p>
+<p><strong>感谢<code>曾倩老师</code> <code>龙光森老师</code> <code>黄佩玲老师</code> <code>林生业老师</code> <code>劳永进老师</code> <code>钟洁老师</code> <code>周静轩老师</code> <code>江英球老师</code> <code>颜良霞老师</code> <code>化学老师</code> <code>庞慧文老师</code> <code>梁超源老师</code></strong> </p>
+<p>你们三年来的教育，使我不断成长</p>
+<p><strong>还要感谢<code>刘靖华老师</code> <code>莫冰老师</code> <code>卜肖宁老师</code> <code>莫贻秋老师</code></strong></p>
+<p>是你们的支持，才让我的兴趣走到了今天</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> quote</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 这个函数是爬虫获取汉字的笔画坐标信息</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">obtain_coordinate</span>(<span class="params">target_word</span>):  <span class="comment"># 获取汉字的坐标</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取汉字的坐标</span></span><br><span class="line"><span class="string">    :param target_word:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url = <span class="string">&quot;https://bihua.bmcx.com/web_system/bmcx_com_www/system/file/bihua/get_0/&quot;</span></span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&#x27;font&#x27;</span>: quote(target_word).replace(<span class="string">&quot;%&quot;</span>, <span class="string">&quot;&quot;</span>).lower(),</span><br><span class="line">        <span class="string">&#x27;shi_fou_zi_dong&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;cache_sjs1&#x27;</span>: <span class="string">&#x27;20031914&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.get(url, params=params)</span><br><span class="line">    content = response.text</span><br><span class="line">    content = content.replace(<span class="string">&#x27;hzbh.main(&#x27;</span>, <span class="string">&#x27;&#x27;</span>).split(<span class="string">&#x27;);document.getElementById&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    content = content.split(<span class="string">&#x27;&#123;&#x27;</span>)[-<span class="number">1</span>].split(<span class="string">&quot;&#125;&quot;</span>)[<span class="number">0</span>]</span><br><span class="line">    pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\w:\[(.+?)\]&#x27;</span>)</span><br><span class="line">    result = re.split(pattern, content)</span><br><span class="line">    order_xy_routine = []</span><br><span class="line">    words_cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> result:</span><br><span class="line">        sec = re.findall(<span class="string">r&#x27;\&#x27;.+?\&#x27;&#x27;</span>, r)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sec):</span><br><span class="line">            orders = sec[<span class="number">1</span>].split(<span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            <span class="keyword">for</span> order <span class="keyword">in</span> orders:</span><br><span class="line">                order_str = re.findall(<span class="string">r&#x27;\(\d+,\d+\)&#x27;</span>, order)</span><br><span class="line">                order_xy = [<span class="built_in">eval</span>(xy) <span class="keyword">for</span> xy <span class="keyword">in</span> order_str]</span><br><span class="line">                order_xy_routine.append(order_xy)</span><br><span class="line">            words_cnt += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(order_xy_routine)</span><br><span class="line">    <span class="keyword">return</span> order_xy_routine</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#这个函数是根据汉字的笔画坐标信息，打印汉字 有笔画的轨迹</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_words</span>(<span class="params">target_words, startx, starty, lineNum=<span class="number">1</span></span>):  <span class="comment"># 画汉字</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    画汉字</span></span><br><span class="line"><span class="string">    :param target_words:</span></span><br><span class="line"><span class="string">    :param startx:</span></span><br><span class="line"><span class="string">    :param starty:</span></span><br><span class="line"><span class="string">    :param lineNum:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    turtle.color(<span class="string">&quot;black&quot;</span>, <span class="string">&quot;black&quot;</span>)  <span class="comment"># 设置画笔颜色</span></span><br><span class="line">    turtle.pu()  <span class="comment"># 抬起画笔</span></span><br><span class="line">    coordinates = obtain_coordinate(target_words)</span><br><span class="line">    <span class="keyword">for</span> index, coordinate <span class="keyword">in</span> <span class="built_in">enumerate</span>(coordinates):</span><br><span class="line">        turtle.goto((startx + coordinate[<span class="number">0</span>][<span class="number">0</span>])/<span class="number">2</span>, -(starty + coordinate[<span class="number">0</span>][<span class="number">1</span>])/<span class="number">2</span>)</span><br><span class="line">        turtle.pd()</span><br><span class="line">        <span class="keyword">for</span> xy <span class="keyword">in</span> coordinate:</span><br><span class="line">            x,y=xy</span><br><span class="line">            turtle.goto((startx+x)/<span class="number">2</span>, -(starty+y)/<span class="number">2</span>)</span><br><span class="line">        turtle.pu()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    turtle.screensize(<span class="number">2400</span>,<span class="number">1300</span>)</span><br><span class="line">    <span class="comment">#画汉字</span></span><br><span class="line">    word = [<span class="string">&quot;教&quot;</span>,<span class="string">&quot;师&quot;</span>,<span class="string">&quot;节&quot;</span>,<span class="string">&quot;快&quot;</span>,<span class="string">&quot;乐&quot;</span>]</span><br><span class="line">    draw_words(word[<span class="number">0</span>], -<span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">1</span>], -<span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">3</span>], <span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">4</span>], <span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    turtle.done()  <span class="comment"># 保证界面不退出 可点击右上角关闭</span></span><br></pre></td></tr></table></figure>
+
+<p>谨用这些代码，来表达我的感激之情</p>
+<img src="/2023/09/10/teacher/1.gif" class>
+
+<p>祝老师们</p>
+<img src="/2023/09/10/teacher/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
+
+
+
+<p>​																																								黄文林</p>
+<p>​																																				          2023年9月10日</p>
+]]></content>
+      <tags>
+        <tag>2023教师节</tag>
       </tags>
   </entry>
   <entry>
@@ -535,6 +518,23 @@
         <tag>编程</tag>
         <tag>hexo</tag>
         <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/08/17/hello-world/</url>
+    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>欢迎</tag>
       </tags>
   </entry>
 </search>
