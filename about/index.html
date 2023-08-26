@@ -72,7 +72,7 @@
 		</nav>
 		<!--文章数-->
 		<nav>
-			总文章数: 13篇
+			总文章数: 14篇
 		</nav>
 		<!--文章数-->
 		<div calss="count-span">
@@ -92,6 +92,10 @@
             
     			
     			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">链接</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -357,17 +361,9 @@
     	<div class="footer-left">
     		&copy; 2023 黄文林
     	</div>
-      	<div class="footer-right">
-			<div calss="count-span">
-				<span id="busuanzi_container_site_pv">
-				  总访问量: <span id="busuanzi_value_site_pv"></span>
-				</span>
-		  
-				<span id="busuanzi_container_site_uv">
-				  总访客: <span id="busuanzi_value_site_uv"></span>
-				</span>
-			  </div>
-      	</div>
+      	
+		
+      	
 		  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 		  <script>
 			  var now = new Date(); 
@@ -447,17 +443,25 @@ MathJax.Hub.Queue(function() {
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -548,6 +552,14 @@ MathJax.Hub.Queue(function() {
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">刘慈欣</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">背景</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -614,6 +626,12 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">不是在消灭Bug的路上，就是在消灭Bug。</div>
+  	  	
+    	</section>
     
   </div>
   
