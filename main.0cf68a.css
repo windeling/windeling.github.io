@@ -362,17 +362,14 @@ html {
 }
 
 body {
-    margin: 0;
     font-size: 14px;
-    font-family: Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
     line-height: 1.5;
-    color: #333;
+    color: rgb(228, 16, 16);
     min-height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('') 0% 0%/cover;
-    min-height: 100%
-
+    margin: 0px;
+    background: linear-gradient(rgba(252, 20, 20, 0.5), rgba(233, 20, 20, 0.5)), url(https://bpic.588ku.com/paixin_pic/22/05/09/193e333ac67aa3767f6c10ffd872e83f.jpg) 0% 0% / cover no-repeat;
 }
-
 
 article,
 aside,

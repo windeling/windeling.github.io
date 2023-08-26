@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://windeling.github.io/3202/01/01/github/</loc>
+    <loc>https://windeling.github.io/notices/index.html</loc>
+    
+    <lastmod>2023-08-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://windeling.github.io/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/</loc>
     
     <lastmod>2023-08-26</lastmod>
     
@@ -59,15 +68,6 @@
     <loc>https://windeling.github.io/2023/08/20/review/</loc>
     
     <lastmod>2023-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://windeling.github.io/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/</loc>
-    
-    <lastmod>2023-08-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -182,15 +182,6 @@
   </url>
   
   <url>
-    <loc>https://windeling.github.io/tags/index.html</loc>
-    
-    <lastmod>2023-08-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://windeling.github.io/resources/index.html</loc>
     
     <lastmod>2023-08-17</lastmod>
@@ -207,13 +198,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://windeling.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-08-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://windeling.github.io/tags/USB/</loc>
