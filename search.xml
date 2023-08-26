@@ -166,8 +166,8 @@
 <p>雷电4视频输出方面最低要求是支持双4K，前代雷电3仅支持单4K。对于经常用双屏、对画质要求高的设计师来说，雷电4更友好。</p>
 ]]></content>
       <tags>
-        <tag>USB</tag>
         <tag>电子</tag>
+        <tag>USB</tag>
       </tags>
   </entry>
   <entry>
@@ -337,6 +337,269 @@
       </tags>
   </entry>
   <entry>
+    <title>valine评论无法提交</title>
+    <url>/2023/08/25/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/</url>
+    <content><![CDATA[<p>起因：有人想买个U盘。</p>
+<span id="more"></span>
+
+<p><a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关U盘 | Liam’s boring life </a></p>
+<p>然后他便写了一篇文章。</p>
+<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
+<p>结果</p>
+<img src="/2023/08/25/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
+
+<p>这就有意思了，评论无法提交。</p>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
+<p>发现他没有定义一个实例。</p>
+<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>
+<p>类相当于一张汽车的「制造图纸」，你可以通过这个「图纸」来制造出许许多多汽车，甚至可以改变「图纸」，造出不同样式的汽车。</p>
+<p>但是如果只有图纸，没有创建出一个真正的汽车实例，我们是永远都无法进行「开车」这个操作的。</p>
+<p>可以说有了类就有了对象，就有了对对象的操作。</p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>办法也很简单，创建一个实例。</p>
+<p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
+<p>可以参考这篇文章进行实例搭建。</p>
+<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
+<img src="/2023/08/25/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
+
+
+
+<p>这里最重要的一点是云函数的问题。</p>
+<p>通常发生在国际服的比较多，华北和华东服务器尚未出现过此类问题。</p>
+<p>可以看到部署在华东服务器上面的实例有三个云函数，其中两个是我自己添加的。</p>
+<p>但是最重要的comment函数是程序写的。</p>
+<p>这个函数负责的评论的存储与管理，非常重要。</p>
+<p>如果选择国际服，就有可能无法加载出这个函数。</p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>此 bug 是由于 LeanCloud 国际版更换 API Url 导致的，原来的 <code>us.leancloud.cn</code> 和 <code>us-api.leancloud.cn</code> 已经停用，换为了 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
+<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote>
+<p>① 在 <code>Valine.min.js</code> 中更换 LeanCloud 对象存储 SDK 为 最新的 <code>4.12.0</code> 版本。</p>
+<p><code>leancloud-storage@3/</code> –&gt; <code>leancloud-storage@4.12.0/</code>，查找替换即可。</p>
+<p>如果你使用 CDN，可以 Fork 一份 Valine 的 GitHub 仓库，然后自行更改并使用 jsdelivr CDN 。</p>
+<p>我已经改好了一份：<a href="https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js">https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js</a> ，如有需要可以自取。</p>
+<p>② 在引用 Valine 的 js 或 YAML 中设置 <code>serverURLs</code> 字段为 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
+<p>比如 <code>serverURLs: &#39;https://xxxxxxxx.api.lncldglobal.com&#39;</code></p>
+</blockquote>
+<p>这个是网上流传的解决办法，但是我们实际中找不到对应的文件。</p>
+<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的同学可以尝试一下。</p>
+<hr>
+<p>比较简单的方法就是选择华北和华东服务器，因为服务器处在国内，比较稳定。</p>
+<p>但是使用这两个服务器要遵守《中华人民共和国网络安全法》，需要进行实名备案注册。</p>
+<p>而且备案注册必须使用支付宝的刷脸进行认证，有点麻烦。</p>
+<p>但是优点就是成功率非常高，能够解决大部分问题。（重装能解决99%的问题）</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>在搭建个人博客的时候，服务器能采用国内的服务器，就尽量使用国内的服务器。</p>
+<p>因为网络长城的存在及国际政治不稳定因素，很容易造成连接中断或连接被污染迟缓等等问题。</p>
+<p>有兴趣可以查看一下部分缓慢的域名：</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>valine</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于浏览器音乐自动播放的问题</title>
+    <url>/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，我发现在我的edge浏览器上怎么都无法自动播放。</p>
+<p>本来以为是代码问题，就没有去研究。</p>
+<span id="more"></span>
+
+<p>但是</p>
+<p>突然之间，我的小平板开始了自动播放。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>先上结论，</p>
+<p>任何浏览器都可以自动播放，只是设置的问题。</p>
+<p>部分浏览器默认允许，但有一些默认禁止（比如edge，chrome）</p>
+<p>方法很简单，只要在设置——站点权限——自动播放——允许&#x2F;禁止中修改就可以了，</p>
+<p>但是也有缺点，</p>
+<p>别人的浏览器不一定是这样设置的o(╥﹏╥)o</p>
+<p>而且很多都是默认设置，这就意味着不能自动播放还是不能。</p>
+<p>而且这是权限设置，必须由人操作更改。</p>
+<p>所以理论上不可改变。</p>
+<h1 id="资料分析"><a href="#资料分析" class="headerlink" title="资料分析"></a>资料分析</h1><blockquote>
+<p>微软 Edge 92 正式版浏览器发布后，将默认禁止网页上的音频、视频自动播放。浏览器的设置中可以看到，该选项为“限制”。</p>
+<p>此外版本的 Edge 中，这一选项默认为允许。外媒表示，限制媒体自动播放，并不意味着完全阻止任何网页内容自动播放，而是根据用户使用习惯来判断。如果用户经常访问某个网站，并且允许自动播放音视频，那么浏览器将不会阻止；而对于首次访问的网站，该功能会一律禁止自动播放行为。</p>
+</blockquote>
+<blockquote>
+<p>Chrome的自动播放政策很简单：</p>
+<ul>
+<li><p>始终允许静音自动播放。</p>
+</li>
+<li><p>在以下情况下，允许自动播放声音：</p>
+</li>
+<li><ul>
+<li>用户已与域进行了交互（单击，点击等）。</li>
+<li>在桌面版chrome上，已经超过了用户的“ <a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23mei">媒体参与度索引”</a>阈值，这意味着该用户以前曾播放有声视频。</li>
+<li>用户已将<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">网站添加到</a>移动设备上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">的主屏幕</a>上，或在桌面上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/progressive-web-apps/desktop">安装了PWA</a>。</li>
+</ul>
+</li>
+<li><p>顶级框架可以<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23iframe">将自动播放权限委派</a>给其iframe，以允许自动播放声音。</p>
+</li>
+</ul>
+<p>在以chorme为内核的浏览中，设置了<strong>MEI（Media Engagement Index）列表</strong>，该列表长度为1000，用来来衡量用户是否是该网站的“忠实用户”。当MEI排名足够高时，即可自动播放。</p>
+</blockquote>
+<p>现在的浏览器内核就是这两个，可以说基本无解……	</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>内存卡</title>
+    <url>/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/</url>
+    <content><![CDATA[<p>今天，我们来简要了解一下目前生活中比较少见的内存卡。</p>
+<h1 id="为什么内存卡在生活中越来越少见？"><a href="#为什么内存卡在生活中越来越少见？" class="headerlink" title="为什么内存卡在生活中越来越少见？"></a>为什么内存卡在生活中越来越少见？</h1><span id="more"></span>
+
+<p>一方面是手机技术的进步，以前的诺基亚等老人机背面。打开电池仓便会看到有三个插槽，两个插槽是SIM卡。而第三个插槽便是TF卡，这个便是老人机存储的核心部分。</p>
+<p>随着时间的流逝，各大厂商逐渐把存储芯片内部集成。可以提供更好的读写性能，但是还是保留了外接TF的选择。这个时间大概在2000年~2015年。</p>
+<p>后来厂商们发现外接TF似乎成为一种机械硬盘式的操作。严重的侵害了厂商的利益。</p>
+<p>举个例子，我可以买一个128+8的手机，然后再买一张拓展的512G卡。</p>
+<p>TF卡由于读写速度较慢，充当了一个类似于机械硬盘的角色，可以存储大量对读写性能要求不是很高的文件。比如手机中的文档，一些文字工作软件。还有APP应用的存储，虽然可能打开的慢一点。</p>
+<p>手机厂商就慌了，他们连夜取消了这个TF卡槽。对外宣称是所谓的增加手机气密性，减少进水可能。</p>
+<p>本质上是什么大家心里都清楚。你取消TF卡槽，你为什么不取消SIM卡槽啊？</p>
+<p>那么后来华为公司又开发出了NM卡技术。可以直接用SIM卡槽的框架存储，这下你总不能把我SIM卡槽给砍掉了吧，不然我都没办法拨打电话，上网了。</p>
+<p>可现在又突然出现了一个esim可以实现内置SIM卡。无需插入实体卡。</p>
+<p>不过还好，由于一些政治原因和经济原因，中国的SIM卡目前暂停推行。2023年五六月左右，三大营商都几乎同时宣布了因系统更新暂停eSIM卡的服务等通知。</p>
+<p>所以nm卡还能用，不过测试没有测试过，并不清楚它的具体读写速度。</p>
+<p>不过我猜也不会太快，毕竟SIM卡的触点较少，虽然看起来一大片金黄金黄的芯片，但是与主板实际接触点就只有五六个。如果有使用过诺基亚老人机的人感受会更深刻，因为以前是可以直接看到触点的。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-6aeec6e38baf184b8245c54dc76032fc_720w.webp" alt="img"></p>
+<p>从知乎回答我们可以看到，sim卡的触点是比较少的。</p>
+<p>而且手机厂商说不定会故意限制sim卡的读写速度。毕竟SIM卡最大的功能就是存储信息和存储电话本了。你的卡号是已经烧录进去的，无法更改的。</p>
+<p>所以厂家很可能在主板的什么传输通道加上一些传输速度限制。让读写速度过于缓慢，以至于放弃使用NM卡。</p>
+<p>出于以上种种原因，sim卡的好兄弟NM卡并没有流行起来。</p>
+<h1 id="常用的内存卡"><a href="#常用的内存卡" class="headerlink" title="常用的内存卡"></a>常用的内存卡</h1><p>目前内存卡的使用领域主要是在相机拍摄领域。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>一方面相机需要有多张不同的卡存储不同的素材，一个成熟的摄影师一天可能会接四五份拍摄任务。</p>
+<p>不同的素材就需要有不同储存卡来储存，这样即使突发故障，有一份储存卡的数据丢失了。其他的储存卡照样能够保存好数据。</p>
+<p>能使拍摄和后期分开，避免占用相机</p>
+<p>而且可以根据需要的拍摄场景选择合适自己的内存卡，避免产生资源浪费。</p>
+<h2 id="储存卡介绍"><a href="#储存卡介绍" class="headerlink" title="储存卡介绍"></a>储存卡介绍</h2><h3 id="首先是摄影界最小的东西，也就是TF卡。"><a href="#首先是摄影界最小的东西，也就是TF卡。" class="headerlink" title="首先是摄影界最小的东西，也就是TF卡。"></a>首先是摄影界最小的东西，也就是<strong>TF卡</strong>。</h3><p><img src="https://picx.zhimg.com/80/v2-25824c624b04e79698c90002f1205576_720w.webp?source=1940ef5c" alt="img"></p>
+<p>大概和我们的大拇指甲盖差不多大。</p>
+<p>主要用于运动相机。</p>
+<hr>
+<h3 id="接着是SD卡，相机界的中流砥柱。"><a href="#接着是SD卡，相机界的中流砥柱。" class="headerlink" title="接着是SD卡，相机界的中流砥柱。"></a>接着是<strong>SD卡</strong>，相机界的中流砥柱。</h3><p><img src="https://picx.zhimg.com/80/v2-62a9ad20b266b6ba1aef1c170ab082d5_720w.webp?source=1940ef5c" alt="img"></p>
+<p>SD卡通用于绝大部分相机，很多小型单反和<a href="https://www.zhihu.com/search?q=%E5%8D%A1%E7%89%87%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">卡片机</a>也是只有SD卡这一个卡槽。可以说SD卡虽然不是最厉害的卡，但是是最普遍的卡。</p>
+<h3 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h3><p>由于SD卡的广泛使用，各大国际联盟也制定了SD卡的标准。</p>
+<img src="/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/image-20230823092833459.png" class title="image-20230823092833459">
+
+<h4 id="Class等级标准："><a href="#Class等级标准：" class="headerlink" title="Class等级标准："></a>Class等级标准：</h4><p>早期存储卡速度等级使用Class等级来标识。主要有C10、C6、C4、C2四种标识。C2最低写入速度为2MB&#x2F;秒；C4最低写入速度为4MB&#x2F;秒；C6最低写入速度为6MB&#x2F;秒；C10最低写入速度为10MB&#x2F;秒。</p>
+<h4 id="UHS-等级标准："><a href="#UHS-等级标准：" class="headerlink" title="UHS 等级标准："></a>UHS 等级标准：</h4><p>UHS（Ultra High Speed）超高速等级为全新的总线模式。目前有UHS-I、UHS-II、UHS-III三种版本。实现UHS标准传输速度需要设备支持，高版本向下兼容低版本，不支持该标准可以兼容降速为普通存储卡使用。日常使用U1（最低写入速度10M&#x2F;S）和U3（最低写入速度30M&#x2F;S）的等级标识最低写入速度。UHS-I卡的最大读取速度为104M&#x2F;S，而UHS-II卡的最大读取速度为312M&#x2F;S。UHS-III卡的最大读取达到了624M&#x2F;S。</p>
+<h4 id="VSC等级标准："><a href="#VSC等级标准：" class="headerlink" title="VSC等级标准："></a>VSC等级标准：</h4><p><a href="https://so.csdn.net/so/search?q=VSC&spm=1001.2101.3001.7020">VSC</a>（Video Speed Class）视频速度等级。4K视频的拍摄需求增大后，SD协会针对视频拍摄应用制定的视频速度等级，以识别字母V加上最低写入速度值的数字构成标识。即：V10最低写入速度10M&#x2F;S；V30最低写入速度30M&#x2F;S；</p>
+<p>由于各项参数之间有重合，所以SD卡允许标上不同的参数的。</p>
+<h4 id="实际分析"><a href="#实际分析" class="headerlink" title="实际分析"></a>实际分析</h4><p>例如我们回到例子的那张SD卡。</p>
+<p>首先上面有着很明显的标识，170 MB每秒。</p>
+<p>但是这个170是MB每秒是读还是写呢？</p>
+<p>我们可以分析一下，如果是写的话，这个储存卡完全可以满足v90的标准。</p>
+<p>可是他只标了v30，那么意味着这个170MB每秒是读的概率比较大。</p>
+<p>然后我们看看各项参数，发现并没有矛盾。</p>
+<p>所以这个170 MB每秒是读数，对于摄影实际帮助并不太大。</p>
+<p>实际写入速度应该在30 MB每秒到60 MB每秒左右。</p>
+<hr>
+<p><img src="https://picx.zhimg.com/80/v2-cdd83c95606e76a90c3bf31641f3e877_720w.webp?source=1940ef5c" alt="img"></p>
+<h3 id="CF和XQD"><a href="#CF和XQD" class="headerlink" title="CF和XQD"></a>CF和XQD</h3><p>这是<a href="https://www.zhihu.com/search?q=sqd%E5%8D%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">SQD卡</a>和CF卡两个老兄，不过cf卡因为一些性能原因已经被放弃了，只有一些较老的相机，还有CF卡的插槽，现在的高端相机，比如尼康的Z6，Z7都有第二插槽为XQD插槽。</p>
+<hr>
+<p><img src="https://picx.zhimg.com/80/v2-9c85a0dc3787af2aa650867cdfaaf92e_720w.webp?source=1940ef5c" alt="img"></p>
+<p>诶，这个是不是很熟悉，感觉长得像很像SD卡？</p>
+<p>这就是SD卡的下一代，我们刚刚讲的以USH协议为代表的新一代的SD卡。，不同的是后面的金手指由一排变成了两排。提高了写入速度。</p>
+<p>但是缺点很明显，只有极少数的相机支持这样的卡槽，所以一般只能发挥出一半的实力。</p>
+<p>不过我们前面也提到了，这玩意是可以向下兼容的，必要时可以变成普通SD卡来使用。</p>
+<p>由于只是多出来一排触点，所以它和SD卡是兼容的。</p>
+<p>速度到底有多高呢？读者可以自行分析一下。</p>
+<h1 id="奇怪的储存卡"><a href="#奇怪的储存卡" class="headerlink" title="奇怪的储存卡"></a>奇怪的储存卡</h1><p>这些是比较通用的储存卡，已经占据99%的储存卡量了。剩下一些就是专业摄影机专用的卡。比如像<a href="https://www.zhihu.com/search?q=%E9%98%BF%E8%8E%B1%E7%94%B5%E5%BD%B1%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">阿莱电影机</a>，一张1T的卡就要10万元。这种是专业电影公司才用得到的。</p>
+<p>还有比如DJI大疆公司的无人机，也有专门的存储卡。</p>
+]]></content>
+      <tags>
+        <tag>电子</tag>
+        <tag>存储</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅析网络传输缓慢的原因</title>
+    <url>/2023/08/25/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%BC%93%E6%85%A2/</url>
+    <content><![CDATA[<p>在日常生活中，有时候我们即使配置了很高的宽带，也会发现有些网站加载速度很慢，甚至无法打开。</p>
+<span id="more"></span>
+
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在本文开始前总要概述一下造成网络缓慢的原因，主要有以下三种。</p>
+<p>1.传输带宽过窄</p>
+<p>2.传输距离过长</p>
+<p>3.服务器响应速度慢。</p>
+<p>但网络攻击以及网络污染也时时在影响着我们的生活，而且这种东西是无法避免的。</p>
+<h1 id="传输带宽过窄"><a href="#传输带宽过窄" class="headerlink" title="传输带宽过窄"></a>传输带宽过窄</h1><p>我们家庭中的网络是由运营商提供的，运营商分配给我们带宽资源取决于我们购买的套餐数量。所以这个是属于购买套餐问题，是比较容易解决的。</p>
+<h1 id="传输距离过长"><a href="#传输距离过长" class="headerlink" title="传输距离过长"></a>传输距离过长</h1><p>我们现在基本上都在使用光纤进行通信。</p>
+<p>然而，因为没有百分之百反射率的材料，所以即使光线的反射率再高，它也一样会对数据产生一点损耗。</p>
+<p>这种损耗在短程传输中可以忽略不计，可以认为接到的数据包总量是百分之百。</p>
+<p>但是如果经历远程传输，例如海底光缆传输，这个时候的损耗就会造成明显的丢包。</p>
+<p>因此服务器要重复多次发送数据的操作。这样就会延长加载的时间。</p>
+<p>那为什么在国内访问也依然很快呢？这是路由器的功劳。</p>
+<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><p>我们在日常生活中访问国内的服务器总速度一般都是很快的，基本上能达到你在运营商购买宽带的带宽。</p>
+<p>但是如果我们想要访问在国外的服务器，哪怕近在咫尺，速度也非常缓慢，这是怎么回事呢？</p>
+<p>实际上网络数据的传输并没有真正意义上的就近原则，而是靠路由器表中的<strong>AS域</strong>来决定最快的那条线路。</p>
+<p>每一个路由器和路由节点都会定时更新一张路由表，表示它能连接到哪些IP地址。以及需要的时间。</p>
+<p>当你想要访问某一个网站的时候，其实就是在你的IP和网站的IP之间建立一条连接。而BGP就会根据它收集到的路由表进行综合判断处理，选择出<strong>连接最快的那一条线路</strong>。</p>
+<h2 id="什么是BGP？"><a href="#什么是BGP？" class="headerlink" title="什么是BGP？"></a>什么是BGP？</h2><h5 id="BGP"><a href="#BGP" class="headerlink" title="BGP"></a>BGP</h5><p><strong>边界网关协议</strong>（英语：<code>Border Gateway Protocol</code>，缩写：<code>BGP</code>）是互联网上一个核心的去中心化自治路由协议。它通过维护IP路由表或“前缀”表来实现自治系统（<code>AS</code>）之间的可达性，属于矢量路由协议。<code>BGP</code>不使用传统的内部网关协议（<code>IGP</code>）的指标，而使用基于路径、网络策略或规则集来决定路由。因此，它更适合被称为矢量性协议，而不是路由协议。</p>
+<h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>任何连接上互联网的主机，通过其自身的IP地址，能够与世界上任何连接上互联网的主机通信。主机将数据传送给路由器，每个路由器再将数据包传给另一个路由器，直到数据被传递给目的主机。为了顺利将数据传递到目的主机，每个路由器必须定期提供最新的路由表。具有相同的IP地址前缀的IP为同一家自治系统（<code>AS</code>）拥有，自治系统之间的路由器的路由表通过边界网关协议进行维护。边界网关协议能让路由表内保存最佳路由路线。</p>
+<p>每个自治系统都通过边界网关协议来表明它可以向哪些IP前缀发送数据。例如如果IP前缀<code>192.0.2.0/24</code>位于<code>AS 64496</code>内，那么该自治系统就会将向其供应商表示它可以向<code>192.0.2.0/24</code>发送任何数据。</p>
+<p>比如我们家庭中的路由器，它的路由表上面就会拥有所有家庭连入该网络的设备，表示这个路由器能与这些设备进行通信。</p>
+<p>然后运营商的街道级路由就会收集这些家用路由器的信息，表示这个街道级路由能够连接到那些家用路由器。</p>
+<p>以此类推，还有市级路由，省级路由，以及顶级路由，还有一种比较特殊的路由——<strong>出口路由</strong>。</p>
+<p>出口路由是指能和国外的服务器进行通信的一类路由，他们的路由表拥有着国外路由的IP地址以及访问方法。</p>
+<h5 id="劫持"><a href="#劫持" class="headerlink" title="劫持"></a>劫持</h5><p>可以通过以下几种方式进行劫持：</p>
+<ul>
+<li>一个自治系统宣称一些IP前缀归其所有，但实际上并不是</li>
+<li>一个自治系统声称拥有某个IP前缀范围比实际声明拥有某个IP前缀的自治系统要更小</li>
+<li>一个自治系统声称它可以通过一条比已知的更短的路径将数据传递到被劫持的自治系统，而不管该路径是否真的存在</li>
+</ul>
+<p>这些方式的共同点是它们<strong>破坏了网络的正常路由</strong>，自治系统宣称的内容被添加至使用边界网关协议的路由器的路由表中，那<strong>路由器则会根据路由表将数据包传输给错误的自治系统</strong>，数据包最终无法被转发到目的地。</p>
+<p>通过这些方式，当你想要和被劫持的IP进行通信时，错误的路由表将会将信息导向一条不存在的通路。</p>
+<p>这样即使对方的服务器进行了应答，它的数据无法传输到你这里，就会产生<strong>连接超时</strong>的错误。</p>
+<h1 id="服务器响应速度慢"><a href="#服务器响应速度慢" class="headerlink" title="服务器响应速度慢"></a>服务器响应速度慢</h1><p>这个也比较容易理解，如果对方搭建的服务器质量不够好，采用的是小型服务器。</p>
+<p>那么当访问量过大时，服务器只能依照顺序进行处理，因此访问速度会变得慢很多。</p>
+<p>不过现在服务器的水平都在日益提升，这一点原因造成的加载缓慢已经变得很少了。</p>
+<h1 id="网络攻击"><a href="#网络攻击" class="headerlink" title="网络攻击"></a>网络攻击</h1><p>网络攻击的方式很多，包括我们刚刚说的BGP边界网关协议劫持攻击。</p>
+<p>好但是只有BGP网络协议劫持攻击才能达到加载缓慢的效果，其他的攻击方式基本上无法连接。</p>
+<h2 id="攻击的分类"><a href="#攻击的分类" class="headerlink" title="攻击的分类"></a>攻击的分类</h2><p>网络攻击的分类大致有以下几种：</p>
+<ul>
+<li>破坏，以破坏通信为目的使得双方的通信无法正常进行。</li>
+<li>窃取，以窃取数据为目的使得重要数据泄露。</li>
+<li>篡改，以修改数据为目的使得重要数据被修改。</li>
+<li>伪装，通过伪装成通信者和你进行访问。</li>
+<li>监听，监听双方的通信，获得通信内容。</li>
+<li>DDoS，通过大规模的访问，使得其他用户无法访问特定资源。</li>
+</ul>
+<p>其中窃取篡改的定义是略有不同的，稍加注意。</p>
+<p>而DDoS理论上不能算成一种网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
+<p>而且DDoS攻击理论上是不可避免的。</p>
+<h2 id="针对连接的攻击"><a href="#针对连接的攻击" class="headerlink" title="针对连接的攻击"></a>针对连接的攻击</h2><p>一般来说，如果针对网络性连接，除了我们提到的BGP网关协议,还有RST重置包以及DNS污染。</p>
+<h3 id="TCP介绍"><a href="#TCP介绍" class="headerlink" title="TCP介绍"></a>TCP介绍</h3><p>互联网上的计算机均使用TCP&#x2F;IP协议进行通信。而<code>TCP</code>重置是<code>TCP</code>的一种消息，用于重置连接。一般来说，例如服务器端在没有客户端请求的端口或者其它连接信息不符时，系统的TCP协议栈就会给客户端回复一个<code>RESET</code>通知消息，可见<code>RESET</code>功能本来用于应对例如服务器意外重启等情况。防火长城切断TCP连接的技术实际上就是比连接双方更快地发送连接重置消息，使连接双方认为对方终止了连接而自行关闭连接。</p>
+<h4 id="TCP重置攻击"><a href="#TCP重置攻击" class="headerlink" title="TCP重置攻击"></a>TCP重置攻击</h4><p>TCP重置攻击指的是使用伪造的TCP重置包干扰用户和网站的连接。这个技术可以在善意的防火墙中应用，但也可用于网络审查或是攻击，恶意中断TCP连接，是一种旁观者攻击。中国大陆的防火长城会自动执行TCP重置攻击，来阻断不符合中国的法律法规的网站。</p>
+<h5 id="TCP重置"><a href="#TCP重置" class="headerlink" title="TCP重置"></a>TCP重置</h5><p>在传输控制协议（TCP）连接的数据包流中，每个数据包都包含一个TCP包头。这些包头中的每一个都包含一个称为“复位”（<code>RST</code>）标志的位。在大多数数据包中，该位设置为0，并且无效；但是，如果此位设置为1，则向接收计算机指示该计算机应立即停止使用TCP连接；它不应使用连接的标识号（端口）发送更多数据包，并丢弃接收到的带有包头的其他数据包，这些包头指示它们属于该连接。TCP重置基本上会立即终止TCP连接。</p>
+<p>按照最初的设计，这是一个有用的工具。常见的应用是在进行TCP连接时计算机（计算机A）崩溃的情况。另一端的计算机（计算机B）将继续发送TCP数据包，因为它不知道计算机A已崩溃。重新启动计算机A后，它将从旧的崩溃前连接接收数据包。计算机A没有这些数据包的上下文，也无法知道如何处理这些数据包，因此它可以向计算机B发送TCP重置。此重置使计算机B知道该连接不再起作用。计算机B上的用户现在可以尝试其他连接或采取其他措施。</p>
+<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。</p>
+<h3 id="DNS污染"><a href="#DNS污染" class="headerlink" title="DNS污染"></a>DNS污染</h3><p>DNS劫持是一类旁观者攻击，攻击者借由其在网络拓扑中的<strong>特殊位置</strong>，发送比真实的DNS回应更早到达攻击目标的<strong>伪造DNS回应</strong>。</p>
+<p><strong>域名解析层级（优先级）：</strong></p>
+<p>浏览器缓存（短时）</p>
+<blockquote>
+<p><strong>流览器缓存</strong>（Browser Caching）是为了节约网络的资源加速浏览，浏览器在用户磁盘上对最近请求过的文档进行存储，当访问者再次请求这个页面时，浏览器就可以从本地磁盘显示文档，这样就可以加速页面的阅览。</p>
+</blockquote>
+<p>本地DNS缓存</p>
+<blockquote>
+<p><strong>域名系统</strong>（英文：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS使用UDP端口53。当前，对于每一级域名长度的限制是63个字符，域名总长度则不能超过253个字符。</p>
+</blockquote>
+<p>hosts文件</p>
+<blockquote>
+<p><strong>Hosts</strong>是一个没有扩展名的系统文件，可以用记事本等工具打开，其作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。<br>需要注意的是，Hosts文件配置的映射是静态的。</p>
+</blockquote>
+<p>最后到网卡配置信息里的DNS服务器以及DNS根域名服务器，通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
+<p> 一部连上了互联网的电脑一般都会使用互联网服务提供商提供的递归DNS服务器，这个服务器通常都会将部分客户曾经请求过的域名暂存起来。缓存污染攻击就是针对这一特性，影响服务器的用户或下游服务。</p>
+<p>在中国大陆，对所有经过防火长城的在<code>UDP</code>的<code>53</code>端口上的域名查询进行IDS入侵检测，一经发现与黑名单关键词相匹配的域名查询请求，会马上伪装成目标解析服务器注入伪造的查询结果。</p>
+<p>由于DNS协议的特殊规定，只相信接收到的第一个DNS，并且不去确认它的真实性。</p>
+<p>早期的GFW只是很简单的干扰我们的通讯，只要我们修改一下host文件就可以轻松绕过GFW的监控，但是后来逐渐失去了作用。</p>
+<h2 id="应对办法"><a href="#应对办法" class="headerlink" title="应对办法"></a>应对办法</h2><p>不能写……</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>没有……（懒了）</p>
+]]></content>
+      <tags>
+        <tag>网络</tag>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>浅析对焦本质</title>
     <url>/2023/08/22/%E5%AF%B9%E7%84%A6/</url>
     <content><![CDATA[<p>对焦是摄影中很重要的一环，今天就浅析一下对焦的本质</p>
@@ -427,74 +690,6 @@
       <tags>
         <tag>摄影</tag>
         <tag>对焦</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>内存卡</title>
-    <url>/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/</url>
-    <content><![CDATA[<p>今天，我们来简要了解一下目前生活中比较少见的内存卡。</p>
-<h1 id="为什么内存卡在生活中越来越少见？"><a href="#为什么内存卡在生活中越来越少见？" class="headerlink" title="为什么内存卡在生活中越来越少见？"></a>为什么内存卡在生活中越来越少见？</h1><span id="more"></span>
-
-<p>一方面是手机技术的进步，以前的诺基亚等老人机背面。打开电池仓便会看到有三个插槽，两个插槽是SIM卡。而第三个插槽便是TF卡，这个便是老人机存储的核心部分。</p>
-<p>随着时间的流逝，各大厂商逐渐把存储芯片内部集成。可以提供更好的读写性能，但是还是保留了外接TF的选择。这个时间大概在2000年~2015年。</p>
-<p>后来厂商们发现外接TF似乎成为一种机械硬盘式的操作。严重的侵害了厂商的利益。</p>
-<p>举个例子，我可以买一个128+8的手机，然后再买一张拓展的512G卡。</p>
-<p>TF卡由于读写速度较慢，充当了一个类似于机械硬盘的角色，可以存储大量对读写性能要求不是很高的文件。比如手机中的文档，一些文字工作软件。还有APP应用的存储，虽然可能打开的慢一点。</p>
-<p>手机厂商就慌了，他们连夜取消了这个TF卡槽。对外宣称是所谓的增加手机气密性，减少进水可能。</p>
-<p>本质上是什么大家心里都清楚。你取消TF卡槽，你为什么不取消SIM卡槽啊？</p>
-<p>那么后来华为公司又开发出了NM卡技术。可以直接用SIM卡槽的框架存储，这下你总不能把我SIM卡槽给砍掉了吧，不然我都没办法拨打电话，上网了。</p>
-<p>可现在又突然出现了一个esim可以实现内置SIM卡。无需插入实体卡。</p>
-<p>不过还好，由于一些政治原因和经济原因，中国的SIM卡目前暂停推行。2023年五六月左右，三大营商都几乎同时宣布了因系统更新暂停eSIM卡的服务等通知。</p>
-<p>所以nm卡还能用，不过测试没有测试过，并不清楚它的具体读写速度。</p>
-<p>不过我猜也不会太快，毕竟SIM卡的触点较少，虽然看起来一大片金黄金黄的芯片，但是与主板实际接触点就只有五六个。如果有使用过诺基亚老人机的人感受会更深刻，因为以前是可以直接看到触点的。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-6aeec6e38baf184b8245c54dc76032fc_720w.webp" alt="img"></p>
-<p>从知乎回答我们可以看到，sim卡的触点是比较少的。</p>
-<p>而且手机厂商说不定会故意限制sim卡的读写速度。毕竟SIM卡最大的功能就是存储信息和存储电话本了。你的卡号是已经烧录进去的，无法更改的。</p>
-<p>所以厂家很可能在主板的什么传输通道加上一些传输速度限制。让读写速度过于缓慢，以至于放弃使用NM卡。</p>
-<p>出于以上种种原因，sim卡的好兄弟NM卡并没有流行起来。</p>
-<h1 id="常用的内存卡"><a href="#常用的内存卡" class="headerlink" title="常用的内存卡"></a>常用的内存卡</h1><p>目前内存卡的使用领域主要是在相机拍摄领域。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>一方面相机需要有多张不同的卡存储不同的素材，一个成熟的摄影师一天可能会接四五份拍摄任务。</p>
-<p>不同的素材就需要有不同储存卡来储存，这样即使突发故障，有一份储存卡的数据丢失了。其他的储存卡照样能够保存好数据。</p>
-<p>能使拍摄和后期分开，避免占用相机</p>
-<p>而且可以根据需要的拍摄场景选择合适自己的内存卡，避免产生资源浪费。</p>
-<h2 id="储存卡介绍"><a href="#储存卡介绍" class="headerlink" title="储存卡介绍"></a>储存卡介绍</h2><h3 id="首先是摄影界最小的东西，也就是TF卡。"><a href="#首先是摄影界最小的东西，也就是TF卡。" class="headerlink" title="首先是摄影界最小的东西，也就是TF卡。"></a>首先是摄影界最小的东西，也就是<strong>TF卡</strong>。</h3><p><img src="https://picx.zhimg.com/80/v2-25824c624b04e79698c90002f1205576_720w.webp?source=1940ef5c" alt="img"></p>
-<p>大概和我们的大拇指甲盖差不多大。</p>
-<p>主要用于运动相机。</p>
-<hr>
-<h3 id="接着是SD卡，相机界的中流砥柱。"><a href="#接着是SD卡，相机界的中流砥柱。" class="headerlink" title="接着是SD卡，相机界的中流砥柱。"></a>接着是<strong>SD卡</strong>，相机界的中流砥柱。</h3><p><img src="https://picx.zhimg.com/80/v2-62a9ad20b266b6ba1aef1c170ab082d5_720w.webp?source=1940ef5c" alt="img"></p>
-<p>SD卡通用于绝大部分相机，很多小型单反和<a href="https://www.zhihu.com/search?q=%E5%8D%A1%E7%89%87%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">卡片机</a>也是只有SD卡这一个卡槽。可以说SD卡虽然不是最厉害的卡，但是是最普遍的卡。</p>
-<h3 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h3><p>由于SD卡的广泛使用，各大国际联盟也制定了SD卡的标准。</p>
-<img src="/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/image-20230823092833459.png" class title="image-20230823092833459">
-
-<h4 id="Class等级标准："><a href="#Class等级标准：" class="headerlink" title="Class等级标准："></a>Class等级标准：</h4><p>早期存储卡速度等级使用Class等级来标识。主要有C10、C6、C4、C2四种标识。C2最低写入速度为2MB&#x2F;秒；C4最低写入速度为4MB&#x2F;秒；C6最低写入速度为6MB&#x2F;秒；C10最低写入速度为10MB&#x2F;秒。</p>
-<h4 id="UHS-等级标准："><a href="#UHS-等级标准：" class="headerlink" title="UHS 等级标准："></a>UHS 等级标准：</h4><p>UHS（Ultra High Speed）超高速等级为全新的总线模式。目前有UHS-I、UHS-II、UHS-III三种版本。实现UHS标准传输速度需要设备支持，高版本向下兼容低版本，不支持该标准可以兼容降速为普通存储卡使用。日常使用U1（最低写入速度10M&#x2F;S）和U3（最低写入速度30M&#x2F;S）的等级标识最低写入速度。UHS-I卡的最大读取速度为104M&#x2F;S，而UHS-II卡的最大读取速度为312M&#x2F;S。UHS-III卡的最大读取达到了624M&#x2F;S。</p>
-<h4 id="VSC等级标准："><a href="#VSC等级标准：" class="headerlink" title="VSC等级标准："></a>VSC等级标准：</h4><p><a href="https://so.csdn.net/so/search?q=VSC&spm=1001.2101.3001.7020">VSC</a>（Video Speed Class）视频速度等级。4K视频的拍摄需求增大后，SD协会针对视频拍摄应用制定的视频速度等级，以识别字母V加上最低写入速度值的数字构成标识。即：V10最低写入速度10M&#x2F;S；V30最低写入速度30M&#x2F;S；</p>
-<p>由于各项参数之间有重合，所以SD卡允许标上不同的参数的。</p>
-<h4 id="实际分析"><a href="#实际分析" class="headerlink" title="实际分析"></a>实际分析</h4><p>例如我们回到例子的那张SD卡。</p>
-<p>首先上面有着很明显的标识，170 MB每秒。</p>
-<p>但是这个170是MB每秒是读还是写呢？</p>
-<p>我们可以分析一下，如果是写的话，这个储存卡完全可以满足v90的标准。</p>
-<p>可是他只标了v30，那么意味着这个170MB每秒是读的概率比较大。</p>
-<p>然后我们看看各项参数，发现并没有矛盾。</p>
-<p>所以这个170 MB每秒是读数，对于摄影实际帮助并不太大。</p>
-<p>实际写入速度应该在30 MB每秒到60 MB每秒左右。</p>
-<hr>
-<p><img src="https://picx.zhimg.com/80/v2-cdd83c95606e76a90c3bf31641f3e877_720w.webp?source=1940ef5c" alt="img"></p>
-<h3 id="CF和XQD"><a href="#CF和XQD" class="headerlink" title="CF和XQD"></a>CF和XQD</h3><p>这是<a href="https://www.zhihu.com/search?q=sqd%E5%8D%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">SQD卡</a>和CF卡两个老兄，不过cf卡因为一些性能原因已经被放弃了，只有一些较老的相机，还有CF卡的插槽，现在的高端相机，比如尼康的Z6，Z7都有第二插槽为XQD插槽。</p>
-<hr>
-<p><img src="https://picx.zhimg.com/80/v2-9c85a0dc3787af2aa650867cdfaaf92e_720w.webp?source=1940ef5c" alt="img"></p>
-<p>诶，这个是不是很熟悉，感觉长得像很像SD卡？</p>
-<p>这就是SD卡的下一代，我们刚刚讲的以USH协议为代表的新一代的SD卡。，不同的是后面的金手指由一排变成了两排。提高了写入速度。</p>
-<p>但是缺点很明显，只有极少数的相机支持这样的卡槽，所以一般只能发挥出一半的实力。</p>
-<p>不过我们前面也提到了，这玩意是可以向下兼容的，必要时可以变成普通SD卡来使用。</p>
-<p>由于只是多出来一排触点，所以它和SD卡是兼容的。</p>
-<p>速度到底有多高呢？读者可以自行分析一下。</p>
-<h1 id="奇怪的储存卡"><a href="#奇怪的储存卡" class="headerlink" title="奇怪的储存卡"></a>奇怪的储存卡</h1><p>这些是比较通用的储存卡，已经占据99%的储存卡量了。剩下一些就是专业摄影机专用的卡。比如像<a href="https://www.zhihu.com/search?q=%E9%98%BF%E8%8E%B1%E7%94%B5%E5%BD%B1%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">阿莱电影机</a>，一张1T的卡就要10万元。这种是专业电影公司才用得到的。</p>
-<p>还有比如DJI大疆公司的无人机，也有专门的存储卡。</p>
-]]></content>
-      <tags>
-        <tag>电子</tag>
-        <tag>存储</tag>
       </tags>
   </entry>
   <entry>
@@ -686,201 +881,6 @@
         <tag>编程</tag>
         <tag>hexo</tag>
         <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>valine评论无法提交</title>
-    <url>/2023/08/25/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/</url>
-    <content><![CDATA[<p>起因：有人想买个U盘。</p>
-<span id="more"></span>
-
-<p><a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关U盘 | Liam’s boring life </a></p>
-<p>然后他便写了一篇文章。</p>
-<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
-<p>结果</p>
-<img src="/2023/08/25/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
-
-<p>这就有意思了，评论无法提交。</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
-<p>发现他没有定义一个实例。</p>
-<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>
-<p>类相当于一张汽车的「制造图纸」，你可以通过这个「图纸」来制造出许许多多汽车，甚至可以改变「图纸」，造出不同样式的汽车。</p>
-<p>但是如果只有图纸，没有创建出一个真正的汽车实例，我们是永远都无法进行「开车」这个操作的。</p>
-<p>可以说有了类就有了对象，就有了对对象的操作。</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>办法也很简单，创建一个实例。</p>
-<p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
-<p>可以参考这篇文章进行实例搭建。</p>
-<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
-<img src="/2023/08/25/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
-
-
-
-<p>这里最重要的一点是云函数的问题。</p>
-<p>通常发生在国际服的比较多，华北和华东服务器尚未出现过此类问题。</p>
-<p>可以看到部署在华东服务器上面的实例有三个云函数，其中两个是我自己添加的。</p>
-<p>但是最重要的comment函数是程序写的。</p>
-<p>这个函数负责的评论的存储与管理，非常重要。</p>
-<p>如果选择国际服，就有可能无法加载出这个函数。</p>
-<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>此 bug 是由于 LeanCloud 国际版更换 API Url 导致的，原来的 <code>us.leancloud.cn</code> 和 <code>us-api.leancloud.cn</code> 已经停用，换为了 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
-<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote>
-<p>① 在 <code>Valine.min.js</code> 中更换 LeanCloud 对象存储 SDK 为 最新的 <code>4.12.0</code> 版本。</p>
-<p><code>leancloud-storage@3/</code> –&gt; <code>leancloud-storage@4.12.0/</code>，查找替换即可。</p>
-<p>如果你使用 CDN，可以 Fork 一份 Valine 的 GitHub 仓库，然后自行更改并使用 jsdelivr CDN 。</p>
-<p>我已经改好了一份：<a href="https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js">https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js</a> ，如有需要可以自取。</p>
-<p>② 在引用 Valine 的 js 或 YAML 中设置 <code>serverURLs</code> 字段为 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
-<p>比如 <code>serverURLs: &#39;https://xxxxxxxx.api.lncldglobal.com&#39;</code></p>
-</blockquote>
-<p>这个是网上流传的解决办法，但是我们实际中找不到对应的文件。</p>
-<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的同学可以尝试一下。</p>
-<hr>
-<p>比较简单的方法就是选择华北和华东服务器，因为服务器处在国内，比较稳定。</p>
-<p>但是使用这两个服务器要遵守《中华人民共和国网络安全法》，需要进行实名备案注册。</p>
-<p>而且备案注册必须使用支付宝的刷脸进行认证，有点麻烦。</p>
-<p>但是优点就是成功率非常高，能够解决大部分问题。（重装能解决99%的问题）</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>在搭建个人博客的时候，服务器能采用国内的服务器，就尽量使用国内的服务器。</p>
-<p>因为网络长城的存在及国际政治不稳定因素，很容易造成连接中断或连接被污染迟缓等等问题。</p>
-<p>有兴趣可以查看一下部分缓慢的域名：</p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>valine</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>浅析网络传输缓慢的原因</title>
-    <url>/2023/08/25/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%BC%93%E6%85%A2/</url>
-    <content><![CDATA[<p>在日常生活中，有时候我们即使配置了很高的宽带，也会发现有些网站加载速度很慢，甚至无法打开。</p>
-<span id="more"></span>
-
-<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在本文开始前总要概述一下造成网络缓慢的原因，主要有以下三种。</p>
-<p>1.传输带宽过窄</p>
-<p>2.传输距离过长</p>
-<p>3.服务器响应速度慢。</p>
-<p>但网络攻击以及网络污染也时时在影响着我们的生活，而且这种东西是无法避免的。</p>
-<h1 id="传输带宽过窄"><a href="#传输带宽过窄" class="headerlink" title="传输带宽过窄"></a>传输带宽过窄</h1><p>我们家庭中的网络是由运营商提供的，运营商分配给我们带宽资源取决于我们购买的套餐数量。所以这个是属于购买套餐问题，是比较容易解决的。</p>
-<h1 id="传输距离过长"><a href="#传输距离过长" class="headerlink" title="传输距离过长"></a>传输距离过长</h1><p>我们现在基本上都在使用光纤进行通信。</p>
-<p>然而，因为没有百分之百反射率的材料，所以即使光线的反射率再高，它也一样会对数据产生一点损耗。</p>
-<p>这种损耗在短程传输中可以忽略不计，可以认为接到的数据包总量是百分之百。</p>
-<p>但是如果经历远程传输，例如海底光缆传输，这个时候的损耗就会造成明显的丢包。</p>
-<p>因此服务器要重复多次发送数据的操作。这样就会延长加载的时间。</p>
-<p>那为什么在国内访问也依然很快呢？这是路由器的功劳。</p>
-<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><p>我们在日常生活中访问国内的服务器总速度一般都是很快的，基本上能达到你在运营商购买宽带的带宽。</p>
-<p>但是如果我们想要访问在国外的服务器，哪怕近在咫尺，速度也非常缓慢，这是怎么回事呢？</p>
-<p>实际上网络数据的传输并没有真正意义上的就近原则，而是靠路由器表中的<strong>AS域</strong>来决定最快的那条线路。</p>
-<p>每一个路由器和路由节点都会定时更新一张路由表，表示它能连接到哪些IP地址。以及需要的时间。</p>
-<p>当你想要访问某一个网站的时候，其实就是在你的IP和网站的IP之间建立一条连接。而BGP就会根据它收集到的路由表进行综合判断处理，选择出<strong>连接最快的那一条线路</strong>。</p>
-<h2 id="什么是BGP？"><a href="#什么是BGP？" class="headerlink" title="什么是BGP？"></a>什么是BGP？</h2><h5 id="BGP"><a href="#BGP" class="headerlink" title="BGP"></a>BGP</h5><p><strong>边界网关协议</strong>（英语：<code>Border Gateway Protocol</code>，缩写：<code>BGP</code>）是互联网上一个核心的去中心化自治路由协议。它通过维护IP路由表或“前缀”表来实现自治系统（<code>AS</code>）之间的可达性，属于矢量路由协议。<code>BGP</code>不使用传统的内部网关协议（<code>IGP</code>）的指标，而使用基于路径、网络策略或规则集来决定路由。因此，它更适合被称为矢量性协议，而不是路由协议。</p>
-<h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>任何连接上互联网的主机，通过其自身的IP地址，能够与世界上任何连接上互联网的主机通信。主机将数据传送给路由器，每个路由器再将数据包传给另一个路由器，直到数据被传递给目的主机。为了顺利将数据传递到目的主机，每个路由器必须定期提供最新的路由表。具有相同的IP地址前缀的IP为同一家自治系统（<code>AS</code>）拥有，自治系统之间的路由器的路由表通过边界网关协议进行维护。边界网关协议能让路由表内保存最佳路由路线。</p>
-<p>每个自治系统都通过边界网关协议来表明它可以向哪些IP前缀发送数据。例如如果IP前缀<code>192.0.2.0/24</code>位于<code>AS 64496</code>内，那么该自治系统就会将向其供应商表示它可以向<code>192.0.2.0/24</code>发送任何数据。</p>
-<p>比如我们家庭中的路由器，它的路由表上面就会拥有所有家庭连入该网络的设备，表示这个路由器能与这些设备进行通信。</p>
-<p>然后运营商的街道级路由就会收集这些家用路由器的信息，表示这个街道级路由能够连接到那些家用路由器。</p>
-<p>以此类推，还有市级路由，省级路由，以及顶级路由，还有一种比较特殊的路由——<strong>出口路由</strong>。</p>
-<p>出口路由是指能和国外的服务器进行通信的一类路由，他们的路由表拥有着国外路由的IP地址以及访问方法。</p>
-<h5 id="劫持"><a href="#劫持" class="headerlink" title="劫持"></a>劫持</h5><p>可以通过以下几种方式进行劫持：</p>
-<ul>
-<li>一个自治系统宣称一些IP前缀归其所有，但实际上并不是</li>
-<li>一个自治系统声称拥有某个IP前缀范围比实际声明拥有某个IP前缀的自治系统要更小</li>
-<li>一个自治系统声称它可以通过一条比已知的更短的路径将数据传递到被劫持的自治系统，而不管该路径是否真的存在</li>
-</ul>
-<p>这些方式的共同点是它们<strong>破坏了网络的正常路由</strong>，自治系统宣称的内容被添加至使用边界网关协议的路由器的路由表中，那<strong>路由器则会根据路由表将数据包传输给错误的自治系统</strong>，数据包最终无法被转发到目的地。</p>
-<p>通过这些方式，当你想要和被劫持的IP进行通信时，错误的路由表将会将信息导向一条不存在的通路。</p>
-<p>这样即使对方的服务器进行了应答，它的数据无法传输到你这里，就会产生<strong>连接超时</strong>的错误。</p>
-<h1 id="服务器响应速度慢"><a href="#服务器响应速度慢" class="headerlink" title="服务器响应速度慢"></a>服务器响应速度慢</h1><p>这个也比较容易理解，如果对方搭建的服务器质量不够好，采用的是小型服务器。</p>
-<p>那么当访问量过大时，服务器只能依照顺序进行处理，因此访问速度会变得慢很多。</p>
-<p>不过现在服务器的水平都在日益提升，这一点原因造成的加载缓慢已经变得很少了。</p>
-<h1 id="网络攻击"><a href="#网络攻击" class="headerlink" title="网络攻击"></a>网络攻击</h1><p>网络攻击的方式很多，包括我们刚刚说的BGP边界网关协议劫持攻击。</p>
-<p>好但是只有BGP网络协议劫持攻击才能达到加载缓慢的效果，其他的攻击方式基本上无法连接。</p>
-<h2 id="攻击的分类"><a href="#攻击的分类" class="headerlink" title="攻击的分类"></a>攻击的分类</h2><p>网络攻击的分类大致有以下几种：</p>
-<ul>
-<li>破坏，以破坏通信为目的使得双方的通信无法正常进行。</li>
-<li>窃取，以窃取数据为目的使得重要数据泄露。</li>
-<li>篡改，以修改数据为目的使得重要数据被修改。</li>
-<li>伪装，通过伪装成通信者和你进行访问。</li>
-<li>监听，监听双方的通信，获得通信内容。</li>
-<li>DDoS，通过大规模的访问，使得其他用户无法访问特定资源。</li>
-</ul>
-<p>其中窃取篡改的定义是略有不同的，稍加注意。</p>
-<p>而DDoS理论上不能算成一种网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
-<p>而且DDoS攻击理论上是不可避免的。</p>
-<h2 id="针对连接的攻击"><a href="#针对连接的攻击" class="headerlink" title="针对连接的攻击"></a>针对连接的攻击</h2><p>一般来说，如果针对网络性连接，除了我们提到的BGP网关协议,还有RST重置包以及DNS污染。</p>
-<h3 id="TCP介绍"><a href="#TCP介绍" class="headerlink" title="TCP介绍"></a>TCP介绍</h3><p>互联网上的计算机均使用TCP&#x2F;IP协议进行通信。而<code>TCP</code>重置是<code>TCP</code>的一种消息，用于重置连接。一般来说，例如服务器端在没有客户端请求的端口或者其它连接信息不符时，系统的TCP协议栈就会给客户端回复一个<code>RESET</code>通知消息，可见<code>RESET</code>功能本来用于应对例如服务器意外重启等情况。防火长城切断TCP连接的技术实际上就是比连接双方更快地发送连接重置消息，使连接双方认为对方终止了连接而自行关闭连接。</p>
-<h4 id="TCP重置攻击"><a href="#TCP重置攻击" class="headerlink" title="TCP重置攻击"></a>TCP重置攻击</h4><p>TCP重置攻击指的是使用伪造的TCP重置包干扰用户和网站的连接。这个技术可以在善意的防火墙中应用，但也可用于网络审查或是攻击，恶意中断TCP连接，是一种旁观者攻击。中国大陆的防火长城会自动执行TCP重置攻击，来阻断不符合中国的法律法规的网站。</p>
-<h5 id="TCP重置"><a href="#TCP重置" class="headerlink" title="TCP重置"></a>TCP重置</h5><p>在传输控制协议（TCP）连接的数据包流中，每个数据包都包含一个TCP包头。这些包头中的每一个都包含一个称为“复位”（<code>RST</code>）标志的位。在大多数数据包中，该位设置为0，并且无效；但是，如果此位设置为1，则向接收计算机指示该计算机应立即停止使用TCP连接；它不应使用连接的标识号（端口）发送更多数据包，并丢弃接收到的带有包头的其他数据包，这些包头指示它们属于该连接。TCP重置基本上会立即终止TCP连接。</p>
-<p>按照最初的设计，这是一个有用的工具。常见的应用是在进行TCP连接时计算机（计算机A）崩溃的情况。另一端的计算机（计算机B）将继续发送TCP数据包，因为它不知道计算机A已崩溃。重新启动计算机A后，它将从旧的崩溃前连接接收数据包。计算机A没有这些数据包的上下文，也无法知道如何处理这些数据包，因此它可以向计算机B发送TCP重置。此重置使计算机B知道该连接不再起作用。计算机B上的用户现在可以尝试其他连接或采取其他措施。</p>
-<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。</p>
-<h3 id="DNS污染"><a href="#DNS污染" class="headerlink" title="DNS污染"></a>DNS污染</h3><p>DNS劫持是一类旁观者攻击，攻击者借由其在网络拓扑中的<strong>特殊位置</strong>，发送比真实的DNS回应更早到达攻击目标的<strong>伪造DNS回应</strong>。</p>
-<p><strong>域名解析层级（优先级）：</strong></p>
-<p>浏览器缓存（短时）</p>
-<blockquote>
-<p><strong>流览器缓存</strong>（Browser Caching）是为了节约网络的资源加速浏览，浏览器在用户磁盘上对最近请求过的文档进行存储，当访问者再次请求这个页面时，浏览器就可以从本地磁盘显示文档，这样就可以加速页面的阅览。</p>
-</blockquote>
-<p>本地DNS缓存</p>
-<blockquote>
-<p><strong>域名系统</strong>（英文：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS使用UDP端口53。当前，对于每一级域名长度的限制是63个字符，域名总长度则不能超过253个字符。</p>
-</blockquote>
-<p>hosts文件</p>
-<blockquote>
-<p><strong>Hosts</strong>是一个没有扩展名的系统文件，可以用记事本等工具打开，其作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。<br>需要注意的是，Hosts文件配置的映射是静态的。</p>
-</blockquote>
-<p>最后到网卡配置信息里的DNS服务器以及DNS根域名服务器，通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
-<p> 一部连上了互联网的电脑一般都会使用互联网服务提供商提供的递归DNS服务器，这个服务器通常都会将部分客户曾经请求过的域名暂存起来。缓存污染攻击就是针对这一特性，影响服务器的用户或下游服务。</p>
-<p>在中国大陆，对所有经过防火长城的在<code>UDP</code>的<code>53</code>端口上的域名查询进行IDS入侵检测，一经发现与黑名单关键词相匹配的域名查询请求，会马上伪装成目标解析服务器注入伪造的查询结果。</p>
-<p>由于DNS协议的特殊规定，只相信接收到的第一个DNS，并且不去确认它的真实性。</p>
-<p>早期的GFW只是很简单的干扰我们的通讯，只要我们修改一下host文件就可以轻松绕过GFW的监控，但是后来逐渐失去了作用。</p>
-<h2 id="应对办法"><a href="#应对办法" class="headerlink" title="应对办法"></a>应对办法</h2><p>不能写……</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>没有……（懒了）</p>
-]]></content>
-      <tags>
-        <tag>网络</tag>
-        <tag>域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于浏览器音乐自动播放的问题</title>
-    <url>/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，我发现在我的edge浏览器上怎么都无法自动播放。</p>
-<p>本来以为是代码问题，就没有去研究。</p>
-<span id="more"></span>
-
-<p>但是</p>
-<p>突然之间，我的小平板开始了自动播放。</p>
-<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>先上结论，</p>
-<p>任何浏览器都可以自动播放，只是设置的问题。</p>
-<p>部分浏览器默认允许，但有一些默认禁止（比如edge，chrome）</p>
-<p>方法很简单，只要在设置——站点权限——自动播放——允许&#x2F;禁止中修改就可以了，</p>
-<p>但是也有缺点，</p>
-<p>别人的浏览器不一定是这样设置的o(╥﹏╥)o</p>
-<p>而且很多都是默认设置，这就意味着不能自动播放还是不能。</p>
-<p>而且这是权限设置，必须由人操作更改。</p>
-<p>所以理论上不可改变。</p>
-<h1 id="资料分析"><a href="#资料分析" class="headerlink" title="资料分析"></a>资料分析</h1><blockquote>
-<p>微软 Edge 92 正式版浏览器发布后，将默认禁止网页上的音频、视频自动播放。浏览器的设置中可以看到，该选项为“限制”。</p>
-<p>此外版本的 Edge 中，这一选项默认为允许。外媒表示，限制媒体自动播放，并不意味着完全阻止任何网页内容自动播放，而是根据用户使用习惯来判断。如果用户经常访问某个网站，并且允许自动播放音视频，那么浏览器将不会阻止；而对于首次访问的网站，该功能会一律禁止自动播放行为。</p>
-</blockquote>
-<blockquote>
-<p>Chrome的自动播放政策很简单：</p>
-<ul>
-<li><p>始终允许静音自动播放。</p>
-</li>
-<li><p>在以下情况下，允许自动播放声音：</p>
-</li>
-<li><ul>
-<li>用户已与域进行了交互（单击，点击等）。</li>
-<li>在桌面版chrome上，已经超过了用户的“ <a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23mei">媒体参与度索引”</a>阈值，这意味着该用户以前曾播放有声视频。</li>
-<li>用户已将<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">网站添加到</a>移动设备上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">的主屏幕</a>上，或在桌面上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/progressive-web-apps/desktop">安装了PWA</a>。</li>
-</ul>
-</li>
-<li><p>顶级框架可以<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23iframe">将自动播放权限委派</a>给其iframe，以允许自动播放声音。</p>
-</li>
-</ul>
-<p>在以chorme为内核的浏览中，设置了<strong>MEI（Media Engagement Index）列表</strong>，该列表长度为1000，用来来衡量用户是否是该网站的“忠实用户”。当MEI排名足够高时，即可自动播放。</p>
-</blockquote>
-<p>现在的浏览器内核就是这两个，可以说基本无解……	</p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>浏览器</tag>
       </tags>
   </entry>
 </search>
