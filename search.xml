@@ -173,24 +173,18 @@
   <entry>
     <title>搭建问题总结</title>
     <url>/2023/08/19/blog-buliding/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
 <span id="more"></span>
 
-<h3 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h3><p>如果追求美观，接下来是几个个性化的介绍：<br>左侧背景图&#x2F;右侧背景图&#x2F;网易云音乐&#x2F;外部推广链接&#x2F;点击效果&#x2F;动态背景线条</p>
+<h1 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h1><p>如果追求美观，接下来是几个个性化的介绍：</p>
+<p>左侧背景图&#x2F;右侧背景图&#x2F;网易云音乐&#x2F;外部推广链接&#x2F;点击效果&#x2F;动态背景线条</p>
 <p>还有比较难的评论功能和相册功能，难点都在于建立一个和外部服务器的链接，很容易链接不到</p>
 <p>相册功能主要是yillia比较难，作者没有内置相册，要去GIthub仓库克隆，还要安装python环境</p>
 <p>但是相册的图片是要存在GIthub服务器的，加载速度只有几十K每秒</p>
 <p>如果要换成网络图床的话python代码又要改（路径换了）</p>
 <p>然后评论区的难点在于链接</p>
-<img src="/2023/08/19/blog-buliding/f819b6db1cb93dfcaca34bc342a271a9.png" class>
-
-<p>有时候可以（虽然忘记给网站开发权限写入了），但是有时候不行，可能就像你现在看到的一样</p>
-<p>然后这个背景音乐也很让人迷惑</p>
-<p>你足够细心的话可以看到三个网页选项卡中有一个是查音乐自动播放的</p>
-<p>最终得出的结论是edge，Chrome不可以</p>
-<p>但美篇又可以（(⊙_⊙)?</p>
-<hr>
-<h3 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h3><p>还有几个容易错的点</p>
+<p>这个背景音乐也很让人迷惑</p>
+<h2 id="背景音乐"><a href="#背景音乐" class="headerlink" title="背景音乐"></a>背景音乐</h2><h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><p>还有几个容易错的点</p>
 <h4 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h4><p>第一个是本地调试hexo s如果多开了窗口，会报错</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">address already in use :::4000</span><br></pre></td></tr></table></figure>
 
@@ -198,14 +192,16 @@
 <p>本地调试一般就三行代码，如果多了奇怪的信息一定是哪里写错了</p>
 <p>除非是白色的代码（上传图片的本地服务）</p>
 <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>有一个代码很坑，要修改一个文件，但网上的代码少了一个&lt;&gt;，所以会报错，而且一大堆黄色红色</p>
-<p>这是因为代码间奇妙的逻辑关系，要返回去看第一个错误文件</p>
-<h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>上传有一个方法，可以把三步变成两步</p>
+<p>后来发现是评论的代码</p>
+<p>详情参阅<a href="https://windeling.github.io/2023/08/20/review/">valine评论系统搭建 | Windeling</a></p>
+<p>要返回去看第一个错误文件，因为后面的错误都是顺带引起的。</p>
+<h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>上传有一个方法，可以把三步变成两步再变成一步</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//本来是</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">//由于这是命令行语法，可以改为</span><br><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br><span class="line">//由hexo官方文档可知</span><br><span class="line">hexo g -f -d</span><br><span class="line">的作用相当于三步</span><br></pre></td></tr></table></figure>
 <p>所以可以一键部署</p>
 <p>这样就方便很多</p>
 <p>还有GIthub的普通响应是中午较快，可以多在中午提交修改</p>
 <h4 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h4><p>建好一个网站以后，发现图片加载太慢了</p>
-<p>这是因为图片如果用那种<img src="/">的方法来引用的话，图片资源是在GIthub的，所以速度很慢</p>
+<p>这是因为图片如果用普通的方法来引用的话，图片资源是在GIthub的，所以速度很慢</p>
 <p>（就算用了也一样）</p>
 <p>解决办法：使用国内的图床，用URL的形式</p>
 <h3 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h3><p>在提交的时候经常会碰到这种情况：</p>
@@ -215,7 +211,7 @@
 
 <p>这便是响应时间过长的问题</p>
 <p>因为GIthub和你的连接太慢了，你可以找一个代理，代理和GIthub连接较快，而你和代理连接也快，这就解决了这个问题</p>
-<p>如果不想找代理，那就多提交几次，但是情况不好的话很可怕（最多一次提交30次）</p>
+<p>如果不想找代理，那就多提交几次。</p>
 ]]></content>
       <tags>
         <tag>编程</tag>
@@ -233,7 +229,7 @@
 <li>评论区获取头像</li>
 </ul>
 <p>更新日志：</p>
-<p>2023.08.18 建站 v1.0.0<br>2023.08.20 美化 v1.1.0<br>2023.08.20 添加评论功能 v1.2.0<br>2023.08.21 添加单个文章浏览量 v1.2.1<br>2023.08.22 添加相册功能v2.2.1<br>2023.08.22 暂时停用相册功能<br>2023.08.25 加入Bing搜索v2.3.1<br>2023.08.25 提供邮件功能，可输入邮箱以便快捷提醒</p>
+<p>2023.08.18 建站 v1.0.0<br>2023.08.20 美化 v1.1.0<br>2023.08.20 添加评论功能 v1.2.0<br>2023.08.21 添加单个文章浏览量 v1.2.1<br>2023.08.22 添加相册功能v2.2.1<br>2023.08.22 暂时停用相册功能<br>2023.08.25 加入Bing搜索v2.3.1<br>2023.08.25 提供邮件功能，可输入邮箱以便快捷提醒 v2.3.1</p>
 <p>bug：<br>相册照片的大小无法控制，要么生成1080*1080的正方畸变图片，要么生成超大图片，目前暂停维护<br>如果强行点入可能卡死，刷新便可<br>开始维护时间：2024.1.25<br>若有想法请评论留言</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相册功能图像控制代码</span><br><span class="line">for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</span><br><span class="line">          var minSrc = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          var src = &#x27;https://www.z4a.net/images/2023/08/22/&#x27; + data.link[i];</span><br><span class="line">          </span><br><span class="line">          var type = data.type[i];</span><br><span class="line">          var target = src + (type === &#x27;video&#x27; ? &#x27;.mp4&#x27; : &#x27;.jpg&#x27;);</span><br><span class="line">          var size = data.size[i];</span><br><span class="line">          src += &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">          liTmpl += &#x27;&lt;figure class=&quot;thumb&quot; itemprop=&quot;associatedMedia&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;\</span><br><span class="line">                &lt;a href=&quot;&#x27; + src + &#x27;&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;&#x27; + size + &#x27;&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-target=&quot;&#x27; + src + &#x27;&quot;&gt;\</span><br><span class="line">                  &lt;img class=&quot;reward-img&quot; data-type=&quot;&#x27; + type + &#x27;&quot; data-src=&quot;&#x27; + minSrc + &#x27;&quot; src=&quot;/assets/img/empty.png&quot; itemprop=&quot;thumbnail&quot; onload=&quot;lzld(this)&quot;&gt;\</span><br><span class="line">                &lt;/a&gt;\</span><br><span class="line">                &lt;figcaption style=&quot;display:none&quot; itemprop=&quot;caption description&quot;&gt;&#x27; + data.text[i] + &#x27;&lt;/figcaption&gt;\</span><br><span class="line">            &lt;/figure&gt;&#x27;;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 <p>可以针对size控制提出建议<br>写的size方法似乎无效，只能变大但不受控制</p>
@@ -769,7 +765,7 @@
       </tags>
   </entry>
   <entry>
-    <title>浅析域名解析缓慢的原因</title>
+    <title>浅析网络传输缓慢的原因</title>
     <url>/2023/08/25/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%BC%93%E6%85%A2/</url>
     <content><![CDATA[<p>在日常生活中，有时候我们即使配置了很高的宽带，也会发现有些网站加载速度很慢，甚至无法打开。</p>
 <span id="more"></span>
@@ -822,14 +818,14 @@
 <li>DDoS，通过大规模的访问，使得其他用户无法访问特定资源。</li>
 </ul>
 <p>其中窃取篡改的定义是略有不同的，稍加注意。</p>
-<p>而DDoS往往不能算成一种正规的网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
+<p>而DDoS理论上不能算成一种网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
 <p>而且DDoS攻击理论上是不可避免的。</p>
 <h2 id="针对连接的攻击"><a href="#针对连接的攻击" class="headerlink" title="针对连接的攻击"></a>针对连接的攻击</h2><p>一般来说，如果针对网络性连接，除了我们提到的BGP网关协议,还有RST重置包以及DNS污染。</p>
 <h3 id="TCP介绍"><a href="#TCP介绍" class="headerlink" title="TCP介绍"></a>TCP介绍</h3><p>互联网上的计算机均使用TCP&#x2F;IP协议进行通信。而<code>TCP</code>重置是<code>TCP</code>的一种消息，用于重置连接。一般来说，例如服务器端在没有客户端请求的端口或者其它连接信息不符时，系统的TCP协议栈就会给客户端回复一个<code>RESET</code>通知消息，可见<code>RESET</code>功能本来用于应对例如服务器意外重启等情况。防火长城切断TCP连接的技术实际上就是比连接双方更快地发送连接重置消息，使连接双方认为对方终止了连接而自行关闭连接。</p>
 <h4 id="TCP重置攻击"><a href="#TCP重置攻击" class="headerlink" title="TCP重置攻击"></a>TCP重置攻击</h4><p>TCP重置攻击指的是使用伪造的TCP重置包干扰用户和网站的连接。这个技术可以在善意的防火墙中应用，但也可用于网络审查或是攻击，恶意中断TCP连接，是一种旁观者攻击。中国大陆的防火长城会自动执行TCP重置攻击，来阻断不符合中国的法律法规的网站。</p>
 <h5 id="TCP重置"><a href="#TCP重置" class="headerlink" title="TCP重置"></a>TCP重置</h5><p>在传输控制协议（TCP）连接的数据包流中，每个数据包都包含一个TCP包头。这些包头中的每一个都包含一个称为“复位”（<code>RST</code>）标志的位。在大多数数据包中，该位设置为0，并且无效；但是，如果此位设置为1，则向接收计算机指示该计算机应立即停止使用TCP连接；它不应使用连接的标识号（端口）发送更多数据包，并丢弃接收到的带有包头的其他数据包，这些包头指示它们属于该连接。TCP重置基本上会立即终止TCP连接。</p>
 <p>按照最初的设计，这是一个有用的工具。常见的应用是在进行TCP连接时计算机（计算机A）崩溃的情况。另一端的计算机（计算机B）将继续发送TCP数据包，因为它不知道计算机A已崩溃。重新启动计算机A后，它将从旧的崩溃前连接接收数据包。计算机A没有这些数据包的上下文，也无法知道如何处理这些数据包，因此它可以向计算机B发送TCP重置。此重置使计算机B知道该连接不再起作用。计算机B上的用户现在可以尝试其他连接或采取其他措施。</p>
-<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。正确格式化的伪造TCP重置可能是中断伪造者可以监视的任何TCP连接的非常有效的方法。</p>
+<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。</p>
 <h3 id="DNS污染"><a href="#DNS污染" class="headerlink" title="DNS污染"></a>DNS污染</h3><p>DNS劫持是一类旁观者攻击，攻击者借由其在网络拓扑中的<strong>特殊位置</strong>，发送比真实的DNS回应更早到达攻击目标的<strong>伪造DNS回应</strong>。</p>
 <p><strong>域名解析层级（优先级）：</strong></p>
 <p>浏览器缓存（短时）</p>
@@ -844,14 +840,10 @@
 <blockquote>
 <p><strong>Hosts</strong>是一个没有扩展名的系统文件，可以用记事本等工具打开，其作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。<br>需要注意的是，Hosts文件配置的映射是静态的。</p>
 </blockquote>
-<p>网卡配置信息里的DNS服务器以及DNS根域名服务器</p>
-<p>通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
+<p>最后到网卡配置信息里的DNS服务器以及DNS根域名服务器，通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
 <p> 一部连上了互联网的电脑一般都会使用互联网服务提供商提供的递归DNS服务器，这个服务器通常都会将部分客户曾经请求过的域名暂存起来。缓存污染攻击就是针对这一特性，影响服务器的用户或下游服务。</p>
 <p>在中国大陆，对所有经过防火长城的在<code>UDP</code>的<code>53</code>端口上的域名查询进行IDS入侵检测，一经发现与黑名单关键词相匹配的域名查询请求，会马上伪装成目标解析服务器注入伪造的查询结果。</p>
 <p>由于DNS协议的特殊规定，只相信接收到的第一个DNS，并且不去确认它的真实性。</p>
-<p>看起来DNS污染攻击没有什么用，毕竟前四个方法都是存在于我们的个人电脑上的，不会受到外部信息的干扰。</p>
-<p>吗？</p>
-<p>如果我们仔细观察一下，除了host文件以外，其他的都是缓存，而缓存是由DNS服务器解析而来的。</p>
 <p>早期的GFW只是很简单的干扰我们的通讯，只要我们修改一下host文件就可以轻松绕过GFW的监控，但是后来逐渐失去了作用。</p>
 <h2 id="应对办法"><a href="#应对办法" class="headerlink" title="应对办法"></a>应对办法</h2><p>不能写……</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>没有……（懒了）</p>
@@ -859,6 +851,53 @@
       <tags>
         <tag>网络</tag>
         <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于浏览器音乐自动播放的问题</title>
+    <url>/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，我发现在我的edge浏览器上怎么都无法自动播放。</p>
+<p>本来以为是代码问题，就没有去研究。</p>
+<span id="more"></span>
+
+<p>但是</p>
+<p>突然之间，我的小平板开始了自动播放。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>先上结论，</p>
+<p>任何浏览器都可以自动播放，只是设置的问题。</p>
+<p>部分浏览器默认允许，但有一些默认禁止（比如edge，chrome）</p>
+<p>方法很简单，只要在设置——站点权限——自动播放——允许&#x2F;禁止中修改就可以了，</p>
+<p>但是也有缺点，</p>
+<p>别人的浏览器不一定是这样设置的o(╥﹏╥)o</p>
+<p>而且很多都是默认设置，这就意味着不能自动播放还是不能。</p>
+<p>而且这是权限设置，必须由人操作更改。</p>
+<p>所以理论上不可改变。</p>
+<h1 id="资料分析"><a href="#资料分析" class="headerlink" title="资料分析"></a>资料分析</h1><blockquote>
+<p>微软 Edge 92 正式版浏览器发布后，将默认禁止网页上的音频、视频自动播放。浏览器的设置中可以看到，该选项为“限制”。</p>
+<p>此外版本的 Edge 中，这一选项默认为允许。外媒表示，限制媒体自动播放，并不意味着完全阻止任何网页内容自动播放，而是根据用户使用习惯来判断。如果用户经常访问某个网站，并且允许自动播放音视频，那么浏览器将不会阻止；而对于首次访问的网站，该功能会一律禁止自动播放行为。</p>
+</blockquote>
+<blockquote>
+<p>Chrome的自动播放政策很简单：</p>
+<ul>
+<li><p>始终允许静音自动播放。</p>
+</li>
+<li><p>在以下情况下，允许自动播放声音：</p>
+</li>
+<li><ul>
+<li>用户已与域进行了交互（单击，点击等）。</li>
+<li>在桌面版chrome上，已经超过了用户的“ <a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23mei">媒体参与度索引”</a>阈值，这意味着该用户以前曾播放有声视频。</li>
+<li>用户已将<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">网站添加到</a>移动设备上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">的主屏幕</a>上，或在桌面上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/progressive-web-apps/desktop">安装了PWA</a>。</li>
+</ul>
+</li>
+<li><p>顶级框架可以<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23iframe">将自动播放权限委派</a>给其iframe，以允许自动播放声音。</p>
+</li>
+</ul>
+<p>在以chorme为内核的浏览中，设置了<strong>MEI（Media Engagement Index）列表</strong>，该列表长度为1000，用来来衡量用户是否是该网站的“忠实用户”。当MEI排名足够高时，即可自动播放。</p>
+</blockquote>
+<p>现在的浏览器内核就是这两个，可以说基本无解……	</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>浏览器</tag>
       </tags>
   </entry>
 </search>

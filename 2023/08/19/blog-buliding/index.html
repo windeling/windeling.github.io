@@ -16,16 +16,14 @@
 <meta property="og:site_name" content="Windeling">
 <meta property="og:description" content="前言搭建这个博客有很多坑，这里总结一下用出的教程https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;102592286这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://windeling.github.io/2023/08/19/blog-buliding/f819b6db1cb93dfcaca34bc342a271a9.png">
-<meta property="og:image" content="https://windeling.github.io/">
 <meta property="og:image" content="https://windeling.github.io/2023/08/19/blog-buliding/image-20230819205819393.png">
 <meta property="article:published_time" content="2023-08-19T12:24:26.000Z">
-<meta property="article:modified_time" content="2023-08-23T02:14:06.710Z">
+<meta property="article:modified_time" content="2023-08-26T00:47:36.175Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://windeling.github.io/2023/08/19/blog-buliding/f819b6db1cb93dfcaca34bc342a271a9.png">
+<meta name="twitter:image" content="https://windeling.github.io/2023/08/19/blog-buliding/image-20230819205819393.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -77,7 +75,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 13
+			总文章数 14
 		</nav>
 		<div calss="count-span">
 			<span id="busuanzi_container_site_pv">
@@ -216,7 +214,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">884字</span>
+      <span class="post-count">805字</span>
 
     </span>
 
@@ -254,24 +252,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>搭建这个博客有很多坑，这里总结一下用出的教程<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>这是最核心的部分， 1-7章讲了搭建blog主体，如果不追求美观便可立即使用</p>
 <span id="more"></span>
 
-<h3 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h3><p>如果追求美观，接下来是几个个性化的介绍：<br>左侧背景图&#x2F;右侧背景图&#x2F;网易云音乐&#x2F;外部推广链接&#x2F;点击效果&#x2F;动态背景线条</p>
+<h1 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h1><p>如果追求美观，接下来是几个个性化的介绍：</p>
+<p>左侧背景图&#x2F;右侧背景图&#x2F;网易云音乐&#x2F;外部推广链接&#x2F;点击效果&#x2F;动态背景线条</p>
 <p>还有比较难的评论功能和相册功能，难点都在于建立一个和外部服务器的链接，很容易链接不到</p>
 <p>相册功能主要是yillia比较难，作者没有内置相册，要去GIthub仓库克隆，还要安装python环境</p>
 <p>但是相册的图片是要存在GIthub服务器的，加载速度只有几十K每秒</p>
 <p>如果要换成网络图床的话python代码又要改（路径换了）</p>
 <p>然后评论区的难点在于链接</p>
-<img src="/2023/08/19/blog-buliding/f819b6db1cb93dfcaca34bc342a271a9.png" class>
-
-<p>有时候可以（虽然忘记给网站开发权限写入了），但是有时候不行，可能就像你现在看到的一样</p>
-<p>然后这个背景音乐也很让人迷惑</p>
-<p>你足够细心的话可以看到三个网页选项卡中有一个是查音乐自动播放的</p>
-<p>最终得出的结论是edge，Chrome不可以</p>
-<p>但美篇又可以（(⊙_⊙)?</p>
-<hr>
-<h3 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h3><p>还有几个容易错的点</p>
+<p>这个背景音乐也很让人迷惑</p>
+<h2 id="背景音乐"><a href="#背景音乐" class="headerlink" title="背景音乐"></a>背景音乐</h2><h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><p>还有几个容易错的点</p>
 <h4 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h4><p>第一个是本地调试hexo s如果多开了窗口，会报错</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">address already in use :::4000</span><br></pre></td></tr></table></figure>
 
@@ -279,14 +271,16 @@
 <p>本地调试一般就三行代码，如果多了奇怪的信息一定是哪里写错了</p>
 <p>除非是白色的代码（上传图片的本地服务）</p>
 <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>有一个代码很坑，要修改一个文件，但网上的代码少了一个&lt;&gt;，所以会报错，而且一大堆黄色红色</p>
-<p>这是因为代码间奇妙的逻辑关系，要返回去看第一个错误文件</p>
-<h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>上传有一个方法，可以把三步变成两步</p>
+<p>后来发现是评论的代码</p>
+<p>详情参阅<a href="https://windeling.github.io/2023/08/20/review/">valine评论系统搭建 | Windeling</a></p>
+<p>要返回去看第一个错误文件，因为后面的错误都是顺带引起的。</p>
+<h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>上传有一个方法，可以把三步变成两步再变成一步</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//本来是</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">//由于这是命令行语法，可以改为</span><br><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br><span class="line">//由hexo官方文档可知</span><br><span class="line">hexo g -f -d</span><br><span class="line">的作用相当于三步</span><br></pre></td></tr></table></figure>
 <p>所以可以一键部署</p>
 <p>这样就方便很多</p>
 <p>还有GIthub的普通响应是中午较快，可以多在中午提交修改</p>
 <h4 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h4><p>建好一个网站以后，发现图片加载太慢了</p>
-<p>这是因为图片如果用那种<img src="/">的方法来引用的话，图片资源是在GIthub的，所以速度很慢</p>
+<p>这是因为图片如果用普通的方法来引用的话，图片资源是在GIthub的，所以速度很慢</p>
 <p>（就算用了也一样）</p>
 <p>解决办法：使用国内的图床，用URL的形式</p>
 <h3 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h3><p>在提交的时候经常会碰到这种情况：</p>
@@ -296,7 +290,7 @@
 
 <p>这便是响应时间过长的问题</p>
 <p>因为GIthub和你的连接太慢了，你可以找一个代理，代理和GIthub连接较快，而你和代理连接也快，这就解决了这个问题</p>
-<p>如果不想找代理，那就多提交几次，但是情况不好的话很可怕（最多一次提交30次）</p>
+<p>如果不想找代理，那就多提交几次。</p>
 
       
 
@@ -372,7 +366,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E6%80%A7%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text">个性化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%91"><span class="toc-number">1.2.</span> <span class="toc-text">坑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E8%B0%83%E8%AF%95"><span class="toc-number">1.2.1.</span> <span class="toc-text">本地调试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="toc-number">1.2.3.</span> <span class="toc-text">上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD"><span class="toc-number">1.2.4.</span> <span class="toc-text">加载</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF"><span class="toc-number">1.3.</span> <span class="toc-text">错误</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AA%E6%80%A7%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">个性化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90"><span class="toc-number">2.1.</span> <span class="toc-text">背景音乐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%91"><span class="toc-number">2.2.</span> <span class="toc-text">坑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E8%B0%83%E8%AF%95"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">本地调试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="toc-number">2.2.0.3.</span> <span class="toc-text">上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD"><span class="toc-number">2.2.0.4.</span> <span class="toc-text">加载</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF"><span class="toc-number">2.2.1.</span> <span class="toc-text">错误</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -590,6 +584,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">域名</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
               </li>
             
             <div class="clearfix"></div>

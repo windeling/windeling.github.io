@@ -7,17 +7,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>浅析域名解析缓慢的原因 | Windeling</title>
+  <title>浅析网络传输缓慢的原因 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在日常生活中，有时候我们即使配置了很高的宽带，也会发现有些网站加载速度很慢，甚至无法打开。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅析域名解析缓慢的原因">
+<meta property="og:title" content="浅析网络传输缓慢的原因">
 <meta property="og:url" content="https://windeling.github.io/2023/08/25/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%BC%93%E6%85%A2/index.html">
 <meta property="og:site_name" content="Windeling">
 <meta property="og:description" content="在日常生活中，有时候我们即使配置了很高的宽带，也会发现有些网站加载速度很慢，甚至无法打开。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-25T03:06:13.000Z">
-<meta property="article:modified_time" content="2023-08-25T03:52:30.919Z">
+<meta property="article:modified_time" content="2023-08-26T00:34:18.534Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="网络">
 <meta property="article:tag" content="域名">
@@ -73,7 +73,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 13
+			总文章数 14
 		</nav>
 		<div calss="count-span">
 			<span id="busuanzi_container_site_pv">
@@ -191,7 +191,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      浅析域名解析缓慢的原因
+      浅析网络传输缓慢的原因
     </h1>
   
 
@@ -212,7 +212,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">3.5k字</span>
+      <span class="post-count">3.4k字</span>
 
     </span>
 
@@ -228,7 +228,7 @@
 
       <span class="post-meta-item-text">  预计阅读时长: </span>
 
-      <span class="post-count">12分</span>
+      <span class="post-count">11分</span>
 
     </span>
     
@@ -301,14 +301,14 @@
 <li>DDoS，通过大规模的访问，使得其他用户无法访问特定资源。</li>
 </ul>
 <p>其中窃取篡改的定义是略有不同的，稍加注意。</p>
-<p>而DDoS往往不能算成一种正规的网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
+<p>而DDoS理论上不能算成一种网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
 <p>而且DDoS攻击理论上是不可避免的。</p>
 <h2 id="针对连接的攻击"><a href="#针对连接的攻击" class="headerlink" title="针对连接的攻击"></a>针对连接的攻击</h2><p>一般来说，如果针对网络性连接，除了我们提到的BGP网关协议,还有RST重置包以及DNS污染。</p>
 <h3 id="TCP介绍"><a href="#TCP介绍" class="headerlink" title="TCP介绍"></a>TCP介绍</h3><p>互联网上的计算机均使用TCP&#x2F;IP协议进行通信。而<code>TCP</code>重置是<code>TCP</code>的一种消息，用于重置连接。一般来说，例如服务器端在没有客户端请求的端口或者其它连接信息不符时，系统的TCP协议栈就会给客户端回复一个<code>RESET</code>通知消息，可见<code>RESET</code>功能本来用于应对例如服务器意外重启等情况。防火长城切断TCP连接的技术实际上就是比连接双方更快地发送连接重置消息，使连接双方认为对方终止了连接而自行关闭连接。</p>
 <h4 id="TCP重置攻击"><a href="#TCP重置攻击" class="headerlink" title="TCP重置攻击"></a>TCP重置攻击</h4><p>TCP重置攻击指的是使用伪造的TCP重置包干扰用户和网站的连接。这个技术可以在善意的防火墙中应用，但也可用于网络审查或是攻击，恶意中断TCP连接，是一种旁观者攻击。中国大陆的防火长城会自动执行TCP重置攻击，来阻断不符合中国的法律法规的网站。</p>
 <h5 id="TCP重置"><a href="#TCP重置" class="headerlink" title="TCP重置"></a>TCP重置</h5><p>在传输控制协议（TCP）连接的数据包流中，每个数据包都包含一个TCP包头。这些包头中的每一个都包含一个称为“复位”（<code>RST</code>）标志的位。在大多数数据包中，该位设置为0，并且无效；但是，如果此位设置为1，则向接收计算机指示该计算机应立即停止使用TCP连接；它不应使用连接的标识号（端口）发送更多数据包，并丢弃接收到的带有包头的其他数据包，这些包头指示它们属于该连接。TCP重置基本上会立即终止TCP连接。</p>
 <p>按照最初的设计，这是一个有用的工具。常见的应用是在进行TCP连接时计算机（计算机A）崩溃的情况。另一端的计算机（计算机B）将继续发送TCP数据包，因为它不知道计算机A已崩溃。重新启动计算机A后，它将从旧的崩溃前连接接收数据包。计算机A没有这些数据包的上下文，也无法知道如何处理这些数据包，因此它可以向计算机B发送TCP重置。此重置使计算机B知道该连接不再起作用。计算机B上的用户现在可以尝试其他连接或采取其他措施。</p>
-<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。正确格式化的伪造TCP重置可能是中断伪造者可以监视的任何TCP连接的非常有效的方法。</p>
+<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。</p>
 <h3 id="DNS污染"><a href="#DNS污染" class="headerlink" title="DNS污染"></a>DNS污染</h3><p>DNS劫持是一类旁观者攻击，攻击者借由其在网络拓扑中的<strong>特殊位置</strong>，发送比真实的DNS回应更早到达攻击目标的<strong>伪造DNS回应</strong>。</p>
 <p><strong>域名解析层级（优先级）：</strong></p>
 <p>浏览器缓存（短时）</p>
@@ -323,14 +323,10 @@
 <blockquote>
 <p><strong>Hosts</strong>是一个没有扩展名的系统文件，可以用记事本等工具打开，其作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。<br>需要注意的是，Hosts文件配置的映射是静态的。</p>
 </blockquote>
-<p>网卡配置信息里的DNS服务器以及DNS根域名服务器</p>
-<p>通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
+<p>最后到网卡配置信息里的DNS服务器以及DNS根域名服务器，通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
 <p> 一部连上了互联网的电脑一般都会使用互联网服务提供商提供的递归DNS服务器，这个服务器通常都会将部分客户曾经请求过的域名暂存起来。缓存污染攻击就是针对这一特性，影响服务器的用户或下游服务。</p>
 <p>在中国大陆，对所有经过防火长城的在<code>UDP</code>的<code>53</code>端口上的域名查询进行IDS入侵检测，一经发现与黑名单关键词相匹配的域名查询请求，会马上伪装成目标解析服务器注入伪造的查询结果。</p>
 <p>由于DNS协议的特殊规定，只相信接收到的第一个DNS，并且不去确认它的真实性。</p>
-<p>看起来DNS污染攻击没有什么用，毕竟前四个方法都是存在于我们的个人电脑上的，不会受到外部信息的干扰。</p>
-<p>吗？</p>
-<p>如果我们仔细观察一下，除了host文件以外，其他的都是缓存，而缓存是由DNS服务器解析而来的。</p>
 <p>早期的GFW只是很简单的干扰我们的通讯，只要我们修改一下host文件就可以轻松绕过GFW的监控，但是后来逐渐失去了作用。</p>
 <h2 id="应对办法"><a href="#应对办法" class="headerlink" title="应对办法"></a>应对办法</h2><p>不能写……</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>没有……（懒了）</p>
@@ -371,11 +367,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2023/09/10/teacher/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          教师节
+          关于浏览器音乐自动播放的问题
         
       </div>
     </a>
@@ -627,6 +623,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">域名</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
               </li>
             
             <div class="clearfix"></div>
