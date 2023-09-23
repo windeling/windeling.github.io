@@ -1,15 +1,455 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>浅析USB接口</title>
-    <url>/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/</url>
+    <title>Hello World</title>
+    <url>/2023/08/17/hello-world/</url>
+    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>永远的2121</title>
+    <url>/2023/09/02/my2121/</url>
+    <content><![CDATA[<h1 id="「愿时光永驻此刻，愿明日终将重逢」"><a href="#「愿时光永驻此刻，愿明日终将重逢」" class="headerlink" title="「愿时光永驻此刻，愿明日终将重逢」"></a>「愿时光永驻此刻，愿明日终将重逢」</h1><p><img src="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg" alt="永远的2121"></p>
+<p>00-曾倩</p>
+<span id="more"></span>
+
+<p>01-李慧婧</p>
+<p>02-蒙军羽</p>
+<p>03-梁键</p>
+<p>04-陈怡佐</p>
+<p>05-何子达</p>
+<p>06-杨星月</p>
+<p>07-符雪儿</p>
+<p>08-黄科豪</p>
+<p>09-林耀宗</p>
+<p>10-谢    扬</p>
+<p>11-王    榕</p>
+<p>12-黄靖茹</p>
+<p>13-刘涛赫</p>
+<p>14-丁仁斌</p>
+<p>15-黄文林</p>
+<p>16-陈禹州</p>
+<p>17-胡义航</p>
+<p>18-吴志军</p>
+<p>19-张华曦</p>
+<p>20-梁姃</p>
+<p>21-</p>
+<p>22-</p>
+<p>23-</p>
+<p>24-</p>
+<p>25-陈翰贤</p>
+<p>26-滕熙雯</p>
+<p>27-</p>
+<p>28-</p>
+<p>29-</p>
+<p>30-</p>
+<p>31-</p>
+<p>32-</p>
+<p>33-谢春霖</p>
+<p>34-</p>
+<p>35-龙彦霏</p>
+<p>36-张士钊</p>
+<p>37-</p>
+<p>38-许家州</p>
+<p>39-林香伶</p>
+<p>40-</p>
+<p>41-</p>
+<p>42-翁展</p>
+<p>43-</p>
+<p>44-吕思良</p>
+<p>45-刘穗凤</p>
+<p>46-</p>
+<p>47-巫奕阳</p>
+<p>48-</p>
+<p>49-</p>
+<p>50-</p>
+<p>51-</p>
+<p>52-</p>
+<p>53-李冠霖</p>
+<p>54-晏晓晨</p>
+<p>55-邓文钦</p>
+<p>56-多多</p>
+<p>……</p>
+<p>空着的评论补充吧……</p>
+<p>可能有点慢……</p>
+]]></content>
+      <tags>
+        <tag>2121</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教师节</title>
+    <url>/2023/09/10/teacher/</url>
+    <content><![CDATA[<p>今天是2023年9月10日，是所有老师的节日——教师节。</p>
+<p><strong>感谢<code>曾倩老师</code> <code>龙光森老师</code> <code>韦佳利老师</code> <code>黄佩玲老师</code> <code>李洁老师</code>  <code>林生业老师</code> <code>黄海老师</code> <code>劳永进老师</code> <code>罗满琼老师</code> <code>钟洁老师</code> <code>周静轩老师</code> <code>江英球老师</code> <code>颜良霞老师</code> <code>白振兴老师</code>  <code>庞惠文老师</code> <code>梁超源老师</code> <code>叶子斌老师</code></strong> </p>
+<p>三年来的教育，每一堂课都是一份收获。</p>
+<p><strong>还要感谢<code>刘靖华老师</code> <code>莫冰老师</code> <code>卜肖宁老师</code> <code>吴壮盛老师</code> <code>莫贻秋老师</code></strong></p>
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> quote</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">obtain_coordinate</span>(<span class="params">target_word</span>):  </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取汉字的坐标</span></span><br><span class="line"><span class="string">    :param target_word:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url = <span class="string">&quot;https://bihua.bmcx.com/web_system/bmcx_com_www/system/file/bihua/get_0/&quot;</span></span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&#x27;font&#x27;</span>: quote(target_word).replace(<span class="string">&quot;%&quot;</span>, <span class="string">&quot;&quot;</span>).lower(),</span><br><span class="line">        <span class="string">&#x27;shi_fou_zi_dong&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;cache_sjs1&#x27;</span>: <span class="string">&#x27;20031914&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.get(url, params=params)</span><br><span class="line">    content = response.text</span><br><span class="line">    content = content.replace(<span class="string">&#x27;hzbh.main(&#x27;</span>, <span class="string">&#x27;&#x27;</span>).split(<span class="string">&#x27;);document.getElementById&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    content = content.split(<span class="string">&#x27;&#123;&#x27;</span>)[-<span class="number">1</span>].split(<span class="string">&quot;&#125;&quot;</span>)[<span class="number">0</span>]</span><br><span class="line">    pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\w:\[(.+?)\]&#x27;</span>)</span><br><span class="line">    result = re.split(pattern, content)</span><br><span class="line">    order_xy_routine = []</span><br><span class="line">    words_cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> result:</span><br><span class="line">        sec = re.findall(<span class="string">r&#x27;\&#x27;.+?\&#x27;&#x27;</span>, r)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sec):</span><br><span class="line">            orders = sec[<span class="number">1</span>].split(<span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            <span class="keyword">for</span> order <span class="keyword">in</span> orders:</span><br><span class="line">                order_str = re.findall(<span class="string">r&#x27;\(\d+,\d+\)&#x27;</span>, order)</span><br><span class="line">                order_xy = [<span class="built_in">eval</span>(xy) <span class="keyword">for</span> xy <span class="keyword">in</span> order_str]</span><br><span class="line">                order_xy_routine.append(order_xy)</span><br><span class="line">            words_cnt += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(order_xy_routine)</span><br><span class="line">    <span class="keyword">return</span> order_xy_routine</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_words</span>(<span class="params">target_words, startx, starty, lineNum=<span class="number">1</span></span>):  <span class="comment"># 画汉字</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    画汉字</span></span><br><span class="line"><span class="string">    :param target_words:</span></span><br><span class="line"><span class="string">    :param startx:</span></span><br><span class="line"><span class="string">    :param starty:</span></span><br><span class="line"><span class="string">    :param lineNum:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    turtle.color(<span class="string">&quot;black&quot;</span>, <span class="string">&quot;black&quot;</span>)  </span><br><span class="line">    turtle.pu()  </span><br><span class="line">    coordinates = obtain_coordinate(target_words)</span><br><span class="line">    <span class="keyword">for</span> index, coordinate <span class="keyword">in</span> <span class="built_in">enumerate</span>(coordinates):</span><br><span class="line">        turtle.goto((startx + coordinate[<span class="number">0</span>][<span class="number">0</span>])/<span class="number">2</span>, -(starty + coordinate[<span class="number">0</span>][<span class="number">1</span>])/<span class="number">2</span>)</span><br><span class="line">        turtle.pd()</span><br><span class="line">        <span class="keyword">for</span> xy <span class="keyword">in</span> coordinate:</span><br><span class="line">            x,y=xy</span><br><span class="line">            turtle.goto((startx+x)/<span class="number">2</span>, -(starty+y)/<span class="number">2</span>)</span><br><span class="line">        turtle.pu()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    turtle.screensize(<span class="number">2400</span>,<span class="number">1300</span>)</span><br><span class="line">    <span class="comment">#画汉字</span></span><br><span class="line">    word = <span class="string">&quot;教师节快乐&quot;</span></span><br><span class="line">    draw_words(word[<span class="number">0</span>], -<span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">1</span>], -<span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">3</span>], <span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">4</span>], <span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    turtle.done()</span><br></pre></td></tr></table></figure>
+
+<p>谨用这些代码，来表达我的感激之情</p>
+<img src="/2023/09/10/teacher/1.gif" class>
+
+<p>祝老师们</p>
+<img src="/2023/09/10/teacher/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
+
+
+
+<p>​																																								黄文林</p>
+<p>​																																				          2023年9月10日</p>
+]]></content>
+      <tags>
+        <tag>教师节</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于valine评论无法提交的问题原因分析和解决方案</title>
+    <url>/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>起因：有人想买个U盘。</p>
+<p>然后他便写了一篇文章。</p>
+<p>接着评论无法提交</p>
+<span id="more"></span>
+
+<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
+<p>结果发现</p>
+<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
+
+<p>这就有意思了，评论无法提交。</p>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
+<p>发现他没有定义一个实例。</p>
+<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>
+<p>类相当于一张汽车的「制造图纸」，你可以通过这个「图纸」来制造出许许多多汽车，甚至可以改变「图纸」，造出不同样式的汽车。</p>
+<p>但是如果只有图纸，没有创建出一个真正的汽车实例，我们是永远都无法进行「开车」这个操作的。</p>
+<p>可以说有了类就有了对象，就有了对对象的操作。</p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>办法也很简单，创建一个实例。</p>
+<p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
+<p>可以参考这篇文章进行实例搭建。</p>
+<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
+<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
+
+
+
+<p>这里最重要的一点是云函数的问题。</p>
+<p>通常发生在国际服的比较多，华北和华东服务器尚未出现过此类问题。</p>
+<p>可以看到部署在华东服务器上面的实例有三个云函数，其中两个是我自己添加的。</p>
+<p>但是最重要的comment函数是程序写的。</p>
+<p>这个函数负责的评论的存储与管理，非常重要。</p>
+<p>如果选择国际服，就有可能无法加载出这个函数。</p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>此 bug 是由于 LeanCloud 国际版更换 API Url 导致的，原来的 <code>us.leancloud.cn</code> 和 <code>us-api.leancloud.cn</code> 已经停用，换为了 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
+<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote>
+<p>① 在 <code>Valine.min.js</code> 中更换 LeanCloud 对象存储 SDK 为 最新的 <code>4.12.0</code> 版本。</p>
+<p><code>leancloud-storage@3/</code> –&gt; <code>leancloud-storage@4.12.0/</code>，查找替换即可。</p>
+<p>如果你使用 CDN，可以 Fork 一份 Valine 的 GitHub 仓库，然后自行更改并使用 jsdelivr CDN 。</p>
+<p>我已经改好了一份：<a href="https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js">https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js</a> ，如有需要可以自取。</p>
+<p>② 在引用 Valine 的 js 或 YAML 中设置 <code>serverURLs</code> 字段为 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
+<p>比如 <code>serverURLs: &#39;https://xxxxxxxx.api.lncldglobal.com&#39;</code></p>
+</blockquote>
+<p>这个是网上流传的解决办法，但是我们实际中找不到对应的文件。</p>
+<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的可以尝试一下。</p>
+<hr>
+<p>比较简单的方法就是选择华北和华东服务器，因为服务器处在国内，比较稳定。</p>
+<p>但是使用这两个服务器要遵守《中华人民共和国网络安全法》，需要进行实名备案注册。</p>
+<p>而且备案注册必须使用支付宝的刷脸进行认证，优点就是成功率非常高，能够解决大部分问题。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>在搭建个人博客的时候，服务器能采用国内的服务器，就尽量使用国内的服务器。</p>
+<p>因为网络长城的存在及国际政治不稳定因素，很容易造成连接中断或连接被污染迟缓等等问题。</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>valine</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于浏览器音乐自动播放的问题</title>
+    <url>/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9F%B3%E4%B9%90%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，发现在edge浏览器上无法自动播放。</p>
+<p>本来以为是代码问题，就没有去研究。</p>
+<p>但是经过使用后发现，在一些平板上是可以自动播放的。</p>
+<span id="more"></span>
+
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>经过一系列研究以后，发现任何浏览器都可以自动播放，只是设置的问题。</p>
+<p>部分浏览器默认允许，但有一些默认禁止（比如edge，chrome）</p>
+<p>用户端的修改方法很简单，只要在设置——站点权限——自动播放——允许&#x2F;禁止中修改就可以了，</p>
+<p>但是也有明显的缺点，不可能让每一个用户都这么设置。</p>
+<p>而且很多浏览器都是默认设置禁止，这就意味着自动播放仍然会失效。</p>
+<p>而且这是权限设置，必须由用户操作更改。</p>
+<p><strong>所以理论上不可修复这一问题。</strong></p>
+<h1 id="资料分析"><a href="#资料分析" class="headerlink" title="资料分析"></a>资料分析</h1><blockquote>
+<p>微软 Edge 92 正式版浏览器发布后，将默认禁止网页上的音频、视频自动播放。浏览器的设置中可以看到，该选项为“限制”。</p>
+<p>此外版本的 Edge 中，这一选项默认为允许。外媒表示，限制媒体自动播放，并不意味着完全阻止任何网页内容自动播放，而是根据用户使用习惯来判断。如果用户经常访问某个网站，并且允许自动播放音视频，那么浏览器将不会阻止；而对于首次访问的网站，该功能会一律禁止自动播放行为。</p>
+</blockquote>
+<blockquote>
+<p>Chrome的自动播放政策很简单：</p>
+<ul>
+<li><p>始终允许静音自动播放。</p>
+</li>
+<li><p>在以下情况下，允许自动播放声音：</p>
+</li>
+<li><ul>
+<li>用户已与域进行了交互（单击，点击等）。</li>
+<li>在桌面版chrome上，已经超过了用户的“ <a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23mei">媒体参与度索引”</a>阈值，这意味着该用户以前曾播放有声视频。</li>
+<li>用户已将<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">网站添加到</a>移动设备上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">的主屏幕</a>上，或在桌面上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/progressive-web-apps/desktop">安装了PWA</a>。</li>
+</ul>
+</li>
+<li><p>顶级框架可以<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23iframe">将自动播放权限委派</a>给其iframe，以允许自动播放声音。</p>
+</li>
+</ul>
+<p>在以chorme为内核的浏览中，设置了<strong>MEI（Media Engagement Index）列表</strong>，该列表长度为1000，用来来衡量用户是否是该网站的“忠实用户”。当MEI排名足够高时，即可自动播放。</p>
+</blockquote>
+<p>现在的浏览器内核就是这两个，可以说在目前的情况下这个问题基本无法解决。</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>valine评论系统搭建</title>
+    <url>/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样。</p>
+<p>在搭建这个评论系统的时候，还是踩了很多坑的，在这里总结一下。</p>
+<span id="more"></span>
+
+<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><h3 id="第一个坑"><a href="#第一个坑" class="headerlink" title="第一个坑"></a>第一个坑</h3><img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820210712161.png" class title="知乎">
+
+<p>这个是代码模版，如果直接复制到文件尾部的话会导致报错，原因是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SyntaxError: Unexpected token &#x27;catch&#x27; in D:\Blog\themes\yilia\layout\_partial\ar</span><br><span class="line">ticle.ejs while compiling ejs</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>我们去查看一下错误代码对照表（或者翻译）</p>
+<p>得到<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820210905747.png" class title="image-20230820210905747"></p>
+<p>但问题的难点在于这个代码也是正确的，所以我猜想不能插到尾部，但是这是最保险的办法。</p>
+<p>所以我们使用编程中的大招：<strong>尾部添加法</strong></p>
+<p>在尾部添加一个Java的结束符。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>就可以解决问题</p>
+<h3 id="第二个坑"><a href="#第二个坑" class="headerlink" title="第二个坑"></a>第二个坑</h3><p>接下来到最难的：Leancloud</p>
+<hr>
+<p>因为： <em><strong>Leancloud改版了！</strong></em></p>
+<p>应用API的部分还算正常，但是到了部署和配置的问题就大了</p>
+<p><img src="https://pic4.zhimg.com/v2-e509dd41ee51cd2ece15611f122cb067_r.jpg" alt="img"></p>
+<p>上图是文章里面的介绍模版。</p>
+<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820211805232.png" class title="image-20230820211805232">
+
+<p>这个是现在（2023.08.21）的UI设计界面</p>
+<p>有些教程会建立应用，然后就会发现：</p>
+<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820211908475.png" class title="image-20230820211908475">
+
+<p><strong>这一点也不一样啊</strong></p>
+<p>而且云引擎的部分全部重新设计</p>
+<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212007204.png" class title="image-20230820212007204">
+
+<p>原来的云引擎里面直接有设置</p>
+<p>但是现在就剩一个「部署」和一个DB</p>
+<p>根据以前的经验，我们肯定去部署瞧一瞧</p>
+<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/58f1186b7803163c3a0c28f9d097f330.jpg" class title="58f1186b7803163c3a0c28f9d097f330">
+
+<p>这时候就要创建一个分组</p>
+<p>然后要新建一个「类」</p>
+<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212437483.png" class title="image-20230820212437483">
+
+<p>有了这个类后就好办多了</p>
+<p>就有了一个实例</p>
+<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212509478.png" class title="image-20230820212509478">
+
+<p>UI设计到这里了</p>
+<p>后面就是紧跟教程了</p>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212613221.png" class title="image-20230820212613221">
+
+<p>原始样子就是这样，也可以在「自定义环境变量」里修改主题</p>
+<hr>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>valine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于yilia背景图片畸变问题及恒定显示解决方案</title>
+    <url>/2023/08/26/%E5%85%B3%E4%BA%8Eyilia%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%95%B8%E5%8F%98%E9%97%AE%E9%A2%98%E5%8F%8A%E6%81%92%E5%AE%9A%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>今天花了6个小时，只解决了一个小bugo(╥﹏╥)o</p>
+<p>惨痛的故事告诉我们：</p>
+<span id="more"></span>
+
+<h1 id="升级前一定要备份！！"><a href="#升级前一定要备份！！" class="headerlink" title="升级前一定要备份！！"></a>升级前一定要备份！！</h1><p>不然就会不断的报错，而且根本找不到问题的原因。</p>
+<p>最后还是<a href="boredliam.github.io">林耀宗</a>给我一份备份，并帮助我修好了bug。</p>
+<p>在此十分感谢！！</p>
+<h1 id="Bug"><a href="#Bug" class="headerlink" title="Bug"></a>Bug</h1><p>这个bug在版本2.4.2之前一直没有成功解决，上了CSDN和知乎去询问，都没有得到满意的结果。</p>
+<p>最后，我们决定自己研发出路。</p>
+<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>以前也是尝试过使用关于yilia背景图片畸变问题及恒定显示解决方案。如果文字区域较小，是能够正常显示的。效果和现在的表现一样。</p>
+<p>但是随着文章的增多，以及区域的拉长，图片开始越来越畸变。</p>
+<img src="/2023/08/26/%E5%85%B3%E4%BA%8Eyilia%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%95%B8%E5%8F%98%E9%97%AE%E9%A2%98%E5%8F%8A%E6%81%92%E5%AE%9A%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/803140378296148.png" class width="803140378296148">
+
+<p>可以明显的看到图片已经向左移动了。</p>
+<p>这个问题在电脑端没有影响很严重。毕竟如果这么看着的话也挺好看的。</p>
+<p>但是我们住图片右上角有一块青色。如果在手机端浏览的话，就会导致青色成为主颜色。会使灰色的文字很难辨认。</p>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>进行复位后，我们决定从CSS入手</p>
+<p>网上有的教程是改变body的元素，我们测试后发现没有效果。</p>
+<p>目前实测成功的代码如下：</p>
+<img src="/2023/08/26/%E5%85%B3%E4%BA%8Eyilia%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%95%B8%E5%8F%98%E9%97%AE%E9%A2%98%E5%8F%8A%E6%81%92%E5%AE%9A%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/ebac4a6352313d3f8b7b38d7877549ec.png" class title="ebac4a6352313d3f8b7b38d7877549ec">
+
+<p>URL替换成你想要的图片，这样就可以固定住图片了，而不是图片随着文章长度拉伸。</p>
+<blockquote>
+<p>本文很多技术指导来源于<a href="boredliam.github.io">林耀宗</a>，非常感谢他的指导</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>yilia</tag>
+        <tag>背景</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于bad config line 1 in file的关于bad config line 1 in file的紧急bug维修及处理方案及处理方案</title>
+    <url>/2023/08/23/%E5%85%B3%E4%BA%8Ebad%20config%20line%201%20in%20file%E7%9A%84%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
+<p>所有命令均提示异常</p>
+<p><code>hexo d</code>直接报错</p>
+<p>找了很久，发现一个不起眼的地方</p>
+<span id="more"></span>
+
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>当时心很忙，就没有截图</p>
+<p>但是报错信息是这样的</p>
+<p><code>fatal: bad config line 1 in file </code></p>
+<img src="/2023/08/23/%E5%85%B3%E4%BA%8Ebad%20config%20line%201%20in%20file%E7%9A%84%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
+
+<p>这个是插件安装错误，插件是dplayer播放器</p>
+<p>解决办法：使用npm卸载</p>
+<p><code>npm uninstall 模块 --save</code></p>
+<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
+<h1 id="C盘问题"><a href="#C盘问题" class="headerlink" title="C盘问题"></a>C盘问题</h1><p>这个情况比较特殊，没有给出路径</p>
+<p>所以这些对于这个问题无用</p>
+<p><a href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
+<p>需要更改C盘的教程，报错信息路径后面一定会有一个路径指向C盘</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>同样的，这个方法也可以解决hexo d时一堆warning LF的弹出显示。</p>
+<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
+<p>然后在<code>git bash</code>中输入这一行代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
+
+<p>就解决了这个问题。</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于手表ADB调试的应用分析与教程</title>
+    <url>/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>今天发现OPPO的手表能够打开开发者选项并进入USB调试。</p>
+<p>因此就有可能通过ADB命令行使手表可以下载自己想要的应用。</p>
+<p>那么就以OPPO Watch 3为例，进行应用调试的分析。</p>
+<span id="more"></span>
+
+<h1 id="开发者模式"><a href="#开发者模式" class="headerlink" title="开发者模式"></a>开发者模式</h1><p>众所周知，ADB调试功能是给程序开发者使用一种功能，其目的在于可以通过更高端的电子设备来对这种智能设备进行并且代码与调试。</p>
+<p>所以我们想要使用ADB调试功能，就必须要在手表端打开调试界面并允许调试。</p>
+<p>但是智能穿戴设备能否打开这是支持的功能型号。下面列出部分系列的支持功能。</p>
+<h2 id="支持的系列"><a href="#支持的系列" class="headerlink" title="支持的系列"></a>支持的系列</h2><p>目前已知支持的系列有OPPO手表全系，以及部分小米手环，还有ticwatch的手表系列，华为的watch系列。</p>
+<p><a href="https://help.wearosbox.com/connect/devices.html">手表列表 | WearOS 工具箱 (wearosbox.com)</a></p>
+<h2 id="不支持的手表"><a href="#不支持的手表" class="headerlink" title="不支持的手表"></a>不支持的手表</h2><p>有很多手表使用了 RTOS 或者轻量级私有化系统，而不是Android。因此我们无法连接到这些手表。以下是一些常见的不支持的手表：</p>
+<ul>
+<li>华为 Watch GT 以及各类产品。<br>仅 HUAWEI Watch 系列手表支持。</li>
+<li>三星 Gear &#x2F; Active 系列。<br>三星 Gear S3 可能可以通过刷入 Wear OS 固件来支持。但由于用户较少，并且需要刷入第三方固件，因此不推荐这样做。</li>
+<li>除小米手表 1 之外的所有小米生产线设备以及上述华米设备。其余如 Color, 小米手表 S1, 华米, Redmi, Amazfit 等品牌均不支持。</li>
+</ul>
+<h1 id="ADB调试"><a href="#ADB调试" class="headerlink" title="ADB调试"></a>ADB调试</h1><p>工欲善其事，必先利其器，在开始操作之前，先简单了解一下关于adb调试的理论原理及应用基础。</p>
+<blockquote>
+<h1 id="Android-调试桥-adb"><a href="#Android-调试桥-adb" class="headerlink" title="Android 调试桥 (adb)"></a>Android 调试桥 (adb)</h1><p>Android 调试桥 (<code>adb</code>) 是一种功能多样的命令行工具，可让您与设备进行通信。<code>adb</code> 命令可用于执行各种设备操作，例如安装和调试应用。<code>adb</code> 提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。它是一种客户端-服务器程序，包括以下三个组件：</p>
+<ul>
+<li><strong>客户端</strong>：用于发送命令。客户端在开发机器上运行。您可以通过发出 <code>adb</code> 命令从命令行终端调用客户端。</li>
+<li>**守护程序 (adbd)**：用于在设备上运行命令。守护程序在每个设备上作为后台进程运行。</li>
+<li><strong>服务器</strong>：用于管理客户端与守护程序之间的通信。服务器在开发机器上作为后台进程运行。</li>
+</ul>
+</blockquote>
+<p>这是安卓官方对于ADB的解释与说明。</p>
+<blockquote>
+<h2 id="adb-的工作原理"><a href="#adb-的工作原理" class="headerlink" title="adb 的工作原理"></a>adb 的工作原理</h2><p>当您启动某个 <code>adb</code> 客户端时，该客户端会先检查是否有 <code>adb</code> 服务器进程已在运行。如果没有，它会启动服务器进程。服务器在启动后会与本地 TCP 端口 5037 绑定，并监听 <code>adb</code> 客户端发出的命令。</p>
+<p><strong>注意</strong>：所有 <code>adb</code> 客户端均使用端口 5037 与 <code>adb</code> 服务器通信。</p>
+<p>然后，服务器会与所有正在运行的设备建立连接。它通过扫描 5555 到 5585 之间（该范围供前 16 个模拟器使用）的奇数号端口查找模拟器。服务器一旦发现 <code>adb</code> 守护程序 (adbd)，便会与相应的端口建立连接。</p>
+</blockquote>
+<blockquote>
+<h2 id="在设备上启用-adb-调试"><a href="#在设备上启用-adb-调试" class="headerlink" title="在设备上启用 adb 调试"></a>在设备上启用 adb 调试</h2><p>如要在通过 USB 连接的设备上使用 adb，您必须在设备的系统设置中启用 <strong>USB 调试</strong>（位于<strong>开发者选项</strong>下）。在 Android 4.2（API 级别 17）及更高版本中，<strong>开发者选项</strong>屏幕默认处于隐藏状态。如需将其显示出来，请<a href="https://developer.android.google.cn/studio/debug/dev-options?hl=zh-cn#enable">启用开发者选项</a>。</p>
+<p>现在，您已经可以通过 USB 连接设备了。您可以通过从 <code>android_sdk/platform-tools/</code> 目录执行 <code>adb devices</code> 来验证设备是否已连接。如果已连接，您将看到设备名称以“设备”形式列出。</p>
+<p><strong>注意</strong>：当您连接搭载 Android 4.2.2（API 级别 17）或更高版本的设备时，系统会显示一个对话框，询问您是否接受允许通过此计算机进行调试的 RSA 密钥。这种安全机制可以保护用户设备，因为它可以确保用户只有在能够解锁设备并确认对话框的情况下才能执行 USB 调试和其他 adb 命令。</p>
+</blockquote>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>调试手表必然要一套完整的工具，因此早有人开发出来了WearOS的工具箱，摆脱了繁琐的命令的苦恼。</p>
+<p><a href="https://wearosbox.com/">WearOS工具箱 专为智能手表打造的工具箱 (wearosbox.com)</a></p>
+<p>将此工具箱内的软件下载到电脑或手机上，然后再进行调试。</p>
+<p><a href="https://help.wearosbox.com/">帮助中心 | WearOS 工具箱 (wearosbox.com)</a></p>
+<h2 id="如何打开开发者选项"><a href="#如何打开开发者选项" class="headerlink" title="如何打开开发者选项"></a>如何打开开发者选项</h2><h3 id="Wear-OS"><a href="#Wear-OS" class="headerlink" title="Wear OS"></a>Wear OS</h3><ul>
+<li><a href="https://help.wearosbox.com/connect/developer/wearos2.html">Wear OS 2.0 及更早版本</a></li>
+<li><a href="https://help.wearosbox.com/connect/developer/wearos.html">Wear OS 3+</a></li>
+<li>三星手表: <a href="https://help.wearosbox.com/connect/device/samsung.html">打开开发者选项和 ADB 调试</a></li>
+</ul>
+<h3 id="OPPO-手表"><a href="#OPPO-手表" class="headerlink" title="OPPO 手表"></a>OPPO 手表</h3><ol>
+<li>进入设置-其他设置-关于手表，连续点击版本号数次，启用手表的开发者选项。</li>
+<li>进入设置-其他设置-开发者选项，打开 USB 调试。</li>
+</ol>
+<h3 id="AOSP"><a href="#AOSP" class="headerlink" title="AOSP"></a>AOSP</h3><ol>
+<li>进入设置-关于手表，连续点击版本号数次，启用手表的开发者选项。</li>
+<li>进入设置-开发者选项，打开 USB 调试。</li>
+</ol>
+<p>打开开发选项以后，就可以选择调试方式。</p>
+<h2 id="调试方式"><a href="#调试方式" class="headerlink" title="调试方式"></a>调试方式</h2><p>一般推荐使用数据线调试，其具有稳定，安全可靠的特点，并且大多数手表都支持此调试功能。</p>
+<p>一些特殊的蓝牙手表能使用蓝牙调试，详情请参阅官方文档。</p>
+<p><a href="https://help.wearosbox.com/connect/method/bluetooth.html">蓝牙调试 | WearOS 工具箱 (wearosbox.com)</a></p>
+<h3 id="手机调试"><a href="#手机调试" class="headerlink" title="手机调试"></a>手机调试</h3><p><a href="https://help.wearosbox.com/connect/method/webadb/webadb.html">使用数据线在手机上激活 | WearOS 工具箱 (wearosbox.com)</a></p>
+<p>手机调试较为繁琐，且需要购买额外部件，因此请参阅官方文档。</p>
+<h3 id="PC调试"><a href="#PC调试" class="headerlink" title="PC调试"></a>PC调试</h3><p>如果是 Android 手表，在打开 ADB 调试后，还不能直接使用 WearOS 工具箱来连接。可以使用以下 ADB 命令启动网络调试。</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>Windows 需要安装驱动。</p>
+<p>连接上设备，在电脑上访问如下网页，下载驱动：</p>
+<p><a href="https://wearosbox.com/d.exe">https://wearosbox.com/d.exeopen in new window</a></p>
+<p>然后，单击 INSTALL 安装。</p>
+<p>Windows 正版用户，在插入手表后，可以直接前往系统设置下载可选驱动，以快速安装。</p>
+<p><img src="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png" alt="img"></p>
+<p>您也可以选择 <a href="https://web.vip.miui.com/page/info/mio/mio/detail?postId=18464849">教程图文详解小米手机驱动安装open in new window</a> 方式或者<br>安装 <a href="https://developer.samsung.com/mobile/android-usb-driver.html">Samsung Android USB 驱动open in new window</a>。实际上以上驱动没有较大差别。</p>
+<p>完成后，请查看设备管理器中的 ADB 设备是否已经被准确识别：</p>
+<p><img src="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png" alt="img"></p>
+<h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><p>本来以为这里是写的最多的，没想到现在已经有了成熟的GUI界面软件。</p>
+<p>那就没什么好说的了，按照操作去点击即可。</p>
+]]></content>
+      <tags>
+        <tag>Android</tag>
+        <tag>ADB</tag>
+        <tag>手表调试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摄影作品-中越友谊公园&amp;东兴口岸</title>
+    <url>/2023/08/18/%E6%91%84%E5%BD%B1%E4%BD%9C%E5%93%81-%E4%B8%AD%E8%B6%8A%E5%8F%8B%E8%B0%8A%E5%85%AC%E5%9B%AD&amp;%E4%B8%9C%E5%85%B4%E5%8F%A3%E5%B2%B8/</url>
+    <content><![CDATA[<p>摄影作品<br>中越友谊公园&amp;口岸</p>
+<span id="more"></span>
+<p><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_7.jpg" alt="2023-08-21_7.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_8.jpg" alt="2023-08-21_8.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_6.jpg" alt="2023-08-21_6.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_9.jpg" alt="2023-08-21_9.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_2.jpg" alt="2023-08-21_2.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_4.jpg" alt="2023-08-21_4.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_5.jpg" alt="2023-08-21_5.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_3.jpg" alt="2023-08-21_3.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_1.jpg" alt="2023-08-21_1.jpg"></p>
+]]></content>
+      <tags>
+        <tag>摄影</tag>
+        <tag>Nikon D90</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅析USB系列接口</title>
+    <url>/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<p>「接口」一词，伴随着电子设备的产生出现在人们的视野。</p>
 <p>然而如今多种多样复杂的接口也让我们烦不胜烦，今天就用一篇文章来详细介绍一下USB接口的规范。</p>
 <span id="more"></span>
 
 <h1 id="分清接口和协议"><a href="#分清接口和协议" class="headerlink" title="分清接口和协议"></a>分清接口和协议</h1><p>在正文开始之前，我们需要分清USB接口和USB协议。</p>
 <p>因为不同的接口可以使用相同的协议，不分清接口和协议的话，容易造成思维的误导和混乱。</p>
-<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/956a5b62c94ebcf94ca96bde388b4db2.png" class title="956a5b62c94ebcf94ca96bde388b4db2">
+<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/956a5b62c94ebcf94ca96bde388b4db2.png" class title="956a5b62c94ebcf94ca96bde388b4db2">
 
 <p>这个就是USB的不同协议了</p>
 <p>具体内容可以参照<a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关USB数据传输 | Liam’s boring life (boredliam.github.io)</a></p>
@@ -106,9 +546,9 @@
 <p>这是USB线缆的标识，看图方法大体相同。</p>
 <p>唯一值得注意的是最后一行的线缆表示不可进行数据传输。</p>
 <h1 id="多种多样的接口"><a href="#多种多样的接口" class="headerlink" title="多种多样的接口"></a>多种多样的接口</h1><h2 id="Type系列"><a href="#Type系列" class="headerlink" title="Type系列"></a>Type系列</h2><p>Type系列可以是我们日常生活中接触到最多，用途最广的接口了。</p>
-<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/306e45588b6f5545532e07da7e483a16.png" class>
+<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/306e45588b6f5545532e07da7e483a16.png" class>
 
-<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181250623.png" class title="image-20230824181250623">
+<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181250623.png" class title="image-20230824181250623">
 
 <p>这些便是我们现在的type家族。</p>
 <p>有些人可能会说，好像Type-B没怎么见过。</p>
@@ -116,14 +556,14 @@
 <p>动手安装过打印机的同学应该很熟悉。</p>
 <p>Type A和Type C自然就不用介绍了，这可是两大家喻户晓的存在。</p>
 <p>但是Type C还有一点点不一样的地方，之后我们再详细展开。</p>
-<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181350495.png" class title="image-20230824181350495">
+<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181350495.png" class title="image-20230824181350495">
 
 <p>这边是mini系列，比较少见。</p>
 <p>而且随着用途的不断减少，也在逐渐退出市场。</p>
 <p>最早的时候可以通过这种线实现两个不同设备之间的连接，没有主机也照样能传输数据。</p>
 <p>其指标与标准USB相同，但是加入了ID针脚（用于区分设备是主机还是外设），以支持OTG。</p>
 <p>主要用途在一些相机设备和MP3 MP4设备，某些老旧型号的手机也会将其作为充电口。</p>
-<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230824181408279.png" alt="image-20230824181408279"></p>
+<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230824181408279.png" alt="image-20230824181408279"></p>
 <p>Micro系列是mini系列的下一代，在同样规格的情况下提高了插拔寿命，最高可到达1万次。</p>
 <p>并且减小的体积更有利于手机部署的小型化。</p>
 <p>当然如果有接触移动硬盘的同学相信对 micro B系列（3.0）一定不陌生。</p>
@@ -145,10 +585,10 @@
 <p>注意雷电协议和雷电接口又是非常不同的两个概念。在开始之前先进行区分一下。</p>
 <h2 id="区分"><a href="#区分" class="headerlink" title="区分"></a>区分</h2><p>雷电接口是支持雷电协议的type-c接口。（有点怪怪的）</p>
 <p>为什么要说这句话？？</p>
-<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181453268.png" class title="image-20230824181453268">
+<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181453268.png" class title="image-20230824181453268">
 
 <p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.0e1820084728a5d7c203143fdcff2edd?rik=7zwLzmVdlgOTpQ&riu=http://img1.mydrivers.com/img/20190305/60307c47732645a89d24c4c753be976c.jpg&ehk=Zaz8T7i1c1/wJHXUgl4UT73ltfgXM0XQWSBeOVuyhe8=&risl=&pid=ImgRaw&r=0" alt="雷电多开助手"></p>
-<img src="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/image-20230824181518238.png" class title="image-20230824181518238">
+<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181518238.png" class title="image-20230824181518238">
 
 <p>因为雷电协议和有的USB协议都是用type-c接口。</p>
 <p>区别在于支持雷电协议的接口旁边会有一个雷电标志。</p>
@@ -168,843 +608,6 @@
       <tags>
         <tag>电子</tag>
         <tag>USB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/08/17/hello-world/</url>
-    <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>欢迎</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>永远的2121</title>
-    <url>/2023/09/02/my2121/</url>
-    <content><![CDATA[<h1 id="「愿时光永驻此刻，愿明日终将重逢」"><a href="#「愿时光永驻此刻，愿明日终将重逢」" class="headerlink" title="「愿时光永驻此刻，愿明日终将重逢」"></a>「愿时光永驻此刻，愿明日终将重逢」</h1><p><img src="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg" alt="永远的2121"></p>
-<p>00-曾倩</p>
-<span id="more"></span>
-
-<p>01-李慧婧</p>
-<p>02-蒙军羽</p>
-<p>03-梁键</p>
-<p>04-陈怡佐</p>
-<p>05-何子达</p>
-<p>06-杨星月</p>
-<p>07-符雪儿</p>
-<p>08-黄科豪</p>
-<p>09-林耀宗</p>
-<p>10-谢    扬</p>
-<p>11-王    榕</p>
-<p>12-黄靖茹</p>
-<p>13-刘涛赫</p>
-<p>14-丁仁斌</p>
-<p>15-黄文林</p>
-<p>16-陈禹州</p>
-<p>17-胡义航</p>
-<p>18-吴志军</p>
-<p>19-张华曦</p>
-<p>20-梁姃</p>
-<p>21-</p>
-<p>22-</p>
-<p>23-</p>
-<p>24-</p>
-<p>25-陈翰贤</p>
-<p>26-滕熙雯</p>
-<p>27-</p>
-<p>28-</p>
-<p>29-</p>
-<p>30-</p>
-<p>31-</p>
-<p>32-</p>
-<p>33-谢春霖</p>
-<p>34-</p>
-<p>35-龙彦霏</p>
-<p>36-张士钊</p>
-<p>37-</p>
-<p>38-许家州</p>
-<p>39-林香伶</p>
-<p>40-</p>
-<p>41-</p>
-<p>42-翁展</p>
-<p>43-</p>
-<p>44-吕思良</p>
-<p>45-刘穗凤</p>
-<p>46-</p>
-<p>47-巫奕阳</p>
-<p>48-</p>
-<p>49-</p>
-<p>50-</p>
-<p>51-</p>
-<p>52-</p>
-<p>53-李冠霖</p>
-<p>54-晏晓晨</p>
-<p>55-邓文钦</p>
-<p>56-多多</p>
-<p>……</p>
-<p>空着的评论补充吧……</p>
-<p>可能有点慢……</p>
-]]></content>
-      <tags>
-        <tag>2121</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>摄影作品-中越友谊公园&amp;东兴口岸</title>
-    <url>/2023/08/18/mys/</url>
-    <content><![CDATA[<p>摄影作品<br>中越友谊公园&amp;口岸</p>
-<span id="more"></span>
-<p><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_7.jpg" alt="2023-08-21_7.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_8.jpg" alt="2023-08-21_8.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_6.jpg" alt="2023-08-21_6.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_9.jpg" alt="2023-08-21_9.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_2.jpg" alt="2023-08-21_2.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_4.jpg" alt="2023-08-21_4.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_5.jpg" alt="2023-08-21_5.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_3.jpg" alt="2023-08-21_3.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_1.jpg" alt="2023-08-21_1.jpg"></p>
-]]></content>
-      <tags>
-        <tag>摄影</tag>
-        <tag>Nikon D90</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>valine评论系统搭建</title>
-    <url>/2023/08/20/review/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样</p>
-<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><span id="more"></span>
-
-<h3 id="一个坑"><a href="#一个坑" class="headerlink" title="一个坑"></a>一个坑</h3><img src="/2023/08/20/review/image-20230820210712161.png" class title="知乎">
-
-<p>这个是代码模版，如果直接复制到文件尾部的话会导致报错，原因是</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SyntaxError: Unexpected token &#x27;catch&#x27; in D:\Blog\themes\yilia\layout\_partial\ar</span><br><span class="line">ticle.ejs while compiling ejs</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>我们去查看一下错误代码对照表（或者翻译）</p>
-<p>得到<img src="/2023/08/20/review/image-20230820210905747.png" class title="image-20230820210905747"></p>
-<p>但问题的难点在于这个代码也是正确的，所以我猜想不能插到尾部，但是这是最保险的办法。</p>
-<p>所以我们使用c++中的大招：<strong>尾部添加法</strong></p>
-<p>随便在尾部添加一个</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-
-<p>就可以解决问题</p>
-<p>有点随便……</p>
-<h3 id="两个坑"><a href="#两个坑" class="headerlink" title="两个坑"></a>两个坑</h3><p>接下来到最难的：Leancloud</p>
-<hr>
-<p>因为： <em><strong>他改版了！</strong></em></p>
-<p>应用API的部分还算好，但是到了部署和配置的问题就大了</p>
-<p><img src="https://pic4.zhimg.com/v2-e509dd41ee51cd2ece15611f122cb067_r.jpg" alt="img"></p>
-<p>这个是文章里面的</p>
-<img src="/2023/08/20/review/image-20230820211805232.png" class title="image-20230820211805232">
-
-<p>这个是现在（2023.08.21）的UI</p>
-<p>有些教程会教你建立应用，然后就会发现：</p>
-<img src="/2023/08/20/review/image-20230820211908475.png" class title="image-20230820211908475">
-
-<p><strong>这一点也不一样啊</strong></p>
-<p>而且最要命的是云引擎的部分全部重新设计</p>
-<img src="/2023/08/20/review/image-20230820212007204.png" class title="image-20230820212007204">
-
-<p>原来的云引擎里面直接有设置</p>
-<p>但是现在就剩一个「部署」和一个DB</p>
-<p>根据以前的经验，我们肯定去部署瞧一瞧</p>
-<img src="/2023/08/20/review/58f1186b7803163c3a0c28f9d097f330.jpg" class title="58f1186b7803163c3a0c28f9d097f330">
-
-<p>这时候就要创建一个分组</p>
-<p>然后要新建一个「类」</p>
-<img src="/2023/08/20/review/image-20230820212437483.png" class title="image-20230820212437483">
-
-<p>有了这个类后就好办多了</p>
-<p>就有了一个实例</p>
-<img src="/2023/08/20/review/image-20230820212509478.png" class title="image-20230820212509478">
-
-<p>UI设计到这里了</p>
-<p>后面就是紧跟教程了</p>
-<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><img src="/2023/08/20/review/image-20230820212613221.png" class title="image-20230820212613221">
-
-<p>原始样子大概就是这样，也可以在「自定义环境变量」里修改主题</p>
-<hr>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>hexo</tag>
-        <tag>valine</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>教师节</title>
-    <url>/2023/09/10/teacher/</url>
-    <content><![CDATA[<p>今天是2023年9月10日，是所有老师的节日——教师节。</p>
-<p><strong>感谢<code>曾倩老师</code> <code>龙光森老师</code> <code>韦佳利老师</code> <code>黄佩玲老师</code> <code>李洁老师</code>  <code>林生业老师</code> <code>黄海老师</code> <code>劳永进老师</code> <code>罗满琼老师</code> <code>钟洁老师</code> <code>周静轩老师</code> <code>江英球老师</code> <code>颜良霞老师</code> <code>白振兴老师</code>  <code>庞惠文老师</code> <code>梁超源老师</code> <code>叶子斌老师</code></strong> </p>
-<p>三年来的教育，每一堂课都是一份收获。</p>
-<p><strong>还要感谢<code>刘靖华老师</code> <code>莫冰老师</code> <code>卜肖宁老师</code> <code>吴壮盛老师</code> <code>莫贻秋老师</code></strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> quote</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">obtain_coordinate</span>(<span class="params">target_word</span>):  </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取汉字的坐标</span></span><br><span class="line"><span class="string">    :param target_word:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url = <span class="string">&quot;https://bihua.bmcx.com/web_system/bmcx_com_www/system/file/bihua/get_0/&quot;</span></span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&#x27;font&#x27;</span>: quote(target_word).replace(<span class="string">&quot;%&quot;</span>, <span class="string">&quot;&quot;</span>).lower(),</span><br><span class="line">        <span class="string">&#x27;shi_fou_zi_dong&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;cache_sjs1&#x27;</span>: <span class="string">&#x27;20031914&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.get(url, params=params)</span><br><span class="line">    content = response.text</span><br><span class="line">    content = content.replace(<span class="string">&#x27;hzbh.main(&#x27;</span>, <span class="string">&#x27;&#x27;</span>).split(<span class="string">&#x27;);document.getElementById&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    content = content.split(<span class="string">&#x27;&#123;&#x27;</span>)[-<span class="number">1</span>].split(<span class="string">&quot;&#125;&quot;</span>)[<span class="number">0</span>]</span><br><span class="line">    pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\w:\[(.+?)\]&#x27;</span>)</span><br><span class="line">    result = re.split(pattern, content)</span><br><span class="line">    order_xy_routine = []</span><br><span class="line">    words_cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> result:</span><br><span class="line">        sec = re.findall(<span class="string">r&#x27;\&#x27;.+?\&#x27;&#x27;</span>, r)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sec):</span><br><span class="line">            orders = sec[<span class="number">1</span>].split(<span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            <span class="keyword">for</span> order <span class="keyword">in</span> orders:</span><br><span class="line">                order_str = re.findall(<span class="string">r&#x27;\(\d+,\d+\)&#x27;</span>, order)</span><br><span class="line">                order_xy = [<span class="built_in">eval</span>(xy) <span class="keyword">for</span> xy <span class="keyword">in</span> order_str]</span><br><span class="line">                order_xy_routine.append(order_xy)</span><br><span class="line">            words_cnt += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(order_xy_routine)</span><br><span class="line">    <span class="keyword">return</span> order_xy_routine</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_words</span>(<span class="params">target_words, startx, starty, lineNum=<span class="number">1</span></span>):  <span class="comment"># 画汉字</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    画汉字</span></span><br><span class="line"><span class="string">    :param target_words:</span></span><br><span class="line"><span class="string">    :param startx:</span></span><br><span class="line"><span class="string">    :param starty:</span></span><br><span class="line"><span class="string">    :param lineNum:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    turtle.color(<span class="string">&quot;black&quot;</span>, <span class="string">&quot;black&quot;</span>)  </span><br><span class="line">    turtle.pu()  </span><br><span class="line">    coordinates = obtain_coordinate(target_words)</span><br><span class="line">    <span class="keyword">for</span> index, coordinate <span class="keyword">in</span> <span class="built_in">enumerate</span>(coordinates):</span><br><span class="line">        turtle.goto((startx + coordinate[<span class="number">0</span>][<span class="number">0</span>])/<span class="number">2</span>, -(starty + coordinate[<span class="number">0</span>][<span class="number">1</span>])/<span class="number">2</span>)</span><br><span class="line">        turtle.pd()</span><br><span class="line">        <span class="keyword">for</span> xy <span class="keyword">in</span> coordinate:</span><br><span class="line">            x,y=xy</span><br><span class="line">            turtle.goto((startx+x)/<span class="number">2</span>, -(starty+y)/<span class="number">2</span>)</span><br><span class="line">        turtle.pu()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    turtle.screensize(<span class="number">2400</span>,<span class="number">1300</span>)</span><br><span class="line">    <span class="comment">#画汉字</span></span><br><span class="line">    word = <span class="string">&quot;教师节快乐&quot;</span></span><br><span class="line">    draw_words(word[<span class="number">0</span>], -<span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">1</span>], -<span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">3</span>], <span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">4</span>], <span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    turtle.done()</span><br></pre></td></tr></table></figure>
-
-<p>谨用这些代码，来表达我的感激之情</p>
-<img src="/2023/09/10/teacher/1.gif" class>
-
-<p>祝老师们</p>
-<img src="/2023/09/10/teacher/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
-
-
-
-<p>​																																								黄文林</p>
-<p>​																																				          2023年9月10日</p>
-]]></content>
-      <tags>
-        <tag>教师节</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于valine评论无法提交的问题原因分析和解决方案</title>
-    <url>/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>起因：有人想买个U盘。</p>
-<span id="more"></span>
-
-<p><a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关U盘 | Liam’s boring life </a></p>
-<p>然后他便写了一篇文章。</p>
-<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
-<p>结果</p>
-<p><img src="/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/b5bdee774a9f033dbf0f165b78beb94b.png" alt="b5bdee774a9f033dbf0f165b78beb94b"></p>
-<p>这就有意思了，评论无法提交。</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
-<p>发现他没有定义一个实例。</p>
-<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>
-<p>类相当于一张汽车的「制造图纸」，你可以通过这个「图纸」来制造出许许多多汽车，甚至可以改变「图纸」，造出不同样式的汽车。</p>
-<p>但是如果只有图纸，没有创建出一个真正的汽车实例，我们是永远都无法进行「开车」这个操作的。</p>
-<p>可以说有了类就有了对象，就有了对对象的操作。</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>办法也很简单，创建一个实例。</p>
-<p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
-<p>可以参考这篇文章进行实例搭建。</p>
-<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
-<p><img src="/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/22007b7b4e05882d35544461b15e52eb.png" alt="22007b7b4e05882d35544461b15e52eb"></p>
-<p>这里最重要的一点是云函数的问题。</p>
-<p>通常发生在国际服的比较多，华北和华东服务器尚未出现过此类问题。</p>
-<p>可以看到部署在华东服务器上面的实例有三个云函数，其中两个是我自己添加的。</p>
-<p>但是最重要的comment函数是程序写的。</p>
-<p>这个函数负责的评论的存储与管理，非常重要。</p>
-<p>如果选择国际服，就有可能无法加载出这个函数。</p>
-<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>此 bug 是由于 LeanCloud 国际版更换 API Url 导致的，原来的 <code>us.leancloud.cn</code> 和 <code>us-api.leancloud.cn</code> 已经停用，换为了 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
-<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote>
-<p>① 在 <code>Valine.min.js</code> 中更换 LeanCloud 对象存储 SDK 为 最新的 <code>4.12.0</code> 版本。</p>
-<p><code>leancloud-storage@3/</code> –&gt; <code>leancloud-storage@4.12.0/</code>，查找替换即可。</p>
-<p>如果你使用 CDN，可以 Fork 一份 Valine 的 GitHub 仓库，然后自行更改并使用 jsdelivr CDN 。</p>
-<p>我已经改好了一份：<a href="https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js">https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js</a> ，如有需要可以自取。</p>
-<p>② 在引用 Valine 的 js 或 YAML 中设置 <code>serverURLs</code> 字段为 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
-<p>比如 <code>serverURLs: &#39;https://xxxxxxxx.api.lncldglobal.com&#39;</code></p>
-</blockquote>
-<p>这个是网上流传的解决办法，但是我们实际中找不到对应的文件。</p>
-<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的同学可以尝试一下。</p>
-<hr>
-<p>比较简单的方法就是选择华北和华东服务器，因为服务器处在国内，比较稳定。</p>
-<p>但是使用这两个服务器要遵守《中华人民共和国网络安全法》，需要进行实名备案注册。</p>
-<p>而且备案注册必须使用支付宝的刷脸进行认证，有点麻烦。</p>
-<p>但是优点就是成功率非常高，能够解决大部分问题。（重装能解决99%的问题）</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>在搭建个人博客的时候，服务器能采用国内的服务器，就尽量使用国内的服务器。</p>
-<p>因为网络长城的存在及国际政治不稳定因素，很容易造成连接中断或连接被污染迟缓等等问题。</p>
-<p>有兴趣可以查看一下部分缓慢的域名：</p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>valine</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于浏览器音乐自动播放的问题</title>
-    <url>/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9F%B3%E4%B9%90%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，我发现在我的edge浏览器上怎么都无法自动播放。</p>
-<p>本来以为是代码问题，就没有去研究。</p>
-<span id="more"></span>
-
-<p>但是</p>
-<p>突然之间，我的小平板开始了自动播放。</p>
-<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>先上结论，</p>
-<p>任何浏览器都可以自动播放，只是设置的问题。</p>
-<p>部分浏览器默认允许，但有一些默认禁止（比如edge，chrome）</p>
-<p>方法很简单，只要在设置——站点权限——自动播放——允许&#x2F;禁止中修改就可以了，</p>
-<p>但是也有缺点，</p>
-<p>别人的浏览器不一定是这样设置的o(╥﹏╥)o</p>
-<p>而且很多都是默认设置，这就意味着不能自动播放还是不能。</p>
-<p>而且这是权限设置，必须由人操作更改。</p>
-<p>所以理论上不可改变。</p>
-<h1 id="资料分析"><a href="#资料分析" class="headerlink" title="资料分析"></a>资料分析</h1><blockquote>
-<p>微软 Edge 92 正式版浏览器发布后，将默认禁止网页上的音频、视频自动播放。浏览器的设置中可以看到，该选项为“限制”。</p>
-<p>此外版本的 Edge 中，这一选项默认为允许。外媒表示，限制媒体自动播放，并不意味着完全阻止任何网页内容自动播放，而是根据用户使用习惯来判断。如果用户经常访问某个网站，并且允许自动播放音视频，那么浏览器将不会阻止；而对于首次访问的网站，该功能会一律禁止自动播放行为。</p>
-</blockquote>
-<blockquote>
-<p>Chrome的自动播放政策很简单：</p>
-<ul>
-<li><p>始终允许静音自动播放。</p>
-</li>
-<li><p>在以下情况下，允许自动播放声音：</p>
-</li>
-<li><ul>
-<li>用户已与域进行了交互（单击，点击等）。</li>
-<li>在桌面版chrome上，已经超过了用户的“ <a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23mei">媒体参与度索引”</a>阈值，这意味着该用户以前曾播放有声视频。</li>
-<li>用户已将<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">网站添加到</a>移动设备上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen">的主屏幕</a>上，或在桌面上<a href="https://link.zhihu.com/?target=https://developers.google.com/web/progressive-web-apps/desktop">安装了PWA</a>。</li>
-</ul>
-</li>
-<li><p>顶级框架可以<a href="https://link.zhihu.com/?target=https://developers.google.com/web/updates/2017/09/autoplay-policy-changes%23iframe">将自动播放权限委派</a>给其iframe，以允许自动播放声音。</p>
-</li>
-</ul>
-<p>在以chorme为内核的浏览中，设置了<strong>MEI（Media Engagement Index）列表</strong>，该列表长度为1000，用来来衡量用户是否是该网站的“忠实用户”。当MEI排名足够高时，即可自动播放。</p>
-</blockquote>
-<p>现在的浏览器内核就是这两个，可以说基本无解……	</p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>浏览器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>内存卡</title>
-    <url>/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/</url>
-    <content><![CDATA[<p>今天，我们来简要了解一下目前生活中比较少见的内存卡。</p>
-<h1 id="为什么内存卡在生活中越来越少见？"><a href="#为什么内存卡在生活中越来越少见？" class="headerlink" title="为什么内存卡在生活中越来越少见？"></a>为什么内存卡在生活中越来越少见？</h1><span id="more"></span>
-
-<p>一方面是手机技术的进步，以前的诺基亚等老人机背面。打开电池仓便会看到有三个插槽，两个插槽是SIM卡。而第三个插槽便是TF卡，这个便是老人机存储的核心部分。</p>
-<p>随着时间的流逝，各大厂商逐渐把存储芯片内部集成。可以提供更好的读写性能，但是还是保留了外接TF的选择。这个时间大概在2000年~2015年。</p>
-<p>后来厂商们发现外接TF似乎成为一种机械硬盘式的操作。严重的侵害了厂商的利益。</p>
-<p>举个例子，我可以买一个128+8的手机，然后再买一张拓展的512G卡。</p>
-<p>TF卡由于读写速度较慢，充当了一个类似于机械硬盘的角色，可以存储大量对读写性能要求不是很高的文件。比如手机中的文档，一些文字工作软件。还有APP应用的存储，虽然可能打开的慢一点。</p>
-<p>手机厂商就慌了，他们连夜取消了这个TF卡槽。对外宣称是所谓的增加手机气密性，减少进水可能。</p>
-<p>本质上是什么大家心里都清楚。你取消TF卡槽，你为什么不取消SIM卡槽啊？</p>
-<p>那么后来华为公司又开发出了NM卡技术。可以直接用SIM卡槽的框架存储，这下你总不能把我SIM卡槽给砍掉了吧，不然我都没办法拨打电话，上网了。</p>
-<p>可现在又突然出现了一个esim可以实现内置SIM卡。无需插入实体卡。</p>
-<p>不过还好，由于一些政治原因和经济原因，中国的SIM卡目前暂停推行。2023年五六月左右，三大营商都几乎同时宣布了因系统更新暂停eSIM卡的服务等通知。</p>
-<p>所以nm卡还能用，不过测试没有测试过，并不清楚它的具体读写速度。</p>
-<p>不过我猜也不会太快，毕竟SIM卡的触点较少，虽然看起来一大片金黄金黄的芯片，但是与主板实际接触点就只有五六个。如果有使用过诺基亚老人机的人感受会更深刻，因为以前是可以直接看到触点的。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-6aeec6e38baf184b8245c54dc76032fc_720w.webp" alt="img"></p>
-<p>从知乎回答我们可以看到，sim卡的触点是比较少的。</p>
-<p>而且手机厂商说不定会故意限制sim卡的读写速度。毕竟SIM卡最大的功能就是存储信息和存储电话本了。你的卡号是已经烧录进去的，无法更改的。</p>
-<p>所以厂家很可能在主板的什么传输通道加上一些传输速度限制。让读写速度过于缓慢，以至于放弃使用NM卡。</p>
-<p>出于以上种种原因，sim卡的好兄弟NM卡并没有流行起来。</p>
-<h1 id="常用的内存卡"><a href="#常用的内存卡" class="headerlink" title="常用的内存卡"></a>常用的内存卡</h1><p>目前内存卡的使用领域主要是在相机拍摄领域。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>一方面相机需要有多张不同的卡存储不同的素材，一个成熟的摄影师一天可能会接四五份拍摄任务。</p>
-<p>不同的素材就需要有不同储存卡来储存，这样即使突发故障，有一份储存卡的数据丢失了。其他的储存卡照样能够保存好数据。</p>
-<p>能使拍摄和后期分开，避免占用相机</p>
-<p>而且可以根据需要的拍摄场景选择合适自己的内存卡，避免产生资源浪费。</p>
-<h2 id="储存卡介绍"><a href="#储存卡介绍" class="headerlink" title="储存卡介绍"></a>储存卡介绍</h2><h3 id="首先是摄影界最小的东西，也就是TF卡。"><a href="#首先是摄影界最小的东西，也就是TF卡。" class="headerlink" title="首先是摄影界最小的东西，也就是TF卡。"></a>首先是摄影界最小的东西，也就是<strong>TF卡</strong>。</h3><p><img src="https://picx.zhimg.com/80/v2-25824c624b04e79698c90002f1205576_720w.webp?source=1940ef5c" alt="img"></p>
-<p>大概和我们的大拇指甲盖差不多大。</p>
-<p>主要用于运动相机。</p>
-<hr>
-<h3 id="接着是SD卡，相机界的中流砥柱。"><a href="#接着是SD卡，相机界的中流砥柱。" class="headerlink" title="接着是SD卡，相机界的中流砥柱。"></a>接着是<strong>SD卡</strong>，相机界的中流砥柱。</h3><p><img src="https://picx.zhimg.com/80/v2-62a9ad20b266b6ba1aef1c170ab082d5_720w.webp?source=1940ef5c" alt="img"></p>
-<p>SD卡通用于绝大部分相机，很多小型单反和<a href="https://www.zhihu.com/search?q=%E5%8D%A1%E7%89%87%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">卡片机</a>也是只有SD卡这一个卡槽。可以说SD卡虽然不是最厉害的卡，但是是最普遍的卡。</p>
-<h3 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h3><p>由于SD卡的广泛使用，各大国际联盟也制定了SD卡的标准。</p>
-<img src="/2023/08/23/%E5%86%85%E5%AD%98%E5%8D%A1/image-20230823092833459.png" class title="image-20230823092833459">
-
-<h4 id="Class等级标准："><a href="#Class等级标准：" class="headerlink" title="Class等级标准："></a>Class等级标准：</h4><p>早期存储卡速度等级使用Class等级来标识。主要有C10、C6、C4、C2四种标识。C2最低写入速度为2MB&#x2F;秒；C4最低写入速度为4MB&#x2F;秒；C6最低写入速度为6MB&#x2F;秒；C10最低写入速度为10MB&#x2F;秒。</p>
-<h4 id="UHS-等级标准："><a href="#UHS-等级标准：" class="headerlink" title="UHS 等级标准："></a>UHS 等级标准：</h4><p>UHS（Ultra High Speed）超高速等级为全新的总线模式。目前有UHS-I、UHS-II、UHS-III三种版本。实现UHS标准传输速度需要设备支持，高版本向下兼容低版本，不支持该标准可以兼容降速为普通存储卡使用。日常使用U1（最低写入速度10M&#x2F;S）和U3（最低写入速度30M&#x2F;S）的等级标识最低写入速度。UHS-I卡的最大读取速度为104M&#x2F;S，而UHS-II卡的最大读取速度为312M&#x2F;S。UHS-III卡的最大读取达到了624M&#x2F;S。</p>
-<h4 id="VSC等级标准："><a href="#VSC等级标准：" class="headerlink" title="VSC等级标准："></a>VSC等级标准：</h4><p><a href="https://so.csdn.net/so/search?q=VSC&spm=1001.2101.3001.7020">VSC</a>（Video Speed Class）视频速度等级。4K视频的拍摄需求增大后，SD协会针对视频拍摄应用制定的视频速度等级，以识别字母V加上最低写入速度值的数字构成标识。即：V10最低写入速度10M&#x2F;S；V30最低写入速度30M&#x2F;S；</p>
-<p>由于各项参数之间有重合，所以SD卡允许标上不同的参数的。</p>
-<h4 id="实际分析"><a href="#实际分析" class="headerlink" title="实际分析"></a>实际分析</h4><p>例如我们回到例子的那张SD卡。</p>
-<p>首先上面有着很明显的标识，170 MB每秒。</p>
-<p>但是这个170是MB每秒是读还是写呢？</p>
-<p>我们可以分析一下，如果是写的话，这个储存卡完全可以满足v90的标准。</p>
-<p>可是他只标了v30，那么意味着这个170MB每秒是读的概率比较大。</p>
-<p>然后我们看看各项参数，发现并没有矛盾。</p>
-<p>所以这个170 MB每秒是读数，对于摄影实际帮助并不太大。</p>
-<p>实际写入速度应该在30 MB每秒到60 MB每秒左右。</p>
-<hr>
-<p><img src="https://picx.zhimg.com/80/v2-cdd83c95606e76a90c3bf31641f3e877_720w.webp?source=1940ef5c" alt="img"></p>
-<h3 id="CF和XQD"><a href="#CF和XQD" class="headerlink" title="CF和XQD"></a>CF和XQD</h3><p>这是<a href="https://www.zhihu.com/search?q=sqd%E5%8D%A1&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">SQD卡</a>和CF卡两个老兄，不过cf卡因为一些性能原因已经被放弃了，只有一些较老的相机，还有CF卡的插槽，现在的高端相机，比如尼康的Z6，Z7都有第二插槽为XQD插槽。</p>
-<hr>
-<p><img src="https://picx.zhimg.com/80/v2-9c85a0dc3787af2aa650867cdfaaf92e_720w.webp?source=1940ef5c" alt="img"></p>
-<p>诶，这个是不是很熟悉，感觉长得像很像SD卡？</p>
-<p>这就是SD卡的下一代，我们刚刚讲的以USH协议为代表的新一代的SD卡。，不同的是后面的金手指由一排变成了两排。提高了写入速度。</p>
-<p>但是缺点很明显，只有极少数的相机支持这样的卡槽，所以一般只能发挥出一半的实力。</p>
-<p>不过我们前面也提到了，这玩意是可以向下兼容的，必要时可以变成普通SD卡来使用。</p>
-<p>由于只是多出来一排触点，所以它和SD卡是兼容的。</p>
-<p>速度到底有多高呢？读者可以自行分析一下。</p>
-<h1 id="奇怪的储存卡"><a href="#奇怪的储存卡" class="headerlink" title="奇怪的储存卡"></a>奇怪的储存卡</h1><p>这些是比较通用的储存卡，已经占据99%的储存卡量了。剩下一些就是专业摄影机专用的卡。比如像<a href="https://www.zhihu.com/search?q=%E9%98%BF%E8%8E%B1%E7%94%B5%E5%BD%B1%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3171778820%7D">阿莱电影机</a>，一张1T的卡就要10万元。这种是专业电影公司才用得到的。</p>
-<p>还有比如DJI大疆公司的无人机，也有专门的存储卡。</p>
-]]></content>
-      <tags>
-        <tag>电子</tag>
-        <tag>存储</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>浅析对焦本质及评判标准</title>
-    <url>/2023/08/22/%E5%AF%B9%E7%84%A6/</url>
-    <content><![CDATA[<p>对焦是摄影中很重要的一环，今天就浅析一下对焦的本质</p>
-<span id="more"></span>
-
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><blockquote>
-<p><strong>相位对焦：</strong>一般单反相机采用的对焦模式，镜头进入的光线，被折射到对焦模块上，产生相位差，对焦模块再根据相位差来判断对焦点位置的对焦方式。<br><strong>反差对焦：</strong>镜头进入的光线直接投射到相机的感光芯片上，主感光芯片通过计算成像的反差，确定焦点位置的对焦方式。</p>
-</blockquote>
-<p>相位差AF最早都是用在单反上，入射光经过一系列分光棱镜分光到相位差检测元件上，通过对相位差检测元件数据的计算，微处理器计算出实际对焦点，然后直接移动到镜头里的镜片组，使得对焦点刚好落到传感器（最早是胶片上）。这种对焦技术的优势是：在镜片移动之前就能够预知实际焦点，因此对焦速度比较快。但是相位差AF受限制于装配精度等问题，有可能产生跑焦，不过现在还能生产的单反都不会受这方面的影响。</p>
-<p>反差对焦，一边检测传感器上成像的反差比，一边调整镜片，以达到成像的边缘的最强烈反差（也就是对焦最实处）。</p>
-<h1 id="为什么对焦如此重要？"><a href="#为什么对焦如此重要？" class="headerlink" title="为什么对焦如此重要？"></a>为什么对焦如此重要？</h1><p>我们任何光学仪器所成的像都只会汇聚在焦点，而焦点理论上是最清晰的。</p>
-<p>不过我们又发明了光圈，这个东西可以帮助我们获得更大的景深。</p>
-<p>例如拍摄风景的时候，我们既要靠前一点的石头沙堆清楚，又要使后面的大海群山清楚。</p>
-<p>这个时候我们就可以适当的将光圈缩小。然后获得更大的景深，以至于到超焦距。</p>
-<p>关于这个问题，我们会在后面的文章讲到。</p>
-<p>那如果我们对不上焦又会怎么样呢？</p>
-<h1 id="对焦实际分析"><a href="#对焦实际分析" class="headerlink" title="对焦实际分析"></a>对焦实际分析</h1><p>举个例子，在白纸上拍一根黑筷子，虚化的过渡是平滑的，是渐变的，放大边缘看反差不明显。</p>
-<img src="/2023/08/22/%E5%AF%B9%E7%84%A6/image-20230822212241504.png" class title="image-20230822212241504">
-
-<p>从上面这幅示意图可以看出，如果没对上焦，那么变化是从白——灰——深灰——黑的变化，这个时候每一段的反差不明显，让人看不出物体的轮廓，给人一种模糊感</p>
-<img src="/2023/08/22/%E5%AF%B9%E7%84%A6/image-20230822212505795.png" class title="image-20230822212505795">
-
-<p>而对焦上的锐利的图像，在某一个像素后突然由黑变白，这样的反差就明显了。</p>
-<p>这样的对焦技术，需要更多的反复尝试，所以一般对焦速度比较慢。但是反差式对焦不会产生跑焦的问题。因为反差式对焦是尝试后再判断的，所见即所得。</p>
-<h1 id="反差对焦的革新"><a href="#反差对焦的革新" class="headerlink" title="反差对焦的革新"></a>反差对焦的革新</h1><p>微单一般也是采用反差式对焦，但是随着技术的进步，一部分微单在传感器上植入相位对焦点，用相位式AF技术一样达到快速对焦的目的；另外一部分微单采用的是提高反差式对焦的检测频率，例如比以往检测的频率提高一倍甚至更高的频率，同样达到高速AF的能力。</p>
-<p>随着现在处理器的速度的增加，微单的相位对焦也大为提升。</p>
-<h1 id="相位对焦的变化"><a href="#相位对焦的变化" class="headerlink" title="相位对焦的变化"></a>相位对焦的变化</h1><p>相位对焦虽然快，但也要看识别能力，对焦模块又可以分为<strong>线性对焦</strong>、<strong>十字对焦</strong>、<strong>双十字对焦</strong>。</p>
-<p>线性对焦：对焦模块上的线性分为竖线和横线，当物体的线条与竖线或横线相交时，相机就能识别并对焦。如果是平行的，那就对不上焦了。这也就是有一些老相机拍平行的物体时很难对上焦的原因。</p>
-<p>后面人们想出了办法，做一个十字对焦，这样无论怎样都会相交，大幅提高了对焦能力。</p>
-<p>但是并不是所有的对焦点都会做成十字对焦，一般只有核心对焦点才会有，甚至只有中心对焦点有。</p>
-<p>再后来加上双十字对焦。成一个「米」形，这样就确保了日常情况下不会脱焦。</p>
-<h1 id="困扰对焦的难题"><a href="#困扰对焦的难题" class="headerlink" title="困扰对焦的难题"></a>困扰对焦的难题</h1><p>那么，是不是就不存在对不上焦的情况了？</p>
-<p>还是有的</p>
-<p>著名的例子有：<strong>白墙拍白纸</strong> ，<strong>黑夜拍黑鞋</strong></p>
-<p>这个是一个笑话，但是也揭示出了对焦的的难点所在。</p>
-<p>只要是对比度低的情况下，或者是光照不足的情况下，都有可能失焦。</p>
-<h1 id="对焦方式的缺点"><a href="#对焦方式的缺点" class="headerlink" title="对焦方式的缺点"></a>对焦方式的缺点</h1><p>其实如果仔细阅读本文，读者们大概已经知道了。</p>
-<p>相位对焦最大的难点就是对焦模块的放置，因为每一个对焦区域都需要放置一个对焦模块。这会导致硬件成本的急剧升高。</p>
-<p>所以以前的单反相机大多都是9~15个对焦点。</p>
-<p>反差对焦理论上可以检测任何一处的对焦状况，而现在确实有实现了全屏对焦的相机。</p>
-<p>就算没有实现全屏对焦，反差对焦的对焦点也会多达400~500个。</p>
-<p>但是反差对焦需要比较强的对比度反差，越是在恶劣的情况下，就越不上比不上相位对焦。</p>
-<h1 id="手机对焦"><a href="#手机对焦" class="headerlink" title="手机对焦"></a>手机对焦</h1><p>接下来分析一下手机对焦的原理</p>
-<p>根据前面的分析，我们可以知道反差对焦依靠的是处理器，相位对焦需要硬件部署的能力。</p>
-<p>由于手机是属于高性能，高算力产品，所以毫无疑问采用了反差对焦的方法。</p>
-<p>这也就是手机无论在哪一点都可以实现对焦。</p>
-<p>所以在一些性能不好的手机上，我们可以看到对焦以后几秒后才清楚。</p>
-<h2 id="验证方法"><a href="#验证方法" class="headerlink" title="验证方法"></a>验证方法</h2><p>那么怎么样验证自己的手机的对焦能力呢？我们重点从边缘来看。</p>
-<p>如果你家没有防盗网，你可以用专业的边缘测试模块来代替。</p>
-<p>首先从手机屏幕取景。让一根防盗网钢柱刚刚好位于手机的边缘。</p>
-<p>然后试着点击钢柱对焦，如果远处的风景变得虚化了，就代表手机在边缘对焦上确实有对焦点。</p>
-<p>但是这不太严谨，如果钢柱没有变清晰，那么你可能需要后退一点，因为你手机最近对焦距离很可能不支持。</p>
-<p>不过现在手机能做到8~5cm的最近对焦距离。大可不必担心。</p>
-<h1 id="对焦之王"><a href="#对焦之王" class="headerlink" title="对焦之王"></a>对焦之王</h1><p>目前公认的对焦之王便是索尼。</p>
-<p>索尼拥有着目前世界上最快的对焦记录，根据严格的测试方法，索尼得出了0.03秒快速对焦的好成绩。</p>
-<p>而且索尼的视频自动对焦功能也很强，牢牢锁住人像，实现人在对人，人走对景。</p>
-<p>而其他厂商，例如尼康佳能，如果突然蹲下或突然移出镜头外，都会造成短暂虚焦。然后再切换回背景。</p>
-<p>手机的自动对焦性能目前没有专业的厂家测评。可以自己测试一下。</p>
-<h2 id="测试方法"><a href="#测试方法" class="headerlink" title="测试方法"></a>测试方法</h2><p>首先将相机固定好，有纸盒，书本等物体的，可以用这些物体固定。没有这些物体的你可以使用三角架。(<em>^▽^</em>)</p>
-<p>然后打开手机的录像模式，尽可能调到你手机的最高录像分辨率，例如4K或者1080P</p>
-<p>接着在镜头前做出一些动作，比如：</p>
-<ul>
-<li>快速旋转身体，测试手机是否需要人的面部才能对焦</li>
-<li>快速站起，蹲下，测试手机的跟焦能力</li>
-<li>进行放大缩小，看看对于远处的景物和近处的景物之间，手机能否做到快速对焦</li>
-<li>在进行变焦的时候，同时转动镜头进行综合能力测试。</li>
-</ul>
-<p>这些都不是毫无厘头的乱转，可以根据以上这些测试指出对应的生活场景。</p>
-<ul>
-<li>快速旋转身体。——测试突然进来的新面孔能否被相机准确对焦，如果你录视频喜欢一些特殊的效果，比如先出现物品，然后再出现人站在物品后。这个测试比较简单，因为人已经被对焦成功了。</li>
-<li>快速站起蹲下。——在上一项测试中，始终还是有一个物体位于背景前方的，区别就是看手机依不依赖脸不识别。但是在本测试中，由于人是突然站起来的，在本来没有对焦的基础上需要快速转换对焦。</li>
-<li>进行放大缩小。——这个的测试目的相较于前两个较为单纯，因为我们很少单单进行放大缩小。</li>
-<li>进行变焦的时候同时旋转镜头。——这个的话就用于拍摄一些转场，比如拍演唱会，我们可以放到广角端拍摄观众，又放到长焦端去拍台上的歌手。</li>
-</ul>
-<p>有一点请要注意，无论是多高级的相机都会有一定的脱焦时间，即便是当前索尼摄像机皇也会有能感觉到的失焦。</p>
-<p>这便是自动对焦带来的不便之处，因为相机并不能准确的识别出场景，它没有像人一样的智慧，所以它对场景的判断主要是依赖机内程序，而程序比较死板，必须要等待到足够的阈值以后才会执行对焦判断，而这个阈值就是时间。</p>
-<h1 id="如何改善失焦？"><a href="#如何改善失焦？" class="headerlink" title="如何改善失焦？"></a>如何改善失焦？</h1><p>既然拍视频就不可避免的会有这个问题，那为什么在那些电视剧，电影或者较为流行的公益片中没有失焦的呢？不可能全部靠后期吧，毕竟如果全部靠后期，那么每一次对焦都会要一次剪辑。</p>
-<p>这个每一次怎么定义呢？</p>
-<h4 id="严格意义上的每一次是指物距改变"><a href="#严格意义上的每一次是指物距改变" class="headerlink" title="严格意义上的每一次是指物距改变"></a>严格意义上的每一次是指物距改变</h4><p>因为你只要物距变了，相距必然会变，这样的成像就到不了CMOS上了。</p>
-<p>这个时候光圈就可以解决这个问题，适当的缩小光圈就可以获得较大的景深，这样就可以不用改变一点位置就要对焦了。</p>
-<p>但是有时候电影就必须需要大光圈拍摄。这时候怎么办呢？</p>
-<p>所以，自从电影诞生的那一刻起，就有了<strong>「跟焦员」</strong>这个职位。</p>
-<p>摄影师和跟焦员往往是一对很好的搭档。而跟焦员需要有一双鹰眼和灵巧的双手。</p>
-<p>他要实时测算出摄影机和拍摄对象之间的距离，并调整手上的跟焦旋钮来校正机器镜头的位置。</p>
-<p>所以跟焦员十分辛苦，但薪水也是非常优渥的。</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>读到这里，想必大家对焦距已经有了一定的了解，希望大家也能在每一次摄影和摄像中都能准确的对上自己需要的焦段，拍出自己心仪的照片。</p>
-]]></content>
-      <tags>
-        <tag>摄影</tag>
-        <tag>对焦</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>思想者</title>
-    <url>/2023/08/23/%E6%80%9D%E6%83%B3%E8%80%85/</url>
-    <content><![CDATA[<p>我以前不喜欢有关情感的小说，但现在我不这么想了。</p>
-<p>致敬刘慈欣——<strong>《思想者》</strong></p>
-<span id="more"></span>
-
-<p>​		他仍记得34年前第一次看到思云山天文台时的感觉，当救护车翻过一道山梁后，思云山的主峰在远方出现，观象台射着夕阳的金光，像镶在主峰上的几粒珍珠。</p>
-<p>　　那时他刚从医学院毕业，是—名脑外科见习医生，作为主治医生的助手，到天文台来抢救一位不能搬运的重伤员，那是一名到这里做访问研究的英国学者，散步时不慎跌下山崖摔伤了脑部。到达天文台后，他们为伤员做了颅骨穿刺，吸出了部分淤血，降低了脑压，当病人改善到能搬运的状态后，便用救护车送他到省城医院做进一步的手术。</p>
-<p>　　离开天文台时已是深夜，在其他人向救护车上搬运病人时，他好奇地打量着周围那几座球顶的观象台，它们的位置组合似乎有某种隐晦的含义，如同月光下的巨石阵。在—种他在以后的生命中都百思不得其解的神秘力量的驱使下，他走向最近的一座观象台，推门走了进去。</p>
-<p>　　里面没有开灯，但有无数小信号灯在亮着，他感觉是从有月亮的星空走进了没有月亮的星空。只有细细的—缕月光从球顶的一道缝隙透下来，投在高大的天文望远镜上，用银色的线条不完整地勾画出它的轮廓，使它看上去像深夜的城市广场中央一件抽象的现代艺术品。</p>
-<p>　　他轻步走到望远镜的底部，在微弱的光亮中看到了一大堆装置，其复杂程度超出了他的想象，正在他寻找着可以把眼睛凑上去的镜头时，从门那边传来—个轻柔的女声：“这是太阳望远镜，没有目镜的。”</p>
-<p>　　一个穿着白色工作服的苗条身影走进门来，很轻盈，仿佛从月光中飘来的—片羽毛。这女孩子走到他面前，他感到了她带来的一股轻风。</p>
-<p>　　“传统的太阳望远镜，是把影像投在一块幕板上，现在大多是在显示器上看了……医生，您好像对这里很感兴趣。”</p>
-<p>　　他点点头：“天文台，总是一个超脱和空灵的地方，我挺喜欢这种感觉的。”</p>
-<p>　　“那您干吗要从事医学呢？哦，我这么问很不礼貌的。”</p>
-<p>　　“医学并不仅仅是琐碎的技术，有时它也很空灵，比如我所学的脑医学。”</p>
-<p>　　“哦？您用手术刀打开大脑，能看到思想？”她说，他在微弱的光线中看到了她的笑容，想起了那从未见过的投射到幕板上的太阳，消去了逼人的光焰，只留下温柔的灿烂，不由心动了一下。他也笑了笑，并希望她能看到自己的笑容。</p>
-<p>　　“我，尽量看吧。不过你想想，那用一只手就能托起的蘑菇状的东西，竟然是一个丰富多彩的宇宙，从某种哲学观点看，这个宇宙比你所观察的宇宙更为宏大，因为你的宇宙虽然有几百亿光年大，但好像已被证明是有限的；而我的宇宙无限，因为思想无限。” </p>
-<p>　　“呵，不是每个人的思想都是无限的，但医生，您可真像是有无限想象的人。至于天文学，它真没有您想象的那么空灵，在几千年前的尼罗河畔和几百年前的远航船上，它曾是一门很实用的技术，那时的天文学家，往往长年累月在星图上标注成千上万颗恒星的位置，把一生消耗在星星的‘人口普查’中。就是现在，天文学的具体研究工作大多也是枯燥乏味没有诗意的，比如我从事的项目，我研究恒星的闪烁，没完没了地观测记录再现测再记录，很不超脱，也不空灵。”</p>
-<p>　　他惊奇地扬起眉毛：“恒星在闪烁吗？像我们看到的那样？”看到她笑而不语，他自嘲地笑着摇摇头，“哦，我当然知道那是大气折射。”</p>
-<p>　　她点点头：“不过呢，作为一个视觉比喻这还真形象，去掉基础恒量，只显示输出能量波动的差值，闪烁中的恒星看起来还真是那个样子。”</p>
-<p>　　“是由于黑子、斑耀什么的引起的吗？”</p>
-<p>　　她收起笑容，庄严地摇摇头：“不，这是恒星总体能量输出的波动．其动因要深刻得多，如同一盏电灯，它的光度变化不是由于周围的飞蛾，而是由于电压的波动。当然恒星的闪烁波动是很微小的，只有十分精密的观测仪器才能觉察出来，要不我们早被太阳的闪烁烤焦 了。研究这种闪烁，是了解恒星的深层结构的一种手段。”</p>
-<p>　　“你已经发现了什么？”</p>
-<p>　　“还远不到发现什么的时候，到目前为止我们还只观测了—颗最容易观测的恒星——太阳的闪烁，这种观测可能要持续数年，同时把观测目标由近至远，逐步扩展到其他恒星……知道吗，我们可能花十几年的时间在宇宙中采集标本，然后才谈得上归纳和发现。这是我博士论文的题目，但我想我会一直把它做下去的，用一生也说不定。”</p>
-<p>　　“如此看来，你并不真觉得天文学枯燥。”</p>
-<p>　　“我觉得自己在从事一项很美的事业，走进恒星世界，就像进入一个无限广阔的花园，这里的每一朵花都与众不同……您肯定觉得这个比喻有些奇怪，但我确实有这种感觉。”</p>
-<p>　　她说着，似乎是无意识地向墙上指指，向那方向看去，他看到墙上挂着一幅画，很抽象，画面只是一条连续起伏的粗线。注意到他在看什么时，她转身走过去从墙上取下那幅画递给他，他发现那条起伏的粗线是用思云山上的雨花石镶嵌而成的。</p>
-<p>　　“很好看，但这表现的是什么呢?一排邻接的山峰吗？”</p>
-<p>　　“最近我们观测到太阳的—次闪烁，其剧烈的程度和波动方式在近年来的观测中都十分罕见，这幅画就是它那次闪烁时辐射能量波动的曲线。呵，我散步时喜欢收集山上的雨花石，所以……”但此时吸引他的是另一条曲线，那是信号灯的弱光在她身躯的一侧勾出的一道 光边，而她的其余部分都与周围的暗影融为一体。如同一位卓越的国画大师在一张完全空白的宣纸上信手勾出的一条飘逸的墨线，仅由于这条柔美曲线的灵气，宣纸上所有的—尘不染的空白立刻充满了生机和内涵……在山外他生活的那座大都市里，每时每刻都有上百万个青 春舰丽的女孩子在追逐着浮华和虚荣，像一大群做布朗运动的分子，没有给思想留出哪怕—瞬间的宁静。但谁能想到，在这远离尘嚣的思云山上，却有一个文静的女孩子在长久地凝视星空……“你能从宇宙中感受到这样的美，真是难得，也很幸运。”他觉察到了自己的失态，收回目光，把画递还给她，但她轻轻地推了回来。</p>
-<p>　　“送给您做个纪念吧，医生，威尔逊教授是我的导师，谢谢你们救了他。”</p>
-<p>　　十分钟后，救护车在月光中驶离了天文台。后来，他渐渐意识到自己的什么东西留在了思云山上。</p>
-<h4 id="时光之一"><a href="#时光之一" class="headerlink" title="[时光之一]"></a>[时光之一]</h4><p>　　直到结婚时，他才彻底放弃了与时光抗衡的努力．这一天，他把自己单身宿舍的车西都搬到了新婚公寓，除了几件不适于两人共享的东西，他把这些东西拿到医院的办公室去，漫不经心地翻看着，其中有那幅雨花石镶嵌画，看着那条多彩的曲线，他突然想到，思云山之行已经是十年前的事了。</p>
-<h4 id="人马座α星"><a href="#人马座α星" class="headerlink" title="[人马座α星]"></a>[人马座α星]</h4><p>　　这是医院里年轻人组织的一次春游，他很珍惜这次机会，因为以后这类事越来越不可能请他参加了．这次旅行的组织者故弄玄虚，在路上一直把所有车窗的帘子紧紧拉上，到达目的地下车后让大家猜这是哪儿，第一个猜中者会有一份不错的奖励。他一下车立刻知道了答案，但沉默不语。</p>
-<p>　　思云山的主峰就在前面，峰顶上那几个珍珠似的球型屋顶在阳光下闪亮。</p>
-<p>　　当有人猜对这个地方后，他对领队说要到天文台去看望一个熟人，然后径自沿着那条通向山顶的盘山公路徒步走去。</p>
-<p>　　他没有说谎，但心里也清楚那个连姓名都不知道的她并不是天文台的工作人员，十年过去了她不太可能还在这里。其实他压根就没想走进去，只是想远远地看看那个地方，十年前在那里，他那阳光灿烂燥热异常的心灵泻进了第一缕月光。</p>
-<p>　　一小时后他登上了山顶，在天文台的油漆已斑驳退色的白色栅栏旁，他默默地看着那些观象台，这里变化不大，他很快便认出了那座曾经进去过的圆顶建筑。他在草地上的一块方石上坐下，点燃一支烟，出神地看着那扇已被岁月留下痕迹的铁门，脑海中一遍遍重放着那 珍藏在他记忆深处的画面：那铁门半开着，一缕如水的月光中，飘进了一片轻盈的羽毛……他完全沉浸在那逝去的梦中，以至于现实的奇迹出现时并不吃惊：那个观象台的铁门真的开了，那片曾在月光中出现的羽毛飘进阳光里，她那轻盈的身影匆匆而去，进入了相邻的另一 座观象台。这过程只有十几秒钟，但他坚信自己没有看错。</p>
-<p>　　五分钟后，他和她重逢了。</p>
-<p>　　他是第一次在充足的光线下看到她，她与自己想象的完全一样，对此他并不惊奇，但转念一想已经十年了，那时在月光和信号灯弱光中隐现的她与现在应该不太一样，这让他很困惑。</p>
-<p>　　她见到他时很惊喜，但除了惊喜似乎没有更多的东西：“医生，您知道我是在各个天文台巡回搞观测项目的，一年只能有半个月在这里，又遇上了您，看来我们真有缘分！”她轻易地说出了最后那句话，更证实了他的感觉：她对他并没有更多的东西，不过，想到十年过 去了她还能认出自己，也感到一丝安慰。</p>
-<p>　　他们谈了几句那个脑部受伤的英国学者后来的情况，然后他问：“你还在研究恒星闪烁吗？”</p>
-<p>　　“是的。对太阳闪烁的观测进行了两年，然后我们转向其他恒星，您容易理解，这时所需的观测手段与对太阳的观测完全不同，项目没有新的资金，中断了好几年，我们三年前才重新恢复了这个项目，现在正在观测的恒星有二十五颗，数量和范围还在扩大。” </p>
-<p>　　“那你一定又创作了不少雨花石画。”</p>
-<p>　　他这十年中从记忆深处无数次浮现的那月光中的笑容，这时在阳光下出现了：“啊，您还记得那个！是的，我每次来思云山还是喜欢收集雨花石，您来看吧！”</p>
-<p>　　她带他走进了十年前他们相遇的那座观象台，他迎面看到一架高大的望远镜，不知道是不是十年前的那架太阳望远镜，但周围的电脑设备都很新，肯定不是那时留下来的．她带他来到一面高大的弧形墙前，墙上是他熟悉的东西，大小不一的雨花石镶嵌画．每幅画都只是 一条波动曲线，长短不一，有的平缓如海波．有的陡峭如一排高低错落的塔松。</p>
-<p>　　她挨个告诉他这些波形都来自哪些恒星，“这些闪烁我们称为恒星的A类闪烁，与其他闪烁相比它们出现的次数较少。A类闪烁与恒星频繁出现的其他闪烁的区别，除了其能量波动的剧烈程度大几个数量级外，其闪烁的波形在数学上也更具美感。”</p>
-<p>　　他困惑地摇摇头，“你们这些基础理论科学家们时常在谈论数学上的美感，这种感觉好像是你们的专利，比如你们认为很美的麦克斯韦方程，我曾经看懂了它，但看不出美在哪儿……”像十年前一样，她突然又变得庄严了：“这种美像水晶，很硬，很纯，很透明。”</p>
-<p>　　他突然注意到了那些画中的一幅，说：“哦，你又重做了一幅？”看到她不解的神态，他又说，“就是你十年前送给我的那幅太阳闪烁的波形图呀。”</p>
-<p>　　“可……这是人马座α星的一次A类闪烁的波形，是在，嗯，去年10月观测到的。”</p>
-<p>　　他相信她表现出的迷惑是真诚的，但他更相信自己的判断，这个波形他太熟悉了，不仅如此，他甚至能够按顺序回忆出组成那条曲线的每一粒雨花石的色彩和形状。他不想让她知道，在过去十年里，除去他结婚的最后一年，他一直把这幅画挂在单身宿舍的墙上，每个月总有那么几天，熄灯后窗外透进的月光足以使躺在床上的他看清那幅画，这时他就开始默数那组成曲线的雨花石，让自己的目光像甲虫一样沿着曲线爬行，一般来说，当爬完一趟又返回一半路程时他就睡着了，在梦中继续沿着那条来自太阳的曲线漫步，像踏着块块彩石过一条见远见不到彼岸的河……“你能够查到十年前的那条太阳闪烁曲线吗？日期是那年的4月23日。”</p>
-<p>　　“当然能，”她用很特别的目光看了他一眼，显然对他如此清晰地记得那日期有些吃惊。她来到电脑前，很快调出了那列太阳闪烁波形，然后又调出了墙上的那幅画上的人马座α星闪烁波形。她立刻呆住了。</p>
-<p>　　两列波形完美地重叠在一起。</p>
-<p>　　当沉默延长到无法忍受时，他试探着说：“也许，这两颗恒星的结构相同，所以闪烁的波形也相同，你说过，A类闪烁是恒星深层结构的反映。”</p>
-<p>　　“它们虽同处主星序，光谱型也同为G2，但结构并不完全相同。关键在于，就是结构相同的两颗恒星也不会出现这样的情况，都是榕树，您见过长得完全相同的两棵吗？如此复杂的波形竟然完全重叠，这就相当于有两棵连最末端的枝丫都一模一样的大榕树。”</p>
-<p>　　“也许，真有两棵一模一样的大榕树。”他安慰说，知道自己的话毫无意义。</p>
-<p>　　她轻轻地摇摇头，突然又想到了什么，猛地站起来，目光中除了刚才的震惊又多了恐惧。</p>
-<p>　　“天唉！”她说。</p>
-<p>　　“怎么了？”他关切地问。</p>
-<p>　　“您……想过时间吗？”</p>
-<p>　　他是个思维敏捷的人，很快捕捉到了她的想法：“据我所知，人马座α星是距我们最近的恒星，这距离好像是……4光年吧。”</p>
-<p>　　“1.3秒差距，就是4.25光年。”她仍被震惊攫住，这话仿佛是别人通过她的嘴说出的。</p>
-<p>　　现在事情清楚了：两个相同的闪烁出现的时间相距8年零6个月，正好是光在两颗恒星间往返一趟所需的时间。当太阳的闪烁光线在4.25年后传到人马座α星时，后者发生了相同的闪烁，又过了同样长的时间，人马座α星的闪烁光线传回来，被观测到。</p>
-<p>　　她又伏在计算机上进行了一阵演算，自语道：“把这些年来两颗恒星的相互退行考虑进去，结果仍能精确地对上。”</p>
-<p>　　“让你如此不安我报抱歉，不过这毕竟是一件无法进—步证实的事，不必太为此烦恼吧。”他又想安慰她。</p>
-<p>　　“无法进一步证实吗？也不一定：太阳那次闪烁的光线仍在太空中传播，也许会再次导致另—颗恒星产生相同的闪烁。”</p>
-<p>　　“比人马座星再远些的下—颗恒星是……”“巴纳德星，1.81秒差距，但它太暗，无法进行闪烁观测；再下一颗，佛耳夫359，2.35秒差距，同样太暗，不能观测；再往远，莱兰21185，2.52秒差距，还是太暗……只有到天狼星了。”</p>
-<p>　　“那好像是我们能看到的最亮的恒星了，有多远?”“2.65秒差距，也就是8.6光年。”</p>
-<p>　　“现在太阳那次闪烁的光线在太空中已行走了10年，已经到了那里，也许天狼星已经闪烁过了。”</p>
-<p>　　“但它闪烁的光线还要再等7年多才能到达这里。”</p>
-<p>　　她突然像从梦中醒来一样，摇着头笑了笑：“呵，天啊，我这是怎么了？太可笑了！”</p>
-<p>　　“你是说，作为一名天文学家，有这样的想法很可笑?”她很认真地看着他：“难道不是吗？作为脑外科医生，如果您同别人讨论思想是来自大脑还是心脏，有什么感觉？”</p>
-<p>　　他无话可说了，看到她在看表，他便起身告辞，她没有挽留他，但沿下山的公路送了他很远。他克制了朝她要电话号码的冲动，因为他知道，自己在她眼中不过是一个十年后又偶然重逢的陌路人而已。</p>
-<p>　　告别后，她返身向天文台走去，山风吹拂着她那白色的工作衣，突然唤起他十年前那次告别的感觉，阳光仿佛变成了月光，那片轻盈的羽毛正离他远去……像—个落水者想极力抓住一根稻草，他决意要维持他们之间那蛛丝般的联系，几乎是本能地，他冲她的背影喊道： “如果，7年后你看到天狼星真的那样闪烁了……”她停下脚步转过身来，微笑着回答他：“那我们就还在这里见面！”</p>
-<h4 id="时光之二"><a href="#时光之二" class="headerlink" title="[时光之二]"></a>[时光之二]</h4><p>　　婚姻使他进入了一种完全不同的生活，但真正彻底改变生活的是孩子，自从孩子出生后，生活的列车突然由慢车变成特快，越过一个又一个沿途车站，永不停息地向前赶路。旅途的枯燥使他麻木了，他闭上双眼不再看沿途那千篇—律的景色，在疲倦中睡去。但同许多在 火车上睡觉的旅客一样，心灵深处的一个小小的时钟仍在走动，使他在到达目的地前的一分钟醒来。</p>
-<p>　　这天深夜，妻儿都已睡熟，他却难以入睡，一种神秘的冲动使他披衣来到阳台上。他仰望着在城市的光雾中暗淡了许多的星空，在寻找着，找什么呢？好一会儿他才在心里回答自己：找天狼星。这时他不由打了—个寒颤。</p>
-<p>　　七年已经过去，现在，距他和她相约的那个日子只有两天了。</p>
-<h4 id="天狼星"><a href="#天狼星" class="headerlink" title="[天狼星]"></a>[天狼星]</h4><p>　　昨天下了今年的第—场雪，路面很滑，最后—段路出租车不能走了，他只好再一次徒步攀登思云山的主峰。</p>
-<p>　　路上，他不止一次地质疑自己的精神是否正常。事实上，她赴约的可能性为零，理由很简单：天狼星不可能像17年前的太阳那样闪烁。在这7年里，他涉猎了大量的天文学和天体物现学知识，7年前那个发现的可笑让他无地自容，她没有当场嘲笑，也让他感激万分。 现在想想，她当时那种认真的样子，不过是一种得体的礼貌而已，7年间他曾无数次回味分别时她的那句诺言，越来越从中体会出一种调侃的意味……随着天文观测向太空轨道的转移，思云山天文台在四年前就不存在了，那里的建筑变成了度假别墅，在这个季节已空无一人 ，他到那儿去干什么？想到这里他停下了脚步，这7年的岁月显示出了它的力量，他再也不可能像当年那样轻松地登山了。他犹豫了一会儿，最终还是放弃了返回的念头，继续向前走。</p>
-<p>　　在这人生过半之际，就让自己最后追一次梦吧。</p>
-<p>　　所以，当他看到那个白色的身影时，真以为是幻觉。天文台旧址前的那个穿着白色风衣的身影与积雪的山地背景融为一体，最初很难分辨，但她看到他时就向这边跑过来，这使他远远看到了那片飞过雪地的羽毛。他只是呆立着，—直等她跑到面前，她喘息着一时说不出 话来，他看到，除了长发换成短发，她没变太多，7年不是太长的时间，对于恒星的—生来说连弹指—挥间都算不上，而她是研究恒星的。</p>
-<p>　　她看着他的眼睛说：“医生，我本来不抱希望能见到您，我来只是为了履行—个诺言，或者说满足一个心愿。”</p>
-<p>　　“我也是。”他点点头。</p>
-<p>　　“我甚至，甚至差点错过了观测时间，但我没有真正忘记这事，只是把它放到记忆中一个很深的地方，在几天前的一个深夜里，我突然想到了它……”“我也是。”他又点点头。 </p>
-<p>　　他们沉默了，听到阵阵松涛声在山间回荡。</p>
-<p>　　“天狼星真的那样闪烁了？”他终于问道，声音微微发颤。</p>
-<p>　　她点点头：“闪烁波形与17年前太阳那次和7年前人马座α星那次精确重叠，一模—样，闪烁发生的时间也很精确。这是孔子三号太空望远镜的观测结果，不会有错的。”</p>
-<p>　　他们又陷入长时间的沉默，松涛声在起伏轰响，他觉得这声音已从群山间盘旋而上，充盈在天地之间，仿佛是宇宙间的某种力量在进行着低沉而神秘的合唱……他不由打了个寒颤。她显然也有同样的感觉，打破沉默，似乎只是为了摆脱这种恐惧。</p>
-<p>　　“但这种事情，这种已超出了所有现有理论的怪异，要想让科学界严肃地面对它，还需要更多的观测和证据。”</p>
-<p>　　他说：“我知道，下一个可观测的恒星是……”“本来小犬座的南河二星可以观测，但五年前该星的亮度急剧减弱到可测值以下，可能是漂浮到它附近的一片星际尘埃所致，这样，下一次只能观测天鹰座的河鼓二星了。”</p>
-<p>　　“它有多远？”</p>
-<p>　　“5.1秒差距，16.6光年，17年前的太阳闪烁信号刚刚到达那颗恒星。”</p>
-<p>　　“这就是说，还要再等将近17年？”</p>
-<p>　　她缓缓地点点头：“人生苦短唉！”</p>
-<p>　　她最后这句话触动了他心灵深处的什么东西，他那被寒风吹得发干的双眼突然有些湿润：“是啊，人生苦短。”</p>
-<p>　　她说：“但我们至少还有时间再这样相约一次。”</p>
-<p>　　这话使他猛地抬起头来，呆呆地望着她，难道又要分别17年？！</p>
-<p>　　“请您原谅，我现在心里很乱，我需要时间思考。”她拂开被风吹到额前的短发说，然后看透了他的心思，动人地笑了起来，“我给您我的电话和邮箱，如果您愿意的话，我们以后常联系。”</p>
-<p>　　他长长地松了一口气，仿佛飘游大洋上的航船终于看到了岸边的灯塔，心中充满了一种难言的幸福感，“那……我送你下山吧。”</p>
-<p>　　她笑着摇摇头，指指后面的圆顶度假别墅：“我要在这里住一阵儿，别担心，这里有电，还有一户很好的人家，是常驻山里的护林哨……我真的需要安静，很长时间的安静。”</p>
-<p>　　他们很快分手，他沿着积雪的公路向山下走去，她站在思云山的顶峰上久久地目送着他，他们都准备好了这17年的等待。</p>
-<h4 id="时光之三"><a href="#时光之三" class="headerlink" title="[时光之三]"></a>[时光之三]</h4><p>　　在第三次从思云山返回后，他突然看到了生命的尽头，他和她的生命都再也没有多少个17年了，宇宙的广漠使光都慢得像蜗牛，生命更是灰尘般微不足道。</p>
-<p>　　在这17年的头5年里他和她保持着联系，他们互通电子邮件，有时也打电话，但从未见过面，她居住在另一个很远的城市。以后，他们各自都走向人生的颠峰，他成为著名脑科专家和这个大医院的院长，她则成为国家科学院院土。他们要操心的事情多了起来，同时他明白，同—个已取得学术界最高地位的天文学家，过多地谈论那件把他们联系在一起的神话般的事件是不适宜的。于是他和她的联系渐渐少了，到17年过完一半时，这联系完全断了。</p>
-<p>　　但他很坦然，他知道他们之间还有一个不可能中断的纽带，那就是在广漠的外太空中正在向地球日夜兼程的河鼓二的星光，他们都在默默地等待它的到达。</p>
-<h4 id="河鼓二星"><a href="#河鼓二星" class="headerlink" title="[河鼓二星]"></a>[河鼓二星]</h4><p>　　他和她在思云山主峰见面时正是深夜，双方都想早来些以免让对方等自己，所以都在凌晨3点多攀上山来。他们各自的飞行车都能轻而易举地到达山顶，但两人都不约而同地把车停在山脚，徒步走上山来，显然都想找回过去的感觉。</p>
-<p>　　自从十年前被划为自然保护区后，思云山成了这世界上少有的越来越荒凉的地方，昔日的天文台和度假别墅已成为—片被藤蔓覆盖的废墟，他和她就在这星光下的废墟间相见。他最近还在电视上见过她，所以已熟悉岁月在她身上留下的痕迹，但她觉得面前的她还是34 年前那个月光中的少女，她的双眸映着星光，让他的心融化在往昔的感觉中。</p>
-<p>　　她说：“我们先不要谈河鼓二好吗？这几年我在主持一个研究项日，就是观测恒星间A类闪烁的传递。”</p>
-<p>　　“呵，我一直以为你不敢触及这个发现，或干脆把它忘了呢。”</p>
-<p>　　“怎么会呢?真实的存在就应该去正视，其实就是经典的相对论和量子力学描述的宇宙，其离奇和怪异已经不可思议了……这几年的观测发现，A类闪烁的传递是恒星间的一种普遍现象，每时每刻都有无数颗恒星在发生初始的A类闪烁，周围的恒星再把这个闪烁传递开去，任何一颗恒星都可能成为初始闪烁的产生者或其他恒星闪烁的传递者，所以整个星际看起来很像是雨中泛起无数圈涟漪的池塘……怎么，你并不感到吃惊？”</p>
-<p>　　“我只是感到不解：仅观测了四颗恒星的闪烁传递就用了三十多年，你们怎么可能……”“你是个十分聪明的人，应该能想到—个办法。”</p>
-<p>　　“我想……是不是这样：寻找一些相互之间相距很近的恒星来观测，比如两颗恒星A和B，它们距地球都有一万光年，但它们之相相距仅5光年，这样你们就能用5年时间观察到它们一万年前的一次闪烁传递。”</p>
-<p>　　“你真的是聪明人！银河系内有上千亿颗恒星，可以找到相当数量的这类恒星对。”</p>
-<p>　　他笑了笑，并像34年前一样，希望她能在夜色中看到自己的笑：“我给你带来了一件礼物。”他说着，打开背上山来的一个旅行包，拿出—个很奇怪的东西，足球大小，初看上去像是一团胡乱团起的渔网，对着天空时，透过它的孔隙可以看到断断续续的星光．他打开 手电，她看到那东西是由无数米粒大小的小球组成的，每个小球都伸出数目不等的几根细得几乎看不见的细杆与其他小球相连，构成了一个极其复杂的网架系统。他关上手电，在黑暗中按了一下网架底座上的一个开关，网架中突然充满了快速移动的光点，令人眼花缭乱，她 仿佛在看着一个装进了几万只萤火虫的空心玻璃球。再定睛细看，她发现光点最初都是由某一个小球发出，然后向周围的小球传递，每时每刻都有一定比例的小球在发出原始光点，或传递别的小球发出的光点，她形象地看到了自己的那个比喻：雨中的池塘。</p>
-<p>　　“这是恒星闪烁传递模型吗？！啊，真美，难道……你已经预见到这一切？！”</p>
-<p>　　“我确实猜测恒星闪烁传递是宇宙间的一种普遍现象，当然是仅凭直觉。但这个东两不是恒星闪烁传递模型。我们院里有一个脑科学研究项目，用三维全息分子显微定位技术，研究大脑神经元之间的信号传递，这就是一小部分右脑皮层的神经元信号传递模型，当然只是很小很少部分。”</p>
-<p>　　她着迷地盯着这个星光窜动的球体：“这就是意识吗？”</p>
-<p>　　“是的，正如巨量的0和1的组合产生了计算机的运算能力一样。意识也只是由巨量的简单连接产生的，这些神经元间的简单连接聚集到—个巨大的数量，就产生了意识，换句话说，意识，就是超巨量的节点间的信号传递。”</p>
-<p>　　他们默默地注视着这个星光灿烂的大脑模型，在他们周围的宇宙深渊中，飘浮着银河系的千亿颗恒星，和银河系外的千亿个恒星系，在这无数的恒星之间，无数的A类闪烁正在传递。</p>
-<p>　　她轻声说：“天快亮了，我们等着看日出吧。”</p>
-<p>　　于是他们靠着一堵断墙坐下来，看着放在前面的大脑模型，那闪闪的荧光有—种强烈的催眠作用，她渐渐睡着了。</p>
-<h4 id="思想者"><a href="#思想者" class="headerlink" title="[思想者]"></a>[思想者]</h4><p>　　她逆着一条苍茫的灰色大河飞行，这是时光之河，她在飞向时间的源头。群星像寒冷的冰碛漂浮在太空中。她飞得很快，扑动一下双翅就越过上亿年时光。宇宙在缩小，群星在会聚，背景辐射在剧增，百亿年过去了，群星的冰碛开始在能量之海中溶化，很快消散为自由 的粒子，后来粒子也变为纯能。太空开始发光，最初是暗红色，她仿佛潜行在能量的血海之中；后来光芒急剧增强，由暗红变成橘黄，再变为刺目的纯蓝，她似乎在一个巨大的霓虹灯管中飞行，物质粒子已完全溶解于能量之海中。透过这炫目的空间，她看到宇宙的边界球面 如巨掌般收拢，她悬浮在这已收缩到只有一间大厅般大小的宇宙中央，等待着奇点的来临。终于一切陷入漆黑，她知道已在奇点中了。</p>
-<p>　　一阵寒意袭来，她发现自己站立在广阔的白色平原上，上面是无限广阔的黑色虚空。看看脚下，地面是纯白色的，覆盖着一层湿滑的透明胶液。她向前走，来到一条鲜红的河流边，河面覆盖着一层透明的膜，可以看到红色的河水在膜下涌动。她离开大地飞升而上，看到 血河在不远处分了汊，还有许多条树枝状的血河，构成了一个复杂的河网。再上升，血河细化为白色大地上的血丝，而大地仍是一望无际。她向前飞去，前面出现了—片黑色的海洋，飞到海洋上空时她才发现这海不是黑的，呈黑色是因为它深而且完全透明，广阔海底的山脉 历历在目，这些水晶状的山脉呈放射状由海洋的中心延伸到岸边……她拼命上升，不知过了多长时间才再次向下看，这时整个宇宙已一览无遗。</p>
-<p>　　这宇宙是一只静静地看着她的巨大的眼睛。</p>
-<p>　　……</p>
-<p>　　她猛地醒来，额头湿湿的，不知是汗水还是露水。他没睡。—直在身边默默地看着她，他们前面的草地上，大脑模型已耗完了电池，穿行于其中的星光熄灭了。</p>
-<p>　　在他们上方，星空依旧。</p>
-<p>　　“‘他’在想什么？”她突然问。</p>
-<p>　　“现在吗?”</p>
-<p>　　“在这34年里。”</p>
-<p>　　“源于太阳的那次闪烁可能只是一次原始的神经元冲动，这种冲动每时每刻都在发生，大部分像蚊子在水塘中点起的小涟漪，转瞬即逝，只有传遍全宇宙的冲动才能成为一次完整的感受。”</p>
-<p>　　“我们耗尽了—生时光，只看到，‘他’的一次甚至自己都感觉不到的瞬间冲动？”她迷茫地说，仿佛仍在梦中。</p>
-<p>　　“耗尽整个人类文明的寿命，可能也看不到‘他’的一次完整的感觉。”</p>
-<p>　　“人生苦短唉！”</p>
-<p>　　“是啊，人生苦短……”</p>
-<p>　　“一个真正意义上的孤独者。”她突然没头没尾地说。</p>
-<p>　　“什么？”他不解地看着她。</p>
-<p>　　“呵，我是说‘他’之外全是虚无，‘他’就是一切，还在想，也许还做梦，梦见什么呢……”“我们还是别试图做哲学家吧！”他一挥手像赶走什么似的说。</p>
-<p>　　她突然想起了什么，从靠着的断墙上直起身说，“按照现代宇宙学的宇宙暴胀理论，在膨胀的宇宙中，从某—点发出的光线永远也不可能传遍宇宙。”</p>
-<p>　　“这就是说，‘他’永远也不可能有一次完整的感觉。”</p>
-<p>　　她两眼平视着无限远方，沉默许久，突然问道：“我们有吗？”</p>
-<p>　　她的这个问题令他陷入对往昔的追忆，这时，思云山的丛林中传来了第一声鸟鸣，东方的天际出现了一线晨光。</p>
-<p>　　“我有过。”他很自信地回答。是的，他有过，那是34年前，在这个山峰上的一个宁静的月夜，一个月光中羽般轻盈的身影，一双仰望星空的少女的眼睛……他的大脑中发生了一次闪烁，并很快传遍了他的整个心灵宇宙，在以后的岁月中，这闪烁一直没有消失。这个过程更加宏伟壮丽，大脑中所包含的那个宇宙，要比这个星光灿烂的己膨胀了150亿年的外部宇宙更为宏大，外部宇宙虽然广阔，毕竟已被被证明是有限的，而思想无限。</p>
-<p>　　东方的天空越来越亮，群星开始隐没，思云山露出了剪影般的轮廓，在它高高的主峰上，在那被蔓藤覆盖的天文台废墟中，这两个年近六十的人期待地望着东方，等待着那个光辉灿烂的脑细胞升出地平线。</p>
-<blockquote>
-<p>本文转自刘慈欣小说集</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>科幻</tag>
-        <tag>小说</tag>
-        <tag>刘慈欣</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>浅析网络域名解析缓慢的原因</title>
-    <url>/2023/08/25/%E6%B5%85%E6%9E%90%E7%BD%91%E7%BB%9C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%BC%93%E6%85%A2%E7%9A%84%E5%8E%9F%E5%9B%A0/</url>
-    <content><![CDATA[<p>在日常生活中，有时候我们即使配置了很高的宽带，也会发现有些网站加载速度很慢，甚至无法打开。</p>
-<span id="more"></span>
-
-<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在本文开始前总要概述一下造成网络缓慢的原因，主要有以下三种。</p>
-<p>1.传输带宽过窄</p>
-<p>2.传输距离过长</p>
-<p>3.服务器响应速度慢。</p>
-<p>但网络攻击以及网络污染也时时在影响着我们的生活，而且这种东西是无法避免的。</p>
-<h1 id="传输带宽过窄"><a href="#传输带宽过窄" class="headerlink" title="传输带宽过窄"></a>传输带宽过窄</h1><p>我们家庭中的网络是由运营商提供的，运营商分配给我们带宽资源取决于我们购买的套餐数量。所以这个是属于购买套餐问题，是比较容易解决的。</p>
-<h1 id="传输距离过长"><a href="#传输距离过长" class="headerlink" title="传输距离过长"></a>传输距离过长</h1><p>我们现在基本上都在使用光纤进行通信。</p>
-<p>然而，因为没有百分之百反射率的材料，所以即使光线的反射率再高，它也一样会对数据产生一点损耗。</p>
-<p>这种损耗在短程传输中可以忽略不计，可以认为接到的数据包总量是百分之百。</p>
-<p>但是如果经历远程传输，例如海底光缆传输，这个时候的损耗就会造成明显的丢包。</p>
-<p>因此服务器要重复多次发送数据的操作。这样就会延长加载的时间。</p>
-<p>那为什么在国内访问也依然很快呢？这是路由器的功劳。</p>
-<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><p>我们在日常生活中访问国内的服务器总速度一般都是很快的，基本上能达到你在运营商购买宽带的带宽。</p>
-<p>但是如果我们想要访问在国外的服务器，哪怕近在咫尺，速度也非常缓慢，这是怎么回事呢？</p>
-<p>实际上网络数据的传输并没有真正意义上的就近原则，而是靠路由器表中的<strong>AS域</strong>来决定最快的那条线路。</p>
-<p>每一个路由器和路由节点都会定时更新一张路由表，表示它能连接到哪些IP地址。以及需要的时间。</p>
-<p>当你想要访问某一个网站的时候，其实就是在你的IP和网站的IP之间建立一条连接。而BGP就会根据它收集到的路由表进行综合判断处理，选择出<strong>连接最快的那一条线路</strong>。</p>
-<h2 id="什么是BGP？"><a href="#什么是BGP？" class="headerlink" title="什么是BGP？"></a>什么是BGP？</h2><h5 id="BGP"><a href="#BGP" class="headerlink" title="BGP"></a>BGP</h5><p><strong>边界网关协议</strong>（英语：<code>Border Gateway Protocol</code>，缩写：<code>BGP</code>）是互联网上一个核心的去中心化自治路由协议。它通过维护IP路由表或“前缀”表来实现自治系统（<code>AS</code>）之间的可达性，属于矢量路由协议。<code>BGP</code>不使用传统的内部网关协议（<code>IGP</code>）的指标，而使用基于路径、网络策略或规则集来决定路由。因此，它更适合被称为矢量性协议，而不是路由协议。</p>
-<h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>任何连接上互联网的主机，通过其自身的IP地址，能够与世界上任何连接上互联网的主机通信。主机将数据传送给路由器，每个路由器再将数据包传给另一个路由器，直到数据被传递给目的主机。为了顺利将数据传递到目的主机，每个路由器必须定期提供最新的路由表。具有相同的IP地址前缀的IP为同一家自治系统（<code>AS</code>）拥有，自治系统之间的路由器的路由表通过边界网关协议进行维护。边界网关协议能让路由表内保存最佳路由路线。</p>
-<p>每个自治系统都通过边界网关协议来表明它可以向哪些IP前缀发送数据。例如如果IP前缀<code>192.0.2.0/24</code>位于<code>AS 64496</code>内，那么该自治系统就会将向其供应商表示它可以向<code>192.0.2.0/24</code>发送任何数据。</p>
-<p>比如我们家庭中的路由器，它的路由表上面就会拥有所有家庭连入该网络的设备，表示这个路由器能与这些设备进行通信。</p>
-<p>然后运营商的街道级路由就会收集这些家用路由器的信息，表示这个街道级路由能够连接到那些家用路由器。</p>
-<p>以此类推，还有市级路由，省级路由，以及顶级路由，还有一种比较特殊的路由——<strong>出口路由</strong>。</p>
-<p>出口路由是指能和国外的服务器进行通信的一类路由，他们的路由表拥有着国外路由的IP地址以及访问方法。</p>
-<h5 id="劫持"><a href="#劫持" class="headerlink" title="劫持"></a>劫持</h5><p>可以通过以下几种方式进行劫持：</p>
-<ul>
-<li>一个自治系统宣称一些IP前缀归其所有，但实际上并不是</li>
-<li>一个自治系统声称拥有某个IP前缀范围比实际声明拥有某个IP前缀的自治系统要更小</li>
-<li>一个自治系统声称它可以通过一条比已知的更短的路径将数据传递到被劫持的自治系统，而不管该路径是否真的存在</li>
-</ul>
-<p>这些方式的共同点是它们<strong>破坏了网络的正常路由</strong>，自治系统宣称的内容被添加至使用边界网关协议的路由器的路由表中，那<strong>路由器则会根据路由表将数据包传输给错误的自治系统</strong>，数据包最终无法被转发到目的地。</p>
-<p>通过这些方式，当你想要和被劫持的IP进行通信时，错误的路由表将会将信息导向一条不存在的通路。</p>
-<p>这样即使对方的服务器进行了应答，它的数据无法传输到你这里，就会产生<strong>连接超时</strong>的错误。</p>
-<h1 id="服务器响应速度慢"><a href="#服务器响应速度慢" class="headerlink" title="服务器响应速度慢"></a>服务器响应速度慢</h1><p>这个也比较容易理解，如果对方搭建的服务器质量不够好，采用的是小型服务器。</p>
-<p>那么当访问量过大时，服务器只能依照顺序进行处理，因此访问速度会变得慢很多。</p>
-<p>不过现在服务器的水平都在日益提升，这一点原因造成的加载缓慢已经变得很少了。</p>
-<h1 id="网络攻击"><a href="#网络攻击" class="headerlink" title="网络攻击"></a>网络攻击</h1><p>网络攻击的方式很多，包括我们刚刚说的BGP边界网关协议劫持攻击。</p>
-<p>好但是只有BGP网络协议劫持攻击才能达到加载缓慢的效果，其他的攻击方式基本上无法连接。</p>
-<h2 id="攻击的分类"><a href="#攻击的分类" class="headerlink" title="攻击的分类"></a>攻击的分类</h2><p>网络攻击的分类大致有以下几种：</p>
-<ul>
-<li>破坏，以破坏通信为目的使得双方的通信无法正常进行。</li>
-<li>窃取，以窃取数据为目的使得重要数据泄露。</li>
-<li>篡改，以修改数据为目的使得重要数据被修改。</li>
-<li>伪装，通过伪装成通信者和你进行访问。</li>
-<li>监听，监听双方的通信，获得通信内容。</li>
-<li>DDoS，通过大规模的访问，使得其他用户无法访问特定资源。</li>
-</ul>
-<p>其中窃取篡改的定义是略有不同的，稍加注意。</p>
-<p>而DDoS理论上不能算成一种网络攻击。因为它的本质上是请求服务，但是是恶意的请求服务。</p>
-<p>而且DDoS攻击理论上是不可避免的。</p>
-<h2 id="针对连接的攻击"><a href="#针对连接的攻击" class="headerlink" title="针对连接的攻击"></a>针对连接的攻击</h2><p>一般来说，如果针对网络性连接，除了我们提到的BGP网关协议,还有RST重置包以及DNS污染。</p>
-<h3 id="TCP介绍"><a href="#TCP介绍" class="headerlink" title="TCP介绍"></a>TCP介绍</h3><p>互联网上的计算机均使用TCP&#x2F;IP协议进行通信。而<code>TCP</code>重置是<code>TCP</code>的一种消息，用于重置连接。一般来说，例如服务器端在没有客户端请求的端口或者其它连接信息不符时，系统的TCP协议栈就会给客户端回复一个<code>RESET</code>通知消息，可见<code>RESET</code>功能本来用于应对例如服务器意外重启等情况。防火长城切断TCP连接的技术实际上就是比连接双方更快地发送连接重置消息，使连接双方认为对方终止了连接而自行关闭连接。</p>
-<h4 id="TCP重置攻击"><a href="#TCP重置攻击" class="headerlink" title="TCP重置攻击"></a>TCP重置攻击</h4><p>TCP重置攻击指的是使用伪造的TCP重置包干扰用户和网站的连接。这个技术可以在善意的防火墙中应用，但也可用于网络审查或是攻击，恶意中断TCP连接，是一种旁观者攻击。中国大陆的防火长城会自动执行TCP重置攻击，来阻断不符合中国的法律法规的网站。</p>
-<h5 id="TCP重置"><a href="#TCP重置" class="headerlink" title="TCP重置"></a>TCP重置</h5><p>在传输控制协议（TCP）连接的数据包流中，每个数据包都包含一个TCP包头。这些包头中的每一个都包含一个称为“复位”（<code>RST</code>）标志的位。在大多数数据包中，该位设置为0，并且无效；但是，如果此位设置为1，则向接收计算机指示该计算机应立即停止使用TCP连接；它不应使用连接的标识号（端口）发送更多数据包，并丢弃接收到的带有包头的其他数据包，这些包头指示它们属于该连接。TCP重置基本上会立即终止TCP连接。</p>
-<p>按照最初的设计，这是一个有用的工具。常见的应用是在进行TCP连接时计算机（计算机A）崩溃的情况。另一端的计算机（计算机B）将继续发送TCP数据包，因为它不知道计算机A已崩溃。重新启动计算机A后，它将从旧的崩溃前连接接收数据包。计算机A没有这些数据包的上下文，也无法知道如何处理这些数据包，因此它可以向计算机B发送TCP重置。此重置使计算机B知道该连接不再起作用。计算机B上的用户现在可以尝试其他连接或采取其他措施。</p>
-<h5 id="伪造TCP重置"><a href="#伪造TCP重置" class="headerlink" title="伪造TCP重置"></a>伪造TCP重置</h5><p>在上述情况下，TCP重置是由作为连接端点之一的计算机发送的。但操作中，第三台计算机可以监视连接上的TCP数据包，然后将包含TCP重置的“伪造”数据包发送到一个或两个端点。伪造数据包中的报头必须错误地表明它来自端点，而不是伪造者。此信息包括端点IP地址和端口号。IP和TCP包头中的每个字段都必须设置为令人信服的伪造值，以进行伪重置，以欺骗端点关闭TCP连接。</p>
-<h3 id="DNS污染"><a href="#DNS污染" class="headerlink" title="DNS污染"></a>DNS污染</h3><p>DNS劫持是一类旁观者攻击，攻击者借由其在网络拓扑中的<strong>特殊位置</strong>，发送比真实的DNS回应更早到达攻击目标的<strong>伪造DNS回应</strong>。</p>
-<p><strong>域名解析层级（优先级）：</strong></p>
-<p>浏览器缓存（短时）</p>
-<blockquote>
-<p><strong>流览器缓存</strong>（Browser Caching）是为了节约网络的资源加速浏览，浏览器在用户磁盘上对最近请求过的文档进行存储，当访问者再次请求这个页面时，浏览器就可以从本地磁盘显示文档，这样就可以加速页面的阅览。</p>
-</blockquote>
-<p>本地DNS缓存</p>
-<blockquote>
-<p><strong>域名系统</strong>（英文：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS使用UDP端口53。当前，对于每一级域名长度的限制是63个字符，域名总长度则不能超过253个字符。</p>
-</blockquote>
-<p>hosts文件</p>
-<blockquote>
-<p><strong>Hosts</strong>是一个没有扩展名的系统文件，可以用记事本等工具打开，其作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。<br>需要注意的是，Hosts文件配置的映射是静态的。</p>
-</blockquote>
-<p>最后到网卡配置信息里的DNS服务器以及DNS根域名服务器，通过UDP协议（传输层）向DNS服务器请求ip地址，DNS服务器域名系统解析（应用层）解析后返回正确的ip地址</p>
-<p> 一部连上了互联网的电脑一般都会使用互联网服务提供商提供的递归DNS服务器，这个服务器通常都会将部分客户曾经请求过的域名暂存起来。缓存污染攻击就是针对这一特性，影响服务器的用户或下游服务。</p>
-<p>在中国大陆，对所有经过防火长城的在<code>UDP</code>的<code>53</code>端口上的域名查询进行IDS入侵检测，一经发现与黑名单关键词相匹配的域名查询请求，会马上伪装成目标解析服务器注入伪造的查询结果。</p>
-<p>由于DNS协议的特殊规定，只相信接收到的第一个DNS，并且不去确认它的真实性。</p>
-<p>早期的GFW只是很简单的干扰我们的通讯，只要我们修改一下host文件就可以轻松绕过GFW的监控，但是后来逐渐失去了作用。</p>
-<h2 id="应对办法"><a href="#应对办法" class="headerlink" title="应对办法"></a>应对办法</h2><p>不能写……</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>没有……（懒了）</p>
-]]></content>
-      <tags>
-        <tag>网络</tag>
-        <tag>域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于bad config line 1 in file的紧急bug维修及处理方案</title>
-    <url>/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/</url>
-    <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
-<p>所有命令均提示异常</p>
-<p><code>hexo d</code>直接报错</p>
-<span id="more"></span>
-<p>找了很久，发现一个不起眼的地方</p>
-<p>当时心很忙，就没有截图</p>
-<p>但是报错信息是这样的</p>
-<p><code>fatal: bad config line 1 in file </code></p>
-<img src="/2023/08/23/%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
-
-<p>这个是插件安装错误，插件是dplayer播放器</p>
-<p>解决办法：使用npm卸载</p>
-<p><code>npm uninstall 模块 --save</code></p>
-<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
-<p>这个情况比较特殊，他没有给出路径</p>
-<p>所以这些对于这个问题无用</p>
-<p><a href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
-<p>叫你去动C盘的，后面一定会有一个路径指向C盘</p>
-<p>同样的，这个方法也可以解决hexo d时一堆warning LF。</p>
-<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
-<p>然后在<code>git bash</code>中输入这一行代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
-
-<p>就解决了</p>
-<blockquote>
-<p><a href="https://crab-in-the-northeast.gitee.io/blog/uncategorized/1.29bug/">1月29日惨案-bad config line 1 in .git&#x2F;config 解决方案 | blog-东北小蟹蟹 (gitee.io)</a></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>hexo</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程有感</title>
-    <url>/2023/09/03/%E7%BC%96%E7%A8%8B%E6%9C%89%E6%84%9F/</url>
-    <content><![CDATA[<p>随着代码编写的逐渐深入，我也慢慢体会到了一些只有在自己写代码的时候才能感觉到的瞬间。</p>
-<p>在生活中我们时常看到一些似乎不起眼的小功能，觉得实现他们并不是一件复杂的事。然而他们的背后很可能有着无数程序猿奋斗几个晚上的心血。</p>
-<span id="more"></span>
-
-<h1 id="简单的繁杂"><a href="#简单的繁杂" class="headerlink" title="简单的繁杂"></a>简单的繁杂</h1><p>比如此时这个页面的背景图。</p>
-<p>到现在还是看似一张整体的背景图。</p>
-<p>很多人都会认为这是一个非常简单的工作，只需要把代码中的图片路径修改一下就可以了。</p>
-<p>然而事实并不是这样。</p>
-<p>如果你用PC端浏览的话，细心观察可以发现文章和左边的固定栏交界处是会有一些略微的差异的。</p>
-<p><strong>因为这是两张图片。</strong></p>
-<p>所以我们在选择图片时，不仅要做到精准裁切，还要同时修改两个地方的调用函数，并且确保它们尽量能同时加载。</p>
-<p>在以前的版本中，优先加载的是左侧侧边栏的背景，然后再加载主页背景。</p>
-<p>这样会导致非常明显的差异，后来经过了进行修改，才能让它们同时并行加载。</p>
-<p>这一个微小的提升看起来没有什么很大的意义，却是优化体验的关键一步。</p>
-<p>所以在这种简单的事情背后有着繁杂的逻辑机制和程序代码。需要不断的去探索与研究。</p>
-<hr>
-<p>有些人可能会说：“这么复杂，为什么不把左边的固定栏背景去掉，换成一张整体背景呢。“</p>
-<p>这个想法看似非常有用，既解决了并行加载的问题，又能使界面的差异消失，还可以增强程序的可维护性，减少维护成本。</p>
-<p>然而这就涉及到另外一个问题了。</p>
-<h1 id="搭积木"><a href="#搭积木" class="headerlink" title="搭积木"></a>搭积木</h1><p>我想很多人都小时候玩过乐高拼装积木，即便没玩过也听说过。</p>
-<p>在这些乐高中，工程师们帮我们设计好这些组件的形状。最基本的有各种方块以及各种板块，让我们用这些东西搭建。</p>
-<p>后来工程师们又给我们提供了一些综合性的物品，比如乐高升降机，乐高工程塔吊，乐高玻璃推拉门。</p>
-<p>这些东西既方便又实用，只要我们把这些东西安放到我们想要的位置，我们就不用重新再搭建一个类似这样的结构了。</p>
-<p>这个过程和编程非常类似。</p>
-<hr>
-<p>在各种各样的程序中，程序员并不是写亲手写出每一行代码的。</p>
-<p>来自世界各地的程序员编写出了一个个程序后，形成一个个<strong>「模块」</strong>。</p>
-<p>程序员们把这些模块发布到编程平台上，后来者便可随意调用这些模块。</p>
-<p>只需要掌握一些<strong>接口参数</strong>，便可实现自己的更多想法。</p>
-<p>程序员不用关心这个模块内部是怎么工作的，只需要知道这个模块是<strong>用来干什么的</strong>。</p>
-<p>这样就可以省去大量反复的工作，避免再走一遍前人的路。</p>
-<p>所以现在网上很多人都说程序员不会用面向过程编程，也不会用面向对象编程，用的都是面向CSDN和github编程。</p>
-<p>这就是编程的核心原则——<strong>「DRY」</strong></p>
-<p><strong>「不要重复你自己」</strong></p>
-<p>这些省下来的时间，便可以拓展更多的想法。</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>但是，这样终归会产生一些问题。</p>
-<p>而是以乐高积木举例，我们在玩乐高积木的时候，有时会发现一些设计出来的模块不能满足我们的要求。</p>
-<p>更准确的说法应该是，不能<strong>精准符合</strong>我们的要求。</p>
-<p>当我们需要一个正方形的升降机时，厂商提供的模块只有长方形的升降机。虽然也能起到升降的功能，但是无法满足我们的要求。</p>
-<p>在编程世界也有同样的情况：我们需要一个随机生成的座位表程序，但是要求只能同性同学坐在一起。</p>
-<p>然而，我们无法找到符合我们精准要求的模块。只能找到随机生成的座位表模块。</p>
-<p>这个时候我们就要进入到编程的下一个阶段，</p>
-<p>从<strong>「使用模块」</strong>到<strong>「修改模块」</strong></p>
-<h1 id="「修改模块」"><a href="#「修改模块」" class="headerlink" title="「修改模块」"></a>「修改模块」</h1><p>发现了无法精准适配的问题后，我们便会去修改模块，以此来满足自己的需求。</p>
-<p>然而这就意味着我们必须要详细了解模块内部是怎么运作的，这样子才能在关键的地方修改，而不仅仅是调用这个模块的一些接口来获得结果。</p>
-<p>所以我们必须要掌握模块运用的编程语言。</p>
-<p>而现在主流的编程语言已经超过20多种，耳熟能详的也有十多种。</p>
-<p><code>python，C++，JavaScript，C#，CSS，PHP，SQL</code>……</p>
-<p>所以修改模块的难度是比使用模块高得多的。</p>
-<p>就像很多人会开车，但是不会造车一样。</p>
-<p>所以回到开头的那个问题。</p>
-<blockquote>
-<p>为什么不把左边的固定栏背景去掉，换成一张整体背景呢?</p>
-</blockquote>
-<p>这就意味着我们要学习CSS的内容，了解到左侧背景的恐惧部分，然后再将它在许多行代码中检索出来进行详细的文件修改。</p>
-<p>这个过程<strong>太难了</strong>。</p>
-<p>所以当模块中没有预设时，一个简简单单的小功能也是非常难以实现的。</p>
-<h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1><p>但是有的时候我们真的不得不修改模块。</p>
-<p>如果你是PC端浏览的话，你可能看到后面的背景图是不会移动的。</p>
-<p>可能认为这是一件非常简单的事情，毕竟模板一般也会预设好的。</p>
-<p>但是这个模块没有，所以我们要对<a href="https://windeling.github.io/2023/08/26/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/">背景图片修改</a></p>
-<p>最后终于升级完成的时候，已经花了6个多小时了。</p>
-<p>因为从来没有接触过CSS……</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>很多时候我们不会理解这些看似很简单的事物后面会隐藏着这些东西。</p>
-<p><strong>「因为知晓，所以而敬畏」</strong></p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于yilia背景图片畸变问题及恒定显示解决方案</title>
-    <url>/2023/08/26/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>今天花了6个小时，只解决了一个小bugo(╥﹏╥)o</p>
-<p>惨痛的故事告诉我们：</p>
-<span id="more"></span>
-
-<h1 id="升级前一定要备份！！"><a href="#升级前一定要备份！！" class="headerlink" title="升级前一定要备份！！"></a>升级前一定要备份！！</h1><p>不然就会不断的报错，而且根本找不到问题的原因。</p>
-<p>最后还是<a href="boredliam.github.io">林耀宗</a>给我一份备份，并帮助我修好了bug。</p>
-<p>在此十分感谢！！</p>
-<h1 id="Bug"><a href="#Bug" class="headerlink" title="Bug"></a>Bug</h1><p>这个bug在版本2.4.2之前一直没有成功解决，上了CSDN和知乎去询问，都没有得到满意的结果。</p>
-<p>最后，我们决定自己研发出路。</p>
-<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>以前也是尝试过使用背景图片。如果文字区域较小，是能够正常显示的。效果和现在的表现一样。</p>
-<p>但是随着文章的增多，以及区域的拉长，图片开始越来越畸变。</p>
-<img src="/2023/08/26/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/803140378296148.png" class width="803140378296148">
-
-<p>可以明显的看到图片已经向左移动了。</p>
-<p>这个问题在电脑端没有影响很严重。毕竟如果这么看着的话也挺好看的。</p>
-<p>但是我们住图片右上角有一块青色。如果在手机端浏览的话，就会导致青色成为主颜色。会使灰色的文字很难辨认。</p>
-<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>进行复位后，我们决定从CSS入手</p>
-<p>网上有的教程是改变body的元素，我们测试后发现没有效果。</p>
-<p>目前实测成功的代码如下：</p>
-<img src="/2023/08/26/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/ebac4a6352313d3f8b7b38d7877549ec.png" class title="ebac4a6352313d3f8b7b38d7877549ec">
-
-<p>URL替换成你想要的图片，这样就可以固定住图片了，而不是图片随着文章长度拉伸。</p>
-<blockquote>
-<p>本文很多技术指导来源于<a href="boredliam.github.io">林耀宗</a>，若有兴趣可以去他的主页看看。</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>yilia</tag>
-        <tag>背景</tag>
       </tags>
   </entry>
 </search>

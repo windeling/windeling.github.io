@@ -10,23 +10,23 @@
   <link rel="dns-prefetch" href="https://windeling.github.io">
   <title>关于valine评论无法提交的问题原因分析和解决方案 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="起因：有人想买个U盘。">
+  <meta name="description" content="起因：有人想买个U盘。 然后他便写了一篇文章。 接着评论无法提交">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于valine评论无法提交的问题原因分析和解决方案">
 <meta property="og:url" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="Windeling">
-<meta property="og:description" content="起因：有人想买个U盘。">
+<meta property="og:description" content="起因：有人想买个U盘。 然后他便写了一篇文章。 接着评论无法提交">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://windeling.github.io/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/b5bdee774a9f033dbf0f165b78beb94b.png">
-<meta property="og:image" content="https://windeling.github.io/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/22007b7b4e05882d35544461b15e52eb.png">
+<meta property="og:image" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png">
+<meta property="og:image" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/22007b7b4e05882d35544461b15e52eb.png">
 <meta property="article:published_time" content="2023-08-25T02:46:00.000Z">
-<meta property="article:modified_time" content="2023-09-03T03:03:34.955Z">
+<meta property="article:modified_time" content="2023-09-23T13:59:29.997Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="valine">
 <meta property="article:tag" content="bug">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://windeling.github.io/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/b5bdee774a9f033dbf0f165b78beb94b.png">
+<meta name="twitter:image" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -37,7 +37,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#898CB2,#898CB2);
+      background: linear-gradient(200deg,#808080,#808080);
     }
   </style>
   
@@ -80,7 +80,7 @@
 		</nav>
 		<!--文章数-->
 		<nav>
-			总文章数: 15篇
+			总文章数: 11篇
 		</nav>
 		<!--文章数-->
 		<div calss="count-span">
@@ -100,10 +100,6 @@
             
     			
     			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">链接</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -219,7 +215,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">853字</span>
+      <span class="post-count">822字</span>
 
     </span>
 
@@ -235,7 +231,7 @@
 
       <span class="post-meta-item-text">  预计阅读时长: </span>
 
-      <span class="post-count">3分</span>
+      <span class="post-count">2分</span>
 
     </span>
     
@@ -258,13 +254,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>起因：有人想买个U盘。</p>
+<p>然后他便写了一篇文章。</p>
+<p>接着评论无法提交</p>
 <span id="more"></span>
 
-<p><a target="_blank" rel="noopener" href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关U盘 | Liam’s boring life </a></p>
-<p>然后他便写了一篇文章。</p>
 <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
-<p>结果</p>
-<p><img src="/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/b5bdee774a9f033dbf0f165b78beb94b.png" alt="b5bdee774a9f033dbf0f165b78beb94b"></p>
+<p>结果发现</p>
+<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
+
 <p>这就有意思了，评论无法提交。</p>
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
 <p>发现他没有定义一个实例。</p>
@@ -276,7 +273,10 @@
 <p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
 <p>可以参考这篇文章进行实例搭建。</p>
 <h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
-<p><img src="/valine%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4/22007b7b4e05882d35544461b15e52eb.png" alt="22007b7b4e05882d35544461b15e52eb"></p>
+<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
+
+
+
 <p>这里最重要的一点是云函数的问题。</p>
 <p>通常发生在国际服的比较多，华北和华东服务器尚未出现过此类问题。</p>
 <p>可以看到部署在华东服务器上面的实例有三个云函数，其中两个是我自己添加的。</p>
@@ -293,15 +293,13 @@
 <p>比如 <code>serverURLs: &#39;https://xxxxxxxx.api.lncldglobal.com&#39;</code></p>
 </blockquote>
 <p>这个是网上流传的解决办法，但是我们实际中找不到对应的文件。</p>
-<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的同学可以尝试一下。</p>
+<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的可以尝试一下。</p>
 <hr>
 <p>比较简单的方法就是选择华北和华东服务器，因为服务器处在国内，比较稳定。</p>
 <p>但是使用这两个服务器要遵守《中华人民共和国网络安全法》，需要进行实名备案注册。</p>
-<p>而且备案注册必须使用支付宝的刷脸进行认证，有点麻烦。</p>
-<p>但是优点就是成功率非常高，能够解决大部分问题。（重装能解决99%的问题）</p>
+<p>而且备案注册必须使用支付宝的刷脸进行认证，优点就是成功率非常高，能够解决大部分问题。</p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>在搭建个人博客的时候，服务器能采用国内的服务器，就尽量使用国内的服务器。</p>
 <p>因为网络长城的存在及国际政治不稳定因素，很容易造成连接中断或连接被污染迟缓等等问题。</p>
-<p>有兴趣可以查看一下部分缓慢的域名：</p>
 
       
 
@@ -342,18 +340,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2023/08/25/%E6%B5%85%E6%9E%90%E7%BD%91%E7%BB%9C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%BC%93%E6%85%A2%E7%9A%84%E5%8E%9F%E5%9B%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9F%B3%E4%B9%90%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          浅析网络域名解析缓慢的原因
+          关于浏览器音乐自动播放的问题
         
       </div>
     </a>
   
   
-    <a href="/2023/08/24/USB%E6%8E%A5%E5%8F%A3%E5%A4%A7%E5%85%A8/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">浅析USB接口</div>
+    <a href="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浅析USB系列接口</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -535,25 +533,17 @@ MathJax.Hub.Queue(function() {
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
       
         
     </ul>
@@ -622,39 +612,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">存储</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">对焦</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">科幻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">小说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">刘慈欣</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">网络</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">域名</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">背景</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ADB</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">手表调试</a>
               </li>
             
             <div class="clearfix"></div>
@@ -722,10 +696,6 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-    	</section>
     
   </div>
   

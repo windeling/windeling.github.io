@@ -8,15 +8,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>Tag: 小说 | Windeling</title>
+  <title>关于手表ADB调试的应用分析与教程 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Windeling">
-<meta property="og:url" content="https://windeling.github.io/tags/%E5%B0%8F%E8%AF%B4/index.html">
+  <meta name="description" content="今天发现OPPO的手表能够打开开发者选项并进入USB调试。 因此就有可能通过ADB命令行使手表可以下载自己想要的应用。 那么就以OPPO Watch 3为例，进行应用调试的分析。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于手表ADB调试的应用分析与教程">
+<meta property="og:url" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Windeling">
+<meta property="og:description" content="今天发现OPPO的手表能够打开开发者选项并进入USB调试。 因此就有可能通过ADB命令行使手表可以下载自己想要的应用。 那么就以OPPO Watch 3为例，进行应用调试的分析。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png">
+<meta property="og:image" content="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png">
+<meta property="article:published_time" content="2023-09-23T12:53:10.000Z">
+<meta property="article:modified_time" content="2023-09-23T13:40:26.215Z">
 <meta property="article:author" content="黄文林">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="ADB">
+<meta property="article:tag" content="手表调试">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -27,7 +37,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#898CB2,#898CB2);
+      background: linear-gradient(200deg,#808080,#808080);
     }
   </style>
   
@@ -70,7 +80,7 @@
 		</nav>
 		<!--文章数-->
 		<nav>
-			总文章数: 15篇
+			总文章数: 11篇
 		</nav>
 		<!--文章数-->
 		<div calss="count-span">
@@ -90,10 +100,6 @@
             
     			
     			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">链接</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -183,72 +189,273 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-关于手表ADB调试的应用分析与教程" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap" style="font-family: Times, Times New Roman, serif;">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives" style="font-family: FangSong;">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/08/23/%E6%80%9D%E6%83%B3%E8%80%85/" class="archive-article-date">
-  	<time datetime="2023-08-23T10:42:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-23</time>
-</a>
-        </div>
-        <div style="font-size: 40px;">
-          
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/08/23/%E6%80%9D%E6%83%B3%E8%80%85/">思想者</a>
+    <h1 class="article-title" itemprop="name">
+      关于手表ADB调试的应用分析与教程
     </h1>
   
 
-        </div>
-        <div class="article-info info-on-right">
+        
+        <a href="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/" class="archive-article-date">
+  	<time datetime="2023-09-23T12:53:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-09-23</time>
+</a>
+        
+          <div style="margin-top:10px;">
+
+  <span class="post-time">
+
+    <span class="post-meta-item-icon">
+
+      <i class="fa fa-keyboard-o"></i>
+
+      <span class="post-meta-item-text">  字数统计: </span>
+
+      <span class="post-count">1.7k字</span>
+
+    </span>
+
+  </span>
+
+  <span class="post-time">
+
+    &nbsp; | &nbsp;
+
+    <span class="post-meta-item-icon">
+
+      <i class="fa fa-hourglass-half"></i>
+
+      <span class="post-meta-item-text">  预计阅读时长: </span>
+
+      <span class="post-count">6分</span>
+
+    </span>
+    
+      <a class="cloud-tie-join-count" href="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/" style="color:rgba(26, 26, 26);margin-top:10px;">
+        &nbsp; | &nbsp;
+        <span id="busuanzi_container_page_pv">
+          阅读量: <span id="busuanzi_value_page_pv"></span>
+        </span>
+      </a>
+    
+  </span>
+  <!--显示阅读次数-->
+
+</div>
           
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天发现OPPO的手表能够打开开发者选项并进入USB调试。</p>
+<p>因此就有可能通过ADB命令行使手表可以下载自己想要的应用。</p>
+<p>那么就以OPPO Watch 3为例，进行应用调试的分析。</p>
+<span id="more"></span>
+
+<h1 id="开发者模式"><a href="#开发者模式" class="headerlink" title="开发者模式"></a>开发者模式</h1><p>众所周知，ADB调试功能是给程序开发者使用一种功能，其目的在于可以通过更高端的电子设备来对这种智能设备进行并且代码与调试。</p>
+<p>所以我们想要使用ADB调试功能，就必须要在手表端打开调试界面并允许调试。</p>
+<p>但是智能穿戴设备能否打开这是支持的功能型号。下面列出部分系列的支持功能。</p>
+<h2 id="支持的系列"><a href="#支持的系列" class="headerlink" title="支持的系列"></a>支持的系列</h2><p>目前已知支持的系列有OPPO手表全系，以及部分小米手环，还有ticwatch的手表系列，华为的watch系列。</p>
+<p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/devices.html">手表列表 | WearOS 工具箱 (wearosbox.com)</a></p>
+<h2 id="不支持的手表"><a href="#不支持的手表" class="headerlink" title="不支持的手表"></a>不支持的手表</h2><p>有很多手表使用了 RTOS 或者轻量级私有化系统，而不是Android。因此我们无法连接到这些手表。以下是一些常见的不支持的手表：</p>
+<ul>
+<li>华为 Watch GT 以及各类产品。<br>仅 HUAWEI Watch 系列手表支持。</li>
+<li>三星 Gear &#x2F; Active 系列。<br>三星 Gear S3 可能可以通过刷入 Wear OS 固件来支持。但由于用户较少，并且需要刷入第三方固件，因此不推荐这样做。</li>
+<li>除小米手表 1 之外的所有小米生产线设备以及上述华米设备。其余如 Color, 小米手表 S1, 华米, Redmi, Amazfit 等品牌均不支持。</li>
+</ul>
+<h1 id="ADB调试"><a href="#ADB调试" class="headerlink" title="ADB调试"></a>ADB调试</h1><p>工欲善其事，必先利其器，在开始操作之前，先简单了解一下关于adb调试的理论原理及应用基础。</p>
+<blockquote>
+<h1 id="Android-调试桥-adb"><a href="#Android-调试桥-adb" class="headerlink" title="Android 调试桥 (adb)"></a>Android 调试桥 (adb)</h1><p>Android 调试桥 (<code>adb</code>) 是一种功能多样的命令行工具，可让您与设备进行通信。<code>adb</code> 命令可用于执行各种设备操作，例如安装和调试应用。<code>adb</code> 提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。它是一种客户端-服务器程序，包括以下三个组件：</p>
+<ul>
+<li><strong>客户端</strong>：用于发送命令。客户端在开发机器上运行。您可以通过发出 <code>adb</code> 命令从命令行终端调用客户端。</li>
+<li>**守护程序 (adbd)**：用于在设备上运行命令。守护程序在每个设备上作为后台进程运行。</li>
+<li><strong>服务器</strong>：用于管理客户端与守护程序之间的通信。服务器在开发机器上作为后台进程运行。</li>
+</ul>
+</blockquote>
+<p>这是安卓官方对于ADB的解释与说明。</p>
+<blockquote>
+<h2 id="adb-的工作原理"><a href="#adb-的工作原理" class="headerlink" title="adb 的工作原理"></a>adb 的工作原理</h2><p>当您启动某个 <code>adb</code> 客户端时，该客户端会先检查是否有 <code>adb</code> 服务器进程已在运行。如果没有，它会启动服务器进程。服务器在启动后会与本地 TCP 端口 5037 绑定，并监听 <code>adb</code> 客户端发出的命令。</p>
+<p><strong>注意</strong>：所有 <code>adb</code> 客户端均使用端口 5037 与 <code>adb</code> 服务器通信。</p>
+<p>然后，服务器会与所有正在运行的设备建立连接。它通过扫描 5555 到 5585 之间（该范围供前 16 个模拟器使用）的奇数号端口查找模拟器。服务器一旦发现 <code>adb</code> 守护程序 (adbd)，便会与相应的端口建立连接。</p>
+</blockquote>
+<blockquote>
+<h2 id="在设备上启用-adb-调试"><a href="#在设备上启用-adb-调试" class="headerlink" title="在设备上启用 adb 调试"></a>在设备上启用 adb 调试</h2><p>如要在通过 USB 连接的设备上使用 adb，您必须在设备的系统设置中启用 <strong>USB 调试</strong>（位于<strong>开发者选项</strong>下）。在 Android 4.2（API 级别 17）及更高版本中，<strong>开发者选项</strong>屏幕默认处于隐藏状态。如需将其显示出来，请<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/debug/dev-options?hl=zh-cn#enable">启用开发者选项</a>。</p>
+<p>现在，您已经可以通过 USB 连接设备了。您可以通过从 <code>android_sdk/platform-tools/</code> 目录执行 <code>adb devices</code> 来验证设备是否已连接。如果已连接，您将看到设备名称以“设备”形式列出。</p>
+<p><strong>注意</strong>：当您连接搭载 Android 4.2.2（API 级别 17）或更高版本的设备时，系统会显示一个对话框，询问您是否接受允许通过此计算机进行调试的 RSA 密钥。这种安全机制可以保护用户设备，因为它可以确保用户只有在能够解锁设备并确认对话框的情况下才能执行 USB 调试和其他 adb 命令。</p>
+</blockquote>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>调试手表必然要一套完整的工具，因此早有人开发出来了WearOS的工具箱，摆脱了繁琐的命令的苦恼。</p>
+<p><a target="_blank" rel="noopener" href="https://wearosbox.com/">WearOS工具箱 专为智能手表打造的工具箱 (wearosbox.com)</a></p>
+<p>将此工具箱内的软件下载到电脑或手机上，然后再进行调试。</p>
+<p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/">帮助中心 | WearOS 工具箱 (wearosbox.com)</a></p>
+<h2 id="如何打开开发者选项"><a href="#如何打开开发者选项" class="headerlink" title="如何打开开发者选项"></a>如何打开开发者选项</h2><h3 id="Wear-OS"><a href="#Wear-OS" class="headerlink" title="Wear OS"></a>Wear OS</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/developer/wearos2.html">Wear OS 2.0 及更早版本</a></li>
+<li><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/developer/wearos.html">Wear OS 3+</a></li>
+<li>三星手表: <a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/device/samsung.html">打开开发者选项和 ADB 调试</a></li>
+</ul>
+<h3 id="OPPO-手表"><a href="#OPPO-手表" class="headerlink" title="OPPO 手表"></a>OPPO 手表</h3><ol>
+<li>进入设置-其他设置-关于手表，连续点击版本号数次，启用手表的开发者选项。</li>
+<li>进入设置-其他设置-开发者选项，打开 USB 调试。</li>
+</ol>
+<h3 id="AOSP"><a href="#AOSP" class="headerlink" title="AOSP"></a>AOSP</h3><ol>
+<li>进入设置-关于手表，连续点击版本号数次，启用手表的开发者选项。</li>
+<li>进入设置-开发者选项，打开 USB 调试。</li>
+</ol>
+<p>打开开发选项以后，就可以选择调试方式。</p>
+<h2 id="调试方式"><a href="#调试方式" class="headerlink" title="调试方式"></a>调试方式</h2><p>一般推荐使用数据线调试，其具有稳定，安全可靠的特点，并且大多数手表都支持此调试功能。</p>
+<p>一些特殊的蓝牙手表能使用蓝牙调试，详情请参阅官方文档。</p>
+<p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/method/bluetooth.html">蓝牙调试 | WearOS 工具箱 (wearosbox.com)</a></p>
+<h3 id="手机调试"><a href="#手机调试" class="headerlink" title="手机调试"></a>手机调试</h3><p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/method/webadb/webadb.html">使用数据线在手机上激活 | WearOS 工具箱 (wearosbox.com)</a></p>
+<p>手机调试较为繁琐，且需要购买额外部件，因此请参阅官方文档。</p>
+<h3 id="PC调试"><a href="#PC调试" class="headerlink" title="PC调试"></a>PC调试</h3><p>如果是 Android 手表，在打开 ADB 调试后，还不能直接使用 WearOS 工具箱来连接。可以使用以下 ADB 命令启动网络调试。</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>Windows 需要安装驱动。</p>
+<p>连接上设备，在电脑上访问如下网页，下载驱动：</p>
+<p><a target="_blank" rel="noopener" href="https://wearosbox.com/d.exe">https://wearosbox.com/d.exeopen in new window</a></p>
+<p>然后，单击 INSTALL 安装。</p>
+<p>Windows 正版用户，在插入手表后，可以直接前往系统设置下载可选驱动，以快速安装。</p>
+<p><img src="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png" alt="img"></p>
+<p>您也可以选择 <a target="_blank" rel="noopener" href="https://web.vip.miui.com/page/info/mio/mio/detail?postId=18464849">教程图文详解小米手机驱动安装open in new window</a> 方式或者<br>安装 <a target="_blank" rel="noopener" href="https://developer.samsung.com/mobile/android-usb-driver.html">Samsung Android USB 驱动open in new window</a>。实际上以上驱动没有较大差别。</p>
+<p>完成后，请查看设备管理器中的 ADB 设备是否已经被准确识别：</p>
+<p><img src="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png" alt="img"></p>
+<h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><p>本来以为这里是写的最多的，没想到现在已经有了成熟的GUI界面软件。</p>
+<p>那就没什么好说的了，按照操作去点击即可。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">科幻</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小说</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ADB</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">刘慈欣</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">手表调试</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2023/09/10/teacher/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">教师节</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E8%80%85%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">开发者模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84%E7%B3%BB%E5%88%97"><span class="toc-number">1.1.</span> <span class="toc-text">支持的系列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E6%89%8B%E8%A1%A8"><span class="toc-number">1.2.</span> <span class="toc-text">不支持的手表</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ADB%E8%B0%83%E8%AF%95"><span class="toc-number">2.</span> <span class="toc-text">ADB调试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android-%E8%B0%83%E8%AF%95%E6%A1%A5-adb"><span class="toc-number">3.</span> <span class="toc-text">Android 调试桥 (adb)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#adb-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">3.1.</span> <span class="toc-text">adb 的工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%90%AF%E7%94%A8-adb-%E8%B0%83%E8%AF%95"><span class="toc-number">3.2.</span> <span class="toc-text">在设备上启用 adb 调试</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text">操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%93%E5%BC%80%E5%BC%80%E5%8F%91%E8%80%85%E9%80%89%E9%A1%B9"><span class="toc-number">4.1.</span> <span class="toc-text">如何打开开发者选项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Wear-OS"><span class="toc-number">4.1.1.</span> <span class="toc-text">Wear OS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OPPO-%E6%89%8B%E8%A1%A8"><span class="toc-number">4.1.2.</span> <span class="toc-text">OPPO 手表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AOSP"><span class="toc-number">4.1.3.</span> <span class="toc-text">AOSP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">调试方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E6%9C%BA%E8%B0%83%E8%AF%95"><span class="toc-number">4.2.1.</span> <span class="toc-text">手机调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PC%E8%B0%83%E8%AF%95"><span class="toc-number">4.2.2.</span> <span class="toc-text">PC调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-number">4.2.3.</span> <span class="toc-text">Windows</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B0%83%E8%AF%95"><span class="toc-number">5.</span> <span class="toc-text">调试</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
+  
+
+  
+
+  
+
+<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+<!-- 评论内容开始 -->
+
+  
     
-
-
+        <section id="comments" class="comments">
+          <style>
+            .comments{
+              margin:50px;
+              padding: 10px;
+              background:#fff;
+              box-shadow: 0.5em 0.5em .5em .1em rgba(0, 0, 0, 0.2);
+              border-radius: 0.5em;
+            }
+            @media screen and (max-width:800px){.comments{
+              margin:auto;padding:10px;background:#fff
+            }}
+          </style>
+          <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "xHtXgMKrGA54D3kZj4yP6fzy-gzGzoHsz",
+            app_key: "V2QKljAUxvB9b6TcavCR1aIB",
+            placeholder: "支持Markdown语法，图片可直接粘贴，可输入邮箱作为评论回复提醒",
+            avatar:"retro"
+        });
+    }
+</script>
+      </section>
+    
+  
+<!-- 评论内容结束 -->
           </div>
         </div>
       </div>
@@ -287,9 +494,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -341,25 +548,17 @@ MathJax.Hub.Queue(function() {
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">链接</a></li>
       
         
     </ul>
@@ -428,39 +627,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">存储</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">对焦</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">科幻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">小说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">刘慈欣</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">网络</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">域名</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">背景</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ADB</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">手表调试</a>
               </li>
             
             <div class="clearfix"></div>
@@ -528,10 +711,6 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-    	</section>
     
   </div>
   
