@@ -234,7 +234,7 @@
       </tags>
   </entry>
   <entry>
-    <title>关于bad config line 1 in file的关于bad config line 1 in file的紧急bug维修及处理方案及处理方案</title>
+    <title>关于bad config line 1 in file的紧急bug维修及处理方案及处理方案</title>
     <url>/2023/08/23/%E5%85%B3%E4%BA%8Ebad%20config%20line%201%20in%20file%E7%9A%84%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
 <p>所有命令均提示异常</p>
@@ -313,10 +313,10 @@
 
 <h1 id="开发者模式"><a href="#开发者模式" class="headerlink" title="开发者模式"></a>开发者模式</h1><p>众所周知，ADB调试功能是给程序开发者使用一种功能，其目的在于可以通过更高端的电子设备来对这种智能设备进行并且代码与调试。</p>
 <p>所以我们想要使用ADB调试功能，就必须要在手表端打开调试界面并允许调试。</p>
-<p>但是智能穿戴设备能否打开这是支持的功能型号。下面列出部分系列的支持功能。</p>
+<p>但是ADB调试是针对安卓系统而言的，所以非安卓系统的手表不能使用此功能调试。</p>
 <h2 id="支持的系列"><a href="#支持的系列" class="headerlink" title="支持的系列"></a>支持的系列</h2><p>目前已知支持的系列有OPPO手表全系，以及部分小米手环，还有ticwatch的手表系列，华为的watch系列。</p>
 <p><a href="https://help.wearosbox.com/connect/devices.html">手表列表 | WearOS 工具箱 (wearosbox.com)</a></p>
-<h2 id="不支持的手表"><a href="#不支持的手表" class="headerlink" title="不支持的手表"></a>不支持的手表</h2><p>有很多手表使用了 RTOS 或者轻量级私有化系统，而不是Android。因此我们无法连接到这些手表。以下是一些常见的不支持的手表：</p>
+<h2 id="不支持的手表"><a href="#不支持的手表" class="headerlink" title="不支持的手表"></a>不支持的手表</h2><p>有很多手表使用了 RTOS 或者轻量级私有化系统，而不是Android。因此无法连接到这些手表。以下是一些常见的不支持的手表：</p>
 <ul>
 <li>华为 Watch GT 以及各类产品。<br>仅 HUAWEI Watch 系列手表支持。</li>
 <li>三星 Gear &#x2F; Active 系列。<br>三星 Gear S3 可能可以通过刷入 Wear OS 固件来支持。但由于用户较少，并且需要刷入第三方固件，因此不推荐这样做。</li>
@@ -372,11 +372,30 @@
 <p>然后，单击 INSTALL 安装。</p>
 <p>Windows 正版用户，在插入手表后，可以直接前往系统设置下载可选驱动，以快速安装。</p>
 <p><img src="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png" alt="img"></p>
-<p>您也可以选择 <a href="https://web.vip.miui.com/page/info/mio/mio/detail?postId=18464849">教程图文详解小米手机驱动安装open in new window</a> 方式或者<br>安装 <a href="https://developer.samsung.com/mobile/android-usb-driver.html">Samsung Android USB 驱动open in new window</a>。实际上以上驱动没有较大差别。</p>
 <p>完成后，请查看设备管理器中的 ADB 设备是否已经被准确识别：</p>
 <p><img src="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png" alt="img"></p>
 <h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><p>本来以为这里是写的最多的，没想到现在已经有了成熟的GUI界面软件。</p>
 <p>那就没什么好说的了，按照操作去点击即可。</p>
+<p>不过还是简要介绍一下PC端的使用方法。</p>
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104027259.png" class title="image-20230924104027259">
+
+<p>首先，安装软件。</p>
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104126129.png" class title="image-20230924104126129">
+
+<p>可能会产生拦截通知，忽略即可。</p>
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104311385.png" class title="image-20230924104311385">
+
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104408549.png" class title="image-20230924104408549">
+
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104524262.png" class title="image-20230924104524262">
+
+<p>最后进入到工具箱界面。</p>
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104641299.png" class title="今天要去看一下不用我">
+
+<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104655677.png" class title="image-20230924104655677">
+
+<p>如果没有安装过ADB驱动将会自动安装，图形化GUI集成了很多功能，可以更方便的调试。</p>
+<p>此后的操作便是很简单的操作了，依靠文字说明提示操作即可。</p>
 ]]></content>
       <tags>
         <tag>Android</tag>
