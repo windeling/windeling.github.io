@@ -411,11 +411,11 @@ template {
 a {
   background: transparent;
   text-decoration: none;
-  color: rgba(118, 141, 150, 0.69)
+  color: rgba(77, 166, 201, 0.69)
 }
-
+s
 a :hover{
-  color: rgb(52, 72, 81)
+  color: rgb(68, 110, 130)
 }
 
 a:active {
@@ -919,11 +919,12 @@ html {
   right: 0;
   min-height: 100%;
   /*background: #eaeaea;*/
-  background-image: url(https://z1.ax1x.com/2023/09/23/pPTdrdI.jpg);
+  background-image: url(https://z1.ax1x.com/2023/09/24/pPTcWlt.jpg);
   background-attachment: fixed;
   left: 300px;
   width: auto
 }
+
 
 .mid-col.show {
   background: none;
@@ -936,7 +937,7 @@ html {
 
 .left-col {
   background: #fff;
-  background-image: url(https://z1.ax1x.com/2023/09/23/pPTd0Ld.jpg);
+  background-image: url(https://z1.ax1x.com/2023/09/24/pPTcRSI.jpg);
   width: 300px;
   position: fixed;
   opacity: 1;
