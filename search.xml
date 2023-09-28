@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2023/08/17/hello-world/</url>
+    <url>/2023081716107/</url>
     <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -19,7 +19,7 @@
   </entry>
   <entry>
     <title>永远的2121</title>
-    <url>/2023/09/02/my2121/</url>
+    <url>/2023090241024/</url>
     <content><![CDATA[<h1 id="「愿时光永驻此刻，愿明日终将重逢」"><a href="#「愿时光永驻此刻，愿明日终将重逢」" class="headerlink" title="「愿时光永驻此刻，愿明日终将重逢」"></a>「愿时光永驻此刻，愿明日终将重逢」</h1><p><img src="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg" alt="永远的2121"></p>
 <p>00-曾倩</p>
 <span id="more"></span>
@@ -90,7 +90,7 @@
   </entry>
   <entry>
     <title>教师节</title>
-    <url>/2023/09/10/teacher/</url>
+    <url>/2023091055220/</url>
     <content><![CDATA[<p>今天是2023年9月10日，是所有老师的节日——教师节。</p>
 <p><strong>感谢<code>曾倩老师</code> <code>龙光森老师</code> <code>韦佳利老师</code> <code>黄佩玲老师</code> <code>李洁老师</code>  <code>林生业老师</code> <code>黄海老师</code> <code>劳永进老师</code> <code>罗满琼老师</code> <code>钟洁老师</code> <code>周静轩老师</code> <code>江英球老师</code> <code>颜良霞老师</code> <code>白振兴老师</code>  <code>庞惠文老师</code> <code>梁超源老师</code> <code>叶子斌老师</code></strong> </p>
 <p>三年来的教育，每一堂课都是一份收获。</p>
@@ -100,10 +100,10 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> quote</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">obtain_coordinate</span>(<span class="params">target_word</span>):  </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取汉字的坐标</span></span><br><span class="line"><span class="string">    :param target_word:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url = <span class="string">&quot;https://bihua.bmcx.com/web_system/bmcx_com_www/system/file/bihua/get_0/&quot;</span></span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&#x27;font&#x27;</span>: quote(target_word).replace(<span class="string">&quot;%&quot;</span>, <span class="string">&quot;&quot;</span>).lower(),</span><br><span class="line">        <span class="string">&#x27;shi_fou_zi_dong&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;cache_sjs1&#x27;</span>: <span class="string">&#x27;20031914&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.get(url, params=params)</span><br><span class="line">    content = response.text</span><br><span class="line">    content = content.replace(<span class="string">&#x27;hzbh.main(&#x27;</span>, <span class="string">&#x27;&#x27;</span>).split(<span class="string">&#x27;);document.getElementById&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    content = content.split(<span class="string">&#x27;&#123;&#x27;</span>)[-<span class="number">1</span>].split(<span class="string">&quot;&#125;&quot;</span>)[<span class="number">0</span>]</span><br><span class="line">    pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\w:\[(.+?)\]&#x27;</span>)</span><br><span class="line">    result = re.split(pattern, content)</span><br><span class="line">    order_xy_routine = []</span><br><span class="line">    words_cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> result:</span><br><span class="line">        sec = re.findall(<span class="string">r&#x27;\&#x27;.+?\&#x27;&#x27;</span>, r)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sec):</span><br><span class="line">            orders = sec[<span class="number">1</span>].split(<span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            <span class="keyword">for</span> order <span class="keyword">in</span> orders:</span><br><span class="line">                order_str = re.findall(<span class="string">r&#x27;\(\d+,\d+\)&#x27;</span>, order)</span><br><span class="line">                order_xy = [<span class="built_in">eval</span>(xy) <span class="keyword">for</span> xy <span class="keyword">in</span> order_str]</span><br><span class="line">                order_xy_routine.append(order_xy)</span><br><span class="line">            words_cnt += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(order_xy_routine)</span><br><span class="line">    <span class="keyword">return</span> order_xy_routine</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_words</span>(<span class="params">target_words, startx, starty, lineNum=<span class="number">1</span></span>):  <span class="comment"># 画汉字</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    画汉字</span></span><br><span class="line"><span class="string">    :param target_words:</span></span><br><span class="line"><span class="string">    :param startx:</span></span><br><span class="line"><span class="string">    :param starty:</span></span><br><span class="line"><span class="string">    :param lineNum:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    turtle.color(<span class="string">&quot;black&quot;</span>, <span class="string">&quot;black&quot;</span>)  </span><br><span class="line">    turtle.pu()  </span><br><span class="line">    coordinates = obtain_coordinate(target_words)</span><br><span class="line">    <span class="keyword">for</span> index, coordinate <span class="keyword">in</span> <span class="built_in">enumerate</span>(coordinates):</span><br><span class="line">        turtle.goto((startx + coordinate[<span class="number">0</span>][<span class="number">0</span>])/<span class="number">2</span>, -(starty + coordinate[<span class="number">0</span>][<span class="number">1</span>])/<span class="number">2</span>)</span><br><span class="line">        turtle.pd()</span><br><span class="line">        <span class="keyword">for</span> xy <span class="keyword">in</span> coordinate:</span><br><span class="line">            x,y=xy</span><br><span class="line">            turtle.goto((startx+x)/<span class="number">2</span>, -(starty+y)/<span class="number">2</span>)</span><br><span class="line">        turtle.pu()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    turtle.screensize(<span class="number">2400</span>,<span class="number">1300</span>)</span><br><span class="line">    <span class="comment">#画汉字</span></span><br><span class="line">    word = <span class="string">&quot;教师节快乐&quot;</span></span><br><span class="line">    draw_words(word[<span class="number">0</span>], -<span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">1</span>], -<span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">3</span>], <span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">4</span>], <span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    turtle.done()</span><br></pre></td></tr></table></figure>
 
 <p>谨用这些代码，来表达我的感激之情</p>
-<img src="/2023/09/10/teacher/1.gif" class>
+<img src="/2023091055220/1.gif" class>
 
 <p>祝老师们</p>
-<img src="/2023/09/10/teacher/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
+<img src="/2023091055220/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
 
 
 
@@ -116,18 +116,18 @@
   </entry>
   <entry>
     <title>valine评论系统搭建</title>
-    <url>/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/</url>
+    <url>/2023082063719/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样。</p>
 <p>在搭建这个评论系统的时候，还是踩了很多坑的，在这里总结一下。</p>
 <span id="more"></span>
 
-<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><h3 id="第一个坑"><a href="#第一个坑" class="headerlink" title="第一个坑"></a>第一个坑</h3><img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820210712161.png" class title="知乎">
+<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><h3 id="第一个坑"><a href="#第一个坑" class="headerlink" title="第一个坑"></a>第一个坑</h3><img src="/2023082063719/image-20230820210712161.png" class title="知乎">
 
 <p>这个是代码模版，如果直接复制到文件尾部的话会导致报错，原因是</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SyntaxError: Unexpected token &#x27;catch&#x27; in D:\Blog\themes\yilia\layout\_partial\ar</span><br><span class="line">ticle.ejs while compiling ejs</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>我们去查看一下错误代码对照表（或者翻译）</p>
-<p>得到<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820210905747.png" class title="image-20230820210905747"></p>
+<p>得到<img src="/2023082063719/image-20230820210905747.png" class title="image-20230820210905747"></p>
 <p>但问题的难点在于这个代码也是正确的，所以我猜想不能插到尾部，但是这是最保险的办法。</p>
 <p>所以我们使用编程中的大招：<strong>尾部添加法</strong></p>
 <p>在尾部添加一个Java的结束符。</p>
@@ -140,32 +140,32 @@
 <p>应用API的部分还算正常，但是到了部署和配置的问题就大了</p>
 <p><img src="https://pic4.zhimg.com/v2-e509dd41ee51cd2ece15611f122cb067_r.jpg" alt="img"></p>
 <p>上图是文章里面的介绍模版。</p>
-<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820211805232.png" class title="image-20230820211805232">
+<img src="/2023082063719/image-20230820211805232.png" class title="image-20230820211805232">
 
 <p>这个是现在（2023.08.21）的UI设计界面</p>
 <p>有些教程会建立应用，然后就会发现：</p>
-<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820211908475.png" class title="image-20230820211908475">
+<img src="/2023082063719/image-20230820211908475.png" class title="image-20230820211908475">
 
 <p><strong>这一点也不一样啊</strong></p>
 <p>而且云引擎的部分全部重新设计</p>
-<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212007204.png" class title="image-20230820212007204">
+<img src="/2023082063719/image-20230820212007204.png" class title="image-20230820212007204">
 
 <p>原来的云引擎里面直接有设置</p>
 <p>但是现在就剩一个「部署」和一个DB</p>
 <p>根据以前的经验，我们肯定去部署瞧一瞧</p>
-<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/58f1186b7803163c3a0c28f9d097f330.jpg" class title="58f1186b7803163c3a0c28f9d097f330">
+<img src="/2023082063719/58f1186b7803163c3a0c28f9d097f330.jpg" class title="58f1186b7803163c3a0c28f9d097f330">
 
 <p>这时候就要创建一个分组</p>
 <p>然后要新建一个「类」</p>
-<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212437483.png" class title="image-20230820212437483">
+<img src="/2023082063719/image-20230820212437483.png" class title="image-20230820212437483">
 
 <p>有了这个类后就好办多了</p>
 <p>就有了一个实例</p>
-<img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212509478.png" class title="image-20230820212509478">
+<img src="/2023082063719/image-20230820212509478.png" class title="image-20230820212509478">
 
 <p>UI设计到这里了</p>
 <p>后面就是紧跟教程了</p>
-<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><img src="/2023/08/20/valine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/image-20230820212613221.png" class title="image-20230820212613221">
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><img src="/2023082063719/image-20230820212613221.png" class title="image-20230820212613221">
 
 <p>原始样子就是这样，也可以在「自定义环境变量」里修改主题</p>
 <hr>
@@ -177,8 +177,43 @@
       </tags>
   </entry>
   <entry>
+    <title>关于bad config line 1 in file的紧急bug维修及处理方案及处理方案</title>
+    <url>/2023082334472/</url>
+    <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
+<p>所有命令均提示异常</p>
+<p><code>hexo d</code>直接报错</p>
+<p>找了很久，发现一个不起眼的地方</p>
+<span id="more"></span>
+
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>当时心很忙，就没有截图</p>
+<p>但是报错信息是这样的</p>
+<p><code>fatal: bad config line 1 in file </code></p>
+<img src="/2023082334472/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
+
+<p>这个是插件安装错误，插件是dplayer播放器</p>
+<p>解决办法：使用npm卸载</p>
+<p><code>npm uninstall 模块 --save</code></p>
+<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
+<h1 id="C盘问题"><a href="#C盘问题" class="headerlink" title="C盘问题"></a>C盘问题</h1><p>这个情况比较特殊，没有给出路径</p>
+<p>所以这些对于这个问题无用</p>
+<p><a href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
+<p>需要更改C盘的教程，报错信息路径后面一定会有一个路径指向C盘</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>同样的，这个方法也可以解决hexo d时一堆warning LF的弹出显示。</p>
+<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
+<p>然后在<code>git bash</code>中输入这一行代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
+
+<p>就解决了这个问题。</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于valine评论无法提交的问题原因分析和解决方案</title>
-    <url>/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <url>/202308258455/</url>
     <content><![CDATA[<p>起因：有人想买个U盘。</p>
 <p>然后他便写了一篇文章。</p>
 <p>接着评论无法提交</p>
@@ -186,7 +221,7 @@
 
 <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
 <p>结果发现</p>
-<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
+<img src="/202308258455/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
 
 <p>这就有意思了，评论无法提交。</p>
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
@@ -199,7 +234,7 @@
 <p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
 <p>可以参考这篇文章进行实例搭建。</p>
 <h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
-<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
+<img src="/202308258455/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
 
 
 
@@ -234,43 +269,8 @@
       </tags>
   </entry>
   <entry>
-    <title>关于bad config line 1 in file的紧急bug维修及处理方案及处理方案</title>
-    <url>/2023/08/23/%E5%85%B3%E4%BA%8Ebad%20config%20line%201%20in%20file%E7%9A%84%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
-<p>所有命令均提示异常</p>
-<p><code>hexo d</code>直接报错</p>
-<p>找了很久，发现一个不起眼的地方</p>
-<span id="more"></span>
-
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>当时心很忙，就没有截图</p>
-<p>但是报错信息是这样的</p>
-<p><code>fatal: bad config line 1 in file </code></p>
-<img src="/2023/08/23/%E5%85%B3%E4%BA%8Ebad%20config%20line%201%20in%20file%E7%9A%84%E7%B4%A7%E6%80%A5bug%E7%BB%B4%E4%BF%AE%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/65b75d92d9653403790752d5f1c3cade.png" class title="65b75d92d9653403790752d5f1c3cade">
-
-<p>这个是插件安装错误，插件是dplayer播放器</p>
-<p>解决办法：使用npm卸载</p>
-<p><code>npm uninstall 模块 --save</code></p>
-<p>但是<code>fatal: bad config line 1 in file </code>没解决，这是关键</p>
-<h1 id="C盘问题"><a href="#C盘问题" class="headerlink" title="C盘问题"></a>C盘问题</h1><p>这个情况比较特殊，没有给出路径</p>
-<p>所以这些对于这个问题无用</p>
-<p><a href="https://blog.csdn.net/cijiancao/article/details/80819975">git使用问题：fatal: bad config line 1 in file C:&#x2F;Users&#x2F;Administrator&#x2F;.gitconfig_cijiancao的博客-CSDN博客</a></p>
-<p>需要更改C盘的教程，报错信息路径后面一定会有一个路径指向C盘</p>
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>同样的，这个方法也可以解决hexo d时一堆warning LF的弹出显示。</p>
-<p>首先删除你博客根目录下的<code>.deploy_git</code></p>
-<p>然后在<code>git bash</code>中输入这一行代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
-
-<p>就解决了这个问题。</p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>hexo</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于yilia背景图片畸变问题及恒定显示解决方案</title>
-    <url>/2023/08/26/%E5%85%B3%E4%BA%8Eyilia%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%95%B8%E5%8F%98%E9%97%AE%E9%A2%98%E5%8F%8A%E6%81%92%E5%AE%9A%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <url>/202308267350/</url>
     <content><![CDATA[<p>今天花了6个小时，只解决了一个小bugo(╥﹏╥)o</p>
 <p>惨痛的故事告诉我们：</p>
 <span id="more"></span>
@@ -282,7 +282,7 @@
 <p>最后，我们决定自己研发出路。</p>
 <h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>以前也是尝试过使用关于yilia背景图片畸变问题及恒定显示解决方案。如果文字区域较小，是能够正常显示的。效果和现在的表现一样。</p>
 <p>但是随着文章的增多，以及区域的拉长，图片开始越来越畸变。</p>
-<img src="/2023/08/26/%E5%85%B3%E4%BA%8Eyilia%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%95%B8%E5%8F%98%E9%97%AE%E9%A2%98%E5%8F%8A%E6%81%92%E5%AE%9A%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/803140378296148.png" class width="803140378296148">
+<img src="/202308267350/803140378296148.png" class width="803140378296148">
 
 <p>可以明显的看到图片已经向左移动了。</p>
 <p>这个问题在电脑端没有影响很严重。毕竟如果这么看着的话也挺好看的。</p>
@@ -290,7 +290,7 @@
 <h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>进行复位后，我们决定从CSS入手</p>
 <p>网上有的教程是改变body的元素，我们测试后发现没有效果。</p>
 <p>目前实测成功的代码如下：</p>
-<img src="/2023/08/26/%E5%85%B3%E4%BA%8Eyilia%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%95%B8%E5%8F%98%E9%97%AE%E9%A2%98%E5%8F%8A%E6%81%92%E5%AE%9A%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/ebac4a6352313d3f8b7b38d7877549ec.png" class title="ebac4a6352313d3f8b7b38d7877549ec">
+<img src="/202308267350/ebac4a6352313d3f8b7b38d7877549ec.png" class title="ebac4a6352313d3f8b7b38d7877549ec">
 
 <p>URL替换成你想要的图片，这样就可以固定住图片了，而不是图片随着文章长度拉伸。</p>
 <blockquote>
@@ -305,7 +305,7 @@
   </entry>
   <entry>
     <title>关于手表ADB调试的应用分析与教程</title>
-    <url>/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/</url>
+    <url>/2023092317374/</url>
     <content><![CDATA[<p>今天发现OPPO的手表能够打开开发者选项并进入USB调试。</p>
 <p>因此就有可能通过ADB命令行使手表可以下载自己想要的应用。</p>
 <p>那么就以OPPO Watch 3为例，进行应用调试的分析。</p>
@@ -377,22 +377,22 @@
 <h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><p>本来以为这里是写的最多的，没想到现在已经有了成熟的GUI界面软件。</p>
 <p>那就没什么好说的了，按照操作去点击即可。</p>
 <p>不过还是简要介绍一下PC端的使用方法。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104027259.png" class title="image-20230924104027259">
+<img src="/2023092317374/image-20230924104027259.png" class title="image-20230924104027259">
 
 <p>首先，安装软件。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104126129.png" class title="image-20230924104126129">
+<img src="/2023092317374/image-20230924104126129.png" class title="image-20230924104126129">
 
 <p>可能会产生拦截通知，忽略即可。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104311385.png" class title="image-20230924104311385">
+<img src="/2023092317374/image-20230924104311385.png" class title="image-20230924104311385">
 
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104408549.png" class title="image-20230924104408549">
+<img src="/2023092317374/image-20230924104408549.png" class title="image-20230924104408549">
 
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104524262.png" class title="image-20230924104524262">
+<img src="/2023092317374/image-20230924104524262.png" class title="image-20230924104524262">
 
 <p>最后进入到工具箱界面。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104641299.png" class title="今天要去看一下不用我">
+<img src="/2023092317374/image-20230924104641299.png" class title="今天要去看一下不用我">
 
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104655677.png" class title="image-20230924104655677">
+<img src="/2023092317374/image-20230924104655677.png" class title="image-20230924104655677">
 
 <p>如果没有安装过ADB驱动将会自动安装，图形化GUI集成了很多功能，可以更方便的调试。</p>
 <p>此后的操作便是很简单的操作了，依靠文字说明提示操作即可。</p>
@@ -405,7 +405,7 @@
   </entry>
   <entry>
     <title>关于浏览器音乐自动播放的问题</title>
-    <url>/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9F%B3%E4%B9%90%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/2023082632320/</url>
     <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，发现在edge浏览器上无法自动播放。</p>
 <p>本来以为是代码问题，就没有去研究。</p>
 <p>但是经过使用后发现，在一些平板上是可以自动播放的。</p>
@@ -449,7 +449,7 @@
   </entry>
   <entry>
     <title>摄影作品-中越友谊公园&amp;东兴口岸</title>
-    <url>/2023/08/18/%E6%91%84%E5%BD%B1%E4%BD%9C%E5%93%81-%E4%B8%AD%E8%B6%8A%E5%8F%8B%E8%B0%8A%E5%85%AC%E5%9B%AD&amp;%E4%B8%9C%E5%85%B4%E5%8F%A3%E5%B2%B8/</url>
+    <url>/2023081836672/</url>
     <content><![CDATA[<p>摄影作品<br>中越友谊公园&amp;口岸</p>
 <span id="more"></span>
 <p><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_7.jpg" alt="2023-08-21_7.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_8.jpg" alt="2023-08-21_8.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_6.jpg" alt="2023-08-21_6.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_9.jpg" alt="2023-08-21_9.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_2.jpg" alt="2023-08-21_2.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_4.jpg" alt="2023-08-21_4.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_5.jpg" alt="2023-08-21_5.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_3.jpg" alt="2023-08-21_3.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_1.jpg" alt="2023-08-21_1.jpg"></p>
@@ -461,14 +461,14 @@
   </entry>
   <entry>
     <title>浅析USB系列接口</title>
-    <url>/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/</url>
+    <url>/2023082436898/</url>
     <content><![CDATA[<p>「接口」一词，伴随着电子设备的产生出现在人们的视野。</p>
 <p>然而如今多种多样复杂的接口也让我们烦不胜烦，今天就用一篇文章来详细介绍一下USB接口的规范。</p>
 <span id="more"></span>
 
 <h1 id="分清接口和协议"><a href="#分清接口和协议" class="headerlink" title="分清接口和协议"></a>分清接口和协议</h1><p>在正文开始之前，我们需要分清USB接口和USB协议。</p>
 <p>因为不同的接口可以使用相同的协议，不分清接口和协议的话，容易造成思维的误导和混乱。</p>
-<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/956a5b62c94ebcf94ca96bde388b4db2.png" class title="956a5b62c94ebcf94ca96bde388b4db2">
+<img src="/2023082436898/956a5b62c94ebcf94ca96bde388b4db2.png" class title="956a5b62c94ebcf94ca96bde388b4db2">
 
 <p>这个就是USB的不同协议了</p>
 <p>具体内容可以参照<a href="https://boredliam.github.io/2023/08/24/USB%E9%80%89%E6%8B%A9/">有关USB数据传输 | Liam’s boring life (boredliam.github.io)</a></p>
@@ -565,9 +565,9 @@
 <p>这是USB线缆的标识，看图方法大体相同。</p>
 <p>唯一值得注意的是最后一行的线缆表示不可进行数据传输。</p>
 <h1 id="多种多样的接口"><a href="#多种多样的接口" class="headerlink" title="多种多样的接口"></a>多种多样的接口</h1><h2 id="Type系列"><a href="#Type系列" class="headerlink" title="Type系列"></a>Type系列</h2><p>Type系列可以是我们日常生活中接触到最多，用途最广的接口了。</p>
-<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/306e45588b6f5545532e07da7e483a16.png" class>
+<img src="/2023082436898/306e45588b6f5545532e07da7e483a16.png" class>
 
-<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181250623.png" class title="image-20230824181250623">
+<img src="/2023082436898/image-20230824181250623.png" class title="image-20230824181250623">
 
 <p>这些便是我们现在的type家族。</p>
 <p>有些人可能会说，好像Type-B没怎么见过。</p>
@@ -575,14 +575,14 @@
 <p>动手安装过打印机的同学应该很熟悉。</p>
 <p>Type A和Type C自然就不用介绍了，这可是两大家喻户晓的存在。</p>
 <p>但是Type C还有一点点不一样的地方，之后我们再详细展开。</p>
-<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181350495.png" class title="image-20230824181350495">
+<h2 id="Mini系列"><a href="#Mini系列" class="headerlink" title="Mini系列"></a>Mini系列</h2><img src="/2023082436898/image-20230824181350495.png" class title="image-20230824181350495">
 
 <p>这边是mini系列，比较少见。</p>
 <p>而且随着用途的不断减少，也在逐渐退出市场。</p>
 <p>最早的时候可以通过这种线实现两个不同设备之间的连接，没有主机也照样能传输数据。</p>
 <p>其指标与标准USB相同，但是加入了ID针脚（用于区分设备是主机还是外设），以支持OTG。</p>
 <p>主要用途在一些相机设备和MP3 MP4设备，某些老旧型号的手机也会将其作为充电口。</p>
-<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230824181408279.png" alt="image-20230824181408279"></p>
+<h2 id="Micro系列"><a href="#Micro系列" class="headerlink" title="Micro系列"></a>Micro系列</h2><p><img src="/2023082436898/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230824181408279.png" alt="image-20230824181408279"></p>
 <p>Micro系列是mini系列的下一代，在同样规格的情况下提高了插拔寿命，最高可到达1万次。</p>
 <p>并且减小的体积更有利于手机部署的小型化。</p>
 <p>当然如果有接触移动硬盘的同学相信对 micro B系列（3.0）一定不陌生。</p>
@@ -604,10 +604,10 @@
 <p>注意雷电协议和雷电接口又是非常不同的两个概念。在开始之前先进行区分一下。</p>
 <h2 id="区分"><a href="#区分" class="headerlink" title="区分"></a>区分</h2><p>雷电接口是支持雷电协议的type-c接口。（有点怪怪的）</p>
 <p>为什么要说这句话？？</p>
-<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181453268.png" class title="image-20230824181453268">
+<img src="/2023082436898/image-20230824181453268.png" class title="image-20230824181453268">
 
 <p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.0e1820084728a5d7c203143fdcff2edd?rik=7zwLzmVdlgOTpQ&riu=http://img1.mydrivers.com/img/20190305/60307c47732645a89d24c4c753be976c.jpg&ehk=Zaz8T7i1c1/wJHXUgl4UT73ltfgXM0XQWSBeOVuyhe8=&risl=&pid=ImgRaw&r=0" alt="雷电多开助手"></p>
-<img src="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/image-20230824181518238.png" class title="image-20230824181518238">
+<img src="/2023082436898/image-20230824181518238.png" class title="image-20230824181518238">
 
 <p>因为雷电协议和有的USB协议都是用type-c接口。</p>
 <p>区别在于支持雷电协议的接口旁边会有一个雷电标志。</p>

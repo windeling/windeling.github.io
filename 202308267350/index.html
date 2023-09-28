@@ -8,25 +8,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>关于valine评论无法提交的问题原因分析和解决方案 | Windeling</title>
+  <title>关于yilia背景图片畸变问题及恒定显示解决方案 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="起因：有人想买个U盘。 然后他便写了一篇文章。 接着评论无法提交">
+  <meta name="description" content="今天花了6个小时，只解决了一个小bugo(╥﹏╥)o 惨痛的故事告诉我们：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于valine评论无法提交的问题原因分析和解决方案">
-<meta property="og:url" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="关于yilia背景图片畸变问题及恒定显示解决方案">
+<meta property="og:url" content="https://windeling.github.io/202308267350/index.html">
 <meta property="og:site_name" content="Windeling">
-<meta property="og:description" content="起因：有人想买个U盘。 然后他便写了一篇文章。 接着评论无法提交">
+<meta property="og:description" content="今天花了6个小时，只解决了一个小bugo(╥﹏╥)o 惨痛的故事告诉我们：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png">
-<meta property="og:image" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/22007b7b4e05882d35544461b15e52eb.png">
-<meta property="article:published_time" content="2023-08-25T02:46:00.000Z">
-<meta property="article:modified_time" content="2023-09-23T13:59:29.997Z">
+<meta property="og:image" content="https://windeling.github.io/202308267350/803140378296148.png">
+<meta property="og:image" content="https://windeling.github.io/202308267350/ebac4a6352313d3f8b7b38d7877549ec.png">
+<meta property="article:published_time" content="2023-08-26T11:37:27.000Z">
+<meta property="article:modified_time" content="2023-09-23T13:47:59.346Z">
 <meta property="article:author" content="黄文林">
-<meta property="article:tag" content="编程">
-<meta property="article:tag" content="valine">
-<meta property="article:tag" content="bug">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="yilia">
+<meta property="article:tag" content="背景">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://windeling.github.io/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png">
+<meta name="twitter:image" content="https://windeling.github.io/202308267350/803140378296148.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -189,20 +189,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于valine评论无法提交的问题原因分析和解决方案" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于yilia背景图片畸变问题及恒定显示解决方案" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于valine评论无法提交的问题原因分析和解决方案
+      关于yilia背景图片畸变问题及恒定显示解决方案
     </h1>
   
 
         
-        <a href="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2023-08-25T02:46:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-25</time>
+        <a href="/202308267350/" class="archive-article-date">
+  	<time datetime="2023-08-26T11:37:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-26</time>
 </a>
         
           <div style="margin-top:10px;">
@@ -215,7 +215,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">822字</span>
+      <span class="post-count">412字</span>
 
     </span>
 
@@ -231,11 +231,11 @@
 
       <span class="post-meta-item-text">  预计阅读时长: </span>
 
-      <span class="post-count">2分</span>
+      <span class="post-count">1分</span>
 
     </span>
     
-      <a class="cloud-tie-join-count" href="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" style="color:rgba(26, 26, 26);margin-top:10px;">
+      <a class="cloud-tie-join-count" href="/202308267350/" style="color:rgba(26, 26, 26);margin-top:10px;">
         &nbsp; | &nbsp;
         <span id="busuanzi_container_page_pv">
           阅读量: <span id="busuanzi_value_page_pv"></span>
@@ -253,53 +253,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>起因：有人想买个U盘。</p>
-<p>然后他便写了一篇文章。</p>
-<p>接着评论无法提交</p>
+        <p>今天花了6个小时，只解决了一个小bugo(╥﹏╥)o</p>
+<p>惨痛的故事告诉我们：</p>
 <span id="more"></span>
 
-<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
-<p>结果发现</p>
-<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
+<h1 id="升级前一定要备份！！"><a href="#升级前一定要备份！！" class="headerlink" title="升级前一定要备份！！"></a>升级前一定要备份！！</h1><p>不然就会不断的报错，而且根本找不到问题的原因。</p>
+<p>最后还是<a href="boredliam.github.io">林耀宗</a>给我一份备份，并帮助我修好了bug。</p>
+<p>在此十分感谢！！</p>
+<h1 id="Bug"><a href="#Bug" class="headerlink" title="Bug"></a>Bug</h1><p>这个bug在版本2.4.2之前一直没有成功解决，上了CSDN和知乎去询问，都没有得到满意的结果。</p>
+<p>最后，我们决定自己研发出路。</p>
+<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>以前也是尝试过使用关于yilia背景图片畸变问题及恒定显示解决方案。如果文字区域较小，是能够正常显示的。效果和现在的表现一样。</p>
+<p>但是随着文章的增多，以及区域的拉长，图片开始越来越畸变。</p>
+<img src="/202308267350/803140378296148.png" class width="803140378296148">
 
-<p>这就有意思了，评论无法提交。</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
-<p>发现他没有定义一个实例。</p>
-<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>
-<p>类相当于一张汽车的「制造图纸」，你可以通过这个「图纸」来制造出许许多多汽车，甚至可以改变「图纸」，造出不同样式的汽车。</p>
-<p>但是如果只有图纸，没有创建出一个真正的汽车实例，我们是永远都无法进行「开车」这个操作的。</p>
-<p>可以说有了类就有了对象，就有了对对象的操作。</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>办法也很简单，创建一个实例。</p>
-<p><a href="https://windeling.github.io/2023/08/20/review/">valine评论搭建</a></p>
-<p>可以参考这篇文章进行实例搭建。</p>
-<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p>在创建完对应的实例以后，发现评论还是无法运作。</p>
-<img src="/2023/08/25/%E5%85%B3%E4%BA%8Evaline%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E6%8F%90%E4%BA%A4%E7%9A%84%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/22007b7b4e05882d35544461b15e52eb.png" class title="22007b7b4e05882d35544461b15e52eb">
+<p>可以明显的看到图片已经向左移动了。</p>
+<p>这个问题在电脑端没有影响很严重。毕竟如果这么看着的话也挺好看的。</p>
+<p>但是我们住图片右上角有一块青色。如果在手机端浏览的话，就会导致青色成为主颜色。会使灰色的文字很难辨认。</p>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>进行复位后，我们决定从CSS入手</p>
+<p>网上有的教程是改变body的元素，我们测试后发现没有效果。</p>
+<p>目前实测成功的代码如下：</p>
+<img src="/202308267350/ebac4a6352313d3f8b7b38d7877549ec.png" class title="ebac4a6352313d3f8b7b38d7877549ec">
 
-
-
-<p>这里最重要的一点是云函数的问题。</p>
-<p>通常发生在国际服的比较多，华北和华东服务器尚未出现过此类问题。</p>
-<p>可以看到部署在华东服务器上面的实例有三个云函数，其中两个是我自己添加的。</p>
-<p>但是最重要的comment函数是程序写的。</p>
-<p>这个函数负责的评论的存储与管理，非常重要。</p>
-<p>如果选择国际服，就有可能无法加载出这个函数。</p>
-<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>此 bug 是由于 LeanCloud 国际版更换 API Url 导致的，原来的 <code>us.leancloud.cn</code> 和 <code>us-api.leancloud.cn</code> 已经停用，换为了 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
-<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote>
-<p>① 在 <code>Valine.min.js</code> 中更换 LeanCloud 对象存储 SDK 为 最新的 <code>4.12.0</code> 版本。</p>
-<p><code>leancloud-storage@3/</code> –&gt; <code>leancloud-storage@4.12.0/</code>，查找替换即可。</p>
-<p>如果你使用 CDN，可以 Fork 一份 Valine 的 GitHub 仓库，然后自行更改并使用 jsdelivr CDN 。</p>
-<p>我已经改好了一份：<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js">https://cdn.jsdelivr.net/gh/YidaozhanYa/Valine@test/dist/Valine.min.js</a> ，如有需要可以自取。</p>
-<p>② 在引用 Valine 的 js 或 YAML 中设置 <code>serverURLs</code> 字段为 <code>APPID前八位.api.lncldglobal.com</code> 。</p>
-<p>比如 <code>serverURLs: &#39;https://xxxxxxxx.api.lncldglobal.com&#39;</code></p>
+<p>URL替换成你想要的图片，这样就可以固定住图片了，而不是图片随着文章长度拉伸。</p>
+<blockquote>
+<p>本文很多技术指导来源于<a href="boredliam.github.io">林耀宗</a>，非常感谢他的指导</p>
 </blockquote>
-<p>这个是网上流传的解决办法，但是我们实际中找不到对应的文件。</p>
-<p>所以这个方法看起来有点困难,但如果能找到<code>Valine.min.js</code>文件的可以尝试一下。</p>
-<hr>
-<p>比较简单的方法就是选择华北和华东服务器，因为服务器处在国内，比较稳定。</p>
-<p>但是使用这两个服务器要遵守《中华人民共和国网络安全法》，需要进行实名备案注册。</p>
-<p>而且备案注册必须使用支付宝的刷脸进行认证，优点就是成功率非常高，能够解决大部分问题。</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>在搭建个人博客的时候，服务器能采用国内的服务器，就尽量使用国内的服务器。</p>
-<p>因为网络长城的存在及国际政治不稳定因素，很容易造成连接中断或连接被污染迟缓等等问题。</p>
 
       
         
@@ -313,15 +291,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">valine</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bug</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">背景</a>
         		</li>
       		
 		</ul>
@@ -340,18 +318,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2023/08/26/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E9%9F%B3%E4%B9%90%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023090241024/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于浏览器音乐自动播放的问题
+          永远的2121
         
       </div>
     </a>
   
   
-    <a href="/2023/08/24/%E6%B5%85%E6%9E%90USB%E7%B3%BB%E5%88%97%E6%8E%A5%E5%8F%A3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">浅析USB系列接口</div>
+    <a href="/2023082632320/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于浏览器音乐自动播放的问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -378,7 +356,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%97%87%E7%8A%B6"><span class="toc-number">1.</span> <span class="toc-text">症状</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%981"><span class="toc-number">2.1.</span> <span class="toc-text">问题1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B"><span class="toc-number">2.1.1.</span> <span class="toc-text">类和实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">2.1.2.</span> <span class="toc-text">解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%982"><span class="toc-number">2.2.</span> <span class="toc-text">问题2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-number">2.2.1.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-1"><span class="toc-number">2.2.2.</span> <span class="toc-text">解决办法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">小结</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E5%89%8D%E4%B8%80%E5%AE%9A%E8%A6%81%E5%A4%87%E4%BB%BD%EF%BC%81%EF%BC%81"><span class="toc-number">1.</span> <span class="toc-text">升级前一定要备份！！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Bug"><span class="toc-number">2.</span> <span class="toc-text">Bug</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%8F%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">描述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3"><span class="toc-number">3.</span> <span class="toc-text">解决</span></a></li></ol>
                     </div>
                 </span>
             </div>

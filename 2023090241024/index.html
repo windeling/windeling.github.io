@@ -8,32 +8,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>关于手表ADB调试的应用分析与教程 | Windeling</title>
+  <title>永远的2121 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天发现OPPO的手表能够打开开发者选项并进入USB调试。 因此就有可能通过ADB命令行使手表可以下载自己想要的应用。 那么就以OPPO Watch 3为例，进行应用调试的分析。">
+  <meta name="description" content="「愿时光永驻此刻，愿明日终将重逢」 00-曾倩">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于手表ADB调试的应用分析与教程">
-<meta property="og:url" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:title" content="永远的2121">
+<meta property="og:url" content="https://windeling.github.io/2023090241024/index.html">
 <meta property="og:site_name" content="Windeling">
-<meta property="og:description" content="今天发现OPPO的手表能够打开开发者选项并进入USB调试。 因此就有可能通过ADB命令行使手表可以下载自己想要的应用。 那么就以OPPO Watch 3为例，进行应用调试的分析。">
+<meta property="og:description" content="「愿时光永驻此刻，愿明日终将重逢」 00-曾倩">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png">
-<meta property="og:image" content="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104027259.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104126129.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104311385.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104408549.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104524262.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104641299.png">
-<meta property="og:image" content="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104655677.png">
-<meta property="article:published_time" content="2023-09-23T12:53:10.000Z">
-<meta property="article:modified_time" content="2023-09-24T02:48:40.986Z">
+<meta property="og:image" content="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg">
+<meta property="article:published_time" content="2023-09-02T14:44:00.000Z">
+<meta property="article:modified_time" content="2023-09-03T03:12:56.446Z">
 <meta property="article:author" content="黄文林">
-<meta property="article:tag" content="Android">
-<meta property="article:tag" content="ADB">
-<meta property="article:tag" content="手表调试">
+<meta property="article:tag" content="2121">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png">
+<meta name="twitter:image" content="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -196,20 +186,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于手表ADB调试的应用分析与教程" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-my2121" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于手表ADB调试的应用分析与教程
+      永远的2121
     </h1>
   
 
         
-        <a href="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2023-09-23T12:53:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-09-23</time>
+        <a href="/2023090241024/" class="archive-article-date">
+  	<time datetime="2023-09-02T14:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-09-02</time>
 </a>
         
           <div style="margin-top:10px;">
@@ -222,7 +212,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">1.8k字</span>
+      <span class="post-count">185字</span>
 
     </span>
 
@@ -238,11 +228,11 @@
 
       <span class="post-meta-item-text">  预计阅读时长: </span>
 
-      <span class="post-count">6分</span>
+      <span class="post-count">1分</span>
 
     </span>
     
-      <a class="cloud-tie-join-count" href="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/" style="color:rgba(26, 26, 26);margin-top:10px;">
+      <a class="cloud-tie-join-count" href="/2023090241024/" style="color:rgba(26, 26, 26);margin-top:10px;">
         &nbsp; | &nbsp;
         <span id="busuanzi_container_page_pv">
           阅读量: <span id="busuanzi_value_page_pv"></span>
@@ -260,96 +250,69 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天发现OPPO的手表能够打开开发者选项并进入USB调试。</p>
-<p>因此就有可能通过ADB命令行使手表可以下载自己想要的应用。</p>
-<p>那么就以OPPO Watch 3为例，进行应用调试的分析。</p>
+        <h1 id="「愿时光永驻此刻，愿明日终将重逢」"><a href="#「愿时光永驻此刻，愿明日终将重逢」" class="headerlink" title="「愿时光永驻此刻，愿明日终将重逢」"></a>「愿时光永驻此刻，愿明日终将重逢」</h1><p><img src="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg" alt="永远的2121"></p>
+<p>00-曾倩</p>
 <span id="more"></span>
 
-<h1 id="开发者模式"><a href="#开发者模式" class="headerlink" title="开发者模式"></a>开发者模式</h1><p>众所周知，ADB调试功能是给程序开发者使用一种功能，其目的在于可以通过更高端的电子设备来对这种智能设备进行并且代码与调试。</p>
-<p>所以我们想要使用ADB调试功能，就必须要在手表端打开调试界面并允许调试。</p>
-<p>但是ADB调试是针对安卓系统而言的，所以非安卓系统的手表不能使用此功能调试。</p>
-<h2 id="支持的系列"><a href="#支持的系列" class="headerlink" title="支持的系列"></a>支持的系列</h2><p>目前已知支持的系列有OPPO手表全系，以及部分小米手环，还有ticwatch的手表系列，华为的watch系列。</p>
-<p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/devices.html">手表列表 | WearOS 工具箱 (wearosbox.com)</a></p>
-<h2 id="不支持的手表"><a href="#不支持的手表" class="headerlink" title="不支持的手表"></a>不支持的手表</h2><p>有很多手表使用了 RTOS 或者轻量级私有化系统，而不是Android。因此无法连接到这些手表。以下是一些常见的不支持的手表：</p>
-<ul>
-<li>华为 Watch GT 以及各类产品。<br>仅 HUAWEI Watch 系列手表支持。</li>
-<li>三星 Gear &#x2F; Active 系列。<br>三星 Gear S3 可能可以通过刷入 Wear OS 固件来支持。但由于用户较少，并且需要刷入第三方固件，因此不推荐这样做。</li>
-<li>除小米手表 1 之外的所有小米生产线设备以及上述华米设备。其余如 Color, 小米手表 S1, 华米, Redmi, Amazfit 等品牌均不支持。</li>
-</ul>
-<h1 id="ADB调试"><a href="#ADB调试" class="headerlink" title="ADB调试"></a>ADB调试</h1><p>工欲善其事，必先利其器，在开始操作之前，先简单了解一下关于adb调试的理论原理及应用基础。</p>
-<blockquote>
-<h1 id="Android-调试桥-adb"><a href="#Android-调试桥-adb" class="headerlink" title="Android 调试桥 (adb)"></a>Android 调试桥 (adb)</h1><p>Android 调试桥 (<code>adb</code>) 是一种功能多样的命令行工具，可让您与设备进行通信。<code>adb</code> 命令可用于执行各种设备操作，例如安装和调试应用。<code>adb</code> 提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。它是一种客户端-服务器程序，包括以下三个组件：</p>
-<ul>
-<li><strong>客户端</strong>：用于发送命令。客户端在开发机器上运行。您可以通过发出 <code>adb</code> 命令从命令行终端调用客户端。</li>
-<li>**守护程序 (adbd)**：用于在设备上运行命令。守护程序在每个设备上作为后台进程运行。</li>
-<li><strong>服务器</strong>：用于管理客户端与守护程序之间的通信。服务器在开发机器上作为后台进程运行。</li>
-</ul>
-</blockquote>
-<p>这是安卓官方对于ADB的解释与说明。</p>
-<blockquote>
-<h2 id="adb-的工作原理"><a href="#adb-的工作原理" class="headerlink" title="adb 的工作原理"></a>adb 的工作原理</h2><p>当您启动某个 <code>adb</code> 客户端时，该客户端会先检查是否有 <code>adb</code> 服务器进程已在运行。如果没有，它会启动服务器进程。服务器在启动后会与本地 TCP 端口 5037 绑定，并监听 <code>adb</code> 客户端发出的命令。</p>
-<p><strong>注意</strong>：所有 <code>adb</code> 客户端均使用端口 5037 与 <code>adb</code> 服务器通信。</p>
-<p>然后，服务器会与所有正在运行的设备建立连接。它通过扫描 5555 到 5585 之间（该范围供前 16 个模拟器使用）的奇数号端口查找模拟器。服务器一旦发现 <code>adb</code> 守护程序 (adbd)，便会与相应的端口建立连接。</p>
-</blockquote>
-<blockquote>
-<h2 id="在设备上启用-adb-调试"><a href="#在设备上启用-adb-调试" class="headerlink" title="在设备上启用 adb 调试"></a>在设备上启用 adb 调试</h2><p>如要在通过 USB 连接的设备上使用 adb，您必须在设备的系统设置中启用 <strong>USB 调试</strong>（位于<strong>开发者选项</strong>下）。在 Android 4.2（API 级别 17）及更高版本中，<strong>开发者选项</strong>屏幕默认处于隐藏状态。如需将其显示出来，请<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/debug/dev-options?hl=zh-cn#enable">启用开发者选项</a>。</p>
-<p>现在，您已经可以通过 USB 连接设备了。您可以通过从 <code>android_sdk/platform-tools/</code> 目录执行 <code>adb devices</code> 来验证设备是否已连接。如果已连接，您将看到设备名称以“设备”形式列出。</p>
-<p><strong>注意</strong>：当您连接搭载 Android 4.2.2（API 级别 17）或更高版本的设备时，系统会显示一个对话框，询问您是否接受允许通过此计算机进行调试的 RSA 密钥。这种安全机制可以保护用户设备，因为它可以确保用户只有在能够解锁设备并确认对话框的情况下才能执行 USB 调试和其他 adb 命令。</p>
-</blockquote>
-<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>调试手表必然要一套完整的工具，因此早有人开发出来了WearOS的工具箱，摆脱了繁琐的命令的苦恼。</p>
-<p><a target="_blank" rel="noopener" href="https://wearosbox.com/">WearOS工具箱 专为智能手表打造的工具箱 (wearosbox.com)</a></p>
-<p>将此工具箱内的软件下载到电脑或手机上，然后再进行调试。</p>
-<p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/">帮助中心 | WearOS 工具箱 (wearosbox.com)</a></p>
-<h2 id="如何打开开发者选项"><a href="#如何打开开发者选项" class="headerlink" title="如何打开开发者选项"></a>如何打开开发者选项</h2><h3 id="Wear-OS"><a href="#Wear-OS" class="headerlink" title="Wear OS"></a>Wear OS</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/developer/wearos2.html">Wear OS 2.0 及更早版本</a></li>
-<li><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/developer/wearos.html">Wear OS 3+</a></li>
-<li>三星手表: <a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/device/samsung.html">打开开发者选项和 ADB 调试</a></li>
-</ul>
-<h3 id="OPPO-手表"><a href="#OPPO-手表" class="headerlink" title="OPPO 手表"></a>OPPO 手表</h3><ol>
-<li>进入设置-其他设置-关于手表，连续点击版本号数次，启用手表的开发者选项。</li>
-<li>进入设置-其他设置-开发者选项，打开 USB 调试。</li>
-</ol>
-<h3 id="AOSP"><a href="#AOSP" class="headerlink" title="AOSP"></a>AOSP</h3><ol>
-<li>进入设置-关于手表，连续点击版本号数次，启用手表的开发者选项。</li>
-<li>进入设置-开发者选项，打开 USB 调试。</li>
-</ol>
-<p>打开开发选项以后，就可以选择调试方式。</p>
-<h2 id="调试方式"><a href="#调试方式" class="headerlink" title="调试方式"></a>调试方式</h2><p>一般推荐使用数据线调试，其具有稳定，安全可靠的特点，并且大多数手表都支持此调试功能。</p>
-<p>一些特殊的蓝牙手表能使用蓝牙调试，详情请参阅官方文档。</p>
-<p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/method/bluetooth.html">蓝牙调试 | WearOS 工具箱 (wearosbox.com)</a></p>
-<h3 id="手机调试"><a href="#手机调试" class="headerlink" title="手机调试"></a>手机调试</h3><p><a target="_blank" rel="noopener" href="https://help.wearosbox.com/connect/method/webadb/webadb.html">使用数据线在手机上激活 | WearOS 工具箱 (wearosbox.com)</a></p>
-<p>手机调试较为繁琐，且需要购买额外部件，因此请参阅官方文档。</p>
-<h3 id="PC调试"><a href="#PC调试" class="headerlink" title="PC调试"></a>PC调试</h3><p>如果是 Android 手表，在打开 ADB 调试后，还不能直接使用 WearOS 工具箱来连接。可以使用以下 ADB 命令启动网络调试。</p>
-<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>Windows 需要安装驱动。</p>
-<p>连接上设备，在电脑上访问如下网页，下载驱动：</p>
-<p><a target="_blank" rel="noopener" href="https://wearosbox.com/d.exe">https://wearosbox.com/d.exeopen in new window</a></p>
-<p>然后，单击 INSTALL 安装。</p>
-<p>Windows 正版用户，在插入手表后，可以直接前往系统设置下载可选驱动，以快速安装。</p>
-<p><img src="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png" alt="img"></p>
-<p>完成后，请查看设备管理器中的 ADB 设备是否已经被准确识别：</p>
-<p><img src="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png" alt="img"></p>
-<h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><p>本来以为这里是写的最多的，没想到现在已经有了成熟的GUI界面软件。</p>
-<p>那就没什么好说的了，按照操作去点击即可。</p>
-<p>不过还是简要介绍一下PC端的使用方法。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104027259.png" class title="image-20230924104027259">
-
-<p>首先，安装软件。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104126129.png" class title="image-20230924104126129">
-
-<p>可能会产生拦截通知，忽略即可。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104311385.png" class title="image-20230924104311385">
-
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104408549.png" class title="image-20230924104408549">
-
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104524262.png" class title="image-20230924104524262">
-
-<p>最后进入到工具箱界面。</p>
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104641299.png" class title="今天要去看一下不用我">
-
-<img src="/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B/image-20230924104655677.png" class title="image-20230924104655677">
-
-<p>如果没有安装过ADB驱动将会自动安装，图形化GUI集成了很多功能，可以更方便的调试。</p>
-<p>此后的操作便是很简单的操作了，依靠文字说明提示操作即可。</p>
+<p>01-李慧婧</p>
+<p>02-蒙军羽</p>
+<p>03-梁键</p>
+<p>04-陈怡佐</p>
+<p>05-何子达</p>
+<p>06-杨星月</p>
+<p>07-符雪儿</p>
+<p>08-黄科豪</p>
+<p>09-林耀宗</p>
+<p>10-谢    扬</p>
+<p>11-王    榕</p>
+<p>12-黄靖茹</p>
+<p>13-刘涛赫</p>
+<p>14-丁仁斌</p>
+<p>15-黄文林</p>
+<p>16-陈禹州</p>
+<p>17-胡义航</p>
+<p>18-吴志军</p>
+<p>19-张华曦</p>
+<p>20-梁姃</p>
+<p>21-</p>
+<p>22-</p>
+<p>23-</p>
+<p>24-</p>
+<p>25-陈翰贤</p>
+<p>26-滕熙雯</p>
+<p>27-</p>
+<p>28-</p>
+<p>29-</p>
+<p>30-</p>
+<p>31-</p>
+<p>32-</p>
+<p>33-谢春霖</p>
+<p>34-</p>
+<p>35-龙彦霏</p>
+<p>36-张士钊</p>
+<p>37-</p>
+<p>38-许家州</p>
+<p>39-林香伶</p>
+<p>40-</p>
+<p>41-</p>
+<p>42-翁展</p>
+<p>43-</p>
+<p>44-吕思良</p>
+<p>45-刘穗凤</p>
+<p>46-</p>
+<p>47-巫奕阳</p>
+<p>48-</p>
+<p>49-</p>
+<p>50-</p>
+<p>51-</p>
+<p>52-</p>
+<p>53-李冠霖</p>
+<p>54-晏晓晨</p>
+<p>55-邓文钦</p>
+<p>56-多多</p>
+<p>……</p>
+<p>空着的评论补充吧……</p>
+<p>可能有点慢……</p>
 
       
         
@@ -363,15 +326,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ADB</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">手表调试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2121</a>
         		</li>
       		
 		</ul>
@@ -390,9 +345,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2023091055220/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          教师节
+        
+      </div>
+    </a>
   
-    <a href="/2023/09/10/teacher/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">教师节</div>
+  
+    <a href="/202308267350/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于yilia背景图片畸变问题及恒定显示解决方案</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -419,7 +383,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E8%80%85%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">开发者模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84%E7%B3%BB%E5%88%97"><span class="toc-number">1.1.</span> <span class="toc-text">支持的系列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E6%89%8B%E8%A1%A8"><span class="toc-number">1.2.</span> <span class="toc-text">不支持的手表</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ADB%E8%B0%83%E8%AF%95"><span class="toc-number">2.</span> <span class="toc-text">ADB调试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android-%E8%B0%83%E8%AF%95%E6%A1%A5-adb"><span class="toc-number">3.</span> <span class="toc-text">Android 调试桥 (adb)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#adb-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">3.1.</span> <span class="toc-text">adb 的工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%90%AF%E7%94%A8-adb-%E8%B0%83%E8%AF%95"><span class="toc-number">3.2.</span> <span class="toc-text">在设备上启用 adb 调试</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text">操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%93%E5%BC%80%E5%BC%80%E5%8F%91%E8%80%85%E9%80%89%E9%A1%B9"><span class="toc-number">4.1.</span> <span class="toc-text">如何打开开发者选项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Wear-OS"><span class="toc-number">4.1.1.</span> <span class="toc-text">Wear OS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OPPO-%E6%89%8B%E8%A1%A8"><span class="toc-number">4.1.2.</span> <span class="toc-text">OPPO 手表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AOSP"><span class="toc-number">4.1.3.</span> <span class="toc-text">AOSP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">调试方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E6%9C%BA%E8%B0%83%E8%AF%95"><span class="toc-number">4.2.1.</span> <span class="toc-text">手机调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PC%E8%B0%83%E8%AF%95"><span class="toc-number">4.2.2.</span> <span class="toc-text">PC调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-number">4.2.3.</span> <span class="toc-text">Windows</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B0%83%E8%AF%95"><span class="toc-number">5.</span> <span class="toc-text">调试</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%8C%E6%84%BF%E6%97%B6%E5%85%89%E6%B0%B8%E9%A9%BB%E6%AD%A4%E5%88%BB%EF%BC%8C%E6%84%BF%E6%98%8E%E6%97%A5%E7%BB%88%E5%B0%86%E9%87%8D%E9%80%A2%E3%80%8D"><span class="toc-number">1.</span> <span class="toc-text">「愿时光永驻此刻，愿明日终将重逢」</span></a></li></ol>
                     </div>
                 </span>
             </div>
