@@ -924,7 +924,24 @@ html {
   left: 300px;
   width: auto
 }
+@keyframes fadeInmid {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
 
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 这里是调整参数并调用函数（fadeInLeft） */
+.mid-col{
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInmid;
+}
 
 .mid-col.show {
   background: none;
@@ -997,6 +1014,25 @@ html {
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
   -webkit-box-align: center
+}
+/* 这部分相当于定义动画的函数 */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 这里是调整参数并调用函数（fadeInLeft） */
+.left-col{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
 }
 
 .left-col #header .header-menu li {

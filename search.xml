@@ -220,6 +220,8 @@
 <p>如果输入时在前面加上www，会显示404页面，表示找不到这个仓库。</p>
 <p>而且github.io的后缀也非常冗长，不利于显示出网站的风格。</p>
 <p>那么有什么办法可以转换域名呢？办法就是更改DNS解析。</p>
+<span id="more"></span>
+
 <h1 id="DNS简介"><a href="#DNS简介" class="headerlink" title="DNS简介"></a>DNS简介</h1><blockquote>
 <p>DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。</p>
 <p>DNS的分布数据库是以域名为索引的，每个域名实际上就是一棵很大的逆向树中路径，这棵逆向树称为域名空间（domain name space），如下图所示树的最大深度不得超过127层，树中每个节点都有一个可以长达63个字符的文本标号。</p>
@@ -448,9 +450,7 @@
 <p><a href="https://wearosbox.com/d.exe">https://wearosbox.com/d.exeopen in new window</a></p>
 <p>然后，单击 INSTALL 安装。</p>
 <p>Windows 正版用户，在插入手表后，可以直接前往系统设置下载可选驱动，以快速安装。</p>
-<p><img src="https://article.biliimg.com/bfs/article/d00daa9fb8bd40c6c48e200a9afe293ec4a2b9c8.png" alt="img"></p>
-<p>完成后，请查看设备管理器中的 ADB 设备是否已经被准确识别：</p>
-<p><img src="https://article.biliimg.com/bfs/article/0c72986f28940fff32bec8592d6d94bc5745f29c.png" alt="img"></p>
+<p>完成后，请查看设备管理器中的 ADB 设备是否已经被准确识别。</p>
 <h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><p>本来以为这里是写的最多的，没想到现在已经有了成熟的GUI界面软件。</p>
 <p>那就没什么好说的了，按照操作去点击即可。</p>
 <p>不过还是简要介绍一下PC端的使用方法。</p>

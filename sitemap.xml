@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://windeling.github.io/2023092317374/</loc>
+    
+    <lastmod>2023-09-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://windeling.github.io/20230929feb6928c/</loc>
     
     <lastmod>2023-09-29</lastmod>
@@ -23,15 +32,6 @@
     <loc>https://windeling.github.io/notices/index.html</loc>
     
     <lastmod>2023-09-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://windeling.github.io/2023092317374/</loc>
-    
-    <lastmod>2023-09-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
