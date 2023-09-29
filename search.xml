@@ -629,4 +629,105 @@
         <tag>USB</tag>
       </tags>
   </entry>
+  <entry>
+    <title>关于洛雪音乐下载高品质文件的处理方法</title>
+    <url>/20230929feb6928c/</url>
+    <content><![CDATA[<p>如今听音乐需要开通各大音乐平台的会员才能畅享音乐之美，因此有很多大佬就在github开发了洛雪音乐这一开源代码项目。</p>
+<p>由于版权限制，洛雪音乐默认只有128k品质的音乐，这对一些对音乐有较高品质追求的用户带来了不便。</p>
+<span id="more"></span>
+
+<h1 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h1><p>既然有问题，必然会有解决问题的人。</p>
+<p>有大佬便编写了一个js文件，可以获得更高品质的音乐。</p>
+<p><img src="/20230929feb6928c/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929120413850.png" alt="image-20230929120413850"></p>
+<p>可以看出，洛雪音乐的作者为我们提供了音乐来源的选择，选择自定义源管理，便可以导入js脚本文件。</p>
+<p>这里的「六音音源」便是可以下载高品质音乐的js文件。</p>
+<h3 id="版本介绍"><a href="#版本介绍" class="headerlink" title="版本介绍"></a>版本介绍</h3><p>目前有两个流行版本，分别是1.0.6和1.0.7，区别主要在于1.0.7每秒不得超过5次请求，这就对机器操作造成了一定的限制。</p>
+<p><img src="/20230929feb6928c/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929120815688.png" alt="image-20230929120815688"></p>
+<p>可以看到，现在支持了320k音质和1000k的FLAC无损音质。经过测试，音质的确有改变。</p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a href="http://dl.sixyin.com/d/23338253-46422269-262911">城通网盘 (sixyin.com)</a> 密码：<a href="https://www.sixyin.com/download?post=8498&time=1695960829#">6yit</a></p>
+<p><a href="https://soso.lanzouj.com/b00p9c94f#8mno">六音音源 (lanzouj.com)</a> 云盘密码：<a href="https://www.sixyin.com/download?post=8498&time=1695960829#">8mno</a></p>
+<p>可直接点击密码进入。</p>
+<h3 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h3><p>下载完js脚本文件后，只需要在自定义音源中导入js文件即可。</p>
+]]></content>
+      <tags>
+        <tag>洛雪音乐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于github个人网站绑定域名的操作方法</title>
+    <url>/2023092958a4be22/</url>
+    <content><![CDATA[<p>在建立个人网站以后，由于这种博客的服务器是建立在github的，通过修改github的page页来实现个人网站的效果。</p>
+<p>所以我们的网站域名其实是对一个github仓库的访问，访问后便展示这个仓库的page页。</p>
+<p>所以所谓的「域名」xxxx.github.io，其实是对一个github仓库的访问。所谓的域名其实是仓库名字。</p>
+<p>如果输入时在前面加上www，会显示404页面，表示找不到这个仓库。</p>
+<p>而且github.io的后缀也非常冗长，不利于显示出网站的风格。</p>
+<p>那么有什么办法可以转换域名呢？办法就是更改DNS解析。</p>
+<h1 id="DNS简介"><a href="#DNS简介" class="headerlink" title="DNS简介"></a>DNS简介</h1><blockquote>
+<p>DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。</p>
+<p>DNS的分布数据库是以域名为索引的，每个域名实际上就是一棵很大的逆向树中路径，这棵逆向树称为域名空间（domain name space），如下图所示树的最大深度不得超过127层，树中每个节点都有一个可以长达63个字符的文本标号。</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>DNS域名解析过程</strong></li>
+</ul>
+<p>1，在浏览器中输入<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域名，操作系统会先检查自己本地的hosts文件是否有这个网址映射关系，如果有，就先调用这个IP地址映射，完成域名解析。</p>
+<p>2，如果hosts里没有这个域名的映射，则查找<strong>本地DNS解析器缓存</strong>，是否有这个网址映射关系，如果有，直接返回，完成域名解析。</p>
+<p>3，如果hosts与本地DNS解析器缓存都没有相应的网址映射关系，首先会找TCP&#x2F;ip参数中设置的首选DNS服务器，在此我们叫它<strong>本地DNS服务器</strong>，此服务器收到查询时，如果要查询的域名，包含在本地配置区域资源中，则返回解析结果给客户机，完成域名解析，此解析具有权威性。</p>
+<p>4，如果要查询的域名，不在本地DNS服务器区域解析，但该服务器已缓存了此网址映射关系，则调用这个IP地址映射，完成域名解析，此解析不具有权威性。</p>
+<p>5，如果本地DNS服务器本地区域文件与缓存解析都失效，则根据本地DNS服务器的设置（是否设置转发器）进行查询，如果未用转发模式，本地DNS就把请求发至13台根DNS，根DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。这台负责.com域的服务器收到请求后，如果自己无法解析，它就会找一个管理.com域的下一级DNS服务器地址(<a href="https://link.zhihu.com/?target=http://BTC.com">http://BTC.com</a>)给本地DNS服务器。当本地DNS服务器收到这个地址后，就会找<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域服务器，重复上面的动作，进行查询，直至找到<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>主机。</p>
+<p>6，如果用的是转发模式，此DNS服务器就会把请求转发至上一级DNS服务器，由上一级服务器进行解析，上一级服务器如果不能解析，或找根DNS或把转请求转至上上级，以此循环。不管是本地DNS服务器用是是转发，还是根提示，最后都是把结果返回给本地DNS服务器，由此DNS服务器再返回给客户机。</p>
+</blockquote>
+<p>从上面的介绍中我们呢可以看到，DNS解析的本质其实是将域名和IP地址联系起来，将一个输入的域名转换为网络能理解的IP地址。</p>
+<p>对与普通的服务器，只要将域名和服务器的IP地址绑定起来，就可以完成这一映射关系。</p>
+<p>但是这个转换工作是谁进行的呢？这个交换服务就要依靠DNS服务器了。</p>
+<h1 id="DNS服务器"><a href="#DNS服务器" class="headerlink" title="DNS服务器"></a>DNS服务器</h1><p>DNS服务器更像一个庞大的数据库，通过建立类似于python字典一样的关系，那么就可以从数据库中提取出所需的信息。</p>
+<p>如果在一个DNS服务器上找不到需的信息，就会向它的上级服务器发送请求，直到获得答复或者顶级服务器无应答。</p>
+<p>但是要怎么样才能往一个DNS服务器添加网站信息呢？要按照情况分类讨论。</p>
+<h2 id="顶级DNS服务器"><a href="#顶级DNS服务器" class="headerlink" title="顶级DNS服务器"></a>顶级DNS服务器</h2><p>这种服务器是最高的级别，理论上中国的三大运营商的自动分配的服务器也都可以解析。</p>
+<p>想要向这个服务器添加IP信息，这时候就要执行「购买域名」的操作了。</p>
+<p>购买域名后，DNS服务器就可以进行转换操作，在正规大平台的服务器往往能覆盖更广的范围，成为更多服务器的上级服务器。</p>
+<h2 id="普通DNS服务器"><a href="#普通DNS服务器" class="headerlink" title="普通DNS服务器"></a>普通DNS服务器</h2><p>如果在普通DNS服务器上添加，就有可能无法解析。</p>
+<p>举一个较为极端的例子，向自己搭建的DNS服务器添加IP信息，运营商不会指定这一个DNS服务器作为其他用户的DNS服务器，</p>
+<p>所以尽量在更高级的DNS服务器里添加自己网站的IP信息。</p>
+<h1 id="GIthub页面的特殊性"><a href="#GIthub页面的特殊性" class="headerlink" title="GIthub页面的特殊性"></a>GIthub页面的特殊性</h1><p>以上是普通网站的页面处理方法，但是github的页面具有一定的特殊性。</p>
+<p>如这两个网站：</p>
+<img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929112957898.png" alt="image-20230929112957898">
+
+<p><img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929112950553.png" alt="image-20230929112950553"></p>
+<p>在使用ping命令测试的时候，我们发现这两个网站的IP地址是相同的。</p>
+<p>原因在于这两个所谓的「网站」其实都是github服务器上的一个仓库，服务器的IP地址都是github的。</p>
+<p>那么这时候似乎就产生了一个bug：如果我们绑定了github的IP，以后域名的解析就都会解析到github的首页。</p>
+<p>所以github的设计者们就想出了这样一个办法：（<a href="http://www.example.com为示范域名,而example.github.io为仓库)/">www.example.com为示范域名，而example.github.io为仓库）</a></p>
+<ul>
+<li>DNS服务器解析<a href="http://www.example.com后,返回github服务器的ip./">www.example.com后，返回github服务器的IP。</a></li>
+<li>客户端访问IP，并传递域名参数<a href="http://www.example.com./">www.example.com。</a></li>
+<li>github服务器处理请求，<strong>并且根据域名参数寻找对应的库</strong>。</li>
+<li>将仓库的页面返回给客户端，完成请求。</li>
+</ul>
+<p>所以关键之处就在于给仓库添加一个域名参数。</p>
+<h1 id="添加域名参数"><a href="#添加域名参数" class="headerlink" title="添加域名参数"></a>添加域名参数</h1><p>我们可以在guihub上面手动添加我们的域名参数，但这个方法不够安全稳定。</p>
+<p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。</p>
+<p><img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929113508057.png" alt="一个"></p>
+<p><img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929113552785.png" alt="image-20230929113552785"></p>
+<p><strong>注意，不要在这个文本文档中的内容域名前面加上www！！</strong></p>
+<p>否则以后所有输入必须以www开头，下文将会讲到区别。</p>
+<p>然后将此文件保存并删除txt后缀。</p>
+<p>将其重命名为<code>CNAME</code>，等待下一次部署便可自动修改。</p>
+<h1 id="解析IP"><a href="#解析IP" class="headerlink" title="解析IP"></a>解析IP</h1><p>在这里就要注意到一点：github的IP地址共有四个，还有一些IPv6地址，所以建议添加以下IP：</p>
+<ul>
+<li>A @ 185.199.108.153</li>
+<li>A @ 185.199.109.153</li>
+<li>A @ 185.199.110.153</li>
+<li>A @ 185.199.111.153</li>
+<li>AAAA @</li>
+</ul>
+<p>其中A代表IPv4，AAAA是IPv6，@比www更为方便，因为@既可以匹配<a href="http://www.example.com和example.com,但www只能代表www.example.com./">www.example.com和example.com，但www只能代表www.example.com。</a></p>
+<p>这样基本上就可以避免github的IP更换而导致的解析错误。</p>
+]]></content>
+      <tags>
+        <tag>github</tag>
+        <tag>域名</tag>
+        <tag>个人博客</tag>
+      </tags>
+  </entry>
 </search>
