@@ -212,88 +212,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于github个人网站绑定域名的操作方法</title>
-    <url>/2023092958a4be22/</url>
-    <content><![CDATA[<p>在建立个人网站以后，由于这种博客的服务器是建立在github的，通过修改github的page页来实现个人网站的效果。</p>
-<p>所以我们的网站域名其实是对一个github仓库的访问，访问后便展示这个仓库的page页。</p>
-<p>所以所谓的「域名」xxxx.github.io，其实是对一个github仓库的访问。所谓的域名其实是仓库名字。</p>
-<p>如果输入时在前面加上www，会显示404页面，表示找不到这个仓库。</p>
-<p>而且github.io的后缀也非常冗长，不利于显示出网站的风格。</p>
-<p>那么有什么办法可以转换域名呢？办法就是更改DNS解析。</p>
-<span id="more"></span>
-
-<h1 id="DNS简介"><a href="#DNS简介" class="headerlink" title="DNS简介"></a>DNS简介</h1><blockquote>
-<p>DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。</p>
-<p>DNS的分布数据库是以域名为索引的，每个域名实际上就是一棵很大的逆向树中路径，这棵逆向树称为域名空间（domain name space），如下图所示树的最大深度不得超过127层，树中每个节点都有一个可以长达63个字符的文本标号。</p>
-</blockquote>
-<blockquote>
-<ul>
-<li><strong>DNS域名解析过程</strong></li>
-</ul>
-<p>1，在浏览器中输入<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域名，操作系统会先检查自己本地的hosts文件是否有这个网址映射关系，如果有，就先调用这个IP地址映射，完成域名解析。</p>
-<p>2，如果hosts里没有这个域名的映射，则查找<strong>本地DNS解析器缓存</strong>，是否有这个网址映射关系，如果有，直接返回，完成域名解析。</p>
-<p>3，如果hosts与本地DNS解析器缓存都没有相应的网址映射关系，首先会找TCP&#x2F;ip参数中设置的首选DNS服务器，在此我们叫它<strong>本地DNS服务器</strong>，此服务器收到查询时，如果要查询的域名，包含在本地配置区域资源中，则返回解析结果给客户机，完成域名解析，此解析具有权威性。</p>
-<p>4，如果要查询的域名，不在本地DNS服务器区域解析，但该服务器已缓存了此网址映射关系，则调用这个IP地址映射，完成域名解析，此解析不具有权威性。</p>
-<p>5，如果本地DNS服务器本地区域文件与缓存解析都失效，则根据本地DNS服务器的设置（是否设置转发器）进行查询，如果未用转发模式，本地DNS就把请求发至13台根DNS，根DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。这台负责.com域的服务器收到请求后，如果自己无法解析，它就会找一个管理.com域的下一级DNS服务器地址(<a href="https://link.zhihu.com/?target=http://BTC.com">http://BTC.com</a>)给本地DNS服务器。当本地DNS服务器收到这个地址后，就会找<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域服务器，重复上面的动作，进行查询，直至找到<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>主机。</p>
-<p>6，如果用的是转发模式，此DNS服务器就会把请求转发至上一级DNS服务器，由上一级服务器进行解析，上一级服务器如果不能解析，或找根DNS或把转请求转至上上级，以此循环。不管是本地DNS服务器用是是转发，还是根提示，最后都是把结果返回给本地DNS服务器，由此DNS服务器再返回给客户机。</p>
-</blockquote>
-<p>从上面的介绍中我们呢可以看到，DNS解析的本质其实是将域名和IP地址联系起来，将一个输入的域名转换为网络能理解的IP地址。</p>
-<p>对与普通的服务器，只要将域名和服务器的IP地址绑定起来，就可以完成这一映射关系。</p>
-<p>但是这个转换工作是谁进行的呢？这个交换服务就要依靠DNS服务器了。</p>
-<h1 id="DNS服务器"><a href="#DNS服务器" class="headerlink" title="DNS服务器"></a>DNS服务器</h1><p>DNS服务器更像一个庞大的数据库，通过建立类似于python字典一样的关系，那么就可以从数据库中提取出所需的信息。</p>
-<p>如果在一个DNS服务器上找不到需的信息，就会向它的上级服务器发送请求，直到获得答复或者顶级服务器无应答。</p>
-<p>但是要怎么样才能往一个DNS服务器添加网站信息呢？要按照情况分类讨论。</p>
-<h2 id="顶级DNS服务器"><a href="#顶级DNS服务器" class="headerlink" title="顶级DNS服务器"></a>顶级DNS服务器</h2><p>这种服务器是最高的级别，理论上中国的三大运营商的自动分配的服务器也都可以解析。</p>
-<p>想要向这个服务器添加IP信息，这时候就要执行「购买域名」的操作了。</p>
-<p>购买域名后，DNS服务器就可以进行转换操作，在正规大平台的服务器往往能覆盖更广的范围，成为更多服务器的上级服务器。</p>
-<h2 id="普通DNS服务器"><a href="#普通DNS服务器" class="headerlink" title="普通DNS服务器"></a>普通DNS服务器</h2><p>如果在普通DNS服务器上添加，就有可能无法解析。</p>
-<p>举一个较为极端的例子，向自己搭建的DNS服务器添加IP信息，运营商不会指定这一个DNS服务器作为其他用户的DNS服务器，</p>
-<p>所以尽量在更高级的DNS服务器里添加自己网站的IP信息。</p>
-<h1 id="GIthub页面的特殊性"><a href="#GIthub页面的特殊性" class="headerlink" title="GIthub页面的特殊性"></a>GIthub页面的特殊性</h1><p>以上是普通网站的页面处理方法，但是github的页面具有一定的特殊性。</p>
-<p>如这两个网站：</p>
-<img src="/2023092958a4be22/image-20230929112957898.png" alt="image-20230929112957898">
-
-<img src="/2023092958a4be22/image-20230929112950553.png" class title="image-20230929112950553">
-
-<p>在使用ping命令测试的时候，我们发现这两个网站的IP地址是相同的。</p>
-<p>原因在于这两个所谓的「网站」其实都是github服务器上的一个仓库，服务器的IP地址都是github的。</p>
-<p>那么这时候似乎就产生了一个bug：如果我们绑定了github的IP，以后域名的解析就都会解析到github的首页。</p>
-<p>所以github的设计者们就想出了这样一个办法：（<a href="http://www.example.com/">www.example.com</a> 为示范域名，而example.github.io为仓库）</p>
-<ul>
-<li>DNS服务器解析<a href="http://www.example.com后,返回github服务器的ip./">www.example.com后，返回github服务器的IP。</a></li>
-<li>客户端访问IP，并传递域名参数<a href="http://www.example.com./">www.example.com。</a></li>
-<li>github服务器处理请求，<strong>并且根据域名参数寻找对应的库</strong>。</li>
-<li>将仓库的页面返回给客户端，完成请求。</li>
-</ul>
-<p>所以关键之处就在于给仓库添加一个域名参数。</p>
-<h1 id="添加域名参数"><a href="#添加域名参数" class="headerlink" title="添加域名参数"></a>添加域名参数</h1><p>我们可以在guihub上面手动添加我们的域名参数，但这个方法不够安全稳定。</p>
-<p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。</p>
-<img src="/2023092958a4be22/image-20230929113508057.png" class title="一个">
-
-<img src="/2023092958a4be22/image-20230929113552785.png" class title="image-20230929113552785">
-
-<p><strong>注意，不要在这个文本文档中的内容域名前面加上www！！</strong></p>
-<p>否则以后所有输入必须以www开头，下文将会讲到区别。</p>
-<p>然后将此文件保存并删除txt后缀。</p>
-<p>将其重命名为<code>CNAME</code>，等待下一次部署便可自动修改。</p>
-<h1 id="解析IP"><a href="#解析IP" class="headerlink" title="解析IP"></a>解析IP</h1><p>在这里就要注意到一点：github的IP地址共有四个，还有一些IPv6地址，所以建议添加以下IP：</p>
-<ul>
-<li>A @ 185.199.108.153</li>
-<li>A @ 185.199.109.153</li>
-<li>A @ 185.199.110.153</li>
-<li>A @ 185.199.111.153</li>
-<li>AAAA @</li>
-</ul>
-<p>其中A代表IPv4，AAAA是IPv6，@比www更为方便，因为@既可以匹配<a href="http://www.example.com和example.com,但www只能代表www.example.com./">www.example.com和example.com，但www只能代表www.example.com。</a></p>
-<p>这样基本上就可以避免github的IP更换而导致的解析错误。</p>
-]]></content>
-      <tags>
-        <tag>github</tag>
-        <tag>域名</tag>
-        <tag>个人博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于valine评论无法提交的问题原因分析和解决方案</title>
     <url>/202308258455/</url>
     <content><![CDATA[<p>起因：有人想买个U盘。</p>
@@ -809,6 +727,180 @@
         <tag>hexo</tag>
         <tag>github</tag>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零基础搭建个人博客（三）</title>
+    <url>/202309296d16578d/</url>
+    <content><![CDATA[<h1 id="域名的购买与解析"><a href="#域名的购买与解析" class="headerlink" title="域名的购买与解析"></a>域名的购买与解析</h1><p>在我们建立与Github仓库的联系以后，实际上我们已经拥有了一个属于自己的个人网页。</p>
+<p>接下来就可以选择是否绑定属于自己的域名。</p>
+<p>最好在博客正式投入前完成。域名购买的决定，如果在投入使用之后再选择绑定域名，会导致一些问题。</p>
+<span id="more"></span>
+
+<h1 id="绑定域名时间过晚的问题"><a href="#绑定域名时间过晚的问题" class="headerlink" title="绑定域名时间过晚的问题"></a>绑定域名时间过晚的问题</h1><p>如果绑定域名的时间过晚，但是之前的原有域名example.github.io已经被搜索引擎收录。</p>
+<p>那么将会导致引擎收入的页面有可能出现无法重定向打开的情况，而且会出现一些冗余结果。</p>
+<p>而且会导致文章浏览次数统计，访问量，访客数量都会清零。</p>
+<p>所以尽可能在正式投入使用之前决定是否绑定域名。</p>
+<h1 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h1><p>域名是自由的，任何人都可以拥有任意的域名。但是域名转换服务器只会将有协议的域名和IP地址进行转换。</p>
+<p>因此严格的准确的说，购买域名其实是在购买域名和IP地址的转换权。</p>
+<p>想深入了解请浏览这篇文章：<a href="http://www.windeling.com.cn/2023092958a4be22/">关于github个人网站绑定域名的原理分析和操作 | Windeling</a></p>
+<h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><p>国内比较著名的平台有<code>阿里云</code>和<code>腾讯云</code>。</p>
+<p>根据自己的喜好即可，域名价格大多相同。</p>
+<h2 id="域名后缀"><a href="#域名后缀" class="headerlink" title="域名后缀"></a>域名后缀</h2><p>常用的域名后缀有<code>.com</code> <code>.com.cn</code> <code>.top</code> <code>.net</code></p>
+<p><code>.com</code>：最普遍和为人所知的域名，价格在￥70-80不等。</p>
+<p><code>.com.cn</code>：强调<strong>中国公司</strong>，需要中国证件购买，￥35-40。</p>
+<p><code>.top</code>：最便宜的域名后缀，￥20-25。</p>
+<p><code>.net</code>：网络的首字母，价格在￥50-60左右。</p>
+<p>所有域名都是以年作为单位购买的，所以平均每月约2-7元。</p>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><blockquote>
+<p>用阿里云平台举例，说明大致流程，其他平台的UI设计可能有所不同，但尽量保证做到相同的设置。</p>
+</blockquote>
+<p>首先，创建账号。</p>
+<p>接着进行实名认证，注意，阿里云有多个实名认证，需要仔细区分：</p>
+<ul>
+<li>账号实名认证</li>
+<li>实名认证模版认证</li>
+<li>域名实名认证</li>
+</ul>
+<p>对于域名，需要的是域名实名认证，需要账号实名认证作为前提。</p>
+<p>由于阿里云和支付宝是同一平台的，所以登录，认证，支付都基本上要使用支付宝，请提前做好准备。</p>
+<p>但是，如果只认证这个域名，是不用<strong>实名认证模版认证</strong>的，此模版认证后可以通用，虽然更方便，但是审核周期更长，而且个人用户一般只会购买一个域名，这个模版更多是针对有大量业务的企业的。</p>
+<p>而且模版认证不等于域名认证，还要再次提交认证。</p>
+<p>所以进行两个认证就可以了。</p>
+<ul>
+<li>账号实名认证（支付宝扫码）（瞬时）——域名实名认证（填写信息）——审核信息（2-5分钟）</li>
+<li>账号实名认证（支付宝扫码）（瞬时）——模版实名认证（填写信息）——审核信息（5-7小时）——通过模版进行域名认证（瞬时）</li>
+</ul>
+<blockquote>
+<p><strong>注意，由于中国政府的关于互联网的相关规定，域名如不实名认证，将会被注册局暂停解析服务，相当于不能使用</strong></p>
+</blockquote>
+<p>认证以后，就可以添加解析了。</p>
+<h1 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h1><p>域名的解析需要转到控制台，填写如下记录。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A @ 185.199.108.153</span><br><span class="line">A @ 185.199.109.153</span><br><span class="line">A @ 185.199.110.153</span><br><span class="line">A @ 185.199.111.153</span><br><span class="line">A WWW 185.199.108.153</span><br><span class="line">A WWW 185.199.109.153</span><br><span class="line">A WWW 185.199.110.153</span><br><span class="line">A WWW 185.199.111.153</span><br></pre></td></tr></table></figure>
+
+<p>A代表是IPv4地址，@代表不加www的域名，如example.com，www代表域名的全称，如<a href="http://www.example.com/">www.example.com</a></p>
+<p>这样无论访问者加不加WWW，都可以解析到正确的IP。</p>
+<blockquote>
+<p>注意：如果只添加@或www，则使用另一种方式将无法访问！！</p>
+</blockquote>
+<p>这四个IP地址是Github的常用IP，最好全部添加，万一Github换用服务器（经常性行为），就会导致无法访问。</p>
+<img src="/202309296d16578d/image-20230929112957898.png" alt="image-20230929112957898">
+
+<p><img src="/%E5%85%B3%E4%BA%8Egithub%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%9A%84%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E6%93%8D%E4%BD%9C/image-20230929112950553.png" alt="image-20230929112950553"></p>
+<p>而且所有的github.io的个人网站的IP地址其实都是相同的。</p>
+<p>原因在于这所谓的「网站」其实都是github服务器上的一个仓库，服务器的IP地址都是github的。</p>
+<p>如果不太相信，也可以用cmd的ping命令来ping一下自己的仓库，IPv4地址肯定是上面四个中的一个（除非github换服务器了）</p>
+<p>如果是以<code>:</code>连接的IP地址，是IPv6地址，可以在结尾加<code>-4</code>强行获得IPv4地址。</p>
+<p><code>ping example.github.io -4</code></p>
+<p>那么这时候似乎就产生了一个bug：如果我们绑定了github的IP，以后域名的解析就都会解析到github的首页。</p>
+<p>所以github的设计者们就想出了这样一个办法：（<a href="http://www.example.com/">www.example.com</a> 为示范域名，而example.github.io为仓库）</p>
+<ul>
+<li>DNS服务器解析<a href="http://www.example.com后,返回github服务器的ip./">www.example.com后，返回github服务器的IP。</a></li>
+<li>客户端访问IP，并传递域名参数<a href="http://www.example.com./">www.example.com。</a></li>
+<li>github服务器处理请求，<strong>并且根据域名参数寻找对应的库</strong>。</li>
+<li>将仓库的页面返回给客户端，完成请求。</li>
+</ul>
+<p>所以关键之处就在于给仓库添加一个域名参数。</p>
+<h1 id="添加域名参数"><a href="#添加域名参数" class="headerlink" title="添加域名参数"></a>添加域名参数</h1><p>可以在guihub上面手动添加我们的域名参数，但这个方法不够安全稳定，而且难以修改。</p>
+<p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。（有无www都可以）对啊好</p>
+<p><img src="/%E5%85%B3%E4%BA%8Egithub%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%9A%84%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E6%93%8D%E4%BD%9C/image-20230929113508057.png"></p>
+<p><img src="/%E5%85%B3%E4%BA%8Egithub%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%9A%84%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E6%93%8D%E4%BD%9C/image-20230929113552785.png" alt="image-20230929113552785"></p>
+<p>然后将此文件保存并删除txt后缀。</p>
+<p>一定要将其重命名为<code>CNAME</code>，等待下一次部署便可自动修改。</p>
+<blockquote>
+<p>注意：文件中如果加入WWW，则最后在地址栏显示的是<a href="http://www.example.com(即使用户输入example.com),反之亦然./">www.example.com（即使用户输入example.com)，反之亦然。</a></p>
+</blockquote>
+<p>至此，git仓库的名称已经换成了你的域名，即使输入example.github.io也会重定向到你的域名。</p>
+<h1 id="可能有坑"><a href="#可能有坑" class="headerlink" title="可能有坑"></a>可能有坑</h1><h2 id="绑定性"><a href="#绑定性" class="headerlink" title="绑定性"></a>绑定性</h2><blockquote>
+<p>……即使输入example.github.io也会重定向到你的域名。</p>
+</blockquote>
+<p>这就意味着域名如果无法解析，io也无法访问。</p>
+<h2 id="认证性"><a href="#认证性" class="headerlink" title="认证性"></a>认证性</h2><p>如果不实名认证，域名将会被停止解析，因而出现<strong>没有找到DNS</strong>的报错提示。</p>
+<h2 id="劫持"><a href="#劫持" class="headerlink" title="劫持"></a>劫持</h2><p>在购买域名时，如果没有购买专门的DNS解析服务，那么使用的是公共的DNS服务器。</p>
+<p>这样可能会被劫持，造成跳转错误。</p>
+<p>具体可以搜索：<code>DNS劫持与污染</code></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>到此，已经建立了一个仓库，并且能够与之通信。</p>
+<p>接下来，就要开始装饰仓库了！！</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于github个人网站绑定域名的原理分析和操作</title>
+    <url>/2023092958a4be22/</url>
+    <content><![CDATA[<p>在建立个人网站以后，由于这种博客的服务器是建立在github的，通过修改github的page页来实现个人网站的效果。</p>
+<p>所以我们的网站域名其实是对一个github仓库的访问，访问后便展示这个仓库的page页。</p>
+<p>所以所谓的「域名」xxxx.github.io，其实是对一个github仓库的访问。所谓的域名其实是仓库名字。</p>
+<p>如果输入时在前面加上www，会显示404页面，表示找不到这个仓库。</p>
+<p>而且github.io的后缀也非常冗长，不利于显示出网站的风格。</p>
+<p>那么有什么办法可以转换域名呢？办法就是更改DNS解析。</p>
+<span id="more"></span>
+
+<h1 id="DNS简介"><a href="#DNS简介" class="headerlink" title="DNS简介"></a>DNS简介</h1><blockquote>
+<p>DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。</p>
+<p>DNS的分布数据库是以域名为索引的，每个域名实际上就是一棵很大的逆向树中路径，这棵逆向树称为域名空间（domain name space），如下图所示树的最大深度不得超过127层，树中每个节点都有一个可以长达63个字符的文本标号。</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>DNS域名解析过程</strong></li>
+</ul>
+<p>1，在浏览器中输入<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域名，操作系统会先检查自己本地的hosts文件是否有这个网址映射关系，如果有，就先调用这个IP地址映射，完成域名解析。</p>
+<p>2，如果hosts里没有这个域名的映射，则查找<strong>本地DNS解析器缓存</strong>，是否有这个网址映射关系，如果有，直接返回，完成域名解析。</p>
+<p>3，如果hosts与本地DNS解析器缓存都没有相应的网址映射关系，首先会找TCP&#x2F;ip参数中设置的首选DNS服务器，在此我们叫它<strong>本地DNS服务器</strong>，此服务器收到查询时，如果要查询的域名，包含在本地配置区域资源中，则返回解析结果给客户机，完成域名解析，此解析具有权威性。</p>
+<p>4，如果要查询的域名，不在本地DNS服务器区域解析，但该服务器已缓存了此网址映射关系，则调用这个IP地址映射，完成域名解析，此解析不具有权威性。</p>
+<p>5，如果本地DNS服务器本地区域文件与缓存解析都失效，则根据本地DNS服务器的设置（是否设置转发器）进行查询，如果未用转发模式，本地DNS就把请求发至13台根DNS，根DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。这台负责.com域的服务器收到请求后，如果自己无法解析，它就会找一个管理.com域的下一级DNS服务器地址(<a href="https://link.zhihu.com/?target=http://BTC.com">http://BTC.com</a>)给本地DNS服务器。当本地DNS服务器收到这个地址后，就会找<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域服务器，重复上面的动作，进行查询，直至找到<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>主机。</p>
+<p>6，如果用的是转发模式，此DNS服务器就会把请求转发至上一级DNS服务器，由上一级服务器进行解析，上一级服务器如果不能解析，或找根DNS或把转请求转至上上级，以此循环。不管是本地DNS服务器用是是转发，还是根提示，最后都是把结果返回给本地DNS服务器，由此DNS服务器再返回给客户机。</p>
+</blockquote>
+<p>从上面的介绍中我们呢可以看到，DNS解析的本质其实是将域名和IP地址联系起来，将一个输入的域名转换为网络能理解的IP地址。</p>
+<p>对与普通的服务器，只要将域名和服务器的IP地址绑定起来，就可以完成这一映射关系。</p>
+<p>但是这个转换工作是谁进行的呢？这个交换服务就要依靠DNS服务器了。</p>
+<h1 id="DNS服务器"><a href="#DNS服务器" class="headerlink" title="DNS服务器"></a>DNS服务器</h1><p>DNS服务器更像一个庞大的数据库，通过建立类似于python字典一样的关系，那么就可以从数据库中提取出所需的信息。</p>
+<p>如果在一个DNS服务器上找不到需的信息，就会向它的上级服务器发送请求，直到获得答复或者顶级服务器无应答。</p>
+<p>但是要怎么样才能往一个DNS服务器添加网站信息呢？要按照情况分类讨论。</p>
+<h2 id="顶级DNS服务器"><a href="#顶级DNS服务器" class="headerlink" title="顶级DNS服务器"></a>顶级DNS服务器</h2><p>这种服务器是最高的级别，理论上中国的三大运营商的自动分配的服务器也都可以解析。</p>
+<p>想要向这个服务器添加IP信息，这时候就要执行「购买域名」的操作了。</p>
+<p>购买域名后，DNS服务器就可以进行转换操作，在正规大平台的服务器往往能覆盖更广的范围，成为更多服务器的上级服务器。</p>
+<h2 id="普通DNS服务器"><a href="#普通DNS服务器" class="headerlink" title="普通DNS服务器"></a>普通DNS服务器</h2><p>如果在普通DNS服务器上添加，就有可能无法解析。</p>
+<p>举一个较为极端的例子，向自己搭建的DNS服务器添加IP信息，运营商不会指定这一个DNS服务器作为其他用户的DNS服务器，</p>
+<p>所以尽量在更高级的DNS服务器里添加自己网站的IP信息。</p>
+<h1 id="GIthub页面的特殊性"><a href="#GIthub页面的特殊性" class="headerlink" title="GIthub页面的特殊性"></a>GIthub页面的特殊性</h1><p>以上是普通网站的页面处理方法，但是github的页面具有一定的特殊性。</p>
+<p>如这两个网站：</p>
+<img src="/2023092958a4be22/image-20230929112957898.png" alt="image-20230929112957898">
+
+<img src="/2023092958a4be22/image-20230929112950553.png" class title="image-20230929112950553">
+
+<p>在使用ping命令测试的时候，我们发现这两个网站的IP地址是相同的。</p>
+<p>原因在于这两个所谓的「网站」其实都是github服务器上的一个仓库，服务器的IP地址都是github的。</p>
+<p>那么这时候似乎就产生了一个bug：如果我们绑定了github的IP，以后域名的解析就都会解析到github的首页。</p>
+<p>所以github的设计者们就想出了这样一个办法：（<a href="http://www.example.com/">www.example.com</a> 为示范域名，而example.github.io为仓库）</p>
+<ul>
+<li>DNS服务器解析<a href="http://www.example.com后,返回github服务器的ip./">www.example.com后，返回github服务器的IP。</a></li>
+<li>客户端访问IP，并传递域名参数<a href="http://www.example.com./">www.example.com。</a></li>
+<li>github服务器处理请求，<strong>并且根据域名参数寻找对应的库</strong>。</li>
+<li>将仓库的页面返回给客户端，完成请求。</li>
+</ul>
+<p>所以关键之处就在于给仓库添加一个域名参数。</p>
+<h1 id="添加域名参数"><a href="#添加域名参数" class="headerlink" title="添加域名参数"></a>添加域名参数</h1><p>可以在guihub上面手动添加我们的域名参数，但这个方法不够安全稳定，而且难以修改。</p>
+<p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。（有无www都可以）对啊好</p>
+<img src="/2023092958a4be22/image-20230929113508057.png" class>
+
+<img src="/2023092958a4be22/image-20230929113552785.png" class title="image-20230929113552785">
+
+<p>然后将此文件保存并删除txt后缀。</p>
+<p>将其重命名为<code>CNAME</code>，等待下一次部署便可自动修改。</p>
+<h1 id="解析IP"><a href="#解析IP" class="headerlink" title="解析IP"></a>解析IP</h1><p>在这里就要注意到一点：github的IPv4地址共有四个，还有一些IPv6地址，所以建议添加以下IP：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A @ 185.199.108.153</span><br><span class="line">A @ 185.199.109.153</span><br><span class="line">A @ 185.199.110.153</span><br><span class="line">A @ 185.199.111.153</span><br><span class="line">A WWW 185.199.108.153</span><br><span class="line">A WWW 185.199.109.153</span><br><span class="line">A WWW 185.199.110.153</span><br><span class="line">A WWW 185.199.111.153</span><br></pre></td></tr></table></figure>
+<p>A代表是IPv4地址，@代表不加www的域名，如example.com，www代表域名的全称，如<a href="http://www.example.com/">www.example.com</a></p>
+<p>这样无论访问者加不加WWW，都可以解析到正确的IP。</p>
+<p>这四个IP地址是Github的常用IP，最好全部添加，万一Github换用服务器（经常性行为），就会导致无法访问。</p>
+]]></content>
+      <tags>
+        <tag>github</tag>
+        <tag>域名</tag>
+        <tag>个人博客</tag>
       </tags>
   </entry>
 </search>
