@@ -8,14 +8,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>Tag: github | Windeling</title>
+  <title>关于网络www前缀对DNS解析影响的分析 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Windeling">
-<meta property="og:url" content="https://windeling.github.io/tags/github/index.html">
+  <meta name="description" content="在购买了这个网站的域名windeling.com.cn后，发现加上了WWW便会无法访问。 那么，造成这个问题的原因是什么？为什么许多网站无论是否添加WWW，都是可以访问的？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于网络www前缀对DNS解析影响的分析">
+<meta property="og:url" content="https://windeling.github.io/20230929e2706666/index.html">
 <meta property="og:site_name" content="Windeling">
+<meta property="og:description" content="在购买了这个网站的域名windeling.com.cn后，发现加上了WWW便会无法访问。 那么，造成这个问题的原因是什么？为什么许多网站无论是否添加WWW，都是可以访问的？">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-29T07:01:24.000Z">
+<meta property="article:modified_time" content="2023-09-29T07:54:49.130Z">
 <meta property="article:author" content="黄文林">
+<meta property="article:tag" content="域名">
+<meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
@@ -175,72 +181,212 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-关于网络www前缀的分析" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap" style="font-family: Times, Times New Roman, serif;">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives" style="font-family: FangSong;">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023092958a4be22/" class="archive-article-date">
-  	<time datetime="2023-09-29T01:56:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-09-29</time>
-</a>
-        </div>
-        <div style="font-size: 40px;">
-          
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023092958a4be22/">关于github个人网站绑定域名的操作方法</a>
+    <h1 class="article-title" itemprop="name">
+      关于网络www前缀对DNS解析影响的分析
     </h1>
   
 
-        </div>
-        <div class="article-info info-on-right">
+        
+        <a href="/20230929e2706666/" class="archive-article-date">
+  	<time datetime="2023-09-29T07:01:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-09-29</time>
+</a>
+        
+          <div style="margin-top:10px;">
+
+  <span class="post-time">
+
+    <span class="post-meta-item-icon">
+
+      <i class="fa fa-keyboard-o"></i>
+
+      <span class="post-meta-item-text">  字数统计: </span>
+
+      <span class="post-count">1.3k字</span>
+
+    </span>
+
+  </span>
+
+  <span class="post-time">
+
+    &nbsp; | &nbsp;
+
+    <span class="post-meta-item-icon">
+
+      <i class="fa fa-hourglass-half"></i>
+
+      <span class="post-meta-item-text">  预计阅读时长: </span>
+
+      <span class="post-count">4分</span>
+
+    </span>
+    
+      <a class="cloud-tie-join-count" href="/20230929e2706666/" style="color:rgba(26, 26, 26);margin-top:10px;">
+        &nbsp; | &nbsp;
+        <span id="busuanzi_container_page_pv">
+          阅读量: <span id="busuanzi_value_page_pv"></span>
+        </span>
+      </a>
+    
+  </span>
+  <!--显示阅读次数-->
+
+</div>
           
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在购买了这个网站的域名windeling.com.cn后，发现加上了WWW便会无法访问。</p>
+<p>那么，造成这个问题的原因是什么？为什么许多网站无论是否添加WWW，都是可以访问的？</p>
+<span id="more"></span>
+
+<h1 id="WWW简介"><a href="#WWW简介" class="headerlink" title="WWW简介"></a>WWW简介</h1><blockquote>
+<p>www是World Wide Web的缩写。</p>
+<p>www WWW (<strong>World Wide Web</strong>，万维网)是存储在 Internet 计算机 中、数量巨大的 文档 的集合。. 这些文档称为 页面 ，它是一种 超文本 ( Hypertext )信息，可以用于描述 超媒体 。. 文本 、 图形 、 视频 、 音频 等 多媒体 ，称为超媒体 ( Hypermedia )。. Web上的信息是由彼此关联的文档组成的，而使其连接在一起的是 超链接 ( Hyperlink) [2] 。</p>
+</blockquote>
+<h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p>这里使用两个具体的网站进行分析。</p>
+<ul>
+<li>Github网站，全球最大的代码托管平台。</li>
+<li>bilibili网站，中国境内著名视频网站。</li>
+</ul>
+<p>在浏览器输入这两个网站的域名时，会发现一些细微的区别。</p>
+<p>如果在在输入哔哩哔哩网站时不加入www,同样在最终的地址栏结果中照样会出现<a target="_blank" rel="noopener" href="http://www.bilibili.com./">www.bilibili.com。</a></p>
+<p>但是在输入github的网址时，即使是加了www，最后也将会将www省去。</p>
+<p>但是最终我们都能跳转到正确的页面，这是为什么呢？</p>
+<h1 id="IP映射"><a href="#IP映射" class="headerlink" title="IP映射"></a>IP映射</h1><blockquote>
+<p>DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。</p>
+<p>DNS的分布数据库是以域名为索引的，每个域名实际上就是一棵很大的逆向树中路径，这棵逆向树称为域名空间（domain name space），如下图所示树的最大深度不得超过127层，树中每个节点都有一个可以长达63个字符的文本标号。</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>DNS域名解析过程</strong></li>
+</ul>
+<p>1，在浏览器中输入<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域名，操作系统会先检查自己本地的hosts文件是否有这个网址映射关系，如果有，就先调用这个IP地址映射，完成域名解析。</p>
+<p>2，如果hosts里没有这个域名的映射，则查找<strong>本地DNS解析器缓存</strong>，是否有这个网址映射关系，如果有，直接返回，完成域名解析。</p>
+<p>3，如果hosts与本地DNS解析器缓存都没有相应的网址映射关系，首先会找TCP&#x2F;ip参数中设置的首选DNS服务器，在此我们叫它<strong>本地DNS服务器</strong>，此服务器收到查询时，如果要查询的域名，包含在本地配置区域资源中，则返回解析结果给客户机，完成域名解析，此解析具有权威性。</p>
+<p>4，如果要查询的域名，不在本地DNS服务器区域解析，但该服务器已缓存了此网址映射关系，则调用这个IP地址映射，完成域名解析，此解析不具有权威性。</p>
+<p>5，如果本地DNS服务器本地区域文件与缓存解析都失效，则根据本地DNS服务器的设置（是否设置转发器）进行查询，如果未用转发模式，本地DNS就把请求发至13台根DNS，根DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。这台负责.com域的服务器收到请求后，如果自己无法解析，它就会找一个管理.com域的下一级DNS服务器地址(<a href="https://link.zhihu.com/?target=http://BTC.com">http://BTC.com</a>)给本地DNS服务器。当本地DNS服务器收到这个地址后，就会找<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域服务器，重复上面的动作，进行查询，直至找到<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>主机。</p>
+<p>6，如果用的是转发模式，此DNS服务器就会把请求转发至上一级DNS服务器，由上一级服务器进行解析，上一级服务器如果不能解析，或找根DNS或把转请求转至上上级，以此循环。不管是本地DNS服务器用是是转发，还是根提示，最后都是把结果返回给本地DNS服务器，由此DNS服务器再返回给客户机。</p>
+</blockquote>
+<p>我们分析一下域名转换为IP的过程，就会发现是DNS服务器在这中起到了至关重要的作用。</p>
+<p>所以如果我们能将多个网址匹配到同样一个IP，也可以实现同样的效果。</p>
+<p>通过重定向的操作手段，在输入不一样的网址时发送301代码，使之重定向到新的网站。</p>
+<p>所以最后的网站结果取决于开发者的设置。</p>
+
+      
+        
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">域名</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">个人博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网络</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/20230929feb6928c/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于洛雪音乐下载高品质文件的处理方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
+  
+
+  
+
+  
+
+<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+<!-- 评论内容开始 -->
+
+  
     
-
-
+        <section id="comments" class="comments">
+          <style>
+            .comments{
+              margin:50px;
+              padding: 10px;
+              background:#fff;
+              box-shadow: 0.5em 0.5em .5em .1em rgba(0, 0, 0, 0.2);
+              border-radius: 0.5em;
+            }
+            @media screen and (max-width:800px){.comments{
+              margin:auto;padding:10px;background:#fff
+            }}
+          </style>
+          <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "xHtXgMKrGA54D3kZj4yP6fzy-gzGzoHsz",
+            app_key: "V2QKljAUxvB9b6TcavCR1aIB",
+            placeholder: "支持Markdown语法，图片可直接粘贴，可输入邮箱作为评论回复提醒",
+            avatar:"retro"
+        });
+    }
+</script>
+      </section>
+    
+  
+<!-- 评论内容结束 -->
           </div>
         </div>
       </div>
@@ -279,9 +425,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

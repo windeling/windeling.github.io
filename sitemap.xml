@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windeling.github.io/20230929e2706666/</loc>
+    
+    <lastmod>2023-09-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://windeling.github.io/2023092958a4be22/</loc>
     
     <lastmod>2023-09-29</lastmod>
@@ -341,6 +350,13 @@
   
   <url>
     <loc>https://windeling.github.io/tags/USB/</loc>
+    <lastmod>2023-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://windeling.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

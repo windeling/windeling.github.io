@@ -735,4 +735,49 @@
         <tag>USB</tag>
       </tags>
   </entry>
+  <entry>
+    <title>关于网络www前缀对DNS解析影响的分析</title>
+    <url>/20230929e2706666/</url>
+    <content><![CDATA[<p>在购买了这个网站的域名windeling.com.cn后，发现加上了WWW便会无法访问。</p>
+<p>那么，造成这个问题的原因是什么？为什么许多网站无论是否添加WWW，都是可以访问的？</p>
+<span id="more"></span>
+
+<h1 id="WWW简介"><a href="#WWW简介" class="headerlink" title="WWW简介"></a>WWW简介</h1><blockquote>
+<p>www是World Wide Web的缩写。</p>
+<p>www WWW (<strong>World Wide Web</strong>，万维网)是存储在 Internet 计算机 中、数量巨大的 文档 的集合。. 这些文档称为 页面 ，它是一种 超文本 ( Hypertext )信息，可以用于描述 超媒体 。. 文本 、 图形 、 视频 、 音频 等 多媒体 ，称为超媒体 ( Hypermedia )。. Web上的信息是由彼此关联的文档组成的，而使其连接在一起的是 超链接 ( Hyperlink) [2] 。</p>
+</blockquote>
+<h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p>这里使用两个具体的网站进行分析。</p>
+<ul>
+<li>Github网站，全球最大的代码托管平台。</li>
+<li>bilibili网站，中国境内著名视频网站。</li>
+</ul>
+<p>在浏览器输入这两个网站的域名时，会发现一些细微的区别。</p>
+<p>如果在在输入哔哩哔哩网站时不加入www,同样在最终的地址栏结果中照样会出现<a href="http://www.bilibili.com./">www.bilibili.com。</a></p>
+<p>但是在输入github的网址时，即使是加了www，最后也将会将www省去。</p>
+<p>但是最终我们都能跳转到正确的页面，这是为什么呢？</p>
+<h1 id="IP映射"><a href="#IP映射" class="headerlink" title="IP映射"></a>IP映射</h1><blockquote>
+<p>DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。</p>
+<p>DNS的分布数据库是以域名为索引的，每个域名实际上就是一棵很大的逆向树中路径，这棵逆向树称为域名空间（domain name space），如下图所示树的最大深度不得超过127层，树中每个节点都有一个可以长达63个字符的文本标号。</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>DNS域名解析过程</strong></li>
+</ul>
+<p>1，在浏览器中输入<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域名，操作系统会先检查自己本地的hosts文件是否有这个网址映射关系，如果有，就先调用这个IP地址映射，完成域名解析。</p>
+<p>2，如果hosts里没有这个域名的映射，则查找<strong>本地DNS解析器缓存</strong>，是否有这个网址映射关系，如果有，直接返回，完成域名解析。</p>
+<p>3，如果hosts与本地DNS解析器缓存都没有相应的网址映射关系，首先会找TCP&#x2F;ip参数中设置的首选DNS服务器，在此我们叫它<strong>本地DNS服务器</strong>，此服务器收到查询时，如果要查询的域名，包含在本地配置区域资源中，则返回解析结果给客户机，完成域名解析，此解析具有权威性。</p>
+<p>4，如果要查询的域名，不在本地DNS服务器区域解析，但该服务器已缓存了此网址映射关系，则调用这个IP地址映射，完成域名解析，此解析不具有权威性。</p>
+<p>5，如果本地DNS服务器本地区域文件与缓存解析都失效，则根据本地DNS服务器的设置（是否设置转发器）进行查询，如果未用转发模式，本地DNS就把请求发至13台根DNS，根DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。这台负责.com域的服务器收到请求后，如果自己无法解析，它就会找一个管理.com域的下一级DNS服务器地址(<a href="https://link.zhihu.com/?target=http://BTC.com">http://BTC.com</a>)给本地DNS服务器。当本地DNS服务器收到这个地址后，就会找<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>域服务器，重复上面的动作，进行查询，直至找到<a href="https://link.zhihu.com/?target=http://pool.btc.com">http://pool.btc.com</a>主机。</p>
+<p>6，如果用的是转发模式，此DNS服务器就会把请求转发至上一级DNS服务器，由上一级服务器进行解析，上一级服务器如果不能解析，或找根DNS或把转请求转至上上级，以此循环。不管是本地DNS服务器用是是转发，还是根提示，最后都是把结果返回给本地DNS服务器，由此DNS服务器再返回给客户机。</p>
+</blockquote>
+<p>我们分析一下域名转换为IP的过程，就会发现是DNS服务器在这中起到了至关重要的作用。</p>
+<p>所以如果我们能将多个网址匹配到同样一个IP，也可以实现同样的效果。</p>
+<p>通过重定向的操作手段，在输入不一样的网址时发送301代码，使之重定向到新的网站。</p>
+<p>所以最后的网站结果取决于开发者的设置。</p>
+]]></content>
+      <tags>
+        <tag>域名</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
 </search>
