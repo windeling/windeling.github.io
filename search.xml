@@ -251,9 +251,10 @@
 <p>所以尽量在更高级的DNS服务器里添加自己网站的IP信息。</p>
 <h1 id="GIthub页面的特殊性"><a href="#GIthub页面的特殊性" class="headerlink" title="GIthub页面的特殊性"></a>GIthub页面的特殊性</h1><p>以上是普通网站的页面处理方法，但是github的页面具有一定的特殊性。</p>
 <p>如这两个网站：</p>
-<img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929112957898.png" alt="image-20230929112957898">
+<img src="/2023092958a4be22/image-20230929112957898.png" alt="image-20230929112957898">
 
-<p><img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929112950553.png" alt="image-20230929112950553"></p>
+<img src="/2023092958a4be22/image-20230929112950553.png" class title="image-20230929112950553">
+
 <p>在使用ping命令测试的时候，我们发现这两个网站的IP地址是相同的。</p>
 <p>原因在于这两个所谓的「网站」其实都是github服务器上的一个仓库，服务器的IP地址都是github的。</p>
 <p>那么这时候似乎就产生了一个bug：如果我们绑定了github的IP，以后域名的解析就都会解析到github的首页。</p>
@@ -267,8 +268,10 @@
 <p>所以关键之处就在于给仓库添加一个域名参数。</p>
 <h1 id="添加域名参数"><a href="#添加域名参数" class="headerlink" title="添加域名参数"></a>添加域名参数</h1><p>我们可以在guihub上面手动添加我们的域名参数，但这个方法不够安全稳定。</p>
 <p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。</p>
-<p><img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929113508057.png" alt="一个"></p>
-<p><img src="/2023092958a4be22/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929113552785.png" alt="image-20230929113552785"></p>
+<img src="/2023092958a4be22/image-20230929113508057.png" class title="一个">
+
+<img src="/2023092958a4be22/image-20230929113552785.png" class title="image-20230929113552785">
+
 <p><strong>注意，不要在这个文本文档中的内容域名前面加上www！！</strong></p>
 <p>否则以后所有输入必须以www开头，下文将会讲到区别。</p>
 <p>然后将此文件保存并删除txt后缀。</p>
@@ -489,7 +492,8 @@
 
 <h1 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h1><p>既然有问题，必然会有解决问题的人。</p>
 <p>有大佬便编写了一个js文件，可以获得更高品质的音乐。</p>
-<p><img src="/20230929feb6928c/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929120413850.png" alt="image-20230929120413850"></p>
+<img src="/20230929feb6928c/image-20230929120413850.png" class title="image-20230929120413850">
+
 <p>可以看出，洛雪音乐的作者为我们提供了音乐来源的选择，选择自定义源管理，便可以导入js脚本文件。</p>
 <p>这里的「六音音源」便是可以下载高品质音乐的js文件。</p>
 <h3 id="版本介绍"><a href="#版本介绍" class="headerlink" title="版本介绍"></a>版本介绍</h3><p>目前有两个流行版本，分别是1.0.6和1.0.7，区别主要在于1.0.7每秒不得超过5次请求，这就对机器操作造成了一定的限制。</p>
