@@ -258,7 +258,7 @@
 <p>在使用ping命令测试的时候，我们发现这两个网站的IP地址是相同的。</p>
 <p>原因在于这两个所谓的「网站」其实都是github服务器上的一个仓库，服务器的IP地址都是github的。</p>
 <p>那么这时候似乎就产生了一个bug：如果我们绑定了github的IP，以后域名的解析就都会解析到github的首页。</p>
-<p>所以github的设计者们就想出了这样一个办法：（<a href="http://www.example.com为示范域名,而example.github.io为仓库)/">www.example.com为示范域名，而example.github.io为仓库）</a></p>
+<p>所以github的设计者们就想出了这样一个办法：（<a href="http://www.example.com/">www.example.com</a> 为示范域名，而example.github.io为仓库）</p>
 <ul>
 <li>DNS服务器解析<a href="http://www.example.com后,返回github服务器的ip./">www.example.com后，返回github服务器的IP。</a></li>
 <li>客户端访问IP，并传递域名参数<a href="http://www.example.com./">www.example.com。</a></li>
