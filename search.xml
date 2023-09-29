@@ -780,4 +780,35 @@
         <tag>网络</tag>
       </tags>
   </entry>
+  <entry>
+    <title>零基础搭建个人博客（零）</title>
+    <url>/20230929ffa1f970/</url>
+    <content><![CDATA[<p>在信息技术日益今天，搭建一个属于自己的，独一无二的，自由设计的个人博客网站已经不再遥远，就算是毫无HTML，CSS，JavaScript基础的小白同样也能搭建成功。</p>
+<p>搭建个人博客最重要的不是编程基础，而是<strong>耐心与坚持</strong>。</p>
+<p>在搭建本博客的过程中，参照的以往的教程都有些老旧，甚至还有一些奇怪的坑容易陷入。</p>
+<p>为此我们决定重新写一篇教程，总结并填补各种教程的坑。</p>
+<span id="more"></span>
+
+<h1 id="总体技术原理"><a href="#总体技术原理" class="headerlink" title="总体技术原理"></a>总体技术原理</h1><p>通过Github Page页面的更改权限，将基于Node.js生成的js文件部署到对应的仓库，使用户访问该仓库时展示页面，达到个人博客的效果。</p>
+<h1 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h1><p>搭建个人博客推荐在Windows环境和Linux环境下搭建。</p>
+<p>需要安装的软件包括：</p>
+<ul>
+<li>git</li>
+<li>Node.js</li>
+<li>hexo</li>
+</ul>
+<h1 id="总体目录"><a href="#总体目录" class="headerlink" title="总体目录"></a>总体目录</h1><p>1.注册Github</p>
+<p>2.安装git工具并与Github建立连接</p>
+<p>3.域名的购买与解析</p>
+<p>4.安装node.js和hexo</p>
+<p>5.设置主题</p>
+<p>6.优化主题</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
 </search>
