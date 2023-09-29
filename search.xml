@@ -497,7 +497,8 @@
 <p>可以看出，洛雪音乐的作者为我们提供了音乐来源的选择，选择自定义源管理，便可以导入js脚本文件。</p>
 <p>这里的「六音音源」便是可以下载高品质音乐的js文件。</p>
 <h3 id="版本介绍"><a href="#版本介绍" class="headerlink" title="版本介绍"></a>版本介绍</h3><p>目前有两个流行版本，分别是1.0.6和1.0.7，区别主要在于1.0.7每秒不得超过5次请求，这就对机器操作造成了一定的限制。</p>
-<p><img src="/20230929feb6928c/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230929120815688.png" alt="image-20230929120815688"></p>
+<img src="/20230929feb6928c/image-20230929120815688.png" class title="image-20230929120815688">
+
 <p>可以看到，现在支持了320k音质和1000k的FLAC无损音质。经过测试，音质的确有改变。</p>
 <h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a href="http://dl.sixyin.com/d/23338253-46422269-262911">城通网盘 (sixyin.com)</a> 密码：<a href="https://www.sixyin.com/download?post=8498&time=1695960829#">6yit</a></p>
 <p><a href="https://soso.lanzouj.com/b00p9c94f#8mno">六音音源 (lanzouj.com)</a> 云盘密码：<a href="https://www.sixyin.com/download?post=8498&time=1695960829#">8mno</a></p>
