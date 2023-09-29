@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windeling.github.io/notices/index.html</loc>
+    
+    <lastmod>2023-09-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://windeling.github.io/20230929e2706666/</loc>
     
     <lastmod>2023-09-29</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://windeling.github.io/2023092958a4be22/</loc>
-    
-    <lastmod>2023-09-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://windeling.github.io/notices/index.html</loc>
     
     <lastmod>2023-09-29</lastmod>
     
