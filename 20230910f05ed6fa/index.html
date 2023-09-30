@@ -16,14 +16,14 @@
 <meta property="og:site_name" content="Windeling">
 <meta property="og:description" content="今天是2023年9月10日，是所有老师的节日——教师节。 感谢曾倩老师 龙光森老师 韦佳利老师 黄佩玲老师 李洁老师  林生业老师 黄海老师 劳永进老师 罗满琼老师 钟洁老师 周静轩老师 江英球老师 颜良霞老师 白振兴老师  庞惠文老师 梁超源老师 叶子斌老师  三年来的教育，每一堂课都是一份收获。 还要感谢刘靖华老师 莫冰老师 卜肖宁老师 吴壮盛老师 莫贻秋老师">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://windeling.github.io/abbrlink/1.gif">
-<meta property="og:image" content="https://windeling.github.io/abbrlink/%E6%97%A0%E6%A0%87%E9%A2%98.png">
+<meta property="og:image" content="https://windeling.github.io/20230910f05ed6fa/1.gif">
+<meta property="og:image" content="https://windeling.github.io/20230910f05ed6fa/%E6%97%A0%E6%A0%87%E9%A2%98.png">
 <meta property="article:published_time" content="2023-09-09T16:00:00.000Z">
 <meta property="article:modified_time" content="2023-09-30T07:46:06.301Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="教师节">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://windeling.github.io/abbrlink/1.gif">
+<meta name="twitter:image" content="https://windeling.github.io/20230910f05ed6fa/1.gif">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -257,10 +257,10 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> quote</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">obtain_coordinate</span>(<span class="params">target_word</span>):  </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取汉字的坐标</span></span><br><span class="line"><span class="string">    :param target_word:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url = <span class="string">&quot;https://bihua.bmcx.com/web_system/bmcx_com_www/system/file/bihua/get_0/&quot;</span></span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&#x27;font&#x27;</span>: quote(target_word).replace(<span class="string">&quot;%&quot;</span>, <span class="string">&quot;&quot;</span>).lower(),</span><br><span class="line">        <span class="string">&#x27;shi_fou_zi_dong&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;cache_sjs1&#x27;</span>: <span class="string">&#x27;20031914&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    response = requests.get(url, params=params)</span><br><span class="line">    content = response.text</span><br><span class="line">    content = content.replace(<span class="string">&#x27;hzbh.main(&#x27;</span>, <span class="string">&#x27;&#x27;</span>).split(<span class="string">&#x27;);document.getElementById&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    content = content.split(<span class="string">&#x27;&#123;&#x27;</span>)[-<span class="number">1</span>].split(<span class="string">&quot;&#125;&quot;</span>)[<span class="number">0</span>]</span><br><span class="line">    pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\w:\[(.+?)\]&#x27;</span>)</span><br><span class="line">    result = re.split(pattern, content)</span><br><span class="line">    order_xy_routine = []</span><br><span class="line">    words_cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> result:</span><br><span class="line">        sec = re.findall(<span class="string">r&#x27;\&#x27;.+?\&#x27;&#x27;</span>, r)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sec):</span><br><span class="line">            orders = sec[<span class="number">1</span>].split(<span class="string">&#x27;#&#x27;</span>)</span><br><span class="line">            <span class="keyword">for</span> order <span class="keyword">in</span> orders:</span><br><span class="line">                order_str = re.findall(<span class="string">r&#x27;\(\d+,\d+\)&#x27;</span>, order)</span><br><span class="line">                order_xy = [<span class="built_in">eval</span>(xy) <span class="keyword">for</span> xy <span class="keyword">in</span> order_str]</span><br><span class="line">                order_xy_routine.append(order_xy)</span><br><span class="line">            words_cnt += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(order_xy_routine)</span><br><span class="line">    <span class="keyword">return</span> order_xy_routine</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_words</span>(<span class="params">target_words, startx, starty, lineNum=<span class="number">1</span></span>):  <span class="comment"># 画汉字</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    画汉字</span></span><br><span class="line"><span class="string">    :param target_words:</span></span><br><span class="line"><span class="string">    :param startx:</span></span><br><span class="line"><span class="string">    :param starty:</span></span><br><span class="line"><span class="string">    :param lineNum:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    turtle.color(<span class="string">&quot;black&quot;</span>, <span class="string">&quot;black&quot;</span>)  </span><br><span class="line">    turtle.pu()  </span><br><span class="line">    coordinates = obtain_coordinate(target_words)</span><br><span class="line">    <span class="keyword">for</span> index, coordinate <span class="keyword">in</span> <span class="built_in">enumerate</span>(coordinates):</span><br><span class="line">        turtle.goto((startx + coordinate[<span class="number">0</span>][<span class="number">0</span>])/<span class="number">2</span>, -(starty + coordinate[<span class="number">0</span>][<span class="number">1</span>])/<span class="number">2</span>)</span><br><span class="line">        turtle.pd()</span><br><span class="line">        <span class="keyword">for</span> xy <span class="keyword">in</span> coordinate:</span><br><span class="line">            x,y=xy</span><br><span class="line">            turtle.goto((startx+x)/<span class="number">2</span>, -(starty+y)/<span class="number">2</span>)</span><br><span class="line">        turtle.pu()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    turtle.screensize(<span class="number">2400</span>,<span class="number">1300</span>)</span><br><span class="line">    <span class="comment">#画汉字</span></span><br><span class="line">    word = <span class="string">&quot;教师节快乐&quot;</span></span><br><span class="line">    draw_words(word[<span class="number">0</span>], -<span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">1</span>], -<span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">2</span>], <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">3</span>], <span class="number">800</span>, <span class="number">0</span>)</span><br><span class="line">    draw_words(word[<span class="number">4</span>], <span class="number">1600</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    turtle.done()</span><br></pre></td></tr></table></figure>
 
 <p>谨用这些代码，来表达我的感激之情</p>
-<img src="/abbrlink/1.gif" class>
+<img src="/20230910f05ed6fa/1.gif" class>
 
 <p>祝老师们</p>
-<img src="/abbrlink/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
+<img src="/20230910f05ed6fa/%E6%97%A0%E6%A0%87%E9%A2%98.png" class>
 
 
 
@@ -500,11 +500,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">2121</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">欢迎</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2121</a>
+                <a href="javascript:void(0)" class="js-tag color4">教师节</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -520,14 +524,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">教师节</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">bug</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
@@ -540,11 +536,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">背景</a>
+                <a href="javascript:void(0)" class="js-tag color4">bug</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -560,11 +552,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">洛雪音乐</a>
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">背景</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">洛雪音乐</a>
               </li>
              
               <li class="article-tag-list-item">
