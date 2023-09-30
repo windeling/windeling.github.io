@@ -938,7 +938,7 @@ html {
 
 /* 这里是调整参数并调用函数（fadeInLeft） */
 .mid-col{
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-fill-mode: both;
     animation-name: fadeOut;
 }
