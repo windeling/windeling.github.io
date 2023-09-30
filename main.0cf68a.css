@@ -924,7 +924,7 @@ html {
   left: 300px;
   width: auto
 }
-@keyframes fadeInmid {
+@keyframes fadeOut {
   from {
     opacity: 0;
     
@@ -940,7 +940,7 @@ html {
 .mid-col{
     animation-duration: 1.5s;
     animation-fill-mode: both;
-    animation-name: fadeInmid;
+    animation-name: fadeOut;
 }
 
 .mid-col.show {
