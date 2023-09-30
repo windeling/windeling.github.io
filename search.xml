@@ -716,7 +716,7 @@
 <li>hexo</li>
 </ul>
 <h1 id="总体目录"><a href="#总体目录" class="headerlink" title="总体目录"></a>总体目录</h1><p>1.注册Github  <a href="https://boredliam.github.io/2023/09/29/Blog_series/blog-01/">零基础搭建个人博客（壹） | Liam’s boring life </a></p>
-<p>2.安装git工具并与Github建立连接 <a href="https://boredliam.github.io/2023/09/29/Blog_series/blog-02/">零基础搭建个人博客（贰） | Liam’s boring life </a></p>
+<p>2.安装git工具并与Github建立连接 <a href="http://www.windeling.com.cn/202309305207cddc/">零基础搭建个人博客（贰） | Windeling</a></p>
 <p>3.域名的购买与解析 <a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
 <p>4.安装node.js和hexo</p>
 <p>5.设置主题 </p>
@@ -789,6 +789,7 @@
 
 <p>A代表是IPv4地址，@代表不加www的域名，如example.com，www代表域名的全称，如<a href="http://www.example.com/">www.example.com</a></p>
 <p>这样无论访问者加不加WWW，都可以解析到正确的IP。</p>
+<p>详细的分析参见<a href="http://www.windeling.com.cn/20230929e2706666/">关于网络www前缀对DNS解析影响的分析 | Windeling</a></p>
 <blockquote>
 <p>注意：如果只添加@或www，则使用另一种方式将无法访问！！</p>
 </blockquote>
@@ -836,6 +837,9 @@
 <h2 id="劫持"><a href="#劫持" class="headerlink" title="劫持"></a>劫持</h2><p>在购买域名时，如果没有购买专门的DNS解析服务，那么使用的是公共的DNS服务器。</p>
 <p>这样可能会被劫持，造成跳转错误。</p>
 <p>具体可以搜索：<code>DNS劫持与污染</code></p>
+<h2 id="WWW问题"><a href="#WWW问题" class="headerlink" title="WWW问题"></a>WWW问题</h2><p>如果加上或删去www后，发现DNS解析错误，可能是只添加了一部分的解析，请在控制台添加完整解析即可。</p>
+<p>参见本章「解析域名」一节。</p>
+<p>详细原因分析在<a href="http://www.windeling.com.cn/20230929e2706666/">关于网络www前缀对DNS解析影响的分析 | Windeling</a></p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>到此，已经建立了一个仓库，并且能够与之通信。</p>
 <p>接下来，就要开始装饰仓库了！！</p>
 ]]></content>
@@ -1055,19 +1059,19 @@
 <p><img src="https://img1.imgtp.com/2023/09/30/lmnKVwCx.png" alt="选择Setup就好啦" title="选择Setup就好啦"></p>
 <p>随后就是一个正常安装程序的流程。</p>
 <p>只需要注意一点。</p>
-<img src="/20230930undefined/v2-3dcca92f4b2ab2a909e773c75d55bb9e_720w.webp" class>
+<img src="/202309305207cddc/v2-3dcca92f4b2ab2a909e773c75d55bb9e_720w.webp" class>
 
 <p>不过没有什么用处……</p>
-<h2 id="成功标志"><a href="#成功标志" class="headerlink" title="成功标志"></a>成功标志</h2><img src="/20230930undefined/image-20230930101825412.png" class title="image-20230930101825412">
+<h2 id="成功标志"><a href="#成功标志" class="headerlink" title="成功标志"></a>成功标志</h2><img src="/202309305207cddc/image-20230930101825412.png" class title="image-20230930101825412">
 
 <p>只要能在任何一个文件夹内右键弹出这样的菜单，并且包含两个很明显的git命令，说明你已经成功了。</p>
 <p><img src="/202309305207cddc/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230930102006004.png" alt="image-20230930102006004"></p>
 <p>选择<code>Open Git Bash here</code>，启动上述命令提示界面。</p>
 <p>输入git验证是否安装成功。</p>
-<img src="/20230930undefined/image-20230930102135560.png" class title="image-20230930102135560">
+<img src="/202309305207cddc/image-20230930102135560.png" class title="image-20230930102135560">
 
 <p>若出现以下界面就代表安装成功。</p>
-<img src="/20230930undefined/image-20230930102219584.png" class title="image-20230930102219584">
+<img src="/202309305207cddc/image-20230930102219584.png" class title="image-20230930102219584">
 
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>接下来就需要决定是否购买域名，为自己的博客设定不一样的标志。</p>
 <p><a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
