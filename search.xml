@@ -1075,7 +1075,7 @@
 <img src="/202309295207cddc/image-20230930102219584.png" class title="image-20230930102219584">
 
 <h1 id="与Github建立联系"><a href="#与Github建立联系" class="headerlink" title="与Github建立联系"></a>与Github建立联系</h1><p>有了联系的工具，还要与自己的Github账号建立联系，才能向自己的账号内提交文件。</p>
-<p>建立联系便需要有认证秘钥，这样才能认证是否为合法的提交者。</p>
+<p>建立联系便需要有认证密钥，这样才能认证是否为合法的提交者。</p>
 <h2 id="SSH简介"><a href="#SSH简介" class="headerlink" title="SSH简介"></a>SSH简介</h2><p>SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。简单来说，SSH就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度。如果想详细了解的话，可以看这篇文章：<a href="https://link.zhihu.com/?target=https://blog.csdn.net/qq_35246620/article/details/54317740">详述 SSH 的原理及其应用 - CSDN</a>，下面就详细介绍如何绑定GitHub和提交文件。</p>
 <h2 id="建立连接"><a href="#建立连接" class="headerlink" title="建立连接"></a>建立连接</h2><h3 id="验证SSH"><a href="#验证SSH" class="headerlink" title="验证SSH"></a>验证SSH</h3><p>要用git上传文件到GitHub首先得利用SSH登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。</p>
 <p>口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以选择公钥授权。</p>
@@ -1084,7 +1084,7 @@
 
 <p>如上图所示，即已安装 SSH。</p>
 <h3 id="生成SSH"><a href="#生成SSH" class="headerlink" title="生成SSH"></a>生成SSH</h3><p>然后，输入 <code>ssh-keygen -t rsa </code>命令，表示指定 RSA 算法生成密钥，然后敲四次回车键。（反正是英文也看不懂）</p>
-<p>之后就就会生成两个文件，分别为秘钥 id_rsa 和公钥 id_rsa.pub.。</p>
+<p>之后就就会生成两个文件，分别为密钥 id_rsa 和公钥 id_rsa.pub.。</p>
 <p>文件的位置在 Git Bash 上面都有显示，默认生成在以下目录：</p>
 <ul>
 <li>Linux 系统：~&#x2F;.ssh</li>
@@ -1098,8 +1098,8 @@
 <blockquote>
 <p>注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.</p>
 </blockquote>
-<p>会出现一段长长的秘钥，然后将它复制下来。</p>
-<h3 id="向Github添加秘钥"><a href="#向Github添加秘钥" class="headerlink" title="向Github添加秘钥"></a>向Github添加秘钥</h3><p>打开Github网站：<a href="https://github.com/">GitHub</a></p>
+<p>会出现一段长长的密钥，然后将它复制下来。</p>
+<h3 id="向Github添加密钥"><a href="#向Github添加密钥" class="headerlink" title="向Github添加密钥"></a>向Github添加密钥</h3><p>打开Github网站：<a href="https://github.com/">GitHub</a></p>
 <img src="/202309295207cddc/image-20230930104203340.png" class title="image-20230930104203340">
 
 <p>点击右上角的个人中心：</p>
@@ -1117,7 +1117,7 @@
 </blockquote>
 <img src="/202309295207cddc/image-20230930104555994.png" class title="image-20230930104555994">
 
-<p>随便起一个title，然后将SSH秘钥复制进<code>Key</code>中。</p>
+<p>随便起一个title，然后将SSH密钥复制进<code>Key</code>中。</p>
 <h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>验证是否成功，我们可以通过在 Git Bash 中输入 <code>ssh -T git@github.com</code> 进行检验：</p>
 <p><img src="https://pic3.zhimg.com/80/v2-5b4f05ea2e2a7fb8b13fd35a9bafa8ce_720w.webp" alt="img"></p>
 <p>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：</p>
