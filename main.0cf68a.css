@@ -3153,7 +3153,8 @@ pre .id {
 #footer {
   font-size: 12px;
   font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px #000000;
+  color: white;
   position: absolute;
   bottom: 30px;
   opacity: .6;
