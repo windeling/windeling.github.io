@@ -793,7 +793,8 @@
 <p>注意：如果只添加@或www，则使用另一种方式将无法访问！！</p>
 </blockquote>
 <p>这四个IP地址是Github的常用IP，最好全部添加，万一Github换用服务器（经常性行为），就会导致无法访问。</p>
-<p><img src="/%E5%85%B3%E4%BA%8Egithub%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%9A%84%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E6%93%8D%E4%BD%9C/image-20230929112950553.png"></p>
+<img src="/202309296d16578d/image-20230929112950553.png" class>
+
 <img src="/202309296d16578d/image-20230929112957898.png" class title="image-20230929112957898">
 
 <p>而且所有的github.io的个人网站的IP地址其实都是相同的。</p>
@@ -811,13 +812,14 @@
 </ul>
 <p>所以关键之处就在于给仓库添加一个域名参数。</p>
 <h1 id="添加域名参数"><a href="#添加域名参数" class="headerlink" title="添加域名参数"></a>添加域名参数</h1><p>可以在guihub上面手动添加我们的域名参数，但这个方法不够安全稳定，而且难以修改。</p>
-<p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。（有无www都可以）对啊好</p>
+<p>因此建议在本地文件中的source文件夹中新建一个文本文档，里面写上自己购买的域名。（有无www都可以）。</p>
 <p><img src="/%E5%85%B3%E4%BA%8Egithub%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%9A%84%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E6%93%8D%E4%BD%9C/image-20230929113508057.png"></p>
-<p><img src="/%E5%85%B3%E4%BA%8Egithub%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E7%9A%84%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E5%92%8C%E6%93%8D%E4%BD%9C/image-20230929113552785.png" alt="image-20230929113552785"></p>
+<img src="/202309296d16578d/image-20230929113552785.png" class title="image-20230929113552785">
+
 <p>然后将此文件保存并删除txt后缀。</p>
 <p>一定要将其重命名为<code>CNAME</code>，等待下一次部署便可自动修改。</p>
 <blockquote>
-<p>注意：文件中如果加入WWW，则最后在地址栏显示的是<a href="http://www.example.com(即使用户输入example.com),反之亦然./">www.example.com（即使用户输入example.com)，反之亦然。</a></p>
+<p>注意：文件中如果加入WWW，则最后在地址栏显示的是<a href="http://www.example.com/">www.example.com</a> ,即使用户输入了example.com，反之亦然。</p>
 </blockquote>
 <p>至此，git仓库的名称已经换成了你的域名，即使输入example.github.io也会重定向到你的域名。</p>
 <h1 id="可能有坑"><a href="#可能有坑" class="headerlink" title="可能有坑"></a>可能有坑</h1><h2 id="绑定性"><a href="#绑定性" class="headerlink" title="绑定性"></a>绑定性</h2><blockquote>
