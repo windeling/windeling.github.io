@@ -1065,7 +1065,8 @@
 <h2 id="成功标志"><a href="#成功标志" class="headerlink" title="成功标志"></a>成功标志</h2><img src="/202309295207cddc/image-20230930101825412.png" class title="image-20230930101825412">
 
 <p>只要能在任何一个文件夹内右键弹出这样的菜单，并且包含两个很明显的git命令，说明你已经成功了。</p>
-<p><img src="/202309295207cddc/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230930102006004.png" alt="image-20230930102006004"></p>
+<img src="/202309295207cddc/image-20230930102006004.png" class title="image-20230930102006004">
+
 <p>选择<code>Open Git Bash here</code>，启动上述命令提示界面。</p>
 <p>输入git验证是否安装成功。</p>
 <img src="/202309295207cddc/image-20230930102135560.png" class title="image-20230930102135560">
