@@ -718,9 +718,9 @@
 <h1 id="总体目录"><a href="#总体目录" class="headerlink" title="总体目录"></a>总体目录</h1><p>1.注册Github  <a href="https://boredliam.github.io/2023/09/29/Blog_series/blog-01/">零基础搭建个人博客（壹） | Liam’s boring life </a></p>
 <p>2.安装git工具并与Github建立连接 <a href="http://www.windeling.com.cn/202309305207cddc/">零基础搭建个人博客（贰） | Windeling</a></p>
 <p>3.域名的购买与解析 <a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
-<p>4.安装node.js和hexo</p>
-<p>5.设置主题 </p>
-<p>6.优化主题</p>
+<p>4.安装node.js和hexo <a href="https://boredliam.github.io/2023/09/30/Blog_series/blog-04/">零基础搭建个人博客（肆） | Liam’s boring life</a></p>
+<p>5.设置个人主题 <a href="http://www.windeling.com.cn/2023093017f4661a/">零基础搭建个人博客（伍） | Windeling</a></p>
+<p>6.优化主题功能</p>
 ]]></content>
       <tags>
         <tag>编程</tag>
@@ -1233,8 +1233,9 @@
 <p>在正式部署博客中，将会由hexo框架为我们推送文件。</p>
 </blockquote>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>接下来就需要决定是否购买域名，为自己的博客设定不一样的标志。</p>
-<p><a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
+<p>➢<a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
 <p>如果决定不购买域名，使用默认的「域名」example.github.io，请跳转到第四章。</p>
+<p>➢<a href="https://boredliam.github.io/2023/09/30/Blog_series/blog-04/">零基础搭建个人博客（肆） | Liam’s boring life</a></p>
 ]]></content>
       <tags>
         <tag>编程</tag>
