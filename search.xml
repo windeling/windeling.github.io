@@ -717,12 +717,22 @@
 <li>Node.js</li>
 <li>hexo</li>
 </ul>
-<h1 id="总体目录"><a href="#总体目录" class="headerlink" title="总体目录"></a>总体目录</h1><p>1.注册Github  <a href="https://boredliam.github.io/2023/09/29/Blog_series/blog-01/">零基础搭建个人博客（壹） | Liam’s boring life </a></p>
-<p>2.安装git工具并与Github建立连接 <a href="http://www.windeling.com.cn/202309305207cddc/">零基础搭建个人博客（贰） | Windeling</a></p>
-<p>3.域名的购买与解析 <a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
-<p>4.安装node.js和hexo <a href="https://boredliam.github.io/2023/09/30/Blog_series/blog-04/">零基础搭建个人博客（肆） | Liam’s boring life</a></p>
-<p>5.设置个人主题 <a href="http://www.windeling.com.cn/2023093017f4661a/">零基础搭建个人博客（伍） | Windeling</a></p>
-<p>6.优化主题功能</p>
+<h1 id="总体目录"><a href="#总体目录" class="headerlink" title="总体目录"></a>总体目录</h1><ol>
+<li><p>注册Github  <a href="https://boredliam.github.io/2023/09/29/Blog_series/blog-01/">零基础搭建个人博客（壹） | Liam’s boring life </a></p>
+</li>
+<li><p>安装git工具并与Github建立连接 <a href="http://www.windeling.com.cn/202309305207cddc/">零基础搭建个人博客（贰） | Windeling</a></p>
+</li>
+<li><p>域名的购买与解析 <a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
+</li>
+<li><p>安装node.js和hexo <a href="https://boredliam.github.io/2023/09/30/Blog_series/blog-04/">零基础搭建个人博客（肆） | Liam’s boring life</a></p>
+</li>
+<li><p>设置个人主题 <a href="http://www.windeling.com.cn/2023093017f4661a/">零基础搭建个人博客（伍） | Windeling</a></p>
+</li>
+<li><p>发布文章</p>
+</li>
+<li><p>优化主题功能</p>
+</li>
+</ol>
 ]]></content>
       <tags>
         <tag>编程</tag>
@@ -1031,20 +1041,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客建站报告</title>
-    <url>/2023082288685b6a/</url>
-    <content><![CDATA[<p>终于，终于，终于把这个博客给搭建完了，是真正的搭建完了。</p>
-<p>现在就来总结一个最详细，最具体的博客建站报告，帮助后来人少走弯路。</p>
-<p>感谢CSDN和知乎大佬，他们的建设和回答给予了我很大的帮助。</p>
-<p><a href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客（超详细） - 知乎 (zhihu.com)</a></p>
-<p>这一篇是建站的核心教程，主要是主体框架部分</p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>零基础搭建个人博客（贰）</title>
     <url>/202309295207cddc/</url>
     <content><![CDATA[<h1 id="Git工具的安装与连接"><a href="#Git工具的安装与连接" class="headerlink" title="Git工具的安装与连接"></a>Git工具的安装与连接</h1><p>由于没有购买自己的服务器，所以编写的代码和网站是寄托在全球最大开源代码托管平台——Github上。</p>
@@ -1238,6 +1234,46 @@
 <p>➢<a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
 <p>如果决定不购买域名，使用默认的「域名」example.github.io，请跳转到第四章。</p>
 <p>➢<a href="https://boredliam.github.io/2023/09/30/Blog_series/blog-04/">零基础搭建个人博客（肆） | Liam’s boring life</a></p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>零基础搭建个人博客（柒）</title>
+    <url>/20230930d427d50c/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>零基础搭建个人博客（陆）</title>
+    <url>/20230930754a52b1/</url>
+    <content><![CDATA[<h1 id="发布文章与快速部署"><a href="#发布文章与快速部署" class="headerlink" title="发布文章与快速部署"></a>发布文章与快速部署</h1><p>经过前面几章的内容，博客的基本框架和主题已经确定下来。</p>
+<p>那么接下来接下进入到如何发布文章的说明了。</p>
+<span id="more"></span>
+
+<h1 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h1><p>发布文章前首先要创建文章。</p>
+<p>只需要在博客根目录下运行git工具，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new 文章名字</span><br><span class="line">//或简写为</span><br><span class="line">hexo n 文章名字</span><br></pre></td></tr></table></figure>
+
+<p>那么就会在路径<code>/source/_post</code>中建立一个新的markdown文件。</p>
+<img src="/20230930undefined/image-20230930132113754.png" class title="image-20230930132113754">
+
+<img src="/20230930undefined/image-20230930132152819.png" class title="image-20230930132152819">
+
+<h1 id="文章写作"><a href="#文章写作" class="headerlink" title="文章写作"></a>文章写作</h1><p>由于是md文件，所以可以使用markdown语法来进行写作。</p>
+<p><a href="https://boredliam.github.io/2023/08/18/Computer/markdown/">markdown语法 | Liam’s boring life (boredliam.github.io)</a></p>
+<p>markdown语法非常容易掌握，也适合写作。</p>
+<h1 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h1><p>写完文章以后将其保存，并重新回到博客根目录。</p>
+<p>按照通常要输入三个命令，即：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这个命令较为繁琐，所以我们可以合成这三个命令，使之一步到位。</p>
+<p>将其合成为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g -f -d</span><br></pre></td></tr></table></figure>
+
+<p>其中g的含义保持不变，是编译的意思，f则是在表示编译前清除缓存文件，d表示部署。</p>
 ]]></content>
       <tags>
         <tag>编程</tag>
