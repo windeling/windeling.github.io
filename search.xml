@@ -1305,7 +1305,8 @@
 <span id="more"></span>
 
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>如果使用中文进行创建文档的话，虽然在地址栏仍然能正常显示。但是如果想要将网址复制下来分享给他人，就会将中文强行转换成十六进制数字。</p>
-<p><img src="/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E9%99%86%EF%BC%89/908b17d9399abf7487961ead5124d59b.png" alt="908b17d9399abf7487961ead5124d59b"></p>
+<img src="/202309308c8465b4/908b17d9399abf7487961ead5124d59b.png" class title="908b17d9399abf7487961ead5124d59b">
+
 <p>但是复制后变成：</p>
 <p><a href="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B">https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B</a></p>
 <blockquote>
@@ -1326,13 +1327,13 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
 
 <p>将<code>permalink</code>修改为<code>permalink: archives/:year:month:day:abbrlink/</code></p>
-<img src="/abbrlink/image-20230930152501603.png" class title="image-20230930152501603">
+<img src="/202309308c8465b4/image-20230930152501603.png" class title="image-20230930152501603">
 
 <p>这样就会生成一个只有一层的url了，简洁明了，对搜索引擎也很友好。</p>
 <p>而且这个<code>abbrlink</code>可以在文章内容自主修改，可以对一些特殊的文章进行自主编号，方便分享。</p>
 <blockquote>
 <p>这个算法的核心似乎是日期，因此从理论来说，每一篇文章的编号一定是不同的。</p>
-<p>所以理论上来说甚至可以把年月日给删除。<img src="/abbrlink/image-20230930161614481.png" class title="image-20230930161614481"></p>
+<p>所以理论上来说甚至可以把年月日给删除。<img src="/202309308c8465b4/image-20230930161614481.png" class title="image-20230930161614481"></p>
 </blockquote>
 <p><img src="/%E5%9F%BA%E4%BA%8Ehexo%E7%94%9F%E6%88%90%E7%9A%84%E7%BD%91%E5%9D%80%E7%9F%AD%E9%93%BE%E6%8E%A5/image-20230930153713391.png" alt="image-20230930153713391"></p>
 <h2 id="abbrlink的长度"><a href="#abbrlink的长度" class="headerlink" title="abbrlink的长度"></a>abbrlink的长度</h2><p><strong>算法为主，进制为辅。</strong></p>
@@ -1342,7 +1343,7 @@
 
 <h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><img src="/%E5%9F%BA%E4%BA%8Ehexo%E7%94%9F%E6%88%90%E7%9A%84%E7%BD%91%E5%9D%80%E7%9F%AD%E9%93%BE%E6%8E%A5/image-20230930153943652.png" alt="image-20230930153943652"></p>
 <p>可以看出URL结构大幅减少。</p>
-<img src="/abbrlink/2" class title="image-20230930161629320">
+<img src="/202309308c8465b4/2" class title="image-20230930161629320">
 
 <p>再删除年月日后，更为简介好记。</p>
 ]]></content>
