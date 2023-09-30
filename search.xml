@@ -730,7 +730,7 @@
       </tags>
   </entry>
   <entry>
-    <title>零基础搭建个人博客（三）</title>
+    <title>零基础搭建个人博客（叁）</title>
     <url>/202309296d16578d/</url>
     <content><![CDATA[<h1 id="域名的购买与解析"><a href="#域名的购买与解析" class="headerlink" title="域名的购买与解析"></a>域名的购买与解析</h1><p>在我们建立与Github仓库的联系以后，实际上我们已经拥有了一个属于自己的个人网页。</p>
 <p>接下来就可以选择是否绑定属于自己的域名。</p>
@@ -756,11 +756,17 @@
 <p>用阿里云平台举例，说明大致流程，其他平台的UI设计可能有所不同，但尽量保证做到相同的设置。</p>
 </blockquote>
 <p>首先，创建账号。</p>
+<img src="/202309296d16578d/image-20230929220628912.png" class>
+
 <p>接着进行实名认证，注意，阿里云有多个实名认证，需要仔细区分：</p>
 <ul>
-<li>账号实名认证</li>
-<li>实名认证模版认证</li>
-<li>域名实名认证</li>
+<li><p>账号实名认证</p>
+</li>
+<li><p>实名认证模版认证</p>
+<img src="/202309296d16578d/001ff866316cdd498257ad3792cf8d35.png" class>
+</li>
+<li><p>域名实名认证</p>
+</li>
 </ul>
 <p>对于域名，需要的是域名实名认证，需要账号实名认证作为前提。</p>
 <p>由于阿里云和支付宝是同一平台的，所以登录，认证，支付都基本上要使用支付宝，请提前做好准备。</p>
@@ -773,6 +779,9 @@
 </ul>
 <blockquote>
 <p><strong>注意，由于中国政府的关于互联网的相关规定，域名如不实名认证，将会被注册局暂停解析服务，相当于不能使用</strong></p>
+<img src="/202309296d16578d/b7b8dbc26f7f67387b96ecab57c7c959.png" class>
+
+<img src="/202309296d16578d/8b4219fce9254e93ba4003ef51ced9f9.png" class>
 </blockquote>
 <p>认证以后，就可以添加解析了。</p>
 <h1 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h1><p>域名的解析需要转到控制台，填写如下记录。</p>
@@ -815,7 +824,12 @@
 <p>……即使输入example.github.io也会重定向到你的域名。</p>
 </blockquote>
 <p>这就意味着域名如果无法解析，io也无法访问。</p>
+<p>所以一定要保证域名能够正常使用。</p>
 <h2 id="认证性"><a href="#认证性" class="headerlink" title="认证性"></a>认证性</h2><p>如果不实名认证，域名将会被停止解析，因而出现<strong>没有找到DNS</strong>的报错提示。</p>
+<img src="/202309296d16578d/8b4219fce9254e93ba4003ef51ced9f9.png" class>
+
+<img src="/202309296d16578d/b7b8dbc26f7f67387b96ecab57c7c959.png" class title="b7b8dbc26f7f67387b96ecab57c7c959">
+
 <h2 id="劫持"><a href="#劫持" class="headerlink" title="劫持"></a>劫持</h2><p>在购买域名时，如果没有购买专门的DNS解析服务，那么使用的是公共的DNS服务器。</p>
 <p>这样可能会被劫持，造成跳转错误。</p>
 <p>具体可以搜索：<code>DNS劫持与污染</code></p>
