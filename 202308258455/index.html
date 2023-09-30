@@ -7,19 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>关于valine评论无法提交的问题原因分析和解决方案 | Windeling</title>
+  <title>关于valine评论国际版无法提交的问题原因分析和解决方案 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="起因：有人想买个U盘。 然后他便写了一篇文章。 接着评论无法提交">
+  <meta name="description" content="症状浏览了一番文章，想写两句评论。 结果发现   这就有意思了，评论无法提交。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于valine评论无法提交的问题原因分析和解决方案">
+<meta property="og:title" content="关于valine评论国际版无法提交的问题原因分析和解决方案">
 <meta property="og:url" content="https://windeling.github.io/202308258455/index.html">
 <meta property="og:site_name" content="Windeling">
-<meta property="og:description" content="起因：有人想买个U盘。 然后他便写了一篇文章。 接着评论无法提交">
+<meta property="og:description" content="症状浏览了一番文章，想写两句评论。 结果发现   这就有意思了，评论无法提交。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://windeling.github.io/202308258455/b5bdee774a9f033dbf0f165b78beb94b.png">
 <meta property="og:image" content="https://windeling.github.io/202308258455/22007b7b4e05882d35544461b15e52eb.png">
 <meta property="article:published_time" content="2023-08-25T02:46:00.000Z">
-<meta property="article:modified_time" content="2023-09-23T13:59:29.997Z">
+<meta property="article:modified_time" content="2023-09-30T05:45:36.280Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="valine">
@@ -193,7 +193,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于valine评论无法提交的问题原因分析和解决方案
+      关于valine评论国际版无法提交的问题原因分析和解决方案
     </h1>
   
 
@@ -212,7 +212,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">822字</span>
+      <span class="post-count">795字</span>
 
     </span>
 
@@ -250,16 +250,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>起因：有人想买个U盘。</p>
-<p>然后他便写了一篇文章。</p>
-<p>接着评论无法提交</p>
-<span id="more"></span>
-
-<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
+        <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>浏览了一番文章，想写两句评论。</p>
 <p>结果发现</p>
 <img src="/202308258455/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
 
 <p>这就有意思了，评论无法提交。</p>
+<span id="more"></span>
+
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
 <p>发现他没有定义一个实例。</p>
 <h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>

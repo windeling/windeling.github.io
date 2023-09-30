@@ -89,7 +89,7 @@
       </tags>
   </entry>
   <entry>
-    <title>valine评论系统搭建</title>
+    <title>valine评论系统搭建踩坑总结</title>
     <url>/2023082063719/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样。</p>
 <p>在搭建这个评论系统的时候，还是踩了很多坑的，在这里总结一下。</p>
@@ -212,18 +212,15 @@
       </tags>
   </entry>
   <entry>
-    <title>关于valine评论无法提交的问题原因分析和解决方案</title>
+    <title>关于valine评论国际版无法提交的问题原因分析和解决方案</title>
     <url>/202308258455/</url>
-    <content><![CDATA[<p>起因：有人想买个U盘。</p>
-<p>然后他便写了一篇文章。</p>
-<p>接着评论无法提交</p>
-<span id="more"></span>
-
-<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>我去浏览了一番，想写两句评论。</p>
+    <content><![CDATA[<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>浏览了一番文章，想写两句评论。</p>
 <p>结果发现</p>
 <img src="/202308258455/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
 
 <p>这就有意思了，评论无法提交。</p>
+<span id="more"></span>
+
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>出现了问题，我们就去leancloud的，管理平台进行修改。</p>
 <p>发现他没有定义一个实例。</p>
 <h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><p>为什么一定要定义一个实例才能运行呢？</p>
