@@ -701,13 +701,15 @@
   <entry>
     <title>零基础搭建个人博客（零）</title>
     <url>/20230929ffa1f970/</url>
-    <content><![CDATA[<p>在信息技术日益今天，搭建一个属于自己的，独一无二的，自由设计的个人博客网站已经不再遥远，就算是毫无HTML，CSS，JavaScript基础的小白同样也能搭建成功。</p>
+    <content><![CDATA[<p>在信息技术日益发展的今天，搭建一个属于自己的，独一无二的，自由设计的个人博客网站已经不再遥远，就算是毫无HTML，CSS，JavaScript基础的小白同样也能搭建成功。</p>
 <p>搭建个人博客最重要的不是编程基础，而是<strong>耐心与坚持</strong>。</p>
 <p>在搭建本博客的过程中，参照的以往的教程都有些老旧，甚至还有一些奇怪的坑容易陷入。</p>
+<p><a href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客（超详细） - 知乎 (zhihu.com)</a></p>
+<p>这一篇教程是搭建个人网站的核心，但由于年代过于久远，UI设计，代码顺序均有变动。</p>
 <p>为此我们决定重新写一篇教程，总结并填补各种教程的坑。</p>
 <span id="more"></span>
 
-<h1 id="总体技术原理"><a href="#总体技术原理" class="headerlink" title="总体技术原理"></a>总体技术原理</h1><p>通过Github Page页面的更改权限，将基于Node.js生成的js文件部署到对应的仓库，使用户访问该仓库时展示页面，达到个人博客的效果。</p>
+<h1 id="总体技术原理"><a href="#总体技术原理" class="headerlink" title="总体技术原理"></a>总体技术原理</h1><p>通过Github Page页面的更改方式，将基于Node.js生成的js文件通过git工具部署到对应的仓库，并由hexo驱动，使用户访问该仓库时展示页面，达到个人博客的效果。</p>
 <h1 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h1><p>搭建个人博客推荐在Windows环境和Linux环境下搭建。</p>
 <p>需要安装的软件包括：</p>
 <ul>
