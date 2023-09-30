@@ -30,8 +30,17 @@
 <meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930104555994.png">
 <meta property="og:image" content="https://pic3.zhimg.com/80/v2-5b4f05ea2e2a7fb8b13fd35a9bafa8ce_720w.webp">
 <meta property="og:image" content="https://pic4.zhimg.com/80/v2-3915b3e46e40010d3d911f84d4e8b0ff_720w.webp">
+<meta property="og:image" content="https://windeling.github.io/C:/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230930111610185.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930111904632.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930112100221.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930112723806.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930112753486.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930112941791.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930113610620.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930114345758.png">
+<meta property="og:image" content="https://windeling.github.io/202309295207cddc/image-20230930115238127.png">
 <meta property="article:published_time" content="2023-09-29T11:44:17.000Z">
-<meta property="article:modified_time" content="2023-09-30T03:01:26.303Z">
+<meta property="article:modified_time" content="2023-09-30T03:56:04.175Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="hexo">
@@ -224,7 +233,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">1.3k字</span>
+      <span class="post-count">2.5k字</span>
 
     </span>
 
@@ -240,7 +249,7 @@
 
       <span class="post-meta-item-text">  预计阅读时长: </span>
 
-      <span class="post-count">4分</span>
+      <span class="post-count">8分</span>
 
     </span>
     
@@ -336,11 +345,10 @@
 
 <p>随便起一个title，然后将SSH秘钥复制进<code>Key</code>中。</p>
 <h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>验证是否成功，我们可以通过在 Git Bash 中输入 <code>ssh -T git@github.com</code> 进行检验：</p>
-<p>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:git@github.com">git@github.com</a> 进行检验：</p>
 <p><img src="https://pic3.zhimg.com/80/v2-5b4f05ea2e2a7fb8b13fd35a9bafa8ce_720w.webp" alt="img"></p>
 <p>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：</p>
 <p><img src="https://pic4.zhimg.com/80/v2-3915b3e46e40010d3d911f84d4e8b0ff_720w.webp" alt="img"></p>
-<h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h1><p>提交文件有两种方法：</p>
+<h1 id="上传文件方法"><a href="#上传文件方法" class="headerlink" title="上传文件方法"></a>上传文件方法</h1><p>提交文件有两种方法：</p>
 <h3 id="第一种：本地没有-git-仓库"><a href="#第一种：本地没有-git-仓库" class="headerlink" title="第一种：本地没有 git 仓库"></a>第一种：本地没有 git 仓库</h3><ol>
 <li>直接将远程仓库 clone 到本地；</li>
 <li>将文件添加并 commit 到本地仓库；</li>
@@ -353,6 +361,92 @@
 <li>将文件添加提交到本地仓库；</li>
 <li>将本地仓库的内容 push 到远程仓库。</li>
 </ol>
+<p>较为推荐使用第一种，步骤较为简便。</p>
+<h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h1><blockquote>
+<p>在开始之前，先声明一下。这里用到的仓库是作为检验是否已经建立连接而创建的验证仓库，后面会新建立一个真正作为博客代码存放区域的仓库。</p>
+<p>为了避免和以后的仓库起冲突，此仓库请<strong>不要</strong>命名为用户名.github.io。</p>
+</blockquote>
+<blockquote>
+<p>这一部分是为了<strong>让新手熟悉如何与建仓库建立连接，并且推送到远端的程序</strong>，对仓库使用方法娴熟者可以跳过。</p>
+</blockquote>
+<blockquote>
+<p>这部分主要是通过一个试验的仓库来<strong>模拟提交博客中可能遇到的各种情况以及操作流程</strong>。</p>
+</blockquote>
+<p>首先建立一个试验仓库，名字可以随意命名。</p>
+<p>要克隆仓库，首先要知道仓库的网络位置。</p>
+<p>由于仓库的设计有所改动，所以介绍两种情况。</p>
+<h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><p><img src="/C:/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230930111610185.png" alt="image-20230930111610185"></p>
+<p>如图，可以看到有一个绿色的按钮<code>code</code>，只将鼠标放在上面可以看到：</p>
+<img src="/202309295207cddc/image-20230930111904632.png" class title="image-20230930111904632">
+
+<p>仓库的网络地址便是给出的这一行URL，点击右边按钮复制即可。</p>
+<h3 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h3><img src="/202309295207cddc/image-20230930112100221.png" class title="image-20230930112100221">
+
+<p>对于一个新建的空仓库，Github很贴心的设置了一个快速设置的界面，直接将仓库的网络地址展现出来。</p>
+<p>但有一些没有接触过Github的人找不到绿色的code按钮就会慌张。</p>
+<p>在这里直接将中间的<code>Quick setup</code>里面的URL复制便可。</p>
+<hr>
+<p>至此，你已经获得了这个试验仓库的URL地址。</p>
+<blockquote>
+<p>在正式建立博客时，这部分就相当于建立博客仓库。</p>
+</blockquote>
+<h2 id="本地克隆"><a href="#本地克隆" class="headerlink" title="本地克隆"></a>本地克隆</h2><p>接下来在本地的硬盘中运行git程序。</p>
+<blockquote>
+<p>此步骤是为了模拟以后向远端推送的过程。</p>
+</blockquote>
+<p>输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 刚刚的URL</span><br></pre></td></tr></table></figure>
+
+<img src="/202309295207cddc/image-20230930112723806.png" class title="image-20230930112723806">
+
+<img src="/202309295207cddc/image-20230930112753486.png" class title="image-20230930112753486">
+
+<p>便发现多出来一个文件夹，名字是你仓库的名字。</p>
+<p>在其中随便创建一个文件，测试能否部署到远端。</p>
+<img src="/202309295207cddc/image-20230930112941791.png" class title="image-20230930112941791">
+
+<p>有些人可能看不到这个.git文件夹，是因为这个文件夹默认是隐藏的，不过这个文件夹不影响操作。</p>
+<p>在<strong>此目录</strong>下运行git程序，输入 <code>git status </code>命令查看仓库状态：</p>
+<blockquote>
+<p>注意：git程序推送到远端时默认是以运行时的路径作为根路径，所以无论是此时还是以后部署博客时，均需要在博客文件夹根目录下进行部署操作。</p>
+</blockquote>
+<img src="/202309295207cddc/image-20230930113610620.png" class title="image-20230930113610620">
+
+<p>程序告诉我们此时已经有新文件，但是还没有被推送。</p>
+<p>所以现在要使用<code>git add 文件名</code>命令将文件添加到临时缓冲区，再用<code>git commit -m &quot;辅助信息&quot;</code>命令将其提交到本地仓库。</p>
+<blockquote>
+<p>这里的辅助信息是用来说明这个文件的，并没有具体的作用，所以也可以直接输入<code>git commit</code>。</p>
+</blockquote>
+<p>如果你是第一次提交的话，就会出现下图的情况，会让你输入用户名和邮箱：</p>
+<img src="/202309295207cddc/image-20230930114345758.png" class title="image-20230930114345758">
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name<span class="string">&quot;你的用户名&quot;</span></span><br><span class="line">git config --global user.email<span class="string">&quot;你的github注册的电子邮件&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果不放心可以输入<code>git log</code>查看仓库提交日志，再次输入<code>git status</code>查看仓库状态。</p>
+<blockquote>
+<p>在正式建立博客时，这一部分就相当于在部署博客。</p>
+</blockquote>
+<h2 id="提交中的改变"><a href="#提交中的改变" class="headerlink" title="提交中的改变"></a>提交中的改变</h2><p>由于github做了系统更新，所以在这一步很多网上的教程都过于古老，不能使用。</p>
+<p>许多教程会让我们输入<code>git push origin master</code>命令来进行推送。</p>
+<p>然而，由于Github在仓库总分支已经由master改为mian了，所以我们要将上述代码中的master也同样更换。</p>
+<p>应输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在这当中，origin是远程仓库的别名，可任意更换。但这个词本身就能代表远程仓库，最好保留。</p>
+</blockquote>
+<p>由于Github与我们的连接速度较慢，所以会光标不断闪烁，请耐心等待。</p>
+<blockquote>
+<p>在正式建立博客时，这一部分就相当于模拟部署时的等待。</p>
+</blockquote>
+<img src="/202309295207cddc/image-20230930115238127.png" class title="image-20230930115238127">
+
+<p>有可能出现连接失败的情况，这是正常现象，在以后正式部署时也会多次遇到。</p>
+<blockquote>
+<p>这种无法连接属于网络问题，可以通过多次尝试或者使用代理的方法来解决。</p>
+</blockquote>
+<p>连接成功后将会跳出一个窗口，需要我们输入用户名和密码验证账户。</p>
+<p>验证成功后将会开始部署，将文件推送到远端。</p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>接下来就需要决定是否购买域名，为自己的博客设定不一样的标志。</p>
 <p><a target="_blank" rel="noopener" href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
 
