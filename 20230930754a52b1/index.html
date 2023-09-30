@@ -16,18 +16,18 @@
 <meta property="og:site_name" content="Windeling">
 <meta property="og:description" content="发布文章与快速部署经过前面几章的内容，博客的基本框架和主题已经确定下来。 那么接下来接下进入到如何发布文章的说明了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://windeling.github.io/20230930undefined/image-20230930132113754.png">
-<meta property="og:image" content="https://windeling.github.io/20230930undefined/image-20230930132152819.png">
-<meta property="og:image" content="https://windeling.github.io/20230930undefined/image-20230930132856475.png">
-<meta property="og:image" content="https://windeling.github.io/20230930undefined/908b17d9399abf7487961ead5124d59b.png">
+<meta property="og:image" content="https://windeling.github.io/20230930754a52b1/image-20230930132113754.png">
+<meta property="og:image" content="https://windeling.github.io/20230930754a52b1/image-20230930132152819.png">
+<meta property="og:image" content="https://windeling.github.io/20230930754a52b1/image-20230930132856475.png">
+<meta property="og:image" content="https://windeling.github.io/20230930754a52b1/908b17d9399abf7487961ead5124d59b.png">
 <meta property="article:published_time" content="2023-09-30T05:11:05.000Z">
-<meta property="article:modified_time" content="2023-09-30T05:38:40.500Z">
+<meta property="article:modified_time" content="2023-09-30T05:39:01.153Z">
 <meta property="article:author" content="黄文林">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://windeling.github.io/20230930undefined/image-20230930132113754.png">
+<meta name="twitter:image" content="https://windeling.github.io/20230930754a52b1/image-20230930132113754.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -261,9 +261,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章名字</span><br><span class="line">//或简写为</span><br><span class="line">hexo n 文章名字</span><br></pre></td></tr></table></figure>
 
 <p>那么就会在路径<code>/source/_post</code>中建立一个新的markdown文件。</p>
-<img src="/20230930undefined/image-20230930132113754.png" class title="image-20230930132113754">
+<img src="/20230930754a52b1/image-20230930132113754.png" class title="image-20230930132113754">
 
-<img src="/20230930undefined/image-20230930132152819.png" class title="image-20230930132152819">
+<img src="/20230930754a52b1/image-20230930132152819.png" class title="image-20230930132152819">
 
 <h1 id="文章写作"><a href="#文章写作" class="headerlink" title="文章写作"></a>文章写作</h1><p>由于是md文件，所以可以使用markdown语法来进行写作。</p>
 <p><a target="_blank" rel="noopener" href="https://boredliam.github.io/2023/08/18/Computer/markdown/">markdown语法 | Liam’s boring life (boredliam.github.io)</a></p>
@@ -277,13 +277,13 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -f -d</span><br></pre></td></tr></table></figure>
 
 <p>其中g的含义保持不变，是编译的意思，f则是在表示编译前清除缓存文件，d表示部署。</p>
-<img src="/20230930undefined/image-20230930132856475.png" class title="image-20230930132856475">
+<img src="/20230930754a52b1/image-20230930132856475.png" class title="image-20230930132856475">
 
 <p>运用这个方法，可以减少输入的次数，使部署更为轻松。</p>
 <h1 id="会遇到的问题"><a href="#会遇到的问题" class="headerlink" title="会遇到的问题"></a>会遇到的问题</h1><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>虽然hexo是支持使用markdown语法格式引入图片的，如<code>![]()</code>，但是经过我们的测试发现如果不进行一定的修改，基本上是无法显示出图片的。</p>
 <p>这个问题将会在第七章讲述修复与解决的办法。</p>
 <h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><p>如果使用中文进行创建文档的话，虽然在地址栏仍然能正常显示。但是如果想要将网址复制下来分享给他人，就会将中文强行转换成十六进制数字。</p>
-<img src="/20230930undefined/908b17d9399abf7487961ead5124d59b.png" class title="908b17d9399abf7487961ead5124d59b">
+<img src="/20230930754a52b1/908b17d9399abf7487961ead5124d59b.png" class title="908b17d9399abf7487961ead5124d59b">
 
 <p>但是复制后变成：</p>
 <p><a href="https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B">https://windeling.github.io/2023/09/23/%E5%85%B3%E4%BA%8E%E6%89%8B%E8%A1%A8ADB%E8%B0%83%E8%AF%95%E7%9A%84%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90%E4%B8%8E%E6%95%99%E7%A8%8B</a></p>
