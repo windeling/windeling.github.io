@@ -1038,4 +1038,44 @@
         <tag>hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>零基础搭建个人博客（贰）</title>
+    <url>/202309305207cddc/</url>
+    <content><![CDATA[<h1 id="Git工具的下载与安装"><a href="#Git工具的下载与安装" class="headerlink" title="Git工具的下载与安装"></a>Git工具的下载与安装</h1><p>由于没有购买自己的服务器，所以编写的代码和网站是寄托在全球最大开源代码托管平台——Github上。</p>
+<p>每次写完文章以后，需要每次都在Github的仓库里面用手动方式提交。</p>
+<p>这个方法需要打开网站，并且还要仔细区分哪些是新文件，非常麻烦与繁琐。</p>
+<p>为了简化这一提交过程，需要下载Git工具。</p>
+<span id="more"></span>
+
+<h1 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h1><p>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目，说简单点就是可以在各地控制同一项目，在这里就起到上传文件到云端（Github）的作用。</p>
+<h1 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h1><p>第一件事当然就是打开官网：<a href="https://git-scm.com/downloads" title="git官网">Git官网</a></p>
+<p>选择操作系统下载即可。</p>
+<p>这里以Windows 10为例。</p>
+<p>直接点64-bit Git for Windows Setup.</p>
+<p><img src="https://img1.imgtp.com/2023/09/30/lmnKVwCx.png" alt="选择Setup就好啦" title="选择Setup就好啦"></p>
+<p>随后就是一个正常安装程序的流程。</p>
+<p>只需要注意一点。</p>
+<img src="/20230930undefined/v2-3dcca92f4b2ab2a909e773c75d55bb9e_720w.webp" class>
+
+<p>不过没有什么用处……</p>
+<h2 id="成功标志"><a href="#成功标志" class="headerlink" title="成功标志"></a>成功标志</h2><img src="/20230930undefined/image-20230930101825412.png" class title="image-20230930101825412">
+
+<p>只要能在任何一个文件夹内右键弹出这样的菜单，并且包含两个很明显的git命令，说明你已经成功了。</p>
+<p><img src="/202309305207cddc/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230930102006004.png" alt="image-20230930102006004"></p>
+<p>选择<code>Open Git Bash here</code>，启动上述命令提示界面。</p>
+<p>输入git验证是否安装成功。</p>
+<img src="/20230930undefined/image-20230930102135560.png" class title="image-20230930102135560">
+
+<p>若出现以下界面就代表安装成功。</p>
+<img src="/20230930undefined/image-20230930102219584.png" class title="image-20230930102219584">
+
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>接下来就需要决定是否购买域名，为自己的博客设定不一样的标志。</p>
+<p><a href="http://www.windeling.com.cn/202309296d16578d/">零基础搭建个人博客（叁） | Windeling</a></p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
 </search>
