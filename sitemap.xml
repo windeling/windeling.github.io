@@ -20,6 +20,42 @@
   </url>
   
   <url>
+    <loc>https://windeling.github.io/20230930754a52b1/</loc>
+    
+    <lastmod>2023-10-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://windeling.github.io/2023090241024/</loc>
+    
+    <lastmod>2023-10-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://windeling.github.io/2023082334472/</loc>
+    
+    <lastmod>2023-10-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://windeling.github.io/20231001273719c3/</loc>
+    
+    <lastmod>2023-10-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://windeling.github.io/202309296d16578d/</loc>
     
     <lastmod>2023-10-01</lastmod>
@@ -83,15 +119,6 @@
   </url>
   
   <url>
-    <loc>https://windeling.github.io/20230930754a52b1/</loc>
-    
-    <lastmod>2023-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://windeling.github.io/202308258455/</loc>
     
     <lastmod>2023-09-30</lastmod>
@@ -102,15 +129,6 @@
   
   <url>
     <loc>https://windeling.github.io/2023082063719/</loc>
-    
-    <lastmod>2023-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://windeling.github.io/20230930d427d50c/</loc>
     
     <lastmod>2023-09-30</lastmod>
     
@@ -173,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://windeling.github.io/2023082334472/</loc>
-    
-    <lastmod>2023-09-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://windeling.github.io/202308267350/</loc>
     
     <lastmod>2023-09-23</lastmod>
@@ -203,15 +212,6 @@
     <loc>https://windeling.github.io/2023082632320/</loc>
     
     <lastmod>2023-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://windeling.github.io/2023090241024/</loc>
-    
-    <lastmod>2023-09-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -469,13 +469,6 @@
   </url>
   
   <url>
-    <loc>https://windeling.github.io/tags/Genshin-Impast/</loc>
-    <lastmod>2023-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://windeling.github.io/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/</loc>
     <lastmod>2023-10-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -491,6 +484,13 @@
   
   <url>
     <loc>https://windeling.github.io/tags/SSL/</loc>
+    <lastmod>2023-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://windeling.github.io/tags/Genshin-Impact/</loc>
     <lastmod>2023-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
