@@ -411,7 +411,7 @@ template {
 a {
   background: transparent;
   text-decoration: none;
-  color: rgba(77, 166, 201, 0.603)
+  color: rgb(255, 255, 255)
 }
 s
 a :hover{

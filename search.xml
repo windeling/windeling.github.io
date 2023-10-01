@@ -81,7 +81,9 @@
   <entry>
     <title>国庆74周年</title>
     <url>/20231001fb3b5e2a/</url>
-    <content><![CDATA[<h1 id="庆祝中华人民共和国成立74周年！"><a href="#庆祝中华人民共和国成立74周年！" class="headerlink" title="庆祝中华人民共和国成立74周年！"></a>庆祝中华人民共和国成立74周年！</h1><img src="/20231001fb3b5e2a/1.png" class>
+    <content><![CDATA[<h1 id="庆祝中华人民共和国成立74周年！"><a href="#庆祝中华人民共和国成立74周年！" class="headerlink" title="庆祝中华人民共和国成立74周年！"></a>庆祝中华人民共和国成立74周年！</h1><span id="more"></span>
+
+<img src="/20231001fb3b5e2a/1.png" class>
 
 
 
@@ -211,6 +213,8 @@
 <p>这个问题，请参照第七章的方案：</p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>这一章主要讲述了如何发布文章，那么如果想对文章界面以及博客界面进行美化的话，请再往下看第七章。</p>
 <p>第七章是非常重要的一章，也是决定博客个性化程度的一章。</p>
+<p>关于博客内容的美化，已经详尽的整理在了第七章。</p>
+<p><a href="https://boredliam.github.io/2023/10/01/Blog_series/blog-07/">零基础搭建个人博客（柒） | Liam’s boring life </a></p>
 ]]></content>
       <tags>
         <tag>编程</tag>
@@ -449,6 +453,8 @@
 <h2 id="WWW问题"><a href="#WWW问题" class="headerlink" title="WWW问题"></a>WWW问题</h2><p>如果加上或删去www后，发现DNS解析错误，可能是只添加了一部分的解析，请在控制台添加完整解析即可。</p>
 <p>参见本章「解析域名」一节。</p>
 <p>详细原因分析在<a href="http://www.windeling.com.cn/20230929e2706666/">关于网络www前缀对DNS解析影响的分析 | Windeling</a></p>
+<h2 id="安全性问题"><a href="#安全性问题" class="headerlink" title="安全性问题"></a>安全性问题</h2><p>绑定域名后，会发现域名变成了「不安全」的状态。</p>
+<p>原因和免费的修复方法参见<a href="https://www.windeling.com.cn/20231001273719c3/">关于绑定域名后通过阿里云SSL证书进行安全认证的方法 | Windeling</a></p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>到此，已经建立了一个仓库，并且能够与之通信。</p>
 <p>接下来，就要开始装饰仓库了！！</p>
 ]]></content>
@@ -689,12 +695,13 @@
 </li>
 <li><p>设置个人主题 <a href="http://www.windeling.com.cn/2023093017f4661a/">零基础搭建个人博客（伍） | Windeling</a></p>
 </li>
-<li><p>发布文章</p>
+<li><p>发布文章 <a href="https://www.windeling.com.cn/20230930754a52b1/">零基础搭建个人博客（陆） | Windeling</a></p>
 </li>
-<li><p>优化主题功能</p>
+<li><p>优化主题功能 <a href="https://boredliam.github.io/2023/10/01/Blog_series/blog-07/">零基础搭建个人博客（柒） | Liam’s boring life </a></p>
 </li>
 </ol>
-]]></content>
+<p>按照这七章的内容一步步的来，你就可以搭建一个完全属于自己，没有任何赘余功能的个人博客网站了！</p>
+<h1 id="还等什么？现在开始吧！"><a href="#还等什么？现在开始吧！" class="headerlink" title="还等什么？现在开始吧！"></a>还等什么？现在开始吧！</h1>]]></content>
       <tags>
         <tag>编程</tag>
         <tag>hexo</tag>
