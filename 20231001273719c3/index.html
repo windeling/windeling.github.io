@@ -8,17 +8,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://windeling.github.io">
-  <title>资源 | Windeling</title>
+  <title>关于绑定域名后通过阿里云SSH证书进行安全认证的方法 | Windeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="资源">
-<meta property="og:url" content="https://windeling.github.io/resources/index.html">
+  <meta name="description" content="在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。   原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。 所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。 这无疑给博客留下了不好的开场，因此需要绑定一张S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于绑定域名后通过阿里云SSH证书进行安全认证的方法">
+<meta property="og:url" content="https://windeling.github.io/20231001273719c3/index.html">
 <meta property="og:site_name" content="Windeling">
+<meta property="og:description" content="在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。   原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。 所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。 这无疑给博客留下了不好的开场，因此需要绑定一张S">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-17T06:00:00.000Z">
-<meta property="article:modified_time" content="2023-08-17T06:08:42.573Z">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/5c1c02693bc3663fe452e960b93e41f1.png">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/image-20231001120248409.png">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/image-20231001120346881.png">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/1">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/image-20231001120703727.png">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/image-20231001120833319.png">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/image-20231001121233621.png">
+<meta property="og:image" content="https://windeling.github.io/20231001undefined/image-20231001122859846.png">
+<meta property="article:published_time" content="2023-10-01T03:39:47.000Z">
+<meta property="article:modified_time" content="2023-10-01T04:30:08.676Z">
 <meta property="article:author" content="黄文林">
+<meta property="article:tag" content="域名">
+<meta property="article:tag" content="SSL">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://windeling.github.io/20231001undefined/5c1c02693bc3663fe452e960b93e41f1.png">
   
     <link rel="alternative" href="/atom.xml" title="Windeling" type="application/atom+xml">
   
@@ -179,20 +192,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-方法教程/关于绑定域名后通过阿里云SSH证书进行安全认证的方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      资源
+      关于绑定域名后通过阿里云SSH证书进行安全认证的方法
     </h1>
   
 
         
-        <a href="/resources/index.html" class="archive-article-date">
-  	<time datetime="2023-08-17T06:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-17</time>
+        <a href="/20231001273719c3/" class="archive-article-date">
+  	<time datetime="2023-10-01T03:39:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-10-01</time>
 </a>
         
           <div style="margin-top:10px;">
@@ -205,7 +218,7 @@
 
       <span class="post-meta-item-text">  字数统计: </span>
 
-      <span class="post-count">0字</span>
+      <span class="post-count">1.2k字</span>
 
     </span>
 
@@ -221,11 +234,11 @@
 
       <span class="post-meta-item-text">  预计阅读时长: </span>
 
-      <span class="post-count">1分</span>
+      <span class="post-count">4分</span>
 
     </span>
     
-      <a class="cloud-tie-join-count" href="/resources/index.html" style="color:rgba(26, 26, 26);margin-top:10px;">
+      <a class="cloud-tie-join-count" href="/20231001273719c3/" style="color:rgba(26, 26, 26);margin-top:10px;">
         &nbsp; | &nbsp;
         <span id="busuanzi_container_page_pv">
           阅读量: <span id="busuanzi_value_page_pv"></span>
@@ -243,7 +256,76 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。</p>
+<img src="/20231001undefined/5c1c02693bc3663fe452e960b93e41f1.png" class title="你好">
+
+<p>原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。</p>
+<p>所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。</p>
+<p>这无疑给博客留下了不好的开场，因此需要绑定一张SSL安全证书来证明自己的博客是安全的。</p>
+<span id="more"></span>
+
+<h1 id="SSL简介"><a href="#SSL简介" class="headerlink" title="SSL简介"></a>SSL简介</h1><blockquote>
+<p>SSL是一种安全套接层协议，是Web浏览器与Web服务器之间安全交换信息的协议，提供两个基本的安全服务：鉴别与保密。</p>
+<p>SSL协议的三个特性在一个:</p>
+<p>① 保密：在握手协议中定义了会话密钥后，所有的消息都被加密；</p>
+<p>② 鉴别：可选的客户端认证，和强制的服务器端认证；</p>
+<p>③ 完整性：传送的消息包括消息完整性检查（使用MAC）。</p>
+<p>SSL的位置</p>
+<p>SSL介于应用层和TCP层之间，应用层数据不再直接传递给传输层，而是传递给SSL层，SSL层对从应用层收到的数据进行加密，并增加自己的SSL头。</p>
+</blockquote>
+<h1 id="获得SSL证书"><a href="#获得SSL证书" class="headerlink" title="获得SSL证书"></a>获得SSL证书</h1><p>SSL证书一般由权威公司进行颁发。如果是自己颁发的SSL证书将不被承认，甚至还会导致更高的风险级别。</p>
+<p>所以我们需要去权威公司中获得一张证明自己网站安全的证书。</p>
+<p>目前的权威公司有许许多多，但是能提供免费证书的却寥寥无几。</p>
+<p>所以最好选择DigiCert 免费版 SSL证书，有效期一年。</p>
+<p>阿里云已经集成这个服务，会更加方便快捷，所以推荐注册域名时使用阿里云。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>登陆阿里云后，转到数字证书管理服务。</p>
+<img src="/20231001undefined/image-20231001120248409.png" class title="image-20231001120248409">
+
+<p>选择SSL在这里证书，再选择免费证书。</p>
+<img src="/20231001undefined/image-20231001120346881.png" class title="image-20231001120346881">
+
+<p>这是购买了免费证书后的界面，在没有购买之前，「创建证书」按钮将会变为「免费证书」的按钮。</p>
+<img src="/20231001undefined/1" class title="ff5b9783940a4e52b51dae6832e2e03b">
+
+<p>选择购买20张，其余的数量则不能免费。</p>
+<img src="/20231001undefined/image-20231001120703727.png" class title="image-20231001120703727">
+
+<p>选择申请证书，按照提示填写信息。</p>
+<p>如果在阿里云购买的域名，在验证信息环节会自动添加DNS解析，更为方便与快捷。</p>
+<p>验证信息完后申请的速度非常快，一般不到一分钟便可有邮件通知，表示申请完成。</p>
+<img src="/20231001undefined/image-20231001120833319.png" class title="image-20231001120833319">
+
+<p>便会显示一张证书，表示已经被认可。</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>获得了证书后便需要将它部署到自己的网站上。</p>
+<p>此时不用选择阿里云内置的部署操作，此部署操作是针对于服务器而言的，对Github page页面操作是无效的。</p>
+<p>所以需要转到Github并登录账号，再选择对应的个人博客仓库的Page页面。</p>
+<p>将页面滑到最底下，可看到如图所示的页面。</p>
+<img src="/20231001undefined/image-20231001121233621.png" class title="image-20231001121233621">
+
+<p>由于此时网站已经通过了证书验证，所以中间的TLS证书请求已经消失了。</p>
+<p>如果从未进行证书验证，此时会在强制HTTPS和Custom domain中间显示TLS证书生成。</p>
+<p>由于TLS证书和SSL证书是同级的，所以我们选择部署SSL证书。</p>
+<p>在此时便有两种方法。</p>
+<h3 id="图形化部署"><a href="#图形化部署" class="headerlink" title="图形化部署"></a>图形化部署</h3><p>当GitHub验证成功，此网站确实具有SSL证书时，下面的Enforce HTTPS（强制HTTPS）的选项就可选，此时勾选便会使对网站的访问强制使用HTTPS。</p>
+<h3 id="输入部署"><a href="#输入部署" class="headerlink" title="输入部署"></a>输入部署</h3><p>如果点击后没有效果，那么便需要清空域名，输入<code>https://yourdomain.com</code>，将域名刷新为只有HTTPS的选项。</p>
+<p>之后Github便会自动将https省略。</p>
+<blockquote>
+<p>注意：上述两种方法都需要在强制HTTPS的选项可选的情况下操作，此选项可选表示Github已经发现了SSL证书。</p>
+<p>否则，即使重新输入部署也无效，还可能导致跳转错误。</p>
+</blockquote>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><p>图形化部署是让访问HTTP的请求强制重定向到HTTPS，但如果未能重定向，就会提示不安全。</p>
+<blockquote>
+<p>此方法在直接输入时大多有效，但在重定向时经常不起作用。</p>
+</blockquote>
+<p>而输入部署是删除所有HTTP的网址，只保留HTTPS的网址。</p>
+<blockquote>
+<p>此方法虽然稳妥，但如果有用户输入全部网址而又忘记加上s时，便会无法访问。</p>
+</blockquote>
+<p>所以最为稳妥的办法是进行两个部署。</p>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><img src="/20231001undefined/image-20231001122859846.png" class title="image-20231001122859846">
+
+<p>部署了SSL证书后，网站变为「安全」状态。</p>
+
       
         
       
@@ -251,6 +333,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">域名</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SSL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -262,6 +359,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/20231001fb3b5e2a/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">国庆74周年</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -362,7 +469,7 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

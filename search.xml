@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于绑定域名后通过阿里云SSH证书进行安全认证的方法</title>
+    <url>/20231001273719c3/</url>
+    <content><![CDATA[<p>在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。</p>
+<img src="/20231001undefined/5c1c02693bc3663fe452e960b93e41f1.png" class title="你好">
+
+<p>原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。</p>
+<p>所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。</p>
+<p>这无疑给博客留下了不好的开场，因此需要绑定一张SSL安全证书来证明自己的博客是安全的。</p>
+<span id="more"></span>
+
+<h1 id="SSL简介"><a href="#SSL简介" class="headerlink" title="SSL简介"></a>SSL简介</h1><blockquote>
+<p>SSL是一种安全套接层协议，是Web浏览器与Web服务器之间安全交换信息的协议，提供两个基本的安全服务：鉴别与保密。</p>
+<p>SSL协议的三个特性在一个:</p>
+<p>① 保密：在握手协议中定义了会话密钥后，所有的消息都被加密；</p>
+<p>② 鉴别：可选的客户端认证，和强制的服务器端认证；</p>
+<p>③ 完整性：传送的消息包括消息完整性检查（使用MAC）。</p>
+<p>SSL的位置</p>
+<p>SSL介于应用层和TCP层之间，应用层数据不再直接传递给传输层，而是传递给SSL层，SSL层对从应用层收到的数据进行加密，并增加自己的SSL头。</p>
+</blockquote>
+<h1 id="获得SSL证书"><a href="#获得SSL证书" class="headerlink" title="获得SSL证书"></a>获得SSL证书</h1><p>SSL证书一般由权威公司进行颁发。如果是自己颁发的SSL证书将不被承认，甚至还会导致更高的风险级别。</p>
+<p>所以我们需要去权威公司中获得一张证明自己网站安全的证书。</p>
+<p>目前的权威公司有许许多多，但是能提供免费证书的却寥寥无几。</p>
+<p>所以最好选择DigiCert 免费版 SSL证书，有效期一年。</p>
+<p>阿里云已经集成这个服务，会更加方便快捷，所以推荐注册域名时使用阿里云。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>登陆阿里云后，转到数字证书管理服务。</p>
+<img src="/20231001undefined/image-20231001120248409.png" class title="image-20231001120248409">
+
+<p>选择SSL在这里证书，再选择免费证书。</p>
+<img src="/20231001undefined/image-20231001120346881.png" class title="image-20231001120346881">
+
+<p>这是购买了免费证书后的界面，在没有购买之前，「创建证书」按钮将会变为「免费证书」的按钮。</p>
+<img src="/20231001undefined/1" class title="ff5b9783940a4e52b51dae6832e2e03b">
+
+<p>选择购买20张，其余的数量则不能免费。</p>
+<img src="/20231001undefined/image-20231001120703727.png" class title="image-20231001120703727">
+
+<p>选择申请证书，按照提示填写信息。</p>
+<p>如果在阿里云购买的域名，在验证信息环节会自动添加DNS解析，更为方便与快捷。</p>
+<p>验证信息完后申请的速度非常快，一般不到一分钟便可有邮件通知，表示申请完成。</p>
+<img src="/20231001undefined/image-20231001120833319.png" class title="image-20231001120833319">
+
+<p>便会显示一张证书，表示已经被认可。</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>获得了证书后便需要将它部署到自己的网站上。</p>
+<p>此时不用选择阿里云内置的部署操作，此部署操作是针对于服务器而言的，对Github page页面操作是无效的。</p>
+<p>所以需要转到Github并登录账号，再选择对应的个人博客仓库的Page页面。</p>
+<p>将页面滑到最底下，可看到如图所示的页面。</p>
+<img src="/20231001undefined/image-20231001121233621.png" class title="image-20231001121233621">
+
+<p>由于此时网站已经通过了证书验证，所以中间的TLS证书请求已经消失了。</p>
+<p>如果从未进行证书验证，此时会在强制HTTPS和Custom domain中间显示TLS证书生成。</p>
+<p>由于TLS证书和SSL证书是同级的，所以我们选择部署SSL证书。</p>
+<p>在此时便有两种方法。</p>
+<h3 id="图形化部署"><a href="#图形化部署" class="headerlink" title="图形化部署"></a>图形化部署</h3><p>当GitHub验证成功，此网站确实具有SSL证书时，下面的Enforce HTTPS（强制HTTPS）的选项就可选，此时勾选便会使对网站的访问强制使用HTTPS。</p>
+<h3 id="输入部署"><a href="#输入部署" class="headerlink" title="输入部署"></a>输入部署</h3><p>如果点击后没有效果，那么便需要清空域名，输入<code>https://yourdomain.com</code>，将域名刷新为只有HTTPS的选项。</p>
+<p>之后Github便会自动将https省略。</p>
+<blockquote>
+<p>注意：上述两种方法都需要在强制HTTPS的选项可选的情况下操作，此选项可选表示Github已经发现了SSL证书。</p>
+<p>否则，即使重新输入部署也无效，还可能导致跳转错误。</p>
+</blockquote>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><p>图形化部署是让访问HTTP的请求强制重定向到HTTPS，但如果未能重定向，就会提示不安全。</p>
+<blockquote>
+<p>此方法在直接输入时大多有效，但在重定向时经常不起作用。</p>
+</blockquote>
+<p>而输入部署是删除所有HTTP的网址，只保留HTTPS的网址。</p>
+<blockquote>
+<p>此方法虽然稳妥，但如果有用户输入全部网址而又忘记加上s时，便会无法访问。</p>
+</blockquote>
+<p>所以最为稳妥的办法是进行两个部署。</p>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><img src="/20231001undefined/image-20231001122859846.png" class title="image-20231001122859846">
+
+<p>部署了SSL证书后，网站变为「安全」状态。</p>
+]]></content>
+      <tags>
+        <tag>域名</tag>
+        <tag>SSL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>国庆74周年</title>
+    <url>/20231001fb3b5e2a/</url>
+    <content><![CDATA[<h1 id="庆祝中华人民共和国成立74周年！"><a href="#庆祝中华人民共和国成立74周年！" class="headerlink" title="庆祝中华人民共和国成立74周年！"></a>庆祝中华人民共和国成立74周年！</h1><img src="/20231001fb3b5e2a/1.png" class>
+
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>国庆74周年</title>
     <url>/20231001fb3b5e2a/</url>
     <content><![CDATA[<h1 id="庆祝中华人民共和国成立74周年！"><a href="#庆祝中华人民共和国成立74周年！" class="headerlink" title="庆祝中华人民共和国成立74周年！"></a>庆祝中华人民共和国成立74周年！</h1><img src="/20231001fb3b5e2a/1.png" class>
@@ -246,13 +333,13 @@
       </tags>
   </entry>
   <entry>
-    <title>原神3周年生日</title>
+    <title>原神三周年生日</title>
     <url>/20230929d345be47/</url>
-    <content><![CDATA[<h1 id="原神3周年生日快乐！"><a href="#原神3周年生日快乐！" class="headerlink" title="原神3周年生日快乐！"></a>原神3周年生日快乐！</h1><p><img src="https://upload-bbs.miyoushe.com/upload/2023/09/29/280234141/886986829d7855adf9b2b4faeab3b9fd_177120248680274435.jpg?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="img"></p>
+    <content><![CDATA[<h1 id="原神三周年生日快乐！"><a href="#原神三周年生日快乐！" class="headerlink" title="原神三周年生日快乐！"></a>原神三周年生日快乐！</h1><p><img src="https://upload-bbs.miyoushe.com/upload/2023/09/29/280234141/886986829d7855adf9b2b4faeab3b9fd_177120248680274435.jpg?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="img"></p>
 <span id="more"></span>
 
 <p><img src="https://upload-bbs.miyoushe.com/upload/2023/09/29/280234141/7a2d08e9d4811718aab1c6c423fac24e_36608258780903772.jpg?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="img"></p>
-<p><strong><a href="https://www.bilibili.com/festival/genshin3rd?bvid=BV1Yj41187gS&spm_id_from=333.1007.0.0">原神3周年生日会 (bilibili.com)</a></strong></p>
+<p><strong><a href="https://www.bilibili.com/festival/genshin3rd?bvid=BV1Yj41187gS&spm_id_from=333.1007.0.0">原神三周年生日会 (bilibili.com)</a></strong></p>
 ]]></content>
       <tags>
         <tag>Genshin Impast</tag>
@@ -276,6 +363,8 @@
 <p>想深入了解请浏览这篇文章：<a href="http://www.windeling.com.cn/2023092958a4be22/">关于github个人网站绑定域名的原理分析和操作 | Windeling</a></p>
 <h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><p>国内比较著名的平台有<code>阿里云</code>和<code>腾讯云</code>。</p>
 <p>根据自己的喜好即可，域名价格大多相同。</p>
+<p>推荐阿里云，因为可以获得免费的数字证书，这样就不会有「不安全」的标记了。</p>
+<p>获得证书的具体方法参见：</p>
 <h2 id="域名后缀"><a href="#域名后缀" class="headerlink" title="域名后缀"></a>域名后缀</h2><p>常用的域名后缀有<code>.com</code> <code>.com.cn</code> <code>.top</code> <code>.net</code></p>
 <p><code>.com</code>：最普遍和为人所知的域名，价格在￥70-80不等。</p>
 <p><code>.com.cn</code>：强调<strong>中国公司</strong>，需要中国证件购买，￥35-40。</p>
