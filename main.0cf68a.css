@@ -3292,7 +3292,7 @@ pre .id {
   }
 
   .btnctn .slider-trigger:hover {
-    background: #444
+    background: #ffffff
   }
 
   .btnctn .slider-trigger .icon {
@@ -3528,7 +3528,7 @@ pre .id {
     margin: 0;
     position: relative;
     z-index: 2;
-    color: #424242
+    color: #ffffff
   }
 
   #mobile-nav .overlay {
@@ -3536,7 +3536,7 @@ pre .id {
     position: absolute;
     width: 100%;
     z-index: 2;
-    background: #4d4d4d
+    background: #4c4848
   }
 
   #mobile-nav #header {
@@ -3595,12 +3595,12 @@ pre .id {
     justify-content: space-around;
     position: relative;
     z-index: 1;
-    border: 1px solid #a0a0a0;
+    border: 1px solid #ffffff;
     border-radius: 3px
   }
 
   .header-menu li {
-    border-left: 1px solid #a0a0a0
+    border-left: 1px solid #ffffff
   }
 
   .header-menu li:first-child {
@@ -3617,7 +3617,7 @@ pre .id {
     text-overflow: ellipsis;
     white-space: nowrap;
     display: block;
-    color: #a0a0a0
+    color: #ffffff
   }
 
   .header-menu li a.active {
@@ -3653,7 +3653,7 @@ pre .id {
 
   .header-subtitle {
     text-align: center;
-    color: #999;
+    color: #ffffff;
     font-size: 14px;
     line-height: 25px;
     overflow: hidden;
