@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>关于绑定域名后通过阿里云SSL证书进行安全认证的方法</title>
-    <url>/20231001273719c3/</url>
+    <url>/273719c3/</url>
     <content><![CDATA[<p>在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。</p>
 <img src="/20231001273719c3/5c1c02693bc3663fe452e960b93e41f1.png" class title="你好">
 
@@ -81,7 +81,7 @@
   </entry>
   <entry>
     <title>国庆74周年</title>
-    <url>/20231001fb3b5e2a/</url>
+    <url>/fb3b5e2a/</url>
     <content><![CDATA[<h1 id="庆祝中华人民共和国成立74周年！"><a href="#庆祝中华人民共和国成立74周年！" class="headerlink" title="庆祝中华人民共和国成立74周年！"></a>庆祝中华人民共和国成立74周年！</h1><span id="more"></span>
 
 <img src="/20231001fb3b5e2a/1.png" class>
@@ -96,7 +96,7 @@
   </entry>
   <entry>
     <title>ZQ语录合集</title>
-    <url>/202309308fbccf9b/</url>
+    <url>/8fbccf9b/</url>
     <content><![CDATA[<p>在此征集ZQ语录，可在下方的评论区补充：（可能有点慢）</p>
 <span id="more"></span>
 <img src="/202309308fbccf9b/3f93aeb94f147261af36fd6772df1386.jpeg" class title="3f93aeb94f147261af36fd6772df1386">
@@ -107,7 +107,7 @@
   </entry>
   <entry>
     <title>基于hexo生成的网址短链接解决中文域名转码问题的方案</title>
-    <url>/202309308c8465b4/</url>
+    <url>/8c8465b4/</url>
     <content><![CDATA[<p>在经历博客网站一段时间以后，需要将文章分享给朋友。</p>
 <p>它的地址栏正常显示的网址一旦复制后就变成了一串串冗余的数字。</p>
 <p>经过仔细研究以后，发现这和中文域名有关。</p>
@@ -166,7 +166,7 @@
   </entry>
   <entry>
     <title>零基础搭建个人博客（陆）</title>
-    <url>/20230930754a52b1/</url>
+    <url>/754a52b1/</url>
     <content><![CDATA[<h1 id="发布文章与快速部署"><a href="#发布文章与快速部署" class="headerlink" title="发布文章与快速部署"></a>发布文章与快速部署</h1><p>经过前面几章的内容，博客的基本框架和主题已经确定下来。</p>
 <p>那么接下来接下进入到如何发布文章的说明了。</p>
 <span id="more"></span>
@@ -225,7 +225,7 @@
   </entry>
   <entry>
     <title>零基础搭建个人博客（伍）</title>
-    <url>/2023093017f4661a/</url>
+    <url>/17f4661a/</url>
     <content><![CDATA[<h1 id="设置Hexo主题"><a href="#设置Hexo主题" class="headerlink" title="设置Hexo主题"></a>设置Hexo主题</h1><p>在成功安装完node.js和hexo后，博客大房子就已经搭建起来了，拥有了最基本的框架。</p>
 <p>但是仅仅只有框架是远远不够的，我们还需要对内部进行「装修」这一项操作，换而言之就是使用主题。</p>
 <span id="more"></span>
@@ -330,7 +330,7 @@
   </entry>
   <entry>
     <title>原神三周年生日</title>
-    <url>/20230929d345be47/</url>
+    <url>/d345be47/</url>
     <content><![CDATA[<h1 id="原神三周年生日快乐！"><a href="#原神三周年生日快乐！" class="headerlink" title="原神三周年生日快乐！"></a>原神三周年生日快乐！</h1><p><img src="https://upload-bbs.miyoushe.com/upload/2023/09/29/280234141/886986829d7855adf9b2b4faeab3b9fd_177120248680274435.jpg?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="img"></p>
 <span id="more"></span>
 
@@ -344,7 +344,7 @@
   </entry>
   <entry>
     <title>零基础搭建个人博客（叁）</title>
-    <url>/202309296d16578d/</url>
+    <url>/6d16578d/</url>
     <content><![CDATA[<h1 id="域名的购买与解析"><a href="#域名的购买与解析" class="headerlink" title="域名的购买与解析"></a>域名的购买与解析</h1><p>在我们建立与Github仓库的联系以后，实际上我们已经拥有了一个属于自己的个人网页。</p>
 <p>接下来就可以选择是否绑定属于自己的域名。</p>
 <p>最好在博客正式投入前完成。域名购买的决定，如果在投入使用之后再选择绑定域名，会导致一些问题。</p>
@@ -469,7 +469,7 @@
   </entry>
   <entry>
     <title>零基础搭建个人博客（贰）</title>
-    <url>/202309295207cddc/</url>
+    <url>/5207cddc/</url>
     <content><![CDATA[<h1 id="Git工具的安装与连接"><a href="#Git工具的安装与连接" class="headerlink" title="Git工具的安装与连接"></a>Git工具的安装与连接</h1><p>由于没有购买自己的服务器，所以编写的代码和网站是寄托在全球最大开源代码托管平台——Github上。</p>
 <p>每次写完文章以后，需要每次都在Github的仓库里面用手动方式提交。</p>
 <p>这个方法需要打开网站，并且还要仔细区分哪些是新文件，非常麻烦与繁琐。</p>
@@ -672,7 +672,7 @@
   </entry>
   <entry>
     <title>零基础搭建个人博客（零）</title>
-    <url>/20230929ffa1f970/</url>
+    <url>/ffa1f970/</url>
     <content><![CDATA[<p>在信息技术日益发展的今天，搭建一个属于自己的，独一无二的，自由设计的个人博客网站已经不再遥远，就算是毫无HTML，CSS，JavaScript基础的小白同样也能搭建成功。</p>
 <p>搭建个人博客最重要的不是编程基础，而是<strong>耐心与坚持</strong>。</p>
 <p>在搭建本博客的过程中，参照的以往的教程都有些老旧，甚至还有一些奇怪的坑容易陷入。</p>
@@ -724,7 +724,7 @@
   </entry>
   <entry>
     <title>关于网络www前缀对DNS解析影响的分析</title>
-    <url>/20230929e2706666/</url>
+    <url>/e2706666/</url>
     <content><![CDATA[<p>在购买了这个网站的域名windeling.com.cn后，发现加上了WWW便会无法访问。</p>
 <p>那么，造成这个问题的原因是什么？为什么许多网站无论是否添加WWW，都是可以访问的？</p>
 <span id="more"></span>
@@ -769,7 +769,7 @@
   </entry>
   <entry>
     <title>关于洛雪音乐下载高品质文件的处理方法</title>
-    <url>/20230929feb6928c/</url>
+    <url>/feb6928c/</url>
     <content><![CDATA[<p>如今听音乐需要开通各大音乐平台的会员才能畅享音乐之美，因此有很多大佬就在github开发了洛雪音乐这一开源代码项目。</p>
 <p>由于版权限制，洛雪音乐默认只有128k品质的音乐，这对一些对音乐有较高品质追求的用户带来了不便。</p>
 <span id="more"></span>
@@ -795,7 +795,7 @@
   </entry>
   <entry>
     <title>关于github个人网站绑定域名的原理分析和操作</title>
-    <url>/2023092958a4be22/</url>
+    <url>/58a4be22/</url>
     <content><![CDATA[<p>在建立个人网站以后，由于这种博客的服务器是建立在github的，通过修改github的page页来实现个人网站的效果。</p>
 <p>所以我们的网站域名其实是对一个github仓库的访问，访问后便展示这个仓库的page页。</p>
 <p>所以所谓的「域名」xxxx.github.io，其实是对一个github仓库的访问。所谓的域名其实是仓库名字。</p>
@@ -870,7 +870,7 @@
   </entry>
   <entry>
     <title>关于手表ADB调试的应用分析与教程</title>
-    <url>/2023092317374/</url>
+    <url>/17374/</url>
     <content><![CDATA[<p>今天发现OPPO的手表能够打开开发者选项并进入USB调试。</p>
 <p>因此就有可能通过ADB命令行使手表可以下载自己想要的应用。</p>
 <p>那么就以OPPO Watch 3为例，进行应用调试的分析。</p>
@@ -968,7 +968,7 @@
   </entry>
   <entry>
     <title>2023教师节</title>
-    <url>/20230910f05ed6fa/</url>
+    <url>/f05ed6fa/</url>
     <content><![CDATA[<p>今天是2023年9月10日，是所有老师的节日——教师节。</p>
 <p><strong>感谢<code>曾倩老师</code> <code>龙光森老师</code> <code>韦佳利老师</code> <code>黄佩玲老师</code> <code>李洁老师</code>  <code>林生业老师</code> <code>黄海老师</code> <code>劳永进老师</code> <code>罗满琼老师</code> <code>钟洁老师</code> <code>周静轩老师</code> <code>江英球老师</code> <code>颜良霞老师</code> <code>白振兴老师</code>  <code>庞惠文老师</code> <code>梁超源老师</code> <code>叶子斌老师</code></strong> </p>
 <p>三年来的教育，每一堂课都是一份收获。</p>
@@ -994,7 +994,7 @@
   </entry>
   <entry>
     <title>永远的2121</title>
-    <url>/2023090241024/</url>
+    <url>/41024/</url>
     <content><![CDATA[<h1 id="「愿时光永驻此刻，愿明日终将重逢」"><a href="#「愿时光永驻此刻，愿明日终将重逢」" class="headerlink" title="「愿时光永驻此刻，愿明日终将重逢」"></a>「愿时光永驻此刻，愿明日终将重逢」</h1><p><img src="https://s1.ax1x.com/2023/09/03/pPDVwCD.jpg" alt="永远的2121"></p>
 <p>00-曾倩</p>
 <span id="more"></span>
@@ -1065,7 +1065,7 @@
   </entry>
   <entry>
     <title>关于yilia背景图片畸变问题及恒定显示解决方案</title>
-    <url>/202308267350/</url>
+    <url>/7350/</url>
     <content><![CDATA[<p>今天花了6个小时，只解决了一个小bugo(╥﹏╥)o</p>
 <p>惨痛的故事告诉我们：</p>
 <span id="more"></span>
@@ -1100,7 +1100,7 @@
   </entry>
   <entry>
     <title>关于浏览器音乐自动播放的问题</title>
-    <url>/2023082632320/</url>
+    <url>/32320/</url>
     <content><![CDATA[<p>在我使用了网易云音乐的外部链接后，发现在edge浏览器上无法自动播放。</p>
 <p>本来以为是代码问题，就没有去研究。</p>
 <p>但是经过使用后发现，在一些平板上是可以自动播放的。</p>
@@ -1144,7 +1144,7 @@
   </entry>
   <entry>
     <title>关于valine评论国际版无法提交的问题原因分析和解决方案</title>
-    <url>/202308258455/</url>
+    <url>/8455/</url>
     <content><![CDATA[<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>浏览了一番文章，想写两句评论。</p>
 <p>结果发现</p>
 <img src="/202308258455/b5bdee774a9f033dbf0f165b78beb94b.png" class title="b5bdee774a9f033dbf0f165b78beb94b">
@@ -1198,7 +1198,7 @@
   </entry>
   <entry>
     <title>浅析USB系列接口</title>
-    <url>/2023082436898/</url>
+    <url>/36898/</url>
     <content><![CDATA[<p>「接口」一词，伴随着电子设备的产生出现在人们的视野。</p>
 <p>然而如今多种多样复杂的接口也让我们烦不胜烦，今天就用一篇文章来详细介绍一下USB接口的规范。</p>
 <span id="more"></span>
@@ -1368,7 +1368,7 @@
   </entry>
   <entry>
     <title>关于bad config line 1 in file的紧急bug维修及处理方案</title>
-    <url>/2023082334472/</url>
+    <url>/34472/</url>
     <content><![CDATA[<p>今天尝试着安装视频插件，但是造成了网站崩溃</p>
 <p>所有命令均提示异常</p>
 <p><code>hexo d</code>直接报错</p>
@@ -1403,7 +1403,7 @@
   </entry>
   <entry>
     <title>valine评论系统搭建踩坑总结</title>
-    <url>/2023082063719/</url>
+    <url>/63719/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>终于写完评论功能了，做得很不容易，因为网上的教程五花八门，代码也不一样。</p>
 <p>在搭建这个评论系统的时候，还是踩了很多坑的，在这里总结一下。</p>
 <span id="more"></span>
@@ -1465,7 +1465,7 @@
   </entry>
   <entry>
     <title>摄影作品-中越友谊公园&amp;东兴口岸</title>
-    <url>/2023081836672/</url>
+    <url>/36672/</url>
     <content><![CDATA[<p>摄影作品<br>中越友谊公园&amp;口岸</p>
 <span id="more"></span>
 <p><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_7.jpg" alt="2023-08-21_7.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_8.jpg" alt="2023-08-21_8.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_6.jpg" alt="2023-08-21_6.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_9.jpg" alt="2023-08-21_9.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_2.jpg" alt="2023-08-21_2.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_4.jpg" alt="2023-08-21_4.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_5.jpg" alt="2023-08-21_5.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_3.jpg" alt="2023-08-21_3.jpg"><br><img src="https://www.z4a.net/images/2023/08/22/2023-08-21_1.jpg" alt="2023-08-21_1.jpg"></p>
@@ -1477,7 +1477,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023081716107/</url>
+    <url>/16107/</url>
     <content><![CDATA[<p>欢迎访问HEXO，这是你的第一篇帖子。检查<a href="https://hexo.io/docs/">文件</a>了解更多信息。</p>
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
