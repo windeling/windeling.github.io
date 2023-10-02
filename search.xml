@@ -320,6 +320,7 @@
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>至此，你已经完成了基于hexo的个人博客搭建！</p>
 <p>如果对附加功能没有要求，便可投入使用。</p>
 <p>接下来的第六章，将会讲述如何完善各个主题。</p>
+<p><a href="https://www.windeling.com.cn/20230930754a52b1/">零基础搭建个人博客（陆） | Windeling</a></p>
 ]]></content>
       <tags>
         <tag>编程</tag>
@@ -456,8 +457,9 @@
 <p>详细原因分析在<a href="http://www.windeling.com.cn/20230929e2706666/">关于网络www前缀对DNS解析影响的分析 | Windeling</a></p>
 <h2 id="安全性问题"><a href="#安全性问题" class="headerlink" title="安全性问题"></a>安全性问题</h2><p>绑定域名后，会发现域名变成了「不安全」的状态。</p>
 <p>原因和免费的修复方法参见<a href="https://www.windeling.com.cn/20231001273719c3/">关于绑定域名后通过阿里云SSL证书进行安全认证的方法 | Windeling</a></p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>到此，已经建立了一个仓库，并且能够与之通信。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>到此，已经建立了一个仓库，并且绑定了一个属于你的域名。</p>
 <p>接下来，就要开始装饰仓库了！！</p>
+<p><a href="https://boredliam.github.io/2023/09/30/Blog_series/blog-04/">零基础搭建个人博客（肆） | Liam’s boring life </a></p>
 ]]></content>
       <tags>
         <tag>编程</tag>
@@ -479,7 +481,8 @@
 <p>选择操作系统下载即可。</p>
 <p>这里以Windows 10为例。</p>
 <p>直接点64-bit Git for Windows Setup.</p>
-<p><img src="https://img1.imgtp.com/2023/09/30/lmnKVwCx.png" alt="选择Setup就好啦" title="选择Setup就好啦"></p>
+<img src="/202309295207cddc/85d6b083cc62929159877fd4aa0eaceb_720.png" class title="85d6b083cc62929159877fd4aa0eaceb_720">
+
 <p>随后就是一个正常安装程序的流程。</p>
 <p>只需要注意一点。</p>
 <img src="/202309295207cddc/v2-3dcca92f4b2ab2a909e773c75d55bb9e_720w.webp" class>
@@ -572,7 +575,8 @@
 <p>首先建立一个试验仓库，名字可以随意命名。</p>
 <p>要克隆仓库，首先要知道仓库的网络位置。</p>
 <p>由于仓库的设计有所改动，所以介绍两种情况。</p>
-<h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><p><img src="/202309295207cddc/Users/winde/AppData/Roaming/Typora/typora-user-images/image-20230930111610185.png" alt="image-20230930111610185"></p>
+<h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><img src="/202309295207cddc/image-20230930111610185.png" class title="image-20230930111610185">
+
 <p>如图，可以看到有一个绿色的按钮<code>code</code>，只将鼠标放在上面可以看到：</p>
 <img src="/202309295207cddc/image-20230930111904632.png" class title="image-20230930111904632">
 
@@ -685,6 +689,14 @@
 <li>Node.js</li>
 <li>hexo</li>
 </ul>
+<h1 id="过程概述"><a href="#过程概述" class="headerlink" title="过程概述"></a>过程概述</h1><p>搭建一个个人博客，就像在搭建一座房子。</p>
+<p>首先，需要「买」下一块土地。（存放代码的服务器）</p>
+<p>接着，要学会往「土地」上放东西。</p>
+<p>然后，可以树立一个「路标」，显示出个性与特色。（购买域名）</p>
+<p>并且，要搭建「房子」hexo和node.js。</p>
+<p>下来，对「房子」进行「装修」。（设定主题）</p>
+<p>最后，要在「房子」里添加各种功能「家具」。（美化主题）</p>
+<p>这样，就搭建好了一个个人博客。</p>
 <h1 id="总体目录"><a href="#总体目录" class="headerlink" title="总体目录"></a>总体目录</h1><ol>
 <li><p>注册Github  <a href="https://boredliam.github.io/2023/09/29/Blog_series/blog-01/">零基础搭建个人博客（壹） | Liam’s boring life </a></p>
 </li>
