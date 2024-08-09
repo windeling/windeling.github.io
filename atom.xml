@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Windelingの間</title>
+  
+  
+  <link href="https://windeling.com/atom.xml" rel="self"/>
+  
+  <link href="https://windeling.com/"/>
+  <updated>2024-08-09T01:01:09.488Z</updated>
+  <id>https://windeling.com/</id>
+  
+  <author>
+    <name>黄文林</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于洛雪音乐同步功能异常的解决方案</title>
+    <link href="https://windeling.com/20240801c9cdd44/"/>
+    <id>https://windeling.com/20240801c9cdd44/</id>
+    <published>2024-08-01T02:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.488Z</updated>
+    
+    <content type="html"><![CDATA[<p>在使用「洛雪音乐」这款软件的时候，由于没有账号功能，因此需要同步数据。</p><p>但是在同步的时候，部分用户会直接报错<code>connect service fail</code>，无法进行同步。</p><p>如果是秒报错，请试着改变原默认端口号23500至24500，并且尝试关闭内网AP隔离，防火墙等安全策略。</p><p><img src="https://pic4.zhimg.com/v2-b83eb31faf7850a18d92d1414f6595db_r.jpg" alt="img"></p><p>得到有效解决的反馈</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在使用「洛雪音乐」这款软件的时候，由于没有账号功能，因此需要同步数据。&lt;/p&gt;
+&lt;p&gt;但是在同步的时候，部分用户会直接报错&lt;code&gt;connect service fail&lt;/code&gt;，无法进行同步。&lt;/p&gt;
+&lt;p&gt;如果是秒报错，请试着改变原默认端口号23500至245</summary>
+      
+    
+    
+    
+    
+    <category term="洛雪音乐" scheme="https://windeling.com/tags/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Google站点地图URL不可用原因分析和解决方案</title>
+    <link href="https://windeling.com/20240801fd1eb90d/"/>
+    <id>https://windeling.com/20240801fd1eb90d/</id>
+    <published>2024-08-01T02:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.508Z</updated>
+    
+    <content type="html"><![CDATA[<p>在我的网站加入谷歌搜索的时候，其提示我的站点地图不正常，显示已识别但URL不可用。</p><p>经过研究发现：Google会对站点地图中的URL进行检查，如果主域名不匹配则禁止提交。</p><blockquote><p>站点地图可以读取，但有错误<br>不允许使用 URL 100 个实例</p></blockquote><p>这个时候就要检查站点地图的主域名是否正确，检查后发现配置错误。</p><p><img src="https://pic1.zhimg.com/v2-3d5d32a71bb36f20e2ee13ce2054ffa4_r.jpg" alt="img"></p><span id="more"></span><p><img src="https://pic4.zhimg.com/v2-3e7b29b76fb6141c0f930fa538a83963_r.jpg" alt="img"></p><p>因此Google拒绝识别。修改配置参数即可解决。</p><p>但相反的是，bing允许添加错误的站点地图，因此我的bingSEO排名急剧下滑，收录页面大幅减少。</p><p><img src="https://pic3.zhimg.com/v2-81bdb988c12e2eb3f056abb2d0fda83e_r.jpg" alt="img"></p><p><img src="https://pic4.zhimg.com/v2-62feee903662907acc149ce2ba28385b_r.jpg" alt="img"></p><p>如图，bing是允许添加错误的站点地图的，因而导致了这一串错误连续产生。</p><p><img src="https://pic3.zhimg.com/v2-9cd37397b14cc2db67c4bd5cdc7eba7a_r.jpg" alt="img"></p><p>在debug后，各搜索引擎已经恢复正常。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在我的网站加入谷歌搜索的时候，其提示我的站点地图不正常，显示已识别但URL不可用。&lt;/p&gt;
+&lt;p&gt;经过研究发现：Google会对站点地图中的URL进行检查，如果主域名不匹配则禁止提交。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;站点地图可以读取，但有错误&lt;br&gt;不允许使用 URL 100 个实例&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个时候就要检查站点地图的主域名是否正确，检查后发现配置错误。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/v2-3d5d32a71bb36f20e2ee13ce2054ffa4_r.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Google" scheme="https://windeling.com/tags/Google/"/>
+    
+    <category term="sitemap" scheme="https://windeling.com/tags/sitemap/"/>
+    
+    <category term="Bing" scheme="https://windeling.com/tags/Bing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>美文转载</title>
+    <link href="https://windeling.com/20240730ca8d02ab/"/>
+    <id>https://windeling.com/20240730ca8d02ab/</id>
+    <published>2024-07-30T09:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.500Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/20240730ca8d02ab/image-20240730164443677.png" alt="image-20240730164443677"></p><span id="more"></span><blockquote><p>转自lofter，相关作者信息如图所示。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/20240730ca8d02ab/image-20240730164443677.png&quot; alt=&quot;image-20240730164443677&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="https://windeling.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="转载" scheme="https://windeling.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>升级valine图片系统有感及关于留言项目的总结</title>
+    <link href="https://windeling.com/20240712acac6a2b/"/>
+    <id>https://windeling.com/20240712acac6a2b/</id>
+    <published>2024-07-12T09:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.492Z</updated>
+    
+    <content type="html"><![CDATA[<p>经过一天的升级部署，现在本站的评论系统支持直接图片上传。</p><p>图片相比于文本，其大小是后者的数十倍甚至数百倍，这对代码提出了更高的要求。</p><p>我这一刻不禁想起了一个项目：</p><h2 id="一年前"><a href="#一年前" class="headerlink" title="一年前"></a>一年前</h2><p><img src="https://pic3.zhimg.com/80/v2-e3ba7914bf883738060c4f8b84a4bb3e_720w.webp" alt="img"></p><span id="more"></span><p>现在看来，这个项目在技术上非常失败。</p><p><img src="https://pic4.zhimg.com/v2-08070d9c7f063f4f202208a4573303bf_r.jpg" alt="img"></p><p>首先启动页就有一个疏漏：没有考虑屏幕畸变。</p><p>大多数手机屏幕的尺寸比例是16:9，但华为的例外，出现了19.6:9这种特殊分辨率，所以启动页的文字就会畸变拉伸。</p><p>而且当时的开发速度实在是太快了，不到两天就完成了立项-策划-编码-调试-部署-宣发所有环节，所以出现了很多疏漏。</p><p>再加上当时只会<del>磕</del>CP（C++和Python），而C++大多用于引擎编写和系统程序，Python更注重于自动化处理和A.I.</p><p>所以我对Android开发一窍不通（毕竟我不用手机），只能使用CoCo来辅助安卓开发<del>（被人戏称为用口口开发）</del></p><p><img src="https://pic1.zhimg.com/v2-d90ffe96774d6c4920a0c8a9e2489570_r.jpg" alt="img"></p><p>接下来我就被自己糟糕的文案给恶心到了。。。。。</p><p>然后发现这个背景图片非常模糊，我甚至以为是安装包损坏了。</p><p>然后经过校验发现分辨率就这么高，我真的很不理解一年前的我为什么要用这种不到百万像素的图片来当背景。（上面那两只鸟都糊了）</p><p>更愚蠢的是这个滑动解锁（有部分用户反馈找不到打开方式），选的配色和背景很相似。</p><p>重点是这里最佳的解决办法应该是按钮或者自动切换。</p><p>还有这个字体也是有小bug的，CoCo会优先使用默认字体再更换为选择的字体，中间大约有300ms的时差，表现的很明显。</p><p>然后后面那一连串弹窗没做本地验证存储，每次进来都要弹出一遍（哪有应用天天确认用户守则的）</p><p><img src="https://pic4.zhimg.com/80/v2-14e1159d8a882542cbcf5b1b26a6905f_720w.webp" alt="img"></p><p>这里的UI布局真的是乱七八糟：</p><ul><li>又用圆角又用尖角</li><li>超链接不美化</li><li>「确认」选用不当，应该添加匿名的按钮（谁知道这两个空是可以不填的）</li></ul><p>然后头像方面，经过Web编程的考验，QQ提供了头像的API接口，否则这一次还得自己上传头像。</p><p>所以这里整出来一个莫名其妙的URL，还有复杂的上传操作。</p><p>其实当时是受技术限制，无法上传图片（没有图片选择器+服务器）</p><p>如今回去一看：</p><p><img src="https://pic1.zhimg.com/80/v2-a4936cc16bac7fb4ae6177024261648c_720w.webp" alt="img"></p><p><img src="https://pic3.zhimg.com/80/v2-9d8daeb3a364de84dafd8d03bebd4296_720w.webp" alt="img"></p><p>我真的是哭笑不得，不知道是该为编程猫CoCo编译器的发展高兴还是该痛骂一通（为什么一年就发展了那么快）</p><p>甚至还对接了leancloud，能做用户系统了。</p><p><img src="https://pic1.zhimg.com/80/v2-a8c328124719c2c886d8f9ef99c6178c_720w.webp" alt="img"></p><p><img src="https://pic1.zhimg.com/80/v2-84caa3f519bf779b12288755532e15f0_720w.webp" alt="img"></p><p>再看这个正式页面，UI设计一坨杂乱，所有功能按钮都堆叠在下面，再加上日期后面莫名其妙的IP地址（不会有人以为是乱码吧）</p><p>然后两个输入框格式也不对，每个人的头像都是默认头像。。。</p><p>由于没有通知，你无法知道你的评论是否被回复，是否有新的评论。</p><p>更让我生气的是，发布留言后滚动框居然不会下滑，也不弹出提示窗口，也不清空输入框，只是震动一下。</p><p>（天知道有多少重复提交的留言是因为这个问题）</p><p><img src="https://pic3.zhimg.com/80/v2-029742a9138bb808092b3d613baa2c62_720w.webp" alt="img"></p><p>然而，一年后的邮件功能又在嘲讽我。。</p><p><img src="https://pic2.zhimg.com/v2-8c313d8895043384abfbee052f86ea8d_r.jpg" alt="img"></p><p>可以说，一年前的我彻底输给了代码。效果肯定也很差：<br><img src="https://pic2.zhimg.com/v2-f608e10b16bb36727703c07445778bd5_r.jpg" alt="img"></p><p>一共15条留言，由于APK文件不支持苹果iOS系统，因此使用率大约为（15&#x2F;45），即33%。</p><hr><h2 id="半年后"><a href="#半年后" class="headerlink" title="半年后"></a>半年后</h2><p>我在寒假深思熟虑，决定开发出一个更好的项目。</p><p>借助已经搭建好的网站，可以通过评论区快速改装成一个留言墙。</p><p>但是当时评论区是这个样子的：</p><p><img src="https://pic2.zhimg.com/v2-e5dbd8257446c0180fd52c37fb0f3265_r.jpg" alt="img"></p><p>然后经过半年的摸索，在周末和假期缝隙中艰难更新，逐渐加入了邮件通知，QQ头像引用，UI美化，图片插入，身份tag种种功能。最终形成了留言墙：</p><p><img src="https://pic3.zhimg.com/v2-d8dcbd51c79b76707ab6f780113cc512_r.jpg" alt="img"></p><p><img src="https://pic3.zhimg.com/v2-179b9e2331a0c7719f760116891e7a2e_r.jpg" alt="img"></p><p>总共加起来有21条评论留言。</p><p>这个数据远低于开发初期预测的数据，也低于后期预估的数据。</p><p>存在的问题可能是因为打开的速度，当时没有采用OSS技术和CDN加速，会造成解析的缓慢。</p><p>再加上QQ随机抽取封锁，会显示出「非官方页面」的图片。</p><p>由于是面向全年级的项目且全平台互通，使用率为（21&#x2F;331），即6.3%（未去重）。</p><hr><h2 id="今天"><a href="#今天" class="headerlink" title="今天"></a>今天</h2><p>经过漫长的拖沓，终于升级了图片部分，可以直接粘贴图片了。</p><p>简单的结果，却几乎翻遍了整个js文件，查阅了大量官方文档（注释的重要性）。</p><p>我本以为这是成功的结果，但是部署到服务器的那一刻，我却有些伤感。</p><p>一年前我受限于技术，做出了粗拙的作品；今天超越了那些困难，却发现得到的是巨大的失落。</p><p>原来，我一直在向着失败奔跑。</p><blockquote><p>写的很烂，也没有头绪，只是一个写代码的emo作品，各位经常看文的别喷。</p><p>接触编程六年来，我始终相信「我们必须知道，我们必将知道」。</p><p>现在才发觉，知道的不仅是技术，更是失败的落寞。</p><p>也许就是这样吧，大家当个乐子看看就行。</p><p>原APP链接：<a href="https://pan.baidu.com/s/1zclv1_kQ7oyLfFluUCvBDA?pwd=2121">https://pan.baidu.com/s/1zclv1_kQ7oyLfFluUCvBDA?pwd=2121</a><br>提取码：2121</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;经过一天的升级部署，现在本站的评论系统支持直接图片上传。&lt;/p&gt;
+&lt;p&gt;图片相比于文本，其大小是后者的数十倍甚至数百倍，这对代码提出了更高的要求。&lt;/p&gt;
+&lt;p&gt;我这一刻不禁想起了一个项目：&lt;/p&gt;
+&lt;h2 id=&quot;一年前&quot;&gt;&lt;a href=&quot;#一年前&quot; class=&quot;headerlink&quot; title=&quot;一年前&quot;&gt;&lt;/a&gt;一年前&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/80/v2-e3ba7914bf883738060c4f8b84a4bb3e_720w.webp&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="永远的2121" scheme="https://windeling.com/tags/%E6%B0%B8%E8%BF%9C%E7%9A%842121/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于无痕迹修改网页元素的方法和原理解析</title>
+    <link href="https://windeling.com/202407104e55a20c/"/>
+    <id>https://windeling.com/202407104e55a20c/</id>
+    <published>2024-07-10T04:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.468Z</updated>
+    
+    <content type="html"><![CDATA[<p>随着时代的需要与发展，在某些时候我们 需要对网页中的某些元素进行删除，修改，那么怎么才能做到不显现出PS痕迹呢？</p><p>首先要明确的是：任何修图软件&#x2F;AI都会漏出修饰痕迹，只是体现在多少的问题，所以想要不漏出痕迹，必须要借用代码的方式。</p><p>以2024中考查询页面为例，说明这种方式：</p><p><img src="https://pic4.zhimg.com/v2-38c3b20fbf1f7623842bd0b3ada1f117_r.jpg" alt="img"></p><span id="more"></span><p>例如以上这张图片，一看就知道是虚假的，但是放大来看毫无修饰痕迹，这是为什么呢？</p><p>原因在于这就是程序渲染出来的最终页面，通过代码修改来达到这种效果。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>打开F12开发人员工具。</p><p><img src="https://pic3.zhimg.com/v2-4a2a38629b6c03330db2c6dbc6017ec6_r.jpg" alt="img"></p><p>选择新窗口左上角的选择（一个小箭头在框里面）</p><p><img src="https://pic4.zhimg.com/v2-f40eb2fab93d17c34ae5b754192f0983_r.jpg" alt="img"></p><p>选中你想要修改的元素，会显示出信息，按下左键确定。</p><p><img src="https://pic4.zhimg.com/v2-1a062372894c6f48fdc0d437ca527e37_r.jpg" alt="img"></p><p>此时右边的控制窗口中自动跳转到了元素对应的区域，直接选择要修改的文本，修改即可。</p><p><img src="https://pic1.zhimg.com/v2-d8a8b5f2fa2bf2ef634140fd73ca58d8_r.jpg" alt="img"></p><p>由于浏览器是同步渲染的，修改会立刻生效，无需刷新。（相反刷新就不见了）</p><p><img src="https://pic3.zhimg.com/v2-3cf64257ff6c147cb1eef5b5718405a6_r.jpg" alt="img"></p><p>还可以添加元素，例如：</p><p><img src="https://pic1.zhimg.com/v2-f121228784f916c8281c2d26100cdaa4_r.jpg" alt="img"></p><p>右键选中对应的元素区域，然后选择「重复元素」便可，删除元素的方法同理。</p><p>这样，我们就能修改页面上的所有文本，图片甚至样式啦。</p><h2 id="原理分析："><a href="#原理分析：" class="headerlink" title="原理分析："></a>原理分析：</h2><p>当我们访问一个网络页面的时候，客户端向服务器发送请求。服务端接收到请求并验证后，向客户端返回页面对应内容（即JavaScript，CSS和HTML页面及其他文本图片素材）。</p><p>在这以后，如果是一个静态页面，客户端将不会再会向服务端发送任何请求，客户端所有的图形渲染都交给传输下来的JavaScript程序和HTML页面来控制，并由CSS渲染。</p><p>因此我们可以更改HTML页面中的一些字符元素，来达到我们想渲染出来的效果。也可以更改一些css中的样式来达到美化界面的目的。</p><p>需要注意的是：如果刷新本页面，客户端将再会向服务器发送一次请求，这时候浏览器将会以新接收到的程序代码和素材为准，因此你的本地操作将会被覆盖。</p><p>所以无论你在本地端如何操作，都不会影响服务器的任何数据，你所做的改动都将保留在本地。</p><p>而因为你修改的是数据本身，而不是渲染后的结果，因此渲染出来的页面便是最终页面，不会有任何的修饰痕迹。</p><blockquote><p>声明：本文仅供科学技术研究，请勿滥用伪造页面，产生的一切法律后果自负。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;随着时代的需要与发展，在某些时候我们 需要对网页中的某些元素进行删除，修改，那么怎么才能做到不显现出PS痕迹呢？&lt;/p&gt;
+&lt;p&gt;首先要明确的是：任何修图软件&amp;#x2F;AI都会漏出修饰痕迹，只是体现在多少的问题，所以想要不漏出痕迹，必须要借用代码的方式。&lt;/p&gt;
+&lt;p&gt;以2024中考查询页面为例，说明这种方式：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic4.zhimg.com/v2-38c3b20fbf1f7623842bd0b3ada1f117_r.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="HTML" scheme="https://windeling.com/tags/HTML/"/>
+    
+    <category term="web" scheme="https://windeling.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于数据公平问题的探讨</title>
+    <link href="https://windeling.com/202407015f224f6c/"/>
+    <id>https://windeling.com/202407015f224f6c/</id>
+    <published>2024-07-01T13:00:01.000Z</published>
+    <updated>2024-08-09T01:01:09.484Z</updated>
+    
+    <content type="html"><![CDATA[<p>在初中生活两次奖杯的颁发中，都出现了有失公平的情况，为了这个问题，我特意回去寻找了智学网EDC账号的数据，现公示如下：</p><p>（数据来自智学网后台管理员成绩报告）</p><p>当然，在这里我们向宋奕妍同学的大度与无私致敬。</p><span id="more"></span><p>第一轮奖杯从七下期中至八下期末：</p><blockquote><p>七下期中：梁键，黄文林，王榕</p><p>七下期末：刘穗凤，翁展，蒙军羽    </p><p>八上期中：刘穗凤，蒙军羽，李慧婧</p><p>八上期末：乱七八糟（智学网后台都无法设置总分排名，因为缺考人数过多，应该您也没有算这一次的数据）</p><p>八下开学考：蒙军羽，李慧婧，梁键</p><p>八下期中：黄文林，李慧婧，王榕</p><p>八下期末：黄文林，蒙军羽，孙诗惠</p></blockquote><p>以上的数据都是带体育版本。</p><blockquote><p>七下期中：还没开始考呢  梁键，黄文林，王榕</p><p>七下期末：李慧婧，翁展，蒙军羽</p><p>八上期中：杨星月，李慧婧，何飞贤</p><p>八上期末：大家都生病了，别考了</p><p>八下开学考：也没考体育 蒙军羽，李慧婧，梁键</p><p>八下期中：李慧婧，黄文林，王榕</p><p>八下期末：智学网都没有生成不带体育的报告，我觉得您不会一个一个减去体育分的(〃＞皿＜)  黄文林，蒙军羽，孙诗惠</p></blockquote><p>以上的数据是不带体育版本。</p><p>即便采用这种解释也有很多漏洞无法解释诸多现象（这里就不一一列举了），最可能的情况是八下期末因为时间紧张，没有将其视为有效数据，这样一来事情就合理了许多。</p><blockquote><p>七下期中：梁键，黄文林，王榕</p><p>七下期末：刘穗凤，翁展，蒙军羽    </p><p>八上期中：刘穗凤，蒙军羽，李慧婧</p><p>八上期末：乱七八糟（智学网后台都无法设置总分排名，因为缺考人数过多，应该您也没有算这一次的数据）</p><p>八下开学考：蒙军羽，李慧婧，梁键</p><p>八下期中：黄文林，李慧婧，王榕</p></blockquote><p>第二次奖杯为九年级：</p><p><strong>宋奕妍共计四次第一名，李慧婧共计三次第一名。</strong></p><blockquote><p>九下期中，其中梁建同学和赵北北同学并列第一，但是奖杯由于只有四个面，八个位置，所以宋奕妍同学就不得不被删掉了一次，再加上有一次月考成绩也没有将其刻上，因此最后宋奕妍同学只有两个名字。</p></blockquote><p>以上都是数据校验错误的案例，出于种种原因，我们删除了第一次奖杯的统计和第二次的具体名次。</p><p>再次向宋奕妍同学致敬。</p><p>就让这如烟的往事，随风飘散吧。</p><p>只留下几行数据在这里，记录着这一切。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在初中生活两次奖杯的颁发中，都出现了有失公平的情况，为了这个问题，我特意回去寻找了智学网EDC账号的数据，现公示如下：&lt;/p&gt;
+&lt;p&gt;（数据来自智学网后台管理员成绩报告）&lt;/p&gt;
+&lt;p&gt;当然，在这里我们向宋奕妍同学的大度与无私致敬。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="永远的2121" scheme="https://windeling.com/tags/%E6%B0%B8%E8%BF%9C%E7%9A%842121/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于NPM报错的原因分析及解决方案</title>
+    <link href="https://windeling.com/202407019772032f/"/>
+    <id>https://windeling.com/202407019772032f/</id>
+    <published>2024-07-01T07:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.440Z</updated>
+    
+    <content type="html"><![CDATA[<p>当运行npm时报错：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm WARN tarball tarball data for fsevents@1.2.7 (sha1-SFG2ZKN4PlIAOzxm6w7uEHSTOqQ=) seems to be corrupted. Trying one more time.</span><br></pre></td></tr></table></figure><p>解决方法：</p><p>删除所调用仓库或文件夹里面的文件：<code>package-lock.json</code> </p><p>问题即可解决。</p><p>原因分析：</p><p>造成此bug的原因应该是此lock文件标志着仓库正在被使用中，会拒绝一切外界的访问。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;当运行npm时报错：&lt;/p&gt;
+&lt;figure class=&quot;highlight text&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;cod</summary>
+      
+    
+    
+    
+    
+    <category term="NPM" scheme="https://windeling.com/tags/NPM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一次买彩票纪念</title>
+    <link href="https://windeling.com/20240630202d610d/"/>
+    <id>https://windeling.com/20240630202d610d/</id>
+    <published>2024-06-30T12:30:00.000Z</published>
+    <updated>2024-08-09T01:01:09.508Z</updated>
+    
+    <content type="html"><![CDATA[<p>准备剪头发，突然要拉着我买彩票。</p><p>没办法只好随便乱填了一些数字。</p><span id="more"></span><p><img src="https://blog-picture-source.oss-cn-guangzhou.aliyuncs.com/07/02/caip"></p><p>嗯，按照同学关系填的。</p><p><del>不出意外没中</del></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;准备剪头发，突然要拉着我买彩票。&lt;/p&gt;
+&lt;p&gt;没办法只好随便乱填了一些数字。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="纪念日" scheme="https://windeling.com/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>毕业QQ好友纪念</title>
+    <link href="https://windeling.com/202406276c7ea561/"/>
+    <id>https://windeling.com/202406276c7ea561/</id>
+    <published>2024-06-27T10:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.500Z</updated>
+    
+    <content type="html"><![CDATA[<p>关于毕业好友纪念，感谢QQ提供的算法。</p><p>确实很准，嗯。</p><span id="more"></span><p><img src="https://blog-picture-source.oss-cn-guangzhou.aliyuncs.com/07/02/IMG_20240702_160224.jpg" alt="pkgwqFs.jpg"></p><p><img src="https://blog-picture-source.oss-cn-guangzhou.aliyuncs.com/07/02/IMG_20240702_160034.jpg" alt="pkgwLYn.jpg"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;关于毕业好友纪念，感谢QQ提供的算法。&lt;/p&gt;
+&lt;p&gt;确实很准，嗯。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="永远的2121" scheme="https://windeling.com/tags/%E6%B0%B8%E8%BF%9C%E7%9A%842121/"/>
+    
+    <category term="纪念日" scheme="https://windeling.com/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>入坑「世界计划·缤纷舞台」纪念</title>
+    <link href="https://windeling.com/2024062755716a43/"/>
+    <id>https://windeling.com/2024062755716a43/</id>
+    <published>2024-06-27T04:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.468Z</updated>
+    
+    <content type="html"><![CDATA[<p>我也不明白我一个手脚不灵活的人去玩音游干什么(〃＞皿＜)。</p><p>果然还是为了角色玩游戏的。</p><p><img src="https://blog-picture-source.oss-cn-guangzhou.aliyuncs.com/07/02/Screenshot_20240702_161430_com.hermes.mk.asia.jpg" alt="pkg01fI.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我也不明白我一个手脚不灵活的人去玩音游干什么(〃＞皿＜)。&lt;/p&gt;
+&lt;p&gt;果然还是为了角色玩游戏的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog-picture-source.oss-cn-guangzhou.aliyuncs.com/07/02/Scree</summary>
+      
+    
+    
+    
+    
+    <category term="pjsk" scheme="https://windeling.com/tags/pjsk/"/>
+    
+    <category term="纪念日" scheme="https://windeling.com/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021级扬帆校区云图</title>
+    <link href="https://windeling.com/20240626b74b9d61/"/>
+    <id>https://windeling.com/20240626b74b9d61/</id>
+    <published>2024-06-26T16:00:01.000Z</published>
+    <updated>2024-08-09T01:01:09.440Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>注意：这仍是一个Beta（测试）页面，所有结果以正式版本为准，不代表最终品质。</p></blockquote><p>我们的船只，载着丰厚的知识，奋斗的身影；</p><p>阳光下的声声呐喊，溢出幸福的张张照片；</p><p>扬起理想的风帆，行过峥嵘的岁月，你我的名字，共同的青春；</p><p>在人生的汪洋中，让我们鞠一捧星光，溅一身水花，追一方梦想，</p><p>时光作渡，回忆满途，同行三载，不枉少年！</p><p>三年的时间，太短又太长，三年的足迹，平凡而又难忘。</p><span id="more"></span><p><img src="https://s21.ax1x.com/2024/06/16/pkwJLdJ.png" alt="pkwJLdJ.png"><br><a href="https://imgse.com/i/pkwJqZ4"><img src="https://s21.ax1x.com/2024/06/16/pkwJqZ4.png" alt="pkwJqZ4.png"></a></p><blockquote><p>数据来源：智学网edc管理员账号数据</p></blockquote><h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><p>感谢所有为这个项目做出贡献的人（未统计完毕）：</p><p>总策划：黄文林</p><p>技术支持：黄文林、林耀宗</p><p>美术绘制：梁键</p><p>文本编纂：王榕</p><p>内容贡献：黄宝裕、陆一帆，蔡佳颖</p><p>测评组：2021级所有的331位同学和66位老师，是他们扬起了这片大帆。</p><p>这个项目因你们而存在，因你们而辉煌。</p><blockquote><p>之所以还是Beta状态，是因为两张图片的配色和字体都不够完美，您可以在下方打出喜欢的颜色的16进制代码，帮助我们完善这一个项目。</p></blockquote><blockquote><p>本项目基于python开发，欢迎有了解python的同学来发表意见。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;注意：这仍是一个Beta（测试）页面，所有结果以正式版本为准，不代表最终品质。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们的船只，载着丰厚的知识，奋斗的身影；&lt;/p&gt;
+&lt;p&gt;阳光下的声声呐喊，溢出幸福的张张照片；&lt;/p&gt;
+&lt;p&gt;扬起理想的风帆，行过峥嵘的岁月，你我的名字，共同的青春；&lt;/p&gt;
+&lt;p&gt;在人生的汪洋中，让我们鞠一捧星光，溅一身水花，追一方梦想，&lt;/p&gt;
+&lt;p&gt;时光作渡，回忆满途，同行三载，不枉少年！&lt;/p&gt;
+&lt;p&gt;三年的时间，太短又太长，三年的足迹，平凡而又难忘。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="永远的2121" scheme="https://windeling.com/tags/%E6%B0%B8%E8%BF%9C%E7%9A%842121/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021级扬帆校区毕业留言墙</title>
+    <link href="https://windeling.com/20240626bea1d429/"/>
+    <id>https://windeling.com/20240626bea1d429/</id>
+    <published>2024-06-26T16:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.500Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个能自由发言的留言墙，谨此纪念我们的初中时光。</p><p>使用前应先浏览<a href="https://www.windeling.com/using2021/">使用说明及用户协议</a>和<a href="https://www.windeling.com/personal/">隐私政策</a></p><h3 id="制作组鸣谢"><a href="#制作组鸣谢" class="headerlink" title="制作组鸣谢"></a>制作组鸣谢</h3><p>总策划：黄文林</p><p>技术支持：黄文林、林耀宗</p><p>测评组：刘穗凤、王榕、梁键、李慧婧、邓文钦、胡义航、林耀宗（排名不分先后）</p><p>感谢所有人三年来的一路相守，愿我们9月二中相见。</p><p>希望大家积极转发，你的转发就是对我们的最大支持。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是一个能自由发言的留言墙，谨此纪念我们的初中时光。&lt;/p&gt;
+&lt;p&gt;使用前应先浏览&lt;a href=&quot;https://www.windeling.com/using2021/&quot;&gt;使用说明及用户协议&lt;/a&gt;和&lt;a href=&quot;https://www.windeling.com/</summary>
+      
+    
+    
+    
+    
+    <category term="永远的2121" scheme="https://windeling.com/tags/%E6%B0%B8%E8%BF%9C%E7%9A%842121/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Hexo部署报错Unhandled rejection TypeError问题的解决方案</title>
+    <link href="https://windeling.com/202402235f11ed2/"/>
+    <id>https://windeling.com/202402235f11ed2/</id>
+    <published>2024-02-23T08:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.468Z</updated>
+    
+    <content type="html"><![CDATA[<p>在部署hexo的时候，如果碰到了以下报错信息：</p><p><img src="https://pic1.zhimg.com/v2-7d4d9fca723dc0ebcb95d49ae35ffb00_r.jpg" alt="img"></p><span id="more"></span><p>这个时候要观察路径：</p><h3 id="如果路径指向page-ejs，请接着往下读，如果路径指向其他位置，请看参考文章："><a href="#如果路径指向page-ejs，请接着往下读，如果路径指向其他位置，请看参考文章：" class="headerlink" title="如果路径指向page.ejs，请接着往下读，如果路径指向其他位置，请看参考文章："></a>如果路径指向page.ejs，请接着往下读，如果路径指向其他位置，请看参考文章：</h3><p><a href="https://blog.csdn.net/blink182007/article/details/123892080">hexo编辑博客报错Unhandled rejection TypeError: E:\Blog\themes\butterfly\layout\includes\layout.pug:16原因-CSDN博客</a></p><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>原因：hexo的page页面是不能有tag的，如果你用<code>hexo new page</code>生成的index.md，属性中一定不能包含tag。</p><p>自然，解决方法就是<strong>删除tag。</strong></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在部署hexo的时候，如果碰到了以下报错信息：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/v2-7d4d9fca723dc0ebcb95d49ae35ffb00_r.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://windeling.com/tags/Hexo/"/>
+    
+    <category term="web" scheme="https://windeling.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于valine和yilia提高加载速度的方法</title>
+    <link href="https://windeling.com/20240221c038e56c/"/>
+    <id>https://windeling.com/20240221c038e56c/</id>
+    <published>2024-02-21T03:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.472Z</updated>
+    
+    <content type="html"><![CDATA[<p>在搭建完yilia主题以后，加载速度异常缓慢。</p><p>因此我们有必要通过开发人员工具进行一轮分析。</p><p><img src="https://pic1.zhimg.com/v2-1a3c5721eaa08bc135cc5f6691240540_r.jpg" alt="img"></p><span id="more"></span><p>这是一篇带有图片的文章的加载速度，居然高达4.7分钟，严重影响了文章的阅读感受。</p><p><img src="https://pic1.zhimg.com/v2-07707b44cfa6e36358d3635b140ba290_r.jpg" alt="img"></p><p>这是主页的加载速度，在只有少量背景图片的情况下，仍然使用了半分钟。</p><p>那么如何改进加载速度呢？</p><h2 id="禁用litten：9005"><a href="#禁用litten：9005" class="headerlink" title="禁用litten：9005"></a><strong>禁用litten：9005</strong></h2><p>这个项目是yilia作者收集客户端信息用的。</p><p>但是由于yilia作者已经不再维护本主题，所以请求是404失败的。</p><p>因此我们可以禁用这个服务，加快网站加载。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a><strong>解决方法</strong></h2><p>在<code>themes\yilia\source\main.0cf68a.js</code>文件中找到<code>192:function(e,t,n)&#123;&#125;,</code>这一函数，将大括号内的内容全部删除，即可禁止调用此函数方法。</p><h2 id="加快valine速度"><a href="#加快valine速度" class="headerlink" title="加快valine速度"></a><strong>加快valine速度</strong></h2><p>除了littenme的服务，还有leancloud的加载拖慢了速度。</p><p>用到leancloud的服务有很多，例如valine，单篇文章浏览量等。</p><p>当初在默认设置leancloud时，我们采用的是官方的标准js，因此速度缓慢。</p><p>所以我们可以设置CDN加速，使用加速后的文件。</p><blockquote><p>CDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%80%9F%E5%BA%A6/488203?fromModule=lemma_inlink">数据传输速度</a>和稳定性的瓶颈和环节，使内容传输得更快、更稳定。通过在网络各处放置<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E8%8A%82%E7%82%B9%E6%9C%8D%E5%8A%A1%E5%99%A8/4576219?fromModule=lemma_inlink">节点服务器</a>所构成的在现有的互联网基础之上的一层智能<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E7%BD%91%E7%BB%9C/855117?fromModule=lemma_inlink">虚拟网络</a>，CDN系统能够实时地根据<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F/7489548?fromModule=lemma_inlink">网络流量</a>和各节点的连接、负载状况以及到用户的距离和<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E5%93%8D%E5%BA%94%E6%97%B6%E9%97%B4/1528464?fromModule=lemma_inlink">响应时间</a>等综合信息将用户的请求重新导向离用户最近的<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E8%8A%82%E7%82%B9/55443463?fromModule=lemma_inlink">服务节点</a>上。其目的是使用户可就近取得所需内容，解决 Internet<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E6%8B%A5%E6%8C%A4/10004398?fromModule=lemma_inlink">网络拥挤</a>的状况，提高用户访问网站的<a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E5%93%8D%E5%BA%94%E9%80%9F%E5%BA%A6/10585537?fromModule=lemma_inlink">响应速度</a>。</p></blockquote><h2 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a><strong>解决方法</strong></h2><p>打开，将其中的<code>themes/yilia/layout/_partial/post/valine.ejs</code>文件前三行的script标签的内容更改。</p><p>这里推荐<a href="https://link.zhihu.com/?target=https://www.bootcdn.cn/valine/">valine (v1.5.1) - A fast, simple &amp; powerful comment system. | BootCDN - Bootstrap 中文网开源项目免费 CDN 加速服务</a></p><p>选择其中的任何一个，顺便把上面的也修改一下（原始的似乎已经404了）。</p><p>把第二和第三行的代码换成下面这个：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://unpkg.com/leancloud-storage@4.12.2/dist/av-live-query-min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a><strong>效果</strong></h2><p><img src="https://pic4.zhimg.com/v2-d144a6c0f14c2eeeb99e32e84c8125c7_r.jpg" alt="img"></p><p><img src="https://pic4.zhimg.com/v2-d7925625ef4fd03498df9b7b0137bd23_r.jpg" alt="img"></p><p>使用valine的应该都知道，6.03秒已经很快了，并且这个速度在全部设备同步。</p><blockquote><p>由于本人设备较多，有一些奇奇怪怪的设备，例如手表，学习平板，这些设备的加载速度极慢，甚至要到1分钟或者超时，换上这个CDN地址后，每台设备基本都是秒开评论区。</p></blockquote><h2 id="图片加载"><a href="#图片加载" class="headerlink" title="图片加载"></a><strong>图片加载</strong></h2><p>由第一幅图可以看出，在有图片的文章中，加载速度仍然很慢，这里有两个方案：</p><h2 id="使用全站CDN"><a href="#使用全站CDN" class="headerlink" title="使用全站CDN"></a><strong>使用全站CDN</strong></h2><p>通过valine的例子我们可以了解到，CDN可以有效加快内容访问速度。</p><p>上例的CDN只应用到了valine的文件，如果想要让全站都加速，那么就需要使用全站CDN的云服务。</p><p>云服务价格根据使用量来计算，一般一年不会超过5元（微小流量）</p><p>不过使用CDN会导致内容更新有一定延迟，具体根据各云服务商的情况。</p><h2 id="使用图床"><a href="#使用图床" class="headerlink" title="使用图床"></a><strong>使用图床</strong></h2><p>这是最简单的方法了，缺点是更改麻烦，速度中等，并且不利于长期发展。</p><p>因为大多数图床都会有数量限制，到某一天要么付费要么开设新账号，非常不利于管理。</p><h2 id="使用简书或者知乎"><a href="#使用简书或者知乎" class="headerlink" title="使用简书或者知乎"></a><strong>使用简书或者知乎</strong></h2><p>这是一个好方法，既可以推广你的文章，又可以有快捷的图片URL。</p><p>但CSDN有防盗链，不适合作为图床。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在搭建完yilia主题以后，加载速度异常缓慢。&lt;/p&gt;
+&lt;p&gt;因此我们有必要通过开发人员工具进行一轮分析。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/v2-1a3c5721eaa08bc135cc5f6691240540_r.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="web编程" scheme="https://windeling.com/tags/web%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="valine" scheme="https://windeling.com/tags/valine/"/>
+    
+    <category term="yilia" scheme="https://windeling.com/tags/yilia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「玄玉瑶芳」甘雨新衣装纪念</title>
+    <link href="https://windeling.com/20240214ca17abee/"/>
+    <id>https://windeling.com/20240214ca17abee/</id>
+    <published>2024-02-14T11:50:00.000Z</published>
+    <updated>2024-08-09T01:01:09.508Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://patchwiki.biligame.com/images/ys/f/f5/7kwlcw8svcyufs6u9lm1ujdzr8tic3b.png" alt="7kwlcw8svcyufs6u9lm1ujdzr8tic3b.png (690×320) (biligame.com)"></p><span id="more"></span><p><img src="https://patchwiki.biligame.com/images/ys/9/99/0toc3ib9iuoailwplefp7entc7u40vd.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://patchwiki.biligame.com/images/ys/f/f5/7kwlcw8svcyufs6u9lm1ujdzr8tic3b.png&quot; alt=&quot;7kwlcw8svcyufs6u9lm1ujdzr8tic3b.png (690×320) (biligame.com)&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="纪念日" scheme="https://windeling.com/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+    <category term="原神" scheme="https://windeling.com/tags/%E5%8E%9F%E7%A5%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于硬盘速度及容量的分析</title>
+    <link href="https://windeling.com/20240204ede1e670/"/>
+    <id>https://windeling.com/20240204ede1e670/</id>
+    <published>2024-02-04T12:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.488Z</updated>
+    
+    <content type="html"><![CDATA[<p>随着科学技术的发展，以闪存颗粒为核心的SSD固态硬盘已经超越了以磁盘为核心的HDD机械硬盘，例如我们用的u盘，移动硬盘，以及现在主流的m.2硬盘，都是使用闪存颗粒进行数据的存储，但是机械硬盘并没有完全的消失在我们的生活中，它仍然在一些重要的方面发挥着它的作用。</p><span id="more"></span><h1 id="固态硬盘和机械硬盘的区别"><a href="#固态硬盘和机械硬盘的区别" class="headerlink" title="固态硬盘和机械硬盘的区别"></a>固态硬盘和机械硬盘的区别</h1><p>固态和机械硬盘的区别中最核心的方面就是体现在存储的介质不同，固态硬盘使用闪存颗粒来进行存储，机械硬盘使用可以被磁化的磁盘来进行存储。</p><h2 id="机械硬盘的存储方式"><a href="#机械硬盘的存储方式" class="headerlink" title="机械硬盘的存储方式"></a>机械硬盘的存储方式</h2><p>当我们执行文件的写入操作时，cpu通过总线指令机械硬盘在主控进行写入操作。机械硬盘接收到指令后，通过数据接口来获得数据，并通过硬盘主控来控制磁盘旋转至对应磁道，通过电磁效应来进行数据的存储，具体过程请自行搜索。<br>使用这种方式存储的优点很明显，就是数据是通过物理手段来存储的，这就意味着机械硬盘具有很高的可恢复性，例如用刀切割这种损坏的方式，就无法把其他部分的数据彻底消除。</p><p>但是这种存储方法也带来了一定的缺陷，由于是通过物理手段存储的这种电磁效应所需要的时间就显得较长，而且由于磁盘需要高速转动，因此进行连续顺序读写时效果尚可，但是如果进行大量零碎小文件的读写，就显得力不从心了。因为在大量零碎小文件的读写中，这些小文件存放的位置不一定紧密相关，可能分布在一个磁片的各个扇区，甚至可能存放在不同磁片的不同扇区。因此机械硬盘在进行4k文件读写这类测试时，速度通常不超过10MB每秒。所以机械硬盘如果用于系统启动盘在执行开机，游戏数据加载等这种大量读写文件的操作时，就会导致拖慢开机速度，游戏表现卡顿这类问题。</p><p>机械键盘有这样的缺陷，那么随着科学的发展，就发明了固态硬盘来克服以上缺点。</p><h2 id="固态硬盘的存储方式"><a href="#固态硬盘的存储方式" class="headerlink" title="固态硬盘的存储方式"></a>固态硬盘的存储方式</h2><p>固态硬盘通过闪存颗粒来进行存储，闪存颗粒按等级可以分为 SLC,MLC,TLC,QLC这4个级别，其中TLC是目前市场上使用最多的闪存颗粒，其具有擦洗次数较多的特点。</p><p>大体来说，按上述顺序来排列越前面的性能越好(读写速度越快),且可擦写次数越多,但单位容积就越少，且价格越昂贵。<br>具体内容请参考这篇文章: [颗粒分析](<a href="https://www.reneelab.com.cn/difference-slc-mlc-tlc.html#slc%EF%BC%89">https://www.reneelab.com.cn/difference-slc-mlc-tlc.html#slc）</a></p><h1 id="提高固态硬盘速度的策略。"><a href="#提高固态硬盘速度的策略。" class="headerlink" title="提高固态硬盘速度的策略。"></a>提高固态硬盘速度的策略。</h1><p>由于TLC的读写速度并不高，因此工程师们想出了一种新的办法——混用颗粒。</p><p>在一些较为廉价的固态硬盘中，厂商将mlc颗粒与tlc颗粒混用，先向较快的mlc颗粒写入数据， mlc颗粒约占总存储容量的1&#x2F;3，用户如果在使用容量不多的情况下，就会感到速度更快。</p><p>这一办法是从硬盘的整体使用角度进行的，考虑从单次文件读写的操作来说，工程师们也有另外的办法——配备缓存。<br>通常一块固态硬盘都会配备1块1-4GB的缓存，在写入时先使用SLC或MLC制造的缓存颗粒中高速写入数据，再由缓存向闪存颗粒写入数据。<br>早期的计算机系统为了使速度看起来更快，在拷贝速度的进度条中，没有计算缓存向闪存颗粒拷贝的时间，因此在早期的计算机系统中要求必须使用弹出硬件才能进行硬盘拔出，还会提示用户如果不这么操作，会有丢失数据的风险。<br>产生这一现象的原因便是缓存并不能在掉电的情况下保存数据，所以如果一传输完数据就立刻插拔硬盘那么缓存，里面的数据将全部丢失，造成数据整体不完整，甚至可能导致视频音频等无法播放。</p><p>此外工程师们还利用模拟的方式，将plc颗粒模拟成mlc颗粒，甚至slc颗粒来增加写入速度。<br> Slc读写速度快的原因就在于它单位颗粒储存的数据量小，操作量更少，就好比在现实生活中的一人一间房，速度就快了，而且由于使用的次数少，可擦写次数也就大大提高，约10万次。<br>以此类推，此后就像二人间，三人间，宿舍区，大杂烩一样，单位颗粒的存储数据量多了，但是速度也就自然慢了下来，可擦写的次数也随之降低，目前普遍使用的tlc的可擦写次数约在1000次至3000次之间。</p><p>注意:可擦写次数不是指读写次数，可擦写次数是指将该硬盘完全写满后清空，才算一次擦写。如果按最低的1000次计算，即使是一块128g的硬盘，也可以写入128,000g的数据。合128TB，在民用领域完全不用担心因为可擦写次数而导致硬盘报废的问题。</p><p>最后，工程师们还将硬盘的容量刻意缩小了一点，这一部分缩小的空间，用来对付写入放大和垃圾回收</p><blockquote><p>写入放大（WA）：WA主要发生在使用新数据更新（或者覆盖）旧数据的时候，由于FLASH需要先擦除再改写的特性，其将目标数据所在的page整个读出来缓冲到buffer中，然后再将你要改写的数据覆盖到buffer中，最后再将buffer写入到另一个空白的page中，所以哪怕你只更新1个字节(1KB)，但是最终的结果是实际上写入了4K数据到FLASH芯片中。</p></blockquote><blockquote><p>垃圾回收（GC）：GC是当FLASH中再也找不到可以直接写入的空白page时，GC就会启动，GC会在FLASH找已经废弃&#x2F;删除的page，然后将这个page擦掉，用来存放你的新数据，但是！但是！但是！这里又有两个问题就是FLASH擦写单位不一致的。写入是按照page进行的，而擦除是按照block进行的，一个block中包含有16个page，所以当GC找到一个废弃page的时候，实际上改page所在的block中还有其他page里面的数据时有效的，所以GC擦除这个block之前需要将里面所有有效的page全部搬到其他地方去，比如搬到保留区中。所以导致了哪怕你只更新1个字节，实际上在后台导致了16个page的搬移写入，加入一个page时4K，那一个block就是64KB了。</p></blockquote><p>因此，当固态硬盘的数据存的很多之后，最直接的影响就是空白的page越来越少了，需要GC的次数就越来越多了，最终感觉上就是SSD变慢了。</p><p>只是预留空间还不够，工程师们还利用了硬盘的空闲时间运行GC，实际上在不写入的时候，SSD如果空闲，也会偷偷进行GC操作，提前准备一些空闲空间。也可以直接使用系统自带的磁盘碎片整理来进行数据的整合。</p><p>因此我们可以预测，如果向一个1TB的固态硬盘内写入一个大文件，将会有以下三段速度表现:</p><ul><li><p>达到标称速度，这个时候实际上就是向缓存写入数据。</p></li><li><p>缓存空间已满，速度降为tlc颗粒的读写速度。</p></li><li><p>空白page耗尽，在读写的时候还要进行GC，再次下降，但降幅比上一次略小。</p></li></ul><h1 id="硬盘容量的减小原因"><a href="#硬盘容量的减小原因" class="headerlink" title="硬盘容量的减小原因"></a>硬盘容量的减小原因</h1><p>在这里也可以顺带解决一个问题——为什么硬盘的实际空间总是要比宣传的空间要小。</p><p>厂家总是宣传是因为进制不同的原因。的确，计算机系统使用的是二进制，在二进制中，2的8次方等于1024，而在十进制中，我们习惯使用1000作为计量单位，因此理论上可能的空间应该有125&#x2F;128。加上上述的磁盘预留的策略，这才变成我们现在所熟悉的大小。</p><p>关于固态硬盘调掉速以及储存容量变化的问题产生这些问题的主要原因均是因性能不足而产生的策略管理。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;随着科学技术的发展，以闪存颗粒为核心的SSD固态硬盘已经超越了以磁盘为核心的HDD机械硬盘，例如我们用的u盘，移动硬盘，以及现在主流的m.2硬盘，都是使用闪存颗粒进行数据的存储，但是机械硬盘并没有完全的消失在我们的生活中，它仍然在一些重要的方面发挥着它的作用。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="电子" scheme="https://windeling.com/tags/%E7%94%B5%E5%AD%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年扬帆校区第二届校园运动会照片合集</title>
+    <link href="https://windeling.com/202312034c8c189c/"/>
+    <id>https://windeling.com/202312034c8c189c/</id>
+    <published>2023-12-03T03:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.440Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="指导思想"><a href="#指导思想" class="headerlink" title="指导思想"></a>指导思想</h1><p>高举中国特色社会主义伟大旗帜，全面贯彻新时代中国特色社会主义思想，弘扬伟大建党精神，自信自强、守正创新，踔厉奋发、勇毅前行，为全面建设社会主义现代化国家、全面推进中华民族伟大复兴而团结奋斗。</p><span id="more"></span><p>参与人员</p><p>总授权：<code>钦州二中班主任，语文教师，中共优秀党员</code>曾倩老师</p><p>总策划：黄文林</p><p>摄影组：黄文林，张士钊，梁键，邓文钦，谢春霖</p><p>后期调色：黄文林</p><p>网络部署：黄文林，林耀宗</p><p>特别鸣谢：李洁老师</p><h1 id="设备型号"><a href="#设备型号" class="headerlink" title="设备型号"></a>设备型号</h1><p>梁    键：<code>Canon 80D + Canon EF-S 18-200mm f/3.5-5.6 IS</code></p><p>张士钊：<code>Canon 5D Mark II + Canon EF 70-200mm f/2.8L USM</code></p><p>黄文林：<code>Nikon D90 + Nikkor AF-S DX 18-105mm f/3.5-5.6G ED VR</code></p><p>邓文钦：<code>FUJIFILM X-E2 + 30mm(手动)</code></p><p>谢春霖：<code>Canon IXUS 90 IS</code></p><!--more--><h1 id="展示说明"><a href="#展示说明" class="headerlink" title="展示说明"></a>展示说明</h1><p>由于本次图片的总张数超过1700张，使用无损<code>PNG</code>格式将会达到<code>144GB</code>的数据量，使得网络流无法承载。</p><p>为此，最终选用了有损压缩的<code>JPG</code>格式，每张大小约<code>7MB</code>。</p><p>即便如此，普通方法也必须再次压缩图片，导致进一步的画质下降。</p><p>最终，选择了通过不限速的阿里云盘部署在网络流上，总大小约<code>20.53GB</code>，各图片已经按照赛事项目归类完毕，可根据需要自取。</p><h1 id="关于调色"><a href="#关于调色" class="headerlink" title="关于调色"></a>关于调色</h1><p>本次所有照片未使用滤镜和素材拼接，仅进行了镜头校正，色差校正，曝光度，高光，阴影，黑白色阶，去朦胧调整和噪点消除等基本操作。</p><p>参照建议，对部分人像照片进行了橙色色域明亮度调整，使肤色变白，因此：</p><h3 id="图片仅供参考，请以实物为准"><a href="#图片仅供参考，请以实物为准" class="headerlink" title="图片仅供参考，请以实物为准"></a>图片仅供参考，请以实物为准</h3><p>长跑时由于光线不足，进光量较小，部分照片采用了抑制噪点的策略，整体较暗，可自行调整。</p><blockquote><p>在摄影中，曝光，噪点，锐度三者互相制衡，提升曝光必然提升噪点，降低噪点必然降低锐度（清晰度），当某一方面需要调整时，必然影响至少其他一个因素。</p></blockquote><p>谢春霖同学的相机由于不支持RAW文件，后期空间不足，未进行调色。</p><p>张士钊同学的相机由于电量不足，最终只有25张照片。</p><p><del>但是张士钊同学的人像天赋非常好，也十分开朗，因此留下了许多《美好的印记》。</del></p><p>邓文钦同学的相机因为使用的是手动定焦镜头，成品率低于40%，因此筛选出来的照片部分脱焦<del>还很鬼畜</del>，敬请谅解。</p><h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>相应照片的版权归属创作者，不得将其用于**<code>金融诈骗</code>，<code>淫秽色情</code> ，<code>侵犯他人肖像权、名誉权</code> ，<code>暴力恐怖</code> **等违反法律法规的行为，违者后果自负，与创作者无关。</p><p>男生宿舍的照片项目不在策划范围内，在部署时已经删除部分过于暴露的图片。</p><p>黄文林，邓文钦，张士钊的照片均经过审查处理，且未通过技术手段恢复；梁键，谢春霖未经审查，存在一定的《奇怪》图片，请谨慎使用。</p><h1 id="照片展示"><a href="#照片展示" class="headerlink" title="照片展示"></a>照片展示</h1><p>点击按钮进入网盘分享页面下载。</p><div class="DL">    <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/tkXyuHHeHAx'">        <p>            <a href="https://www.alipan.com/s/tkXyuHHeHAx" target="_blank">Photo by 谢春霖-直出</a>        </p>    </div>    <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/yz8xjwabzhD'">        <p>            <a href="https://www.alipan.com/s/yz8xjwabzhD" target="_blank">Photo by 邓文钦</a>        </p>    </div>     <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/E9nQkjDyTvz'">        <p>            <a href="https://www.alipan.com/s/E9nQkjDyTvz" target="_blank">Photo by 张士钊</a>        </p>    </div>     <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/2nzbTJN6tHh'">        <p>            <a href="https://www.alipan.com/s/2nzbTJN6tHh" target="_blank">Photo By 黄文林-风景</a>        </p>    </div>        <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/FB2zo73DTRY'">        <p>            <a href="https://www.alipan.com/s/FB2zo73DTRY" target="_blank">Photo By 黄文林-人像</a>        </p>    </div>    <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/SAgvzNabx8o'">        <p>            <a href="https://www.alipan.com/s/SAgvzNabx8o" target="_blank">Photo By 黄文林-长跑</a>        </p>    </div>    <div class="DL_btn" onclick="window.location.href='https://https://www.alipan.com/s/GPFyPvK1QYz'">        <p>            <a href="https://www.alipan.com/s/GPFyPvK1QYz" target="_blank">Photo By 梁键-教职工运动会</a>        </p>    </div>    <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/T2sNpz3baz5'">        <p>            <a href="https://www.alipan.com/s/T2sNpz3baz5" target="_blank">Photo By 黄文林-跳绳</a>        </p>    </div>        <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/yBAdTgn4Euv'">        <p>            <a href="https://www.alipan.com/s/yBAdTgn4Euv" target="_blank">Photo By 黄文林-100米</a>        </p>    </div>       <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/Gtei1699qZr'">        <p>            <a href="https://www.alipan.com/s/Gtei1699qZr" target="_blank">Photo By 黄文林-入场/赛前</a>        </p>    </div>        <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/6y93Ns5SihK'">        <p>            <a href="https://www.alipan.com/s/6y93Ns5SihK" target="_blank">Photo By 梁键-风景/长跑/跳绳/100米</a>        </p>    </div>    <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/LQTkdwMY6GU'">        <p>            <a href="https://www.alipan.com/s/LQTkdwMY6GU" target="_blank">Photo By 梁键-人像</a>        </p>    </div>     <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/AQ6FJHhFTuh'">        <p>            <a href="https://www.alipan.com/s/AQ6FJHhFTuh" target="_blank">Photo By 梁键-集体仰卧起坐/接力赛</a>        </p>    </div>        <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/ydAPPMnMLdM'">        <p>            <a href="https://www.alipan.com/s/ydAPPMnMLdM" target="_blank">Photo By 黄文林-集体仰卧起坐</a>        </p>    </div>        <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/CaxVgoka8w8'">        <p>            <a href="https://https://www.alipan.com/s/CaxVgoka8w8" target="_blank">Photo By 黄文林-接力赛</a>        </p>    </div>        <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/h2pyxKwvqsC'">        <p>            <a href="https://www.alipan.com/s/h2pyxKwvqsC" target="_blank">Photo By 黄文林-实心球</a>        </p>    </div>       <div class="DL_btn" onclick="window.location.href='https://www.alipan.com/s/6xV3KXXkn3B'">        <p>            <a href="https://www.alipan.com/s/6xV3KXXkn3B" target="_blank">Photo By 黄文林-教职工运动会</a>        </p>    </div></div>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;指导思想&quot;&gt;&lt;a href=&quot;#指导思想&quot; class=&quot;headerlink&quot; title=&quot;指导思想&quot;&gt;&lt;/a&gt;指导思想&lt;/h1&gt;&lt;p&gt;高举中国特色社会主义伟大旗帜，全面贯彻新时代中国特色社会主义思想，弘扬伟大建党精神，自信自强、守正创新，踔厉奋发、勇毅前行，为全面建设社会主义现代化国家、全面推进中华民族伟大复兴而团结奋斗。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="永远的2121" scheme="https://windeling.com/tags/%E6%B0%B8%E8%BF%9C%E7%9A%842121/"/>
+    
+    <category term="校运会" scheme="https://windeling.com/tags/%E6%A0%A1%E8%BF%90%E4%BC%9A/"/>
+    
+    <category term="摄影" scheme="https://windeling.com/tags/%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="Nikon D90" scheme="https://windeling.com/tags/Nikon-D90/"/>
+    
+    <category term="Canon 80D" scheme="https://windeling.com/tags/Canon-80D/"/>
+    
+    <category term="Canon 5D Mark II" scheme="https://windeling.com/tags/Canon-5D-Mark-II/"/>
+    
+    <category term="Canon IXUS 90 IS" scheme="https://windeling.com/tags/Canon-IXUS-90-IS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>甘雨生日快乐！</title>
+    <link href="https://windeling.com/202312028aa19237/"/>
+    <id>https://windeling.com/202312028aa19237/</id>
+    <published>2023-12-02T11:50:00.000Z</published>
+    <updated>2024-08-09T01:01:09.508Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://patchwiki.biligame.com/images/ys/thumb/0/09/2vktkrndxesm19qkkx8353uf0x5yi9p.png/750px-%E7%94%9F%E8%B4%BA%C2%B7%E7%94%98%E9%9B%A8%C2%B72023.png" alt="750px-生贺·甘雨·2023.png (750×750) (biligame.com)"></p><span id="more"></span><blockquote><p>生日贺词：</p><p>啊！我、我又睡着了吗，真是抱歉…<br>睡着的时候，我好像做了一个梦。呃，不是什么有趣的梦啦，就是梦到一些小时候的事。<br>接着留云真君突然出现，竹筒倒豆子一样给你讲了不少我的糗事——<br>嗯，万幸只是梦而已。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://patchwiki.biligame.com/images/ys/thumb/0/09/2vktkrndxesm19qkkx8353uf0x5yi9p.png/750px-%E7%94%9F%E8%B4%BA%C2%B7%E7%94%98%E9%9B%A8%C2%B72023.png&quot; alt=&quot;750px-生贺·甘雨·2023.png (750×750) (biligame.com)&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="纪念日" scheme="https://windeling.com/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+    <category term="原神" scheme="https://windeling.com/tags/%E5%8E%9F%E7%A5%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于bilibili视频内嵌的iframe代码</title>
+    <link href="https://windeling.com/20231112dccd7e08/"/>
+    <id>https://windeling.com/20231112dccd7e08/</id>
+    <published>2023-11-12T03:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.440Z</updated>
+    
+    <content type="html"><![CDATA[<p>在我们将网站搭建好后，如果我们想要展示视频，需要到著名的视频平台进行视频托管服务。否则便需要安装繁琐的插件播放器，还要忍受境外网络缓慢的加载速度。</p><p>最理想的托管平台在哔哩哔哩莫属，而且b站为我们了贴心的嵌入代码功能。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=671060277&amp;bvid=BV1ua4y1H714&amp;cid=277330630&amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure><span id="more"></span><p>代码效果表现如下:</p><iframe src="//player.bilibili.com/player.html?aid=671060277&bvid=BV1ua4y1H714&cid=277330630&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>显而易见，实际效果并不是非常优秀，因为只有在哔哩哔哩的网站播放才会增加对应的收益，所以b站的嵌入代码没有做的尽善尽美，想让我们到官网去观看视频。</p><p>因此我们需要自行制定iframe的参数，使视频播放效果更好。</p><p>修改后的效果：</p><iframe src="//player.bilibili.com/player.html?aid=671060277&bvid=BV1ua4y1H714&cid=277330630&p=1" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><p>代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=671060277&amp;bvid=BV1ua4y1H714&amp;cid=277330630&amp;p=1&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure><p>核心代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts</span><br></pre></td></tr></table></figure><p>将src路径后面的参数替换成修改后的参数即可。</p><h1 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h1><p>指定iframe的参数便可，参数width和height起着控制宽高的作用，allow起着允许全屏的作用。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在我们将网站搭建好后，如果我们想要展示视频，需要到著名的视频平台进行视频托管服务。否则便需要安装繁琐的插件播放器，还要忍受境外网络缓慢的加载速度。&lt;/p&gt;
+&lt;p&gt;最理想的托管平台在哔哩哔哩莫属，而且b站为我们了贴心的嵌入代码功能。&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;iframe src=&amp;quot;//player.bilibili.com/player.html?aid=671060277&amp;amp;bvid=BV1ua4y1H714&amp;amp;cid=277330630&amp;amp;p=1&amp;quot; scrolling=&amp;quot;no&amp;quot; border=&amp;quot;0&amp;quot; frameborder=&amp;quot;no&amp;quot; framespacing=&amp;quot;0&amp;quot; allowfullscreen=&amp;quot;true&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="web前端" scheme="https://windeling.com/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="iframe" scheme="https://windeling.com/tags/iframe/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于QQ空间的网站内嵌代码</title>
+    <link href="https://windeling.com/20231112e855684d/"/>
+    <id>https://windeling.com/20231112e855684d/</id>
+    <published>2023-11-12T02:00:00.000Z</published>
+    <updated>2024-08-09T01:01:09.440Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>QQ空间分享<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=utf-8&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;shareQQzone();&quot;</span> <span class="attr">value</span>=<span class="string">&quot;分享&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20111201&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//QQ空间分享方法:这样写可以对分享事件进行绑定</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">shareQQzone</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//这里填写跳转的网站</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _url = <span class="string">&#x27;https://windeling.com/2023111169c64279/&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _showcount = <span class="string">&#x27;1&#x27;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//分享链接后我的评论语句</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _desc = <span class="string">&#x27;说点什么吧&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//分享的描述</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _summary = <span class="string">&#x27;Windeling的摄影作品&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//标题，设置的标题</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _title = <span class="string">&#x27;摄影作品-竹山村&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//设置名称，貌似没有什么用</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _site = <span class="string">&#x27;没有显示&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//添加的图片，最好是正方形的</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _pic = <span class="string">&#x27;https://pic3.zhimg.com/80/v2-8a734f046386f6aaba97fb7c5d56f346_720w.webp&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 图片宽度，不理解</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _width= <span class="string">&#x27;800px&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 图片高度，不理解</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _height= <span class="string">&#x27;200px&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//分享的链接，由上面属性拼接而成</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> _shareUrl = <span class="string">&#x27;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;url=&#x27;</span> + <span class="built_in">encodeURIComponent</span>(_url||<span class="variable language_">document</span>.<span class="property">location</span>);   <span class="comment">//参数url设置分享的内容链接|默认当前页location</span></span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;&amp;showcount=&#x27;</span> + _showcount||<span class="number">0</span>;      <span class="comment">//参数showcount是否显示分享总数,显示：&#x27;1&#x27;，不显示：&#x27;0&#x27;，默认不显示</span></span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;&amp;desc=&#x27;</span> + <span class="built_in">encodeURIComponent</span>(_desc||<span class="string">&#x27;分享的描述&#x27;</span>);    <span class="comment">//参数desc设置分享的描述，可选参数</span></span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;&amp;summary=&#x27;</span> + <span class="built_in">encodeURIComponent</span>(_summary||<span class="string">&#x27;分享摘要&#x27;</span>);    <span class="comment">//参数summary设置分享摘要，可选参数</span></span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;&amp;title=&#x27;</span> + <span class="built_in">encodeURIComponent</span>(_title||<span class="variable language_">document</span>.<span class="property">title</span>);    <span class="comment">//参数title设置分享标题，可选参数</span></span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;&amp;site=&#x27;</span> + <span class="built_in">encodeURIComponent</span>(_site||<span class="string">&#x27;&#x27;</span>);   <span class="comment">//参数site设置分享来源，可选参数</span></span></span><br><span class="line"><span class="language-javascript">        _shareUrl += <span class="string">&#x27;&amp;pics=&#x27;</span> + <span class="built_in">encodeURIComponent</span>(_pic||<span class="string">&#x27;&#x27;</span>);   <span class="comment">//参数pics设置分享图片的路径，多张图片以＂|＂隔开，可选参数</span></span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">window</span>.<span class="title function_">open</span>(_shareUrl,<span class="string">&#x27;_blank&#x27;</span>,<span class="string">&#x27;width=&#x27;</span>+_width+<span class="string">&#x27;,height=&#x27;</span>+_height+<span class="string">&#x27;,top=&#x27;</span>+(screen.<span class="property">height</span>-_height)/<span class="number">2</span>+<span class="string">&#x27;,left=&#x27;</span>+(screen.<span class="property">width</span>-_width)/<span class="number">2</span>+<span class="string">&#x27;,toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
+      
+    
+    
+    
+    
+    <category term="web前端" scheme="https://windeling.com/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="ifname" scheme="https://windeling.com/tags/ifname/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>
+            New York-Online Tour-Around the World in Eight Hours
+        </title>
+        <script type="text/javascript">
+            function newyork () {
+                var newyork = document.createElement("img");
+                newyork.src = "New York.png";
+                var enter = document.getElementById('enter');
+                enter.appendChild(newyork);
+            }
+        </script>
+        </head>
+    <body style="background-color: #F2F3EE;">
+        <div class="guide">
+            <div class="item"><img src="/tour/tour.ico" style="padding-left: 10px;">
+                Tour
+                <div class="dropdown-content">
+                    <p>Asia</p>
+                    <p>Africa</p>
+                    <p>Europe</p>
+                    <div class="double-content">
+                        America
+                        <div class="double-dropdown-content">
+                            <div class="triple-content">
+                                the USA
+                                <div class="triple-dropdown-content">
+                                    <p>Miami</p>
+                                    <a onclick="newyork()">New York</a>
+                                    <p>San Francisco</p>
+                                    <p>Seattle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Others</p>
+                </div>
+            </div>
+            <div class="item"><img src="/tour/camera.ico">Camera</div>
+            <div class="item" style="border-right: 0;"><img src="/tour/print.ico">Print</div>
+        </div>
+        <div class="content" id="content">
+            <p>I have't done this yet.</p>
+            <p>Here we are in "the Big Apple"--New York, the biggest city in the USA. Wall Street, the world-famous trade centre, is here at the southern end of Manhattan Island. There are many big companies and international banks here.</p>
+            <!-- <img src="bank.png"> -->
+            <p>Further on is Times Square. Every year, thousands of people gather here on New Year's Eve. It's exciting to see the huge glass ball falling through the darkness! </p>
+            <p>In the centre of the island is Central Park. With several lakes, hills and a large green lawn, it's a good place to relax after a hard day's work. </p>
+            <p>When you visit New York, don't miss Broadway. It has been famous for its theatres since the early twentieth century. Have you ever heard of the song "Memory"? It comes from the famous Broadway musical Cats. </p>
+            <p>OK, so much for New York. There's a "Back" icon at the bottom of the page. Click on it, pick another city and then start your new tour!</p>
+            <!-- <img src="park.png"> -->
+            <a id="enter" href="new_york.html"></a>
+        </div>
+        <style>
+            .guide{
+                position: sticky;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 25px;
+                background-color: #e1e3d6;
+                top: 0;
+                z-index: 1000;
+            }
+            .item img{
+                height: 30px;
+                vertical-align: middle;
+                padding-right: 2px;
+            }
+            .item{
+                /* width: 10%; */
+                display: inline-block;
+                text-align: center;
+                border-right: 2px solid #ccc8c4;
+                margin: 10px;
+                align-items: center;
+                padding-right: 20px;
+                margin-right: 0;
+                margin-left: 20px;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                left: 0px;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                border: 2px #000000 solid;
+                /* padding: 2px 16px; */
+                font-size: 20px;
+                font-style: initial;
+                z-index: 1;
+            }
+            .double-dropdown-content{
+                display: none;
+                position: absolute;
+                left: 160px;
+                margin-top: -30px;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                border: 2px #000000 solid;
+                font-size: 20px;
+                font-style: initial;
+                padding: 10px;
+            }
+            .triple-dropdown-content{
+                display: none;
+                position: absolute;
+                left: 145px;
+                margin-top: -36px;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                border: 2px #000000 solid;
+                font-size: 20px;
+                font-style: initial;
+            }
+            .item:hover .dropdown-content {
+                display: block;
+            }
+            .double-content:hover .double-dropdown-content{
+                display: block;
+            }
+            .triple-content:hover .triple-dropdown-content{
+                display: block;
+            }
+            #enter img{
+                position: relative;
+                margin: auto;
+                width: 90%;
+                display: block;
+            }
+            .content p{
+                font-family:'Times New Roman';
+                font-size: 30px;
+                position: relative;
+                margin: auto;
+                padding-left: 70px;
+                padding-right: 70px;
+                top: 20px;
+                line-height: 1.8em;
+            }
+        </style>
+    </body>
+</html>
