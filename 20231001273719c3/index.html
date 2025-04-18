@@ -1,0 +1,1005 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=dark>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="msvalidate.01" content="53986AF3CFA0C8D60580184F7070CFD7" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://blog-ground.oss-accelerate.aliyuncs.com/logo.png">
+  <link rel="icon" href="https://blog-ground.oss-accelerate.aliyuncs.com/logo.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="黄文林">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。  原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。 所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。 这无疑给博客留下了不好的开场，因此需要绑定一张SS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于绑定域名后通过阿里云SSL证书进行安全认证的方法">
+<meta property="og:url" content="https://blog.windeling.com/20231001273719c3/index.html">
+<meta property="og:site_name" content="Windelingの間">
+<meta property="og:description" content="在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。  原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。 所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。 这无疑给博客留下了不好的开场，因此需要绑定一张SS">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-4a2913c2468a66de421eb2f929361e2c_r.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-6aa0a24a7db03c8cc10374a6f259e109_r.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-5bbfb040c5b3ff0e0359bd04a5f4250a_r.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-8e169bd3dd08cf5b94930031bca9b251_r.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-35a1083f9f43da8406b15a94b4b8c2ef_r.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-21be2d0c508ed21b931235a4964f68ce_r.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-5738ccb7a6b95e388f1d3030e0e1b588_r.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-7a069f741d20938fa4d82a8f2bb189c6_720w.webp">
+<meta property="article:published_time" content="2023-10-01T03:39:47.000Z">
+<meta property="article:modified_time" content="2025-04-18T10:19:47.981Z">
+<meta property="article:author" content="黄文林">
+<meta property="article:tag" content="域名">
+<meta property="article:tag" content="SSL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pic1.zhimg.com/v2-4a2913c2468a66de421eb2f929361e2c_r.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>关于绑定域名后通过阿里云SSL证书进行安全认证的方法 - Windelingの間</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"blog.windeling.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":80,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"xX8SvWOnYN1RJj7A3s7SxX5Q-gzGzoHsz","app_key":"hVieH7arRZZp9vAnVBcBOgdZ","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Windelingの間" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+  
+    
+
+<style type="text/css">
+    @keyframes spin3D {
+        from {
+            transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+        }
+
+        to {
+            transform: rotate3d(0deg);
+        }
+    }
+
+    #loading {
+        height: 100%;
+        background-color: #172d4781;
+        backdrop-filter: saturate(100%) blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 99999999;
+    }
+
+    .spinner-box {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .leo {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .blue-orbit {
+        width: 175px;
+        height: 175px;
+        border: 2px solid #1a91fa;
+        animation: spin3D 3s linear .2s infinite;
+    }
+
+    .green-orbit {
+        width: 135px;
+        height: 135px;
+        border: 2px solid #00ffdd;
+        animation: spin3D 2s linear 0s infinite;
+    }
+
+    .red-orbit {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #d75151;
+        animation: spin3D 1s linear 0s infinite;
+    }
+
+    .white-orbit-a {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #faf5f5;
+        animation: spin3D 3s linear 0s infinite;
+    }
+
+    .white-orbit-b {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #faf5f5;
+        animation: spin3D 1.5s linear 0s infinite;
+    }
+
+    .nucleus {
+        width: 1px;
+        height: 1px;
+        border: 1px solid #ffffff;
+        animation: spin3D 1s linear 0s infinite;
+    }
+</style>
+
+<div id="loading">
+    <div class="spinner-box">
+        <div class="blue-orbit leo"></div>
+        <div class="green-orbit leo"></div>
+        <div class="red-orbit leo"></div>
+        <div class="white-orbit-a leo"></div>
+        <div class="white-orbit-b leo"></div>
+        <div class="nucleus leo"></div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const loaded = function () {
+            window.onload = function () {
+                const loader = document.getElementById("loading");
+                loader.className = "fadeout";
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 
+                300
+                );
+            }
+        };
+        loaded();
+    })();
+</script>
+  
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Windelingの間</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/message/" target="_self">
+                <i class="iconfont icon-speakernotes"></i>
+                <span>留言板</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/donate/" target="_self">
+                <i class="iconfont icon-friends"></i>
+                <span>捐赠</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://blog-ground.oss-accelerate.aliyuncs.com/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="关于绑定域名后通过阿里云SSL证书进行安全认证的方法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        黄文林
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-10-01 11:39" pubdate>
+          2023年10月1日 中午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">关于绑定域名后通过阿里云SSL证书进行安全认证的方法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>在购买域名并将其解析绑定到Github Page个人网站上后，网站的性质由安全变为了不安全。</p>
+<p><img src="https://pic1.zhimg.com/v2-4a2913c2468a66de421eb2f929361e2c_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>原因并在于以前网站的所谓域名其实是对一个仓库的访问，但是现在通过Github Page的修改域名解析的方式。来定义了一个自己的域名，而这个域名是没有SSL安全证书的。</p>
+<p>所以会在一些浏览器中显示出不安全的字样，甚至谷歌的chrome浏览器直接中断了连接。</p>
+<p>这无疑给博客留下了不好的开场，因此需要绑定一张SSL安全证书来证明自己的博客是安全的。</p>
+<span id="more"></span>
+
+<h1 id="SSL简介"><a href="#SSL简介" class="headerlink" title="SSL简介"></a>SSL简介</h1><blockquote>
+<p>SSL是一种安全套接层协议，是Web浏览器与Web服务器之间安全交换信息的协议，提供两个基本的安全服务：鉴别与保密。</p>
+<p>SSL协议的三个特性在一个:</p>
+<p>① 保密：在握手协议中定义了会话密钥后，所有的消息都被加密；</p>
+<p>② 鉴别：可选的客户端认证，和强制的服务器端认证；</p>
+<p>③ 完整性：传送的消息包括消息完整性检查（使用MAC）。</p>
+<p>SSL的位置</p>
+<p>SSL介于应用层和TCP层之间，应用层数据不再直接传递给传输层，而是传递给SSL层，SSL层对从应用层收到的数据进行加密，并增加自己的SSL头。</p>
+</blockquote>
+<h1 id="获得SSL证书"><a href="#获得SSL证书" class="headerlink" title="获得SSL证书"></a>获得SSL证书</h1><p>SSL证书一般由权威公司进行颁发。如果是自己颁发的SSL证书算法不够强力，甚至还会被浏览器认为是更高的风险级别。</p>
+<p>所以我们需要去权威公司中获得一张证明自己网站安全的证书，加密自己的网站。</p>
+<p>目前的权威公司有许多，但是能提供免费证书的却寥寥无几。</p>
+<p>所以最好选择DigiCert 免费版 SSL证书，有效期一年。</p>
+<p>阿里云已经集成这个服务，会更加方便快捷，所以推荐注册域名时使用阿里云。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>登陆阿里云后，转到数字证书管理服务。</p>
+<p><img src="https://pic2.zhimg.com/v2-6aa0a24a7db03c8cc10374a6f259e109_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>选择SSL在这里证书，再选择免费证书。</p>
+<p><img src="https://pic3.zhimg.com/v2-5bbfb040c5b3ff0e0359bd04a5f4250a_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>这是购买了免费证书后的界面，在没有购买之前，「创建证书」按钮将会变为「免费证书」的按钮。</p>
+<p><img src="https://pic2.zhimg.com/v2-8e169bd3dd08cf5b94930031bca9b251_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>选择购买20张，其余的数量则不能免费。</p>
+<p><img src="https://pic4.zhimg.com/v2-35a1083f9f43da8406b15a94b4b8c2ef_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>选择申请证书，按照提示填写信息。</p>
+<p>如果在阿里云购买的域名，在验证信息环节会自动添加DNS解析，更为方便与快捷。</p>
+<p>验证信息完后申请的速度非常快，一般不到一分钟便可有邮件通知，表示申请完成。</p>
+<p><img src="https://pic3.zhimg.com/v2-21be2d0c508ed21b931235a4964f68ce_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>便会显示一张证书，表示已经被认可。</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>获得了证书后便需要将它部署到自己的网站上。</p>
+<p>此时不用选择阿里云内置的部署操作，此部署操作是针对于服务器而言的，对Github page页面操作是无效的。</p>
+<p>所以需要转到Github并登录账号，再选择对应的个人博客仓库的Page页面。</p>
+<p>将页面滑到最底下，可看到如图所示的页面。</p>
+<p><img src="https://pic1.zhimg.com/v2-5738ccb7a6b95e388f1d3030e0e1b588_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="img"></p>
+<p>由于此时网站已经通过了证书验证，所以中间的TLS证书请求已经消失了。</p>
+<p>如果从未进行证书验证，此时会在强制HTTPS和Custom domain中间显示TLS证书生成。</p>
+<p>由于TLS证书和SSL证书是同级的，所以我们选择部署SSL证书。</p>
+<p>在此时便有两种方法。</p>
+<h3 id="图形化部署"><a href="#图形化部署" class="headerlink" title="图形化部署"></a>图形化部署</h3><p>当GitHub验证成功，此网站确实具有SSL证书时，下面的Enforce HTTPS（强制HTTPS）的选项就可选，此时勾选便会使对网站的访问强制使用HTTPS。</p>
+<h3 id="输入部署"><a href="#输入部署" class="headerlink" title="输入部署"></a>输入部署</h3><p>如果点击后没有效果，那么便需要清空域名，输入<code>https://yourdomain.com</code>，将域名刷新为只有HTTPS的选项。</p>
+<p>之后Github便会自动将https省略。</p>
+<blockquote>
+<p>注意：上述两种方法都需要在强制HTTPS的选项可选的情况下操作，此选项可选表示Github已经发现了SSL证书。</p>
+<p>否则，即使重新输入部署也无效，还可能导致跳转错误。</p>
+</blockquote>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><p>图形化部署是让访问HTTP的请求强制重定向到HTTPS，但如果未能重定向，就会提示不安全。</p>
+<blockquote>
+<p>此方法在直接输入时大多有效，但在重定向时经常不起作用。</p>
+</blockquote>
+<p>而输入部署是删除所有HTTP的网址，只保留HTTPS的网址。</p>
+<blockquote>
+<p>此方法虽然稳妥，但如果有用户输入全部网址而又忘记加上s时，便会无法访问。</p>
+</blockquote>
+<p>所以最为稳妥的办法是进行两个部署。</p>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><img src="https://pic3.zhimg.com/80/v2-7a069f741d20938fa4d82a8f2bb189c6_720w.webp" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload></p>
+<p>部署了SSL证书后，网站变为「安全」状态。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Web%E7%BC%96%E7%A8%8B/" class="category-chain-item">Web编程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Web%E7%BC%96%E7%A8%8B/%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/" class="category-chain-item">网络连接</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%9F%9F%E5%90%8D/" class="print-no-link">#域名</a>
+      
+        <a href="/tags/SSL/" class="print-no-link">#SSL</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>关于绑定域名后通过阿里云SSL证书进行安全认证的方法</div>
+      <div>https://blog.windeling.com/20231001273719c3/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>黄文林</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年10月1日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2025年4月18日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-cc-nc"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/20231022f5e2d602/" title="关于Github Actions自动部署的优势和方法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">关于Github Actions自动部署的优势和方法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/202309308c8465b4/" title="基于hexo生成的网址短链接解决中文域名转码问题的方案">
+                        <span class="hidden-mobile">基于hexo生成的网址短链接解决中文域名转码问题的方案</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://blog-ground.oss-accelerate.aliyuncs.com/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"xX8SvWOnYN1RJj7A3s7SxX5Q-gzGzoHsz","appKey":"hVieH7arRZZp9vAnVBcBOgdZ","path":"window.location.pathname","placeholder":"输入QQ邮箱引用头像，图片可直接粘贴","avatar":"retro","meta":["nick","mail"],"requiredFields":[],"pageSize":10,"visitor":true,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"tagMeta":["管理员","好友","访客"],"master":["9f82ada0f029aa91f29bf3732d0f5b49","4cb070c369cf2df4cb51fcb732a61a71","afe9acb40d843e86c644f586120e6b80","464302b034a85c1169e37279189768bf","a1ec88397ac333a54313a1a0ae15b528","2aeb2464375584cf3b3f781c290fbcef","7d74b1c3211fcc37a4ba405b54f71580","26051afffea96b6a8d1babf43ce9d66c"],"friends":["dccf9ce45ff48891ace3a25c123e9670","8d1e35b38ff04fed48567d6cbf482171","3136484f15ba42f936358250558f352e","562b61a605ef71aa8976075f44c0ca59","13716ffea197cd448ce51be6d8117118","fb228aee9805b474c5f6fd365ae9fcd9","e65dfec89f0808860f4dd5f1a9eb756c","5d12bd502690649460634949f39d5809","8a5b48837abadf47603f6ab30175d6e8","f538b7e7c5df9dbc38d72789c3ca9da4","64ad8e45c5586ae292799d4dcddf07f1","c2e0c47cbcc81b2645637d3dc6fc20d5","58e4159574654b1d8a692f14f7b5dfac","20e3425728400eb505a4e664766e07c8","9717ee55feca22f0ae7b6bdbdb3d127d","418a5c7f0f74528f2e5f5992b5ebb245","10b3d35d9f212f357a35029a2b5ff0ef","a404462d4b30c4d63cb15ad071ffc60f"]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  <div>
+    &copy; 2025 黄文林
+  </div>
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        本站总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访问设备数 
+        <span id="busuanzi_value_site_uv"></span>
+         台
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+  <div class="TIMESET" style="text-align: center;">
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+      var now = new Date(); 
+      function createtime() { 
+        var grt= new Date("08/17/2023 11:00:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+      setInterval("createtime()",250);
+    </script>
+    </div>
+   
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://fastly.jsdelivr.net/npm/busuanzi@2.3.0/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="/js/background.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

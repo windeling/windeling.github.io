@@ -1,0 +1,1090 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=dark>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="msvalidate.01" content="53986AF3CFA0C8D60580184F7070CFD7" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://blog-ground.oss-accelerate.aliyuncs.com/logo.png">
+  <link rel="icon" href="https://blog-ground.oss-accelerate.aliyuncs.com/logo.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="黄文林">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="当我看到林耀宗写完了这篇理一下化学思路 - Liam’s boring life，并热情洋溢的让我审稿的时候，我很愉快的接下了这个任务。接下来我提出了大量PR，但是都被驳回了，理由是太过超前。(〃＞皿＜)因此我决定自己写一篇来继续深入探索胶体的种种性质。             前言本文唯一的参考资料是一本破破烂烂的来源于二中图书馆的「无机化学」（武汉大学 吉林大学等校编">
+<meta property="og:type" content="article">
+<meta property="og:title" content="胶体的扩展">
+<meta property="og:url" content="https://blog.windeling.com/20241003130c893f/index.html">
+<meta property="og:site_name" content="Windelingの間">
+<meta property="og:description" content="当我看到林耀宗写完了这篇理一下化学思路 - Liam’s boring life，并热情洋溢的让我审稿的时候，我很愉快的接下了这个任务。接下来我提出了大量PR，但是都被驳回了，理由是太过超前。(〃＞皿＜)因此我决定自己写一篇来继续深入探索胶体的种种性质。             前言本文唯一的参考资料是一本破破烂烂的来源于二中图书馆的「无机化学」（武汉大学 吉林大学等校编">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-fe7662110ea2e1e8d3312611f21ebebc_720w.jpg">
+<meta property="og:image" content="https://picx.zhimg.com/80/v2-8b1b5e3df0652b72d2166b6a0f960659_720w.png">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-b8bf8cc047a1cc522366956d501e6b38_r.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-6bce3fd5473f31581827af6a49b950cb_r.jpg">
+<meta property="article:published_time" content="2024-10-03T12:56:40.000Z">
+<meta property="article:modified_time" content="2025-04-18T10:19:47.981Z">
+<meta property="article:author" content="黄文林">
+<meta property="article:tag" content="无机化学">
+<meta property="article:tag" content="高等教育">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pic1.zhimg.com/80/v2-fe7662110ea2e1e8d3312611f21ebebc_720w.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>胶体的扩展 - Windelingの間</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"blog.windeling.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":80,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"xX8SvWOnYN1RJj7A3s7SxX5Q-gzGzoHsz","app_key":"hVieH7arRZZp9vAnVBcBOgdZ","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Windelingの間" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+  
+    
+
+<style type="text/css">
+    @keyframes spin3D {
+        from {
+            transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+        }
+
+        to {
+            transform: rotate3d(0deg);
+        }
+    }
+
+    #loading {
+        height: 100%;
+        background-color: #172d4781;
+        backdrop-filter: saturate(100%) blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 99999999;
+    }
+
+    .spinner-box {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .leo {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .blue-orbit {
+        width: 175px;
+        height: 175px;
+        border: 2px solid #1a91fa;
+        animation: spin3D 3s linear .2s infinite;
+    }
+
+    .green-orbit {
+        width: 135px;
+        height: 135px;
+        border: 2px solid #00ffdd;
+        animation: spin3D 2s linear 0s infinite;
+    }
+
+    .red-orbit {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #d75151;
+        animation: spin3D 1s linear 0s infinite;
+    }
+
+    .white-orbit-a {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #faf5f5;
+        animation: spin3D 3s linear 0s infinite;
+    }
+
+    .white-orbit-b {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #faf5f5;
+        animation: spin3D 1.5s linear 0s infinite;
+    }
+
+    .nucleus {
+        width: 1px;
+        height: 1px;
+        border: 1px solid #ffffff;
+        animation: spin3D 1s linear 0s infinite;
+    }
+</style>
+
+<div id="loading">
+    <div class="spinner-box">
+        <div class="blue-orbit leo"></div>
+        <div class="green-orbit leo"></div>
+        <div class="red-orbit leo"></div>
+        <div class="white-orbit-a leo"></div>
+        <div class="white-orbit-b leo"></div>
+        <div class="nucleus leo"></div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const loaded = function () {
+            window.onload = function () {
+                const loader = document.getElementById("loading");
+                loader.className = "fadeout";
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 
+                300
+                );
+            }
+        };
+        loaded();
+    })();
+</script>
+  
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Windelingの間</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/message/" target="_self">
+                <i class="iconfont icon-speakernotes"></i>
+                <span>留言板</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/donate/" target="_self">
+                <i class="iconfont icon-friends"></i>
+                <span>捐赠</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://blog-ground.oss-accelerate.aliyuncs.com/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="胶体的扩展"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        黄文林
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-10-03 20:56" pubdate>
+          2024年10月3日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          13 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">胶体的扩展</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <div class="note note-primary">
+            <p>当我看到林耀宗写完了这篇<a target="_blank" rel="noopener" href="https://boredliam.github.io/posts/327112.html">理一下化学思路 - Liam’s boring life</a>，并热情洋溢的让我审稿的时候，我很愉快的接下了这个任务。</p><p>接下来我提出了大量PR，但是都被驳回了，理由是太过超前。(〃＞皿＜)</p><p>因此我决定自己写一篇来继续深入探索胶体的种种性质。</p>
+          </div>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文唯一的参考资料是一本破破烂烂的来源于二中图书馆的「无机化学」（武汉大学 吉林大学等校编）</p>
+<p><del>此外，本文的目录结构保持与前文相同，以方便您的扩展阅读。</del>作者突然想用FAQ的形式来写。</p>
+<p>在您阅读本文前，我们已经假定您已经完全阅读并理解了<a target="_blank" rel="noopener" href="https://boredliam.github.io/posts/327112.html">理一下化学思路 - Liam’s boring life</a>中的内容。</p>
+<h2 id="Q1-这个化学方程式算不算复分解反应？"><a href="#Q1-这个化学方程式算不算复分解反应？" class="headerlink" title="Q1:这个化学方程式算不算复分解反应？"></a><strong>Q1:这个化学方程式算不算复分解反应？</strong></h2><p>$$ FeCl_{3} + 3H_{2}O &#x3D;&#x3D; Fe(OH)_{3} +3HCl $$</p>
+<p>这个化学式在初中没有讲过，我们暂且拓展一下。（盐类物质的水解属于高中范畴）</p>
+<p>这里我们先假定了您已经知晓了电解质这一概念，并且明白水是极其微弱的电解质。</p>
+<p>那么我们就可以将其看成一个离子反应，也就是说铁离子和水电离出来的氢氧根离子发生反应，进而生成氢氧化铁和氯化氢两种物质。</p>
+<p>请注意这属于复分解反应的范畴，然而细心的同学可能就要问了：这里没有生成沉淀气体和水，不符合复分解反应的条件呀？</p>
+<div class="note note-success">
+            <p>在这里我们将初中的课本进行一定的修正：</p><p>复分解反应发生的三个条件：</p>
+          </div>
+
+
+    <div class="fold">
+      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-0094518d" role="button" aria-expanded="false" aria-controls="collapse-0094518d">
+        <div class="fold-arrow">▶</div>生成沉淀
+      </div>
+      <div class="fold-collapse collapse" id="collapse-0094518d">
+        <div class="fold-content">
+          <p>生成难溶性的物质 </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="fold">
+      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-1d85df42" role="button" aria-expanded="false" aria-controls="collapse-1d85df42">
+        <div class="fold-arrow">▶</div>生成气体
+      </div>
+      <div class="fold-collapse collapse" id="collapse-1d85df42">
+        <div class="fold-content">
+          <p>生成易挥发的物质 </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="fold">
+      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-60e67c8d" role="button" aria-expanded="false" aria-controls="collapse-60e67c8d">
+        <div class="fold-arrow">▶</div>生成水
+      </div>
+      <div class="fold-collapse collapse" id="collapse-60e67c8d">
+        <div class="fold-content">
+          <p>生成难电离的物质 </p>
+        </div>
+      </div>
+    </div>
+
+<p>这样子看来，氢氧化铁胶体就属于难溶性的物质，因此上述化学式属于复分解反应。</p>
+<blockquote>
+<p>注：有些资料也把$HCl$归为易挥发的物质，在其后面加上箭头。</p>
+</blockquote>
+<h2 id="Q2：难溶性的氢氧化铁胶体为什么又处于介稳体系呢？"><a href="#Q2：难溶性的氢氧化铁胶体为什么又处于介稳体系呢？" class="headerlink" title="Q2：难溶性的氢氧化铁胶体为什么又处于介稳体系呢？"></a><strong>Q2：难溶性的氢氧化铁胶体为什么又处于介稳体系呢？</strong></h2><p>学过热力学的同学可能会对此产生疑问：胶体不是一个多相体系吗？其具有很大的界面，总有聚成更大粒子的倾向，当颗粒大到一定程度时，自然就会产生沉淀，也就是聚沉。但是为什么胶体不容易聚沉呢？</p>
+<ul>
+<li>其一是因为它粒子较小，难以相遇。</li>
+<li>其二是胶粒带相同电荷，相互排斥，不易聚沉。</li>
+<li><span class="label label-info">其三是吸附层离子中的水化作用，使胶粒力被水包围。</span></li>
+</ul>
+<h2 id="Q3：电泳要用什么电？"><a href="#Q3：电泳要用什么电？" class="headerlink" title="Q3：电泳要用什么电？"></a><strong>Q3：电泳要用什么电？</strong></h2><blockquote>
+<p>因为胶粒带电荷，所以在电场作用下最外面的扩散层会和胶粒分开，向着电极移动，这就是电泳。</p>
+</blockquote>
+<p><img src="https://pic1.zhimg.com/80/v2-fe7662110ea2e1e8d3312611f21ebebc_720w.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload></p>
+<p><strong>直流电</strong>，持续的电流才能有效破坏扩散层和吸附层之间的连接。</p>
+<h2 id="Q4：这些都是真正的胶体吗？"><a href="#Q4：这些都是真正的胶体吗？" class="headerlink" title="Q4：这些都是真正的胶体吗？"></a>Q4：这些都是真正的胶体吗？</h2><p><img src="https://picx.zhimg.com/80/v2-8b1b5e3df0652b72d2166b6a0f960659_720w.png" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload></p>
+<p>事实上稀豆浆、淀粉溶液并不属于胶体，严格意义上它们属于高分子溶液。</p>
+<div class="note note-success">
+            <p><strong>什么是高分子溶液？</strong></p><blockquote><p>橡胶，动物胶，蛋白质，淀粉等物质溶解于水或其他溶剂中，所得溶液叫做高分子溶液。</p></blockquote><p>注意我们强调了「溶液」这一词，也就是说高分子溶液它是一个均相体系，在分散介质和分散相中不存在界面；而胶体则不同，胶体的胶粒和分散介质中有扩散层包裹着，属于一个多相体系。</p>
+          </div>
+
+<p>之所以把它们归入胶体这一类，是因为它们的分子较大，具有某些胶体的性质，例如都可以产生丁达尔效应，都可以加入电解质而产生聚沉现象。</p>
+<p>然而它们也有一定的不同之处，比如：（以下的胶体均指严格意义上的胶体）</p>
+<ol>
+<li>胶体在聚成以后很难进行复原，而高分子溶液却很轻易的便可恢复成类胶体的性质。</li>
+<li>高分的溶液和胶体的稳定性来源不同。高分子溶液之所以稳定，是因为它的高度溶剂化，不是由于电荷互相排斥（高分子溶液一般不带电荷）</li>
+</ol>
+<h2 id="Q5：不同的电解质对胶体的聚沉有影响吗？"><a href="#Q5：不同的电解质对胶体的聚沉有影响吗？" class="headerlink" title="Q5：不同的电解质对胶体的聚沉有影响吗？"></a>Q5：不同的电解质对胶体的聚沉有影响吗？</h2><p>有影响，其中关键影响如下：</p>
+<ol>
+<li>只有与胶粒所带电荷电性相反的电解质粒子才起到关键的聚沉作用。（这个多好理解）</li>
+<li>在相反的离子中粒子的种类与聚沉作用关系不大，决定电解质继承能力的离子的价态。</li>
+<li>其中，价态越高，聚沉作用越强。</li>
+</ol>
+<p>总结起来就是：</p>
+<div class="note note-success">
+            <p>电解质的聚沉能力主要由异号的离子价态决定，离子价态越高，电解质的聚沉能力越大。</p><p>这一规律被称为叔儿采-哈迪规则。</p>
+          </div>
+
+<h2 id="Q6：高分子溶液对胶体的聚沉有影响吗？"><a href="#Q6：高分子溶液对胶体的聚沉有影响吗？" class="headerlink" title="Q6：高分子溶液对胶体的聚沉有影响吗？"></a>Q6：高分子溶液对胶体的聚沉有影响吗？</h2><p>当然有，而且还分两种影响。</p>
+<h3 id="保护作用"><a href="#保护作用" class="headerlink" title="保护作用"></a>保护作用</h3><p>当向胶体中加入大量高分子溶液（即高分子数目远远超过胶体粒子的数目）完全覆盖其表面时，其对电解质聚沉的抵抗本领就会大为增强（也就是说同样数量的或者加入更多的电解质不能再引起胶体的聚沉）</p>
+<p>实例：生活中的墨水就是一种常见的胶体，但我们几乎不会见到墨水聚沉，原因就在于墨水里面通常加入了阿拉伯胶或者明胶（更常用），由于高分子溶液是稳定的，也可以使得胶体获得稳定性。</p>
+<h3 id="敏化作用"><a href="#敏化作用" class="headerlink" title="敏化作用"></a>敏化作用</h3><p>与上述例子相反，单向胶体加入的高分子溶液不足以覆盖完胶体的表面时，它不仅不能对胶体产生保护作用，而且还会降低其稳定性，甚至引起聚沉。</p>
+<p>由此可见，控制高分子溶液的用量对胶体的保护和敏化是非常重要的。</p>
+<h2 id="Q7：你能举一些有趣多样的胶体粒子吗？"><a href="#Q7：你能举一些有趣多样的胶体粒子吗？" class="headerlink" title="Q7：你能举一些有趣多样的胶体粒子吗？"></a>Q7：你能举一些有趣多样的胶体粒子吗？</h2><p>这里列举两个能在高中阶段使用的物质制取的胶体：</p>
+<p><img src="https://pic1.zhimg.com/v2-b8bf8cc047a1cc522366956d501e6b38_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="硅酸胶体"></p>
+<p><img src="https://pic2.zhimg.com/v2-6bce3fd5473f31581827af6a49b950cb_r.jpg" srcset="https://blog-ground.oss-accelerate.aliyuncs.com/loading.gif" lazyload alt="我也不懂咋回事·硫磺胶体"></p>
+<blockquote>
+<p>硫磺胶体的配平全是$1$。</p>
+</blockquote>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="category-chain-item">学习</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E5%8C%96%E5%AD%A6/" class="category-chain-item">化学</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%97%A0%E6%9C%BA%E5%8C%96%E5%AD%A6/" class="print-no-link">#无机化学</a>
+      
+        <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2/" class="print-no-link">#高等教育</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>胶体的扩展</div>
+      <div>https://blog.windeling.com/20241003130c893f/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>黄文林</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年10月3日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2025年4月18日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-cc-nc"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/202412028aa19237/" title="甘雨生日快乐！">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">甘雨生日快乐！</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/20240929d345be47/" title="原神四周年生日">
+                        <span class="hidden-mobile">原神四周年生日</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://blog-ground.oss-accelerate.aliyuncs.com/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"xX8SvWOnYN1RJj7A3s7SxX5Q-gzGzoHsz","appKey":"hVieH7arRZZp9vAnVBcBOgdZ","path":"window.location.pathname","placeholder":"输入QQ邮箱引用头像，图片可直接粘贴","avatar":"retro","meta":["nick","mail"],"requiredFields":[],"pageSize":10,"visitor":true,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"tagMeta":["管理员","好友","访客"],"master":["9f82ada0f029aa91f29bf3732d0f5b49","4cb070c369cf2df4cb51fcb732a61a71","afe9acb40d843e86c644f586120e6b80","464302b034a85c1169e37279189768bf","a1ec88397ac333a54313a1a0ae15b528","2aeb2464375584cf3b3f781c290fbcef","7d74b1c3211fcc37a4ba405b54f71580","26051afffea96b6a8d1babf43ce9d66c"],"friends":["dccf9ce45ff48891ace3a25c123e9670","8d1e35b38ff04fed48567d6cbf482171","3136484f15ba42f936358250558f352e","562b61a605ef71aa8976075f44c0ca59","13716ffea197cd448ce51be6d8117118","fb228aee9805b474c5f6fd365ae9fcd9","e65dfec89f0808860f4dd5f1a9eb756c","5d12bd502690649460634949f39d5809","8a5b48837abadf47603f6ab30175d6e8","f538b7e7c5df9dbc38d72789c3ca9da4","64ad8e45c5586ae292799d4dcddf07f1","c2e0c47cbcc81b2645637d3dc6fc20d5","58e4159574654b1d8a692f14f7b5dfac","20e3425728400eb505a4e664766e07c8","9717ee55feca22f0ae7b6bdbdb3d127d","418a5c7f0f74528f2e5f5992b5ebb245","10b3d35d9f212f357a35029a2b5ff0ef","a404462d4b30c4d63cb15ad071ffc60f"]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  <div>
+    &copy; 2025 黄文林
+  </div>
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        本站总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访问设备数 
+        <span id="busuanzi_value_site_uv"></span>
+         台
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+  <div class="TIMESET" style="text-align: center;">
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+      var now = new Date(); 
+      function createtime() { 
+        var grt= new Date("08/17/2023 11:00:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+      setInterval("createtime()",250);
+    </script>
+    </div>
+   
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://fastly.jsdelivr.net/npm/busuanzi@2.3.0/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="/js/background.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
